@@ -14,14 +14,12 @@ body {
 }
 
 #gooey-bg {
+  z-index: 200;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-}
-#gooey-bg path {
-  z-index: 200;
 }
 #gooey-bg path.color-path {
   fill: #663fd9;
@@ -117,7 +115,7 @@ body {
 #page {
   z-index: 100;
   position: absolute;
-  top: 150%;
+  top: 75%;
   right: 0;
   bottom: 0;
   left: 0;
