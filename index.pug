@@ -14,9 +14,12 @@ svg#gooey-bg(width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="n
 
 #nav-header
   ul.nav
-    each text, target in {"#about":"About", "#faq":"FAQ", "#sponsors":"Sponsors"}
-      li.nav-item
-        a.nav-link(onclick="return navScrollTo('"+target+"');" href=target)= text
+    li.nav-item
+      a.nav-link(href="#about") About
+    li.nav-item
+      a.nav-link(href="#faq") FAQ
+    li.nav-item
+      a.nav-link(href="#sponsors") Sponsors
     li.nav-item.nav-register
       a.nav-link(href="#/register") Register
 

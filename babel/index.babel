@@ -83,12 +83,14 @@ $(window).resize(function() {
   $(this).scroll(); // Trigger a scroll update
 }).resize();
 
-function navScrollTo(tag) {
+$(".nav-link").click(function() {
+  var target = $(this).attr("href");
+  console.log("target", target);
   $("html,body").stop().animate({
-    scrollTop: $(tag).offset().top
+    scrollTop: $(target).offset().top
   }, 400, "easeInOutQuad");
   return false;
-}
+});
 
 $("body").scrollspy({target: "#nav-header"})
 
