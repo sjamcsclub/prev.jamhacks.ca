@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo|Lato");
+html {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  min-height: 400%;
+  line-height: 15.6pt;
+}
+
+::selection {
+  background-color: #8f72e3;
+}
+
+#gooey-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#gooey-bg path {
+  z-index: 200;
+}
+#gooey-bg path.color-path {
+  fill: #663fd9;
+}
+#gooey-bg path.light-path {
+  fill: #8f72e3;
+}
+#gooey-bg path.white-path {
+  fill: white;
+}
+
+#landing {
+  z-index: 300;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#landing-logo {
+  text-align: center;
+  color: white;
+  font-size: 72pt;
+  font-weight: 400;
+  font-family: Baloo, sans-serif;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0.45rem rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  #landing-logo {
+    font-size: 48pt;
+  }
+}
+#landing-subtitle {
+  color: white;
+  font: 20pt "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+  text-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5em;
+}
+#landing .landing-button {
+  color: white;
+  border-color: white;
+  border-radius: 100em;
+  border-width: 2px;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+  text-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3), 0 0.2rem rgba(0, 0, 0, 0.3) inset;
+}
+#landing .landing-button:hover, #landing .landing-button:active, #landing .landing-button:focus {
+  color: #663fd9;
+  background-color: white;
+  border-color: white;
+  text-shadow: none;
+  box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+#nav-header {
+  display: none;
+  z-index: 400;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+#nav-header .nav {
+  font-size: 12pt;
+}
+#nav-header .nav-tabs {
+  border-bottom: none;
+}
+#nav-header .nav-link {
+  color: white;
+  border: none;
+  padding: 1em 1.5em;
+}
+#nav-header .nav-link.active {
+  background-color: #8f72e3;
+}
+#nav-header .nav-register {
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+#page {
+  z-index: 100;
+  position: absolute;
+  top: 150%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#page h1 {
+  text-align: center;
+}
+#page section {
+  padding-top: 10%;
+}
+
+footer {
+  padding-top: 10%;
+}
+
+.map-container::before {
+  padding-top: 50%;
+}
