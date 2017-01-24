@@ -1,0 +1,22 @@
+{
+  "name": "jamhacks.ca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjamcsclub/jamhacks.ca.git"
+  },
+  "author": "Ethan Guo <ethguo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sjamcsclub/jamhacks.ca/issues"
+  },
+  "homepage": "https://github.com/sjamcsclub/jamhacks.ca#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
