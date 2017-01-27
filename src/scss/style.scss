@@ -1,19 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo|Lato');
+@import url('https://fonts.googleapis.com/css?family=Baloo|Nunito:300,400,700');
 
 $hue-primary: 255; //degrees
 $sat-primary: 67%;
 $color-primary: hsl($hue-primary, $sat-primary, 55%);
 $color-primary-light: hsl($hue-primary, $sat-primary, 67%);
 
-$font-primary: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+$color-gray-dark: #222222;
+
+$font-primary: "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+
+$font-headings: Baloo, $font-primary;
 
 html {
+  // overflow: hidden;
   height: 100%;
 }
+
 body {
+  // Fix for jumpy effects caused by url bar showing/hiding on Android Chrome.
+  // TODO: Try using screen.height instead of window height in js (See http://stackoverflow.com/a/31330874/1670161).
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  
   background-color: white;
   min-height: 400%;
-  // font: 12pt $font-primary;
+  font: 12pt $font-primary;
   line-height: 12pt * 1.3;
   // overflow: hidden;
 }
@@ -22,10 +33,11 @@ body {
 }
 
 #gooey-bg {
+  z-index: 200;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
+  // border: 1px solid black;
   path {
-    z-index: 200;
     &.color-path {
       fill: $color-primary;
     }
@@ -57,22 +69,26 @@ body {
     justify-content: center;
   }
   &-logo {
-    text-align: center;
     color: white;
     font-size: 72pt;
-    font-weight: 400;
-    font-family: Baloo, sans-serif;
+    font-family: $font-headings;
     letter-spacing: 0.1em;
+    text-align: center;
     text-shadow: 0 0.45rem rgba(0,0,0, 0.3);
     @media screen and (max-width: 768px) {
       font-size: 48pt;
     }
   }
-  &-subtitle {
+  h2, h3 {
     color: white;
-    font: 20pt $font-primary;
     text-shadow: 0 0.25rem rgba(0,0,0, 0.3);
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75rem;
+  }
+  h2 {
+    font: 21pt $font-primary;
+  }
+  h3 {
+    font: 300 14pt $font-primary;
   }
 
   .landing-button {
@@ -80,7 +96,7 @@ body {
     border-color: white;
     border-radius: 100em;
     border-width: 2px;
-    font-family: $font-primary;
+    font: 15pt $font-primary;
     text-shadow: 0 0.25rem rgba(0,0,0, 0.3);
     box-shadow: 0 0.25rem rgba(0,0,0, 0.3), 0 0.2rem rgba(0,0,0, 0.3) inset;
     &:hover, &:active, &:focus {
@@ -123,10 +139,13 @@ body {
 #page {
   z-index: 100;
   position: absolute;
-  top: 150%; right: 0; bottom: 0; left: 0;
+  top: 75%; right: 0; bottom: 0; left: 0;
   
   h1 {
+    width: 100%;
     text-align: center;
+    color: $color-gray-dark;
+    font-family: $font-headings;
   }
   section {
     padding-top: 10%;
@@ -146,6 +165,6 @@ footer {
 
 .map-container {
   &::before {
-    padding-top: percentage(1 / 2);
+    padding-top: percentage(1 / 1.618);
   }
 }
