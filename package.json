@@ -2,7 +2,7 @@
   "name": "jamhacks.ca",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,13 @@
   },
   "homepage": "https://github.com/sjamcsclub/jamhacks.ca#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "babel-preset-env": "^1.1.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0"
   }
 }
