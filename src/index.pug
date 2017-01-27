@@ -4,24 +4,21 @@
   #landing-wrapper
     h1#landing-logo JAMHACKS
     h2#landing-subtitle April 9, 2016
-    a.btn.btn-outline-secondary.btn-lg.landing-button(href="/register") Register
-svg#gooey-bg(width="100%" height="100%" viewBox="0 0 100 1" preserveAspectRatio="none")
-  path(id="path1" class="light-path" d="")
-  path(id="path2" class="color-path" d="")
+    a.btn.btn-outline-secondary.btn-lg.landing-button(href="#/register") Register
+svg#gooey-bg(width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none")
+  path(id="landing1" class="light-path" d="")
+  path(id="landing2" class="color-path" d="")
 
   //- path(id="footer1" class="light-path" d="")
   //- path(id="footer2" class="color-path" d="")
 
 #nav-header
   ul.nav
-    li.nav-item
-      a.nav-link(href="#about") About
-    li.nav-item
-      a.nav-link(href="#faq") FAQ
-    li.nav-item
-      a.nav-link(href="#sponsors") Sponsors
+    each text, target in {"#about":"About", "#faq":"FAQ", "#sponsors":"Sponsors"}
+      li.nav-item
+        a.nav-link(onclick="return navScrollTo('"+target+"');" href=target)= text
     li.nav-item.nav-register
-      a.nav-link(href="/register") Register
+      a.nav-link(href="#/register") Register
 
 #page
   main

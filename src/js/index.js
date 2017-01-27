@@ -18,50 +18,48 @@ const mathx = {
 
 
 class GooeyTransition {
-  constructor(svg) {
-    this.svg = $(svg);
-    this.paths = $(svg).find("path");
-    console.log("PATHS", this.paths);
+  constructor(paths) {
+    this.paths = paths;
     this.limit = 0;
     this.gap = 0.05;
   }
   getPath(t) {
-    var easeQuad = mathx.scale(ease.quadraticOut(t), 1, 0, this.limit, $(window).height());
-    var easeQuart = mathx.scale(ease.quarticOut(t), 1, 0, this.limit, $(window).height());
-    // console.log(ease1.toFixed(3), ease2.toFixed(3));
+    var easeQuad = mathx.scale(ease.quadraticOut(mathx.clamp(t, 0, 1)), 1, 0, this.limit, 1)
+    var easeQuart = mathx.scale(ease.quarticOut(mathx.clamp(t, 0, 1)), 1, 0, this.limit, 1)
+    // var ease = easeQuad / easeQuart;
     return `
       M 0 0
       V ${easeQuart}
-      Q 12.5 ${easeQuart} 25 ${easeQuad}
-      T 50 ${easeQuad}
-      T 75 ${easeQuad}
-      T 100 ${easeQuart}
+      Q 0.125 ${easeQuart} 0.25 ${easeQuad}
+      T 0.5 ${easeQuad}
+      T 0.75 ${easeQuad}
+      T 1 ${easeQuart}
       V 0
     `;
   }
   render(t) {
-    var easeQuad = mathx.scale(ease.quadraticOut(t), 1, 0, this.limit, $(window).height());
-    var easeQuart = mathx.scale(ease.quarticOut(t), 1, 0, this.limit, $(window).height());
-    var svgHeight = easeQuad + easeQuad - easeQuart;
-    this.svg.css("height", svgHeight);
-    this.svg.attr("viewBox", `0 0 100 ${svgHeight}`);
-    
     for (var i = 0; i < this.paths.length; i++) {
-      $(this.paths[i]).attr('d', this.getPath(t + i * this.gap));
+      this.paths[i].attr('d', this.getPath(t + i * this.gap));
     }
   }
 }
 
-var landingTransition = new GooeyTransition("#gooey-bg");
+var landing1 = $("#gooey-bg #landing1");
+var landing2 = $("#gooey-bg #landing2");
+// var footer1 = $("#gooey-bg #footer1");
+// var footer2 = $("#gooey-bg #footer2");
+
+var landingTransition = new GooeyTransition([landing1, landing2]);
 // const footerTransition = new GooeyTransition(0.9, [footer1, footer2]);
 
 // Update anytime page is scrolled.
 $(window).scroll(function() {
-  // console.log($(".active").attr("href"));
+  console.log($(".active").attr("href"));
   
   var t = $(window).scrollTop() / $(window).height();
+  // console.log($(window).height(), t)
   
-  landingTransition.render(mathx.clamp(t*2, 0, 1));
+  landingTransition.render(t*2);
   
   // footerTransition.render(t*2 - 4);
   
@@ -69,29 +67,31 @@ $(window).scroll(function() {
   var landingHeight = mathx.scale(mathx.clamp(t, 0, 0.5), 0.5, 0, 0, $(this).height());
   $("#landing").css("height", landingHeight);
   
-  // Fade in/out nav-header
   if ($("#nav-header").queue().length == 0 && t > 0.49) {
+    // console.log("fading in");
     $("#nav-header").fadeIn(200);
   }
   else if ($("#nav-header").queue().length == 0 && t < 0.5) {
+    // console.log("fading out");
     $("#nav-header").fadeOut(200);
   }
   
 });
 
 $(window).resize(function() {
-  landingTransition.limit = $("#nav-header").height();
-  
+  landingTransition.limit = $("#nav-header").height() / $(window).height();
   $(this).scroll(); // Trigger a scroll update
 }).resize();
 
-$(".nav-link").click(function() {
-  var target = $(this).attr("href");
-  console.log("target", target);
+function navScrollTo(tag) {
   $("html,body").stop().animate({
-    scrollTop: $(target).offset().top
+    scrollTop: $(tag).offset().top
   }, 400, "easeInOutQuad");
   return false;
-});
+}
 
 $("body").scrollspy({target: "#nav-header"})
+
+/* TODO *
+ * Fix svg z-indexing
+ */
