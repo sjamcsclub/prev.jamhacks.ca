@@ -1,11 +1,16 @@
 // requirements
+var del = require("del");
+var path = require("path");
+
 var gulp = require("gulp");
 var babel = require("gulp-babel");
 var pug = require("gulp-pug");
 var sass = require("gulp-sass");
-var sourcemaps = require("gulp-sourcemaps");
 var autoprefixer = require("gulp-autoprefixer");
+var sourcemaps = require("gulp-sourcemaps");
+// var uglify = require('gulp-uglify');
 var notify = require("gulp-notify");
+var browserSync = require("browser-sync").create();
 // var plumber = require('gulp-plumber');
 // var gutil = require("gulp-util");
 
@@ -14,19 +19,21 @@ var paths = {
   src: {
     pug: "src/**/*.pug",
     babel: "src/js/**/*.js",
-    sass: "src/scss/**/*.scss"
+    sass: "src/scss/**/*.scss",
+    static: "static/**/*"
   },
-  dest: {
+  dest: { // 
     html: "docs",
     js: "docs/js",
-    css: "docs/css"
+    css: "docs/css",
+    static: "docs"
   }
 };
 var browsers = "> 1%, last 2 versions, IE >= 9, Firefox ESR"
 
 // tasks
 
-gulp.task("pug", function () {
+gulp.task("pug", function() {
   return gulp.src(paths.src.pug)
     .pipe(pug())
     .on('error', notify.onError({
@@ -34,22 +41,19 @@ gulp.task("pug", function () {
       title: "Pug error"
     }))
     .pipe(gulp.dest(paths.dest.html))
+    .pipe(browserSync.stream())
     .pipe(notify({
       title: "Success",
       message: "Compiled Pug file to HTML: <%= file.relative %>"
     }));
 });
 
-gulp.task("babel", function () {
+gulp.task("babel", function() {
   return gulp.src(paths.src.babel)
     // .pipe(sourcemaps.init())
     .pipe(babel({
       presets: [
-        ["env", {
-          "targets": {
-            "browsers": browsers
-          }
-        }]
+        ["env", {"targets": {"browsers": browsers}}]
       ]
     }))
     .on('error', notify.onError({
@@ -58,6 +62,7 @@ gulp.task("babel", function () {
     }))
     // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.dest.js))
+    .pipe(browserSync.stream())
     .pipe(notify({
       title: "Success",
       message: "Compiled Babel file to JS: <%= file.relative %>"
@@ -77,19 +82,53 @@ gulp.task("sass", function() {
       env: browsers
     }))
     .pipe(gulp.dest(paths.dest.css))
-    // .pipe(livereload(server))
+    .pipe(browserSync.stream())
     .pipe(notify({
       title: "Success",
       message: "Compiled Sass file to CSS: <%= file.relative %>"
     }));
 });
 
+gulp.task("static", function() {
+  return gulp.src(paths.src.static)
+    .pipe(gulp.dest(paths.dest.static))
+    .pipe(browserSync.stream())
+    .pipe(notify({
+      title: "Success",
+      message: "Copied static file: <%= file.relative %>"
+    }));
+});
+
+// function makeWatcher(fileType) {
+//   console.log(fileType, paths.src[fileType]);
+//   gulp.watch(paths.src[fileType], [fileType])
+//     // Special handler for deleting files
+//     .on("change", (event) => {
+//       if (event.type === 'deleted') {
+//         var srcPath = path.relative(path.resolve(paths.src[fileType]), event.path);
+//         var destPath = path.resolve(paths.dest[fileType], srcPath);
+//         del.sync(destPath);
+//         browserSync.reload()
+//       }
+//     });
+// }
+
 gulp.task("watch", function() {
+  // ["pug", "babel", "sass", "static"].forEach(makeWatcher);
   gulp.watch(paths.src.pug, ["pug"]);
   gulp.watch(paths.src.babel, ["babel"]);
   gulp.watch(paths.src.sass, ["sass"]);
+  gulp.watch(paths.src.static, ["static"]);
 });
 
-gulp.task("all", ["pug", "babel", "sass"]);
+gulp.task("sync", function() {
+  browserSync.init({
+    server: {
+      baseDir: paths.dest.html
+    }
+  });
+});
 
-gulp.task("default", ["all", "watch"]);
+gulp.task("build", ["pug", "babel", "sass", "static"]);
+
+gulp.task("default", ["build", "watch", "sync"]);
