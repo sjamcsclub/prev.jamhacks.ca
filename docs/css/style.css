@@ -99,6 +99,9 @@ body {
       background-color: #7e70c8; }
   #nav-header .nav-register {
     font-weight: 800; }
+  @media only screen and (max-width: 768px) {
+    #nav-header {
+      font-size: 12pt; } }
 
 #page {
   z-index: 100;
