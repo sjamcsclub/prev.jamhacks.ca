@@ -93,10 +93,10 @@ body {
     margin-bottom: 0.75rem;
   }
   h2 {
-    font: 21pt $font-primary;
+    font: 24pt $font-primary;
   }
   h3 {
-    font: 300 15pt $font-primary;
+    font: 300 18pt $font-primary;
   }
 
   .landing-button {
@@ -104,7 +104,7 @@ body {
     border-color: white;
     border-radius: 100em;
     border-width: 2px;
-    font: 15pt $font-primary;
+    font: 18pt $font-primary;
     text-shadow: $drop-shadow $on-color;
     box-shadow: $drop-shadow $on-color, $drop-shadow $on-color inset;
     &:hover, &:active, &:focus {

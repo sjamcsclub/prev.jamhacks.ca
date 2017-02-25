@@ -63,15 +63,15 @@ body {
     text-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
     margin-bottom: 0.75rem; }
   #landing h2 {
-    font: 21pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    font: 24pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing h3 {
-    font: 300 15pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing .landing-button {
     color: white;
     border-color: white;
     border-radius: 100em;
     border-width: 2px;
-    font: 15pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    font: 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
     text-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
     box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3), 0 0.25rem rgba(0, 0, 0, 0.3) inset; }
     #landing .landing-button:hover, #landing .landing-button:active, #landing .landing-button:focus {
