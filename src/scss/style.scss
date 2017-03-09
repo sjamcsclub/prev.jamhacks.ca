@@ -6,9 +6,11 @@
 // $color-primary-lighter: hsl($hue-primary, $sat-primary, 67%);
 
 $color-primary: #493A98;
-$color-bg: $color-primary;
-$color-primary-light: lighten($color-bg, 12.5%);
-$color-primary-lighter: lighten($color-bg, 20%);
+
+$color-primary-light: lighten($color-primary, 12.5%);
+$color-primary-lighter: lighten($color-primary, 20%);
+
+$color-secondary: #a1d083;
 
 $font-primary: "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
 
@@ -71,8 +73,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  // overflow: hidden;
-  // background-color: green;
   &-wrapper {
     display: flex;
     flex-direction: column;
@@ -208,6 +208,10 @@ body {
     font-size: 120%;
     line-height: 150%;
     text-align: center;
+    margin-bottom: 1.5em;
+  }
+  .logo {
+    margin: 1em 0.5em;
   }
 }
 

@@ -1,4 +1,22 @@
-- var loremipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+mixin mailto(email)
+  a(href="mailto:"+email, target="_blank")= email
+
+mixin logo(src, alt)
+  .logo
+    img.img-fluid(src="img/logos/"+src, alt=alt)
+
+mixin logo-sm(src, alt)
+  .col-6.col-md-3
+    +logo(src, alt)
+
+mixin logo-md(src, alt)
+  .col-10.col-md-6
+    +logo(src, alt)
+
+mixin logo-lg(src, alt)
+  .col-12
+    +logo(src, alt)
+
 
 doctype html
 html
@@ -135,7 +153,7 @@ html
                 p Yes. In short, be respectful to other people. You can read the full version #[a(href="/conduct" target="_blank") here].
               .col-md-6
                 h2 I have another question.
-                p Feel free to email us at #[a(href="mailto:hello@jamhacks.ca" target="_blank") hello@jamhacks.ca] or send us a message on #[a(href="https://www.facebook.com/JAMHacks/") Facebook].
+                p Feel free to email us at #[+mailto("hello@jamhacks.ca")] or send us a message on #[a(href="https://www.facebook.com/JAMHacks/") Facebook].
 
 
           section#sponsors
@@ -144,7 +162,11 @@ html
                 h1 Sponsors
             .row.justify-content-center
               .col-lg-9
-                p Interested in sponsoring? Shoot us an email at #[a(href="mailto:sponsor@jamhacks.ca" target="_blank") sponsor@jamhacks.ca], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
+                p Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
+            .row.justify-content-center
+
+              +logo-md("Christie-Digital.png", "Christie Digital")
+              +logo-sm("IoT-WR.png", "Internet of Things Waterloo Region")
               
       footer
         .container
