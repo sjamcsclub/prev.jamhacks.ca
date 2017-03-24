@@ -172,6 +172,14 @@ body {
   section {
     margin-bottom: 12.5vh;
   }
+
+  .tagline {
+    // font-weight: 300;
+    font-size: 120%;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
   // .map-container {
   //   position: relative;
   //   padding-top: 30px;
@@ -183,11 +191,7 @@ body {
 
 #about {
   .tagline {
-    // font-weight: 300;
     font-size: 150%;
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 1.5em;
   }
   .map-container::before {
     padding-top: percentage(1 / 1.618);
@@ -209,12 +213,6 @@ body {
 }
 
 #sponsors {
-  p {
-    font-size: 120%;
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 1.5em;
-  }
   .logo {
     margin: 1em 0.5em;
   }

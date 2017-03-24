@@ -92,6 +92,8 @@ html
         li.nav-item
           a.nav-link(href="#faq") FAQ
         li.nav-item
+          a.nav-link(href="#schedule") Schedule
+        li.nav-item
           a.nav-link(href="#sponsors") Sponsors
         li.nav-item.nav-register
           a.nav-link(href="/register") Register
@@ -156,15 +158,25 @@ html
                 p Feel free to email us at #[+mailto("hello@jamhacks.ca")] or send us a message on #[a(href="https://www.facebook.com/JAMHacks/") Facebook].
 
 
+          section#schedule
+            .row.justify-content-center
+              .col
+                h1 Schedule
+            .row.justify-content-center
+              .col-lg-10.col-xl-9
+                p.tagline Plan to arrive between 8:00-8:30am, to sign in, find a spot and get settled down. 
+                  br.hidden-lg-down
+                  | We should be ending around 10pm. A full schedule will be available soon!
+
+
           section#sponsors
             .row.justify-content-center
               .col
                 h1 Sponsors
             .row.justify-content-center
               .col-lg-9
-                p Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
+                p.tagline Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
             .row.justify-content-center
-
               +logo-md("Christie-Digital.png", "Christie Digital")
               +logo-sm("IoT-WR.png", "Internet of Things Waterloo Region")
               +logo-sm("Intel.png", "Intel")
