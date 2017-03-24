@@ -159,18 +159,19 @@ body {
 #page {
   z-index: 100;
   position: relative;
-  top: 75vh; right: 0; bottom: 0; left: 0;
+  top: 80vh; right: 0; bottom: 0; left: 0;
   
-  h1 {
+  section {
+    margin-bottom: 12.5vh;
+  }
+
+  h1, h2 {
     font-size: 40pt;
     line-height: 40pt * 4/3;
     text-align: center;
     color: $color-primary;
     font-family: $font-headings;
     text-shadow: $drop-shadow-small $on-white;
-  }
-  section {
-    margin-bottom: 12.5vh;
   }
 
   .tagline {
@@ -187,42 +188,45 @@ body {
   //   height: 0;
   //   overflow: hidden;
   // }
-}
 
-#about {
-  .tagline {
-    font-size: 150%;
+  section#about {
+    .tagline {
+      font-size: 150%;
+    }
+    .map-container::before {
+      padding-top: percentage(1 / 1.618);
+    }
   }
-  .map-container::before {
-    padding-top: percentage(1 / 1.618);
-  }
-}
 
-#faq {
-  h2 {
-    font-size: 150%;
-    font-weight: 400;
-    margin-bottom: 0.5em;
+  section#faq {
+    h3 {
+      font-size: 150%;
+      font-weight: 400;
+      margin-bottom: 0.5em;
+    }
+    p {
+      margin-bottom: 1.5em;
+    }
+    .centered {
+      text-align: center;
+    }
   }
-  p {
-    margin-bottom: 1.5em;
-  }
-  .centered {
-    text-align: center;
-  }
-}
 
-#sponsors {
-  .logo {
-    margin: 1em 0.5em;
+  section#sponsors {
+    .logo {
+      margin: 1.25rem;
+    }
+    h2 {
+      margin-top: 0.5em;
+    }
   }
-}
 
-footer {
-  margin-top: 10em;
-  .copyright {
-    text-align: center;
-    padding-bottom: 2em;
-    margin-bottom: 0;
+  footer {
+    margin-top: 20vh;
+    .copyright {
+      text-align: center;
+      padding-bottom: 2em;
+      margin-bottom: 0;
+    }
   }
 }

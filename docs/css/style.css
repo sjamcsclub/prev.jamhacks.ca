@@ -110,48 +110,43 @@ body {
 #page {
   z-index: 100;
   position: relative;
-  top: 75vh;
+  top: 80vh;
   right: 0;
   bottom: 0;
   left: 0; }
-  #page h1 {
+  #page section {
+    margin-bottom: 12.5vh; }
+  #page h1, #page h2 {
     font-size: 40pt;
     line-height: 53.33333pt;
     text-align: center;
     color: #493A98;
     font-family: Baloo, "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
     text-shadow: 0 0.2rem rgba(0, 0, 0, 0.15); }
-  #page section {
-    margin-bottom: 12.5vh; }
   #page .tagline {
     font-size: 120%;
     line-height: 150%;
     text-align: center;
     margin-bottom: 1.5em; }
-
-#about .tagline {
-  font-size: 150%; }
-
-#about .map-container::before {
-  padding-top: 61.8047%; }
-
-#faq h2 {
-  font-size: 150%;
-  font-weight: 400;
-  margin-bottom: 0.5em; }
-
-#faq p {
-  margin-bottom: 1.5em; }
-
-#faq .centered {
-  text-align: center; }
-
-#sponsors .logo {
-  margin: 1em 0.5em; }
-
-footer {
-  margin-top: 10em; }
-  footer .copyright {
-    text-align: center;
-    padding-bottom: 2em;
-    margin-bottom: 0; }
+  #page section#about .tagline {
+    font-size: 150%; }
+  #page section#about .map-container::before {
+    padding-top: 61.8047%; }
+  #page section#faq h3 {
+    font-size: 150%;
+    font-weight: 400;
+    margin-bottom: 0.5em; }
+  #page section#faq p {
+    margin-bottom: 1.5em; }
+  #page section#faq .centered {
+    text-align: center; }
+  #page section#sponsors .logo {
+    margin: 1.25rem; }
+  #page section#sponsors h2 {
+    margin-top: 0.5em; }
+  #page footer {
+    margin-top: 20vh; }
+    #page footer .copyright {
+      text-align: center;
+      padding-bottom: 2em;
+      margin-bottom: 0; }

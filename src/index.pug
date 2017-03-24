@@ -1,21 +1,17 @@
 mixin mailto(email)
   a(href="mailto:"+email, target="_blank")= email
 
-mixin logo(src, alt)
-  .logo
+mixin logo-sm(src, alt)
+  .logo.col-6.col-md-3
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
-mixin logo-sm(src, alt)
-  .col-6.col-md-3
-    +logo(src, alt)
-
 mixin logo-md(src, alt)
-  .col-10.col-md-6
-    +logo(src, alt)
+  .logo.col-10.col-md-6
+    img.img-fluid(src="img/logos/"+src, alt=alt)
 
 mixin logo-lg(src, alt)
-  .col-12
-    +logo(src, alt)
+  .logo.col-12
+    img.img-fluid(src="img/logos/"+src, alt=alt)
 
 
 doctype html
@@ -120,41 +116,41 @@ html
                 h1 FAQ
             .row
               .col-md-6
-                h2 What is JAMHacks?
+                h3 What is JAMHacks?
                 p JAMHacks is a #[strong hackathon]&mdash;a 12-hour-long "innovation marathon." You'll work in teams of up to 4 to create an app, game, website, robot, gadget, or whatever your heart desires.
               .col-md-6
-                h2 What else is JAMHacks?
+                h3 What else is JAMHacks?
                 p JAMHacks is also a #[strong learnathon]&mdash;We'll be running workshops to guide you through making a software or electronics project, even if you've never coded before!
               .col-md-6
-                h2 What if I don't know how to code?
+                h3 What if I don't know how to code?
                 p No problem! A hackathon is a great way to quickly pick up new skills. We'll have workshops and mentors to guide you from your first line of code to writing your own app or website!
               .col-md-6
-                h2 Do I need to have a team?
+                h3 Do I need to have a team?
                 p Nope! We'll have time for team formation at the event, which is a great way to meet cool new people. That said, if you have some friends who are interested, you can definitely form a team ahead of time!
               .col-md-6
-                h2 Can I build a hardware/electronics project?
+                h3 Can I build a hardware/electronics project?
                 p Absolutely! We'll have a shop open with soldering irons and small components (resistors etc.) for you to use. Also, Intel will be providing some kits!
               .col-md-6
-                h2 Who can participate?
+                h3 Who can participate?
                 p JAMHacks is open to any high school student in Ontario!
               .col-md-6
-                h2 Is there any cost?
+                h3 Is there any cost?
                 p Nope! The event will be free for all participants thanks to the generous contributions of our sponsors.
               .col-md-6
-                h2 How many people will be accepted?
-                p We will have enough room to accept everyone who applies!
+                h3 How many people will be accepted?
+                p We should have enough room to accept everyone who applies!
               .col-md-6
-                h2 What should I bring?
+                h3 What should I bring?
                 p You should bring your laptop, phone, charger, and your student card or some other form of ID. We will provide food and snacks!
                 //- (we will be able to provide a very limited number of computers)
               .col-md-6
-                h2 What if I'm not a high school student?
+                h3 What if I'm not a high school student?
                 p We'd love to have you as a mentor! You can #[a(href="/mentor" target="_blank") register here].
               .col-md-6
-                h2 Is there a code of conduct?
+                h3 Is there a code of conduct?
                 p Yes. In short, be respectful to other people. You can read the full version #[a(href="/conduct" target="_blank") here].
               .col-md-6
-                h2 I have another question.
+                h3 I have another question.
                 p Feel free to email us at #[+mailto("hello@jamhacks.ca")] or send us a message on #[a(href="https://www.facebook.com/JAMHacks/") Facebook].
 
 
@@ -176,11 +172,20 @@ html
             .row.justify-content-center
               .col-lg-9
                 p.tagline Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
-            .row.justify-content-center
+            .row.justify-content-center.align-items-center
               +logo-md("Christie-Digital.png", "Christie Digital")
-              +logo-sm("IoT-WR.png", "Internet of Things Waterloo Region")
               +logo-sm("Intel.png", "Intel")
+            .row.justify-content-center.align-items-center
+              +logo-sm("IoT-WR.png", "Internet of Things Waterloo Region")
+              +logo-sm("Magnet-Forensics.png", "Magnet Forensics")
               
+            .row.justify-content-center
+              .col
+                h2 Partners
+            .row.justify-content-center
+              +logo-md("Communitech.png", "Communitech")
+
+
       footer
         .container
           .col
