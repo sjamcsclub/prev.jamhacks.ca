@@ -65,7 +65,8 @@ body {
   #landing h2 {
     font: 24pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing h3 {
-    font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    margin-bottom: 1.5rem; }
   #landing h4 {
     font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing .landing-button {
