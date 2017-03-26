@@ -213,6 +213,21 @@ body {
     }
   }
 
+  section#schedule {
+    .schedule {
+      .event {
+        padding: 0.5rem;
+        background-color: $color-primary-light;
+        color: white;
+        font-weight: 300;
+
+        .title {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
   section#sponsors {
     .logo {
       margin: 1.25rem;
