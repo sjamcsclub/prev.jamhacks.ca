@@ -94,6 +94,8 @@ body {
   top: 0;
   right: 0;
   left: 0; }
+  #nav-header .nav {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.225); }
   #nav-header .nav-tabs {
     border-bottom: none; }
   #nav-header .nav-link {
@@ -141,13 +143,21 @@ body {
     margin-bottom: 1.5em; }
   #page section#faq .centered {
     text-align: center; }
+  #page section#schedule .schedule .row {
+    margin-bottom: 0.5em; }
+  #page section#schedule .schedule .time {
+    padding: 0.5em; }
   #page section#schedule .schedule .event {
-    padding: 0.5rem;
+    min-height: 5em;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
     background-color: #6554be;
     color: white;
     font-weight: 300; }
     #page section#schedule .schedule .event .title {
       font-weight: 700; }
+    #page section#schedule .schedule .event .subtitle {
+      font-style: italic; }
   #page section#sponsors .logo {
     margin: 1.25rem; }
   #page section#sponsors h2 {

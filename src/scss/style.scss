@@ -16,10 +16,12 @@ $font-primary: "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-se
 
 $font-headings: Baloo, $font-primary;
 
-$on-color: rgba(0,0,0, 0.3);
-$on-white: rgba(0,0,0, 0.15);
 $drop-shadow: 0 0.25rem;
 $drop-shadow-small: 0 0.2rem;
+$diffuse: 0.5rem;
+$on-color: rgba(0,0,0, 0.3);
+$on-white: rgba(0,0,0, 0.15);
+$on-text: rgba(0,0,0, 0.225);
 
 @mixin mobile-only {
   @media only screen and (max-width: 768px) {
@@ -131,6 +133,7 @@ body {
   top: 0; right: 0; left: 0;
   
   .nav {
+    box-shadow: $drop-shadow $diffuse $on-text;
     // padding: 0.75em 2.5em 0;
     // font-size: 12pt;
     // display: flex;
@@ -215,14 +218,27 @@ body {
 
   section#schedule {
     .schedule {
+      .row {
+        margin-bottom: 0.5em;
+      }
+      .time {
+        padding: 0.5em;
+      }
       .event {
-        padding: 0.5rem;
+        min-height: 5em;
+        padding: 0.5em 1em;
+        margin: 0 0.5em;
         background-color: $color-primary-light;
         color: white;
         font-weight: 300;
 
         .title {
           font-weight: 700;
+        }
+        .subtitle {
+          font-style: italic;
+        }
+        .location {
         }
       }
     }

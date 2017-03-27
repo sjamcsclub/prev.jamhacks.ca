@@ -13,6 +13,32 @@ mixin logo-lg(src, alt)
   .logo.col-12
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
+//- event = {title, subtitle?, location}
+mixin schedule-row(time, event)
+  .row.no-gutters
+    .col-2
+      .time!= time
+    .col-10.col-md-8.offset-md-1.col-lg-6.offset-lg-2
+      .event
+        .title!= event.title
+        .subtitle!= event.subtitle || ""
+        .location!= event.location || "&nbsp;"
+
+mixin schedule-row-2(time, event1, event2)
+  .row.no-gutters
+    .col-2
+      .time!= time
+    .col-5
+      .event
+        .title!= event1.title
+        .subtitle!= event1.subtitle || ""
+        .location!= event1.location || "&nbsp;"
+    .col-5
+      .event
+        .title!= event2.title
+        .subtitle!= event2.subtitle || ""
+        .location!= event2.location || "&nbsp;"
+
 
 doctype html
 html
@@ -162,17 +188,41 @@ html
               .col-lg-10.col-xl-9
                 p.tagline Plan to arrive between 8:00-8:30am, to sign in, find a spot and get settled down. 
                 
-                .schedule
-                  .row
-                    .col-md-6
-                      .event
-                        .title Registration
-                        .time 8:00am-9:00am
-                        .location First Floor Foyer
+            .row.justify-content-center
+              .col-lg-11.col-xl-9.schedule
 
+                +schedule-row("8:00&ndash;9:00am",
+                  {title:"Registration", location:"First floor foyer"})
 
-                //-   br.hidden-lg-down
-                //-   | We should be ending around 9:30pm. A full schedule will be available soon!
+                +schedule-row("9:00&ndash;9:30am",
+                  {title:"Opening Ceremonies", location:"Auditorium"})
+
+                +schedule-row-2("9:30&ndash;11:00am",
+                  {title:"Web Design 101"},
+                  {title:"Projection", subtitle:"Christie Digital"})
+
+                +schedule-row-2("11:00am&ndash;12:30pm",
+                  {title:"Python 101"},
+                  {title:"Electronics 101"})
+
+                +schedule-row("12:30&ndash;2:00pm",
+                  {title:"Lunch", location:"Cafeteria"})
+
+                +schedule-row-2("2:00&ndash;3:30pm",
+                  {title:"Web Design 102 &ndash; Javascript", subtitle:"Gamelynx"},
+                  {title:"Electronics 102 &ndash; Intel Edison", subtitle:"Intel"})
+
+                +schedule-row("4:00&ndash;5:30pm",
+                  {title:"Python 102 &ndash; Machine Learning"})
+
+                +schedule-row("6:00&ndash;7:00pm",
+                  {title:"Dinner", location:"Cafeteria"})
+
+                +schedule-row("8:00&ndash;9:00pm",
+                  {title:"Demos and Judging", location:"Cafeteria"})
+
+                +schedule-row("6:00&ndash;7:00pm",
+                  {title:"Closing Ceremonies", location:"Auditorium"})
 
 
           section#sponsors
