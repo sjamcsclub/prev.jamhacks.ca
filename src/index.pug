@@ -2,15 +2,15 @@ mixin mailto(email)
   a(href="mailto:"+email, target="_blank")= email
 
 mixin logo-sm(src, alt)
-  .logo.col-6.col-md-3
+  .logo.col-6.col-sm-5.col-md-4.col-lg-3
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
 mixin logo-md(src, alt)
-  .logo.col-10.col-md-6
+  .logo.col-9.col-md-6
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
 mixin logo-lg(src, alt)
-  .logo.col-12
+  .logo.col-12.col-lg-9
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
 
@@ -173,7 +173,9 @@ html
               .col-lg-9
                 p.tagline Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
             .row.justify-content-center.align-items-center
-              +logo-md("Christie-Digital.png", "Christie Digital")
+              +logo-lg("Christie-Digital.png", "Christie Digital")
+            .row.justify-content-center.align-items-center
+              +logo-md("Indico.png", "Indico")
               +logo-sm("Intel.png", "Intel")
             .row.justify-content-center.align-items-center
               +logo-sm("IoT-WR.png", "Internet of Things Waterloo Region")
