@@ -18,8 +18,8 @@ mixin schedule-row(time, event)
   .row.no-gutters
     .col-2
       .time!= time
-    .col-10.col-md-8.offset-md-1.col-lg-6.offset-lg-2
-      .event
+    .col-10.col-lg-8
+      div(class=(event.type ? "event event-" + event.type : "event"))
         .title!= event.title
         .subtitle!= event.subtitle || ""
         .location!= event.location || "&nbsp;"
@@ -29,12 +29,12 @@ mixin schedule-row-2(time, event1, event2)
     .col-2
       .time!= time
     .col-5
-      .event
+      div(class=(event1.type ? "event event-" + event1.type : "event"))
         .title!= event1.title
         .subtitle!= event1.subtitle || ""
         .location!= event1.location || "&nbsp;"
     .col-5
-      .event
+      div(class=(event2.type ? "event event-" + event2.type : "event"))
         .title!= event2.title
         .subtitle!= event2.subtitle || ""
         .location!= event2.location || "&nbsp;"
@@ -198,22 +198,22 @@ html
                   {title:"Opening Ceremonies", location:"Auditorium"})
 
                 +schedule-row-2("9:30&ndash;11:00am",
-                  {title:"Web Design 101"},
-                  {title:"Projection", subtitle:"Christie Digital"})
+                  {title:"Web Design 101", type:"workshop"},
+                  {title:"Projection", subtitle:"Christie Digital", type:"workshop"})
 
                 +schedule-row-2("11:00am&ndash;12:30pm",
-                  {title:"Python 101"},
-                  {title:"Electronics 101"})
+                  {title:"Python 101", type:"workshop"},
+                  {title:"Electronics 101", type:"workshop"})
 
                 +schedule-row("12:30&ndash;2:00pm",
                   {title:"Lunch", location:"Cafeteria"})
 
                 +schedule-row-2("2:00&ndash;3:30pm",
-                  {title:"Web Design 102 &ndash; Javascript", subtitle:"Gamelynx"},
-                  {title:"Electronics 102 &ndash; Intel Edison", subtitle:"Intel"})
+                  {title:"Web Design 102 &ndash; Javascript", subtitle:"Gamelynx", type:"workshop"},
+                  {title:"Electronics 102 &ndash; Intel Edison", subtitle:"Intel", type:"workshop"})
 
                 +schedule-row("4:00&ndash;5:30pm",
-                  {title:"Python 102 &ndash; Machine Learning"})
+                  {title:"Python 102 &ndash; Machine Learning", type:"workshop"})
 
                 +schedule-row("6:00&ndash;7:00pm",
                   {title:"Dinner", location:"Cafeteria"})

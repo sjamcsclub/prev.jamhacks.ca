@@ -143,14 +143,12 @@ body {
     margin-bottom: 1.5em; }
   #page section#faq .centered {
     text-align: center; }
-  #page section#schedule .schedule .row {
-    margin-bottom: 0.5em; }
   #page section#schedule .schedule .time {
-    padding: 0.5em; }
+    padding-top: 0.75em; }
   #page section#schedule .schedule .event {
     min-height: 5em;
     padding: 0.5em 1em;
-    margin: 0 0.5em;
+    margin: 0.25em 0.5em;
     background-color: #6554be;
     color: white;
     font-weight: 300; }
@@ -158,6 +156,8 @@ body {
       font-weight: 700; }
     #page section#schedule .schedule .event .subtitle {
       font-style: italic; }
+    #page section#schedule .schedule .event-workshop {
+      background-color: #7ebe55; }
   #page section#sponsors .logo {
     margin: 1.25rem; }
   #page section#sponsors h2 {

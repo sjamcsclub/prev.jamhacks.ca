@@ -12,6 +12,8 @@ $color-primary-lighter: lighten($color-primary, 20%);
 
 $color-secondary: #a1d083;
 
+$color-secondary-dark: darken($color-secondary, 12.5%);
+
 $font-primary: "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
 
 $font-headings: Baloo, $font-primary;
@@ -219,15 +221,18 @@ body {
   section#schedule {
     .schedule {
       .row {
-        margin-bottom: 0.5em;
       }
       .time {
-        padding: 0.5em;
+        padding-top: 0.75em;
+        // border-right: 1px dotted grey;
+        // height: 100%;
       }
       .event {
         min-height: 5em;
+        // height: 100%;
         padding: 0.5em 1em;
-        margin: 0 0.5em;
+        margin: 0.25em 0.5em;
+        // margin-bottom: 0.5em;
         background-color: $color-primary-light;
         color: white;
         font-weight: 300;
@@ -239,6 +244,9 @@ body {
           font-style: italic;
         }
         .location {
+        }
+        &-workshop {
+          background-color: $color-secondary-dark;
         }
       }
     }
