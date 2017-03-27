@@ -35,7 +35,9 @@ var browsers = "> 1%, last 2 versions, IE >= 9, Firefox ESR"
 
 gulp.task("pug", function() {
   return gulp.src(paths.src.pug)
-    .pipe(pug())
+    .pipe(pug({
+      pretty: true
+    }))
     .on('error', notify.onError({
       message: "Pug error: <%= error.message %>",
       title: "Pug error"
