@@ -6,11 +6,11 @@ mixin logo-sm(src, alt)
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
 mixin logo-md(src, alt)
-  .logo.col-9.col-md-6
+  .logo.col-8.col-md-5
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
 mixin logo-lg(src, alt)
-  .logo.col-12.col-lg-9
+  .logo.col-12.col-lg-8
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
 //- event = {title, subtitle?, location}
@@ -244,8 +244,9 @@ html
             .row.justify-content-center
               .col
                 h2 Partners
-            .row.justify-content-center
+            .row.justify-content-center.align-items-center
               +logo-md("Communitech.png", "Communitech")
+              +logo-sm("Hack-the-North.png", "Hack the North")
 
 
       footer
