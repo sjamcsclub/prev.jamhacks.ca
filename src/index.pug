@@ -28,12 +28,12 @@ mixin schedule-row-2(time, event1, event2)
   .row.no-gutters
     .col-2
       .time!= time
-    .col-5
+    .col-5.col-lg-4
       div(class=(event1.type ? "event event-" + event1.type : "event"))
         .title!= event1.title
         .subtitle!= event1.subtitle || ""
         .location!= event1.location || "&nbsp;"
-    .col-5
+    .col-5.col-lg-4
       div(class=(event2.type ? "event event-" + event2.type : "event"))
         .title!= event2.title
         .subtitle!= event2.subtitle || ""
