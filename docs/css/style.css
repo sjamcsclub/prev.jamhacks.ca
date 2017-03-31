@@ -160,6 +160,12 @@ body {
       background-color: #7ebe55; }
   #page section#sponsors .logo {
     padding: 1.5rem; }
+  #page section#sponsors .logo-grow {
+    padding: 0.5rem;
+    margin-right: 1rem; }
+  #page section#sponsors .logo-grow-2 {
+    padding: 0rem;
+    margin-right: 1.5rem; }
   #page section#sponsors h2 {
     margin-top: 0.5em; }
   #page footer {
