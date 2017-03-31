@@ -9,6 +9,10 @@ mixin logo-sm-md(src, alt)
   .logo.col-6.col-md-4
     img.img-fluid(src="img/logos/"+src, alt=alt)
 
+mixin logo-intel(src, alt)
+  .logo.col-6.col-sm-5.col-md-4.col-lg-3
+    img.img-fluid(src="img/logos/"+src, alt=alt)
+
 mixin logo-md(src, alt)
   .logo.col-8.col-md-5
     img.img-fluid(src="img/logos/"+src, alt=alt)
@@ -243,7 +247,7 @@ html
               +logo-md("Indico.png", "Indico")
             .row.justify-content-center.align-items-center
               .col-md-1.hidden-sm-down
-              +logo-sm-md("Intel.png", "Intel")
+              +logo-intel("Intel.png", "Intel")
               +logo-md("KW4Rent.png", "KW4Rent")
               .col-md-1.hidden-sm-down
               +logo-sm("IoT-WR.png", "Internet of Things Waterloo Region")
