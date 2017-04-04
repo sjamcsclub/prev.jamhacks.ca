@@ -106,6 +106,10 @@ body {
   h4 {
     font: 300 18pt $font-primary;
   }
+  a {
+    color: $color-secondary;
+    font-weight: 600;
+  }
 
   .landing-button {
     margin-top: 0.5rem;
@@ -178,6 +182,11 @@ body {
     color: $color-primary;
     font-family: $font-headings;
     text-shadow: $drop-shadow-small $on-white;
+  }
+
+  a {
+    color: $color-secondary-dark;
+    font-weight: 600;
   }
 
   .tagline {
