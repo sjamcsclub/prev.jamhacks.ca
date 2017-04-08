@@ -25,8 +25,14 @@ $on-color: rgba(0,0,0, 0.3);
 $on-white: rgba(0,0,0, 0.15);
 $on-text: rgba(0,0,0, 0.225);
 
-@mixin mobile-only {
-  @media only screen and (max-width: 768px) {
+@mixin sm-down {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs-down {
+  @media only screen and (max-width: 575px) {
     @content;
   }
 }
@@ -101,7 +107,7 @@ body {
   }
   h3 {
     font: 300 18pt $font-primary;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;    
   }
   h4 {
     font: 300 18pt $font-primary;
@@ -111,14 +117,30 @@ body {
     font-weight: 600;
   }
 
+  .landing-buttons {
+    // margin-bottom: 0.75rem;
+    width: 100%;
+    .landing-button-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
   .landing-button {
-    margin-top: 0.5rem;
-    margin-bottom: 1.25rem;
+    margin: 0.5rem;
+    width: 100%;
+    @include xs-down {
+      margin-bottom: 0.25rem;
+      width: 40%;
+      min-width: 7.5em;
+    }
+    background-color: $color-primary-light;
     color: white;
     border-color: white;
     border-radius: 100em;
     border-width: 2px;
-    font: 18pt $font-primary;
+    font: 16pt $font-primary;
     text-shadow: $drop-shadow $on-color;
     box-shadow: $drop-shadow $on-color, $drop-shadow $on-color inset;
     &:hover, &:active, &:focus {
@@ -161,7 +183,7 @@ body {
     // margin-left: auto;
   }
 
-  @include mobile-only {
+  @include sm-down {
     font-size: 12pt;
   }
 }

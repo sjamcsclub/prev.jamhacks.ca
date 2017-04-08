@@ -101,9 +101,18 @@ html
         img#landing-logo(src="img/JAMHacks.svg" alt="JAMHacks")
         h2 April 9, 2017
         h3 Sir John A. Macdonald Secondary School, Waterloo
-        //- a.btn.btn-outline-secondary.btn-lg.landing-button(href="/register") Register
-        h4 Registrations are now closed! Make sure to get your forms signed:
-        h4 #[a(href="/files/Participant_Waiver.pdf") Waiver] | #[a(href="/files/Guest_Contract.pdf") Guest Contract] (for non-SJAM students)
+        .landing-buttons.container-fluid
+          .row.justify-content-center
+            .col-sm-4.landing-button-col
+              a.btn.btn-lg.landing-button(href="https://jamhacks2017.slack.com/shared_invite/MTY2NTA4NDk0NDUwLTE0OTE2MzYwOTAtYjgzMjAyNjQ0Zg" target="_blank") Slack
+            .col-sm-4.landing-button-col
+              a.btn.btn-lg.landing-button(href="https://www.facebook.com/groups/jamhacks2017participants/" target="_blank") Facebook
+            .col-sm-4.landing-button-col
+              a.btn.btn-lg.landing-button(href="https://jamhacks.devpost.com/" target="_blank") Devpost
+        //- h4 Registrations are now closed! Make sure to get your forms signed:
+        //- h4 #[a(href="/files/Participant_Waiver.pdf") Waiver] | #[a(href="/files/Guest_Contract.pdf") Guest Contract] (for non-SJAM students)
+
+
     svg#gooey-bg(width="100%" height="100%" viewBox="0 0 100 1" preserveAspectRatio="none")
 
       //- defs
@@ -143,7 +152,7 @@ html
                 h1 About
             .row.justify-content-center
               .col-lg-9
-                p.tagline JAMHacks is Waterloo's first high school hackathon. On April&nbsp;9th, come join 160 other high school students for 12&nbsp;hours of creativity, innovation and learning!
+                p.tagline JAMHacks is Waterloo's first high school hackathon. On April&nbsp;9th, come join 100 other high school students for 12&nbsp;hours of creativity, innovation and learning!
             .row.justify-content-center
               .col-md-9.col-lg-7
                 .map-container.embed-responsive
