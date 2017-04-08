@@ -51,6 +51,14 @@ mixin schedule-row-2(time, event1, event2)
         .subtitle!= event2.subtitle || ""
         .location!= event2.location || "&nbsp;"
 
+mixin schedule-div(time, title)
+  .row.no-gutters
+    .col-2
+      .time!= time
+    .col-10.col-lg-8
+      .schedule-div
+        span.schedule-div-text!= title
+
 
 doctype html
 html
@@ -220,26 +228,29 @@ html
                 +schedule-row("9:00&ndash;9:30am",
                   {title:"Opening Ceremonies", location:"Auditorium"})
 
+                +schedule-div("9:30am", "Hacking Begins!")
+
                 +schedule-row-2("9:30&ndash;11:00am",
                   {title:"Web Design 101", type:"workshop"},
-                  {title:"Projection", subtitle:"Christie Digital", type:"workshop"})
+                  {title:"Projection", subtitle:"Christie", type:"workshop"})
 
-                +schedule-row-2("11:00am&ndash;12:30pm",
-                  {title:"Python 101", type:"workshop"},
-                  {title:"Electronics 101", type:"workshop"})
+                +schedule-row("11:00am&ndash;12:30pm",
+                  {title:"Python 101", type:"workshop"})
 
                 +schedule-row("12:30&ndash;2:00pm",
                   {title:"Lunch", location:"Cafeteria"})
 
                 +schedule-row-2("2:00&ndash;3:30pm",
                   {title:"Web Design 102 &ndash; Javascript", subtitle:"Gamelynx", type:"workshop"},
-                  {title:"Electronics 102 &ndash; Intel Edison", subtitle:"Intel", type:"workshop"})
+                  {title:"Electronics 101 &ndash; Intel Edison", subtitle:"Intel", type:"workshop"})
 
                 +schedule-row("4:00&ndash;5:30pm",
                   {title:"Python 102 &ndash; Machine Learning", type:"workshop"})
 
                 +schedule-row("6:00&ndash;7:00pm",
                   {title:"Dinner", location:"Cafeteria"})
+
+                +schedule-div("8:00pm", "Hacking Ends!")
 
                 +schedule-row("8:00&ndash;9:00pm",
                   {title:"Project Showcase and Judging", location:"Cafeteria"})

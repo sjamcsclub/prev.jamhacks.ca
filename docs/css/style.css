@@ -183,6 +183,15 @@ body {
       font-style: italic; }
     #page section#schedule .schedule .event-workshop {
       background-color: #7ebe55; }
+  #page section#schedule .schedule .schedule-div {
+    height: 25%;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    margin: 0.5em 0.5em; }
+    #page section#schedule .schedule .schedule-div .schedule-div-text {
+      font-size: 13pt;
+      background-color: white;
+      padding: 0 0.25em; }
   #page section#sponsors .logo {
     padding: 1.5rem; }
   #page section#sponsors .logo-grow {

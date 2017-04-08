@@ -280,6 +280,17 @@ body {
           background-color: $color-secondary-dark;
         }
       }
+      .schedule-div {
+        height: 25%;
+        border-bottom: 1px solid grey;
+        text-align: center;
+        margin: 0.5em 0.5em;
+        .schedule-div-text {
+          font-size: 13pt;
+          background-color: white;
+          padding: 0 0.25em;
+        }
+      }
     }
   }
 
