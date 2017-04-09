@@ -117,38 +117,46 @@ body {
     font-weight: 600;
   }
 
-  .landing-buttons {
-    // margin-bottom: 0.75rem;
-    width: 100%;
-    .landing-button-col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  // .landing-buttons {
+  //   // margin-bottom: 0.75rem;
+  //   width: 100%;
+  //   .landing-button-col {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //   }
 
-  }
-  .landing-button {
-    margin: 0.5rem;
-    width: 100%;
-    @include xs-down {
-      margin-bottom: 0.25rem;
-      width: 40%;
-      min-width: 7.5em;
-    }
-    background-color: $color-primary-light;
-    color: white;
-    border-color: white;
-    border-radius: 100em;
-    border-width: 2px;
-    font: 16pt $font-primary;
-    text-shadow: $drop-shadow $on-color;
-    box-shadow: $drop-shadow $on-color, $drop-shadow $on-color inset;
-    &:hover, &:active, &:focus {
-      color: $color-primary-light;
-      background-color: white;
-      border-color: white;
-      text-shadow: none;
-      box-shadow: $drop-shadow $on-color;
+  // }
+  // .landing-button {
+  //   margin: 0.5rem;
+  //   width: 100%;
+  //   @include xs-down {
+  //     margin-bottom: 0.25rem;
+  //     width: 40%;
+  //     min-width: 7.5em;
+  //   }
+  //   background-color: $color-primary-light;
+  //   color: white;
+  //   border-color: white;
+  //   border-radius: 100em;
+  //   border-width: 2px;
+  //   font: 16pt $font-primary;
+  //   text-shadow: $drop-shadow $on-color;
+  //   box-shadow: $drop-shadow $on-color, $drop-shadow $on-color inset;
+  //   &:hover, &:active, &:focus {
+  //     color: $color-primary-light;
+  //     background-color: white;
+  //     border-color: white;
+  //     text-shadow: none;
+  //     box-shadow: $drop-shadow $on-color;
+  //   }
+  // }
+
+  .social-link-icon {
+    img {
+      height: 5em;
+      width: 5em;
+      margin: 1em;
     }
   }
 }

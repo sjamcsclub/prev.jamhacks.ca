@@ -72,41 +72,10 @@ body {
   #landing a {
     color: #a1d083;
     font-weight: 600; }
-  #landing .landing-buttons {
-    width: 100%; }
-    #landing .landing-buttons .landing-button-col {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-  #landing .landing-button {
-    margin: 0.5rem;
-    width: 100%;
-    background-color: #6554be;
-    color: white;
-    border-color: white;
-    border-radius: 100em;
-    border-width: 2px;
-    font: 16pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
-    text-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3), 0 0.25rem rgba(0, 0, 0, 0.3) inset; }
-    @media only screen and (max-width: 575px) {
-      #landing .landing-button {
-        margin-bottom: 0.25rem;
-        width: 40%;
-        min-width: 7.5em; } }
-    #landing .landing-button:hover, #landing .landing-button:active, #landing .landing-button:focus {
-      color: #6554be;
-      background-color: white;
-      border-color: white;
-      text-shadow: none;
-      box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3); }
+  #landing .social-link-icon img {
+    height: 5em;
+    width: 5em;
+    margin: 1em; }
 
 #nav-header {
   background-color: #6554be;
