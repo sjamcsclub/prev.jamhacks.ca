@@ -65,6 +65,7 @@ var GooeyTransition = function () {
 }();
 
 var landingTransitionScale = 1.5;
+var landingScrollScale = 0.4;
 var landingTransition = new GooeyTransition("#gooey-bg");
 
 // const footerTransition = new GooeyTransition(0.9, [footer1, footer2]);
@@ -80,7 +81,7 @@ $(window).scroll(function () {
   // footerTransition.render(t*2 - 4);
 
   // Rescale landing
-  var landingHeight = mathx.scale(mathx.clamp(t, 0, 1 / landingTransitionScale), 1 / landingTransitionScale, 0, 0, $(this).height());
+  var landingHeight = mathx.scale(mathx.clamp(t, 0, landingScrollScale), landingScrollScale, 0, 0, $(this).height());
   $("#landing").css("height", landingHeight);
 
   // Fade in/out nav-header
