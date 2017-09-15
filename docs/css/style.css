@@ -37,7 +37,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  #landing-wrapper {
+  #landing #landing-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -51,7 +51,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  #landing-logo {
+  #landing #landing-logo {
     position: relative;
     left: 6%;
     height: 33.33333vh;
@@ -63,19 +63,112 @@ body {
     text-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
     margin-bottom: 0.75rem; }
   #landing h2 {
-    font: 24pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    font: 600 30pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing h3 {
     font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
   #landing h4 {
     font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing a {
     color: #a1d083;
     font-weight: 600; }
-  #landing .social-link-icon img {
-    height: 5em;
-    width: 5em;
-    margin: 1em; }
+  #landing .landing-email-signup {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #landing .landing-email-signup form {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    #landing .landing-email-signup .email {
+      margin: 0.5rem;
+      margin-right: 0;
+      padding: 0.75rem;
+      padding-left: 1.5rem;
+      padding-right: 1.25rem;
+      background-color: #6554be;
+      color: white;
+      border-color: white;
+      border-width: 2px;
+      border-right-width: 1px;
+      border-top-left-radius: 100rem;
+      border-bottom-left-radius: 100rem;
+      font: 16pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+      text-align: left;
+      text-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3), 0 0.25rem rgba(0, 0, 0, 0.3) inset; }
+      @media only screen and (max-width: 575px) {
+        #landing .landing-email-signup .email {
+          border-radius: 100rem;
+          border-width: 2px;
+          margin: 0.25rem;
+          padding: 0.5rem 1rem; } }
+      #landing .landing-email-signup .email::-webkit-input-placeholder {
+        color: #9f95d6;
+        text-shadow: none; }
+      #landing .landing-email-signup .email::-moz-placeholder {
+        color: #9f95d6;
+        text-shadow: none; }
+      #landing .landing-email-signup .email:-ms-input-placeholder {
+        color: #9f95d6;
+        text-shadow: none; }
+      #landing .landing-email-signup .email::placeholder {
+        color: #9f95d6;
+        text-shadow: none; }
+      #landing .landing-email-signup .email:hover {
+        color: #6554be;
+        background-color: white;
+        border-color: white;
+        text-shadow: none;
+        box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3); }
+    #landing .landing-email-signup .subscribe-button {
+      margin: 0.5rem;
+      margin-left: 0;
+      padding: 0.75rem;
+      padding-left: 1.25rem;
+      padding-right: 2rem;
+      background-color: #6554be;
+      color: white;
+      border-color: white;
+      border-width: 2px;
+      border-left-width: 1px;
+      border-top-right-radius: 100rem;
+      border-bottom-right-radius: 100rem;
+      font: 16pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+      text-shadow: 0 0.25rem rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3), 0 0.25rem rgba(0, 0, 0, 0.3) inset; }
+      @media only screen and (max-width: 575px) {
+        #landing .landing-email-signup .subscribe-button {
+          border-radius: 100rem;
+          border-width: 2px;
+          margin: 0.25rem;
+          padding: 0.5rem 1.5rem; } }
+      #landing .landing-email-signup .subscribe-button:hover, #landing .landing-email-signup .subscribe-button:active, #landing .landing-email-signup .subscribe-button:focus {
+        color: #6554be;
+        background-color: white;
+        border-color: white;
+        text-shadow: none;
+        box-shadow: 0 0.25rem rgba(0, 0, 0, 0.3); }
 
 #nav-header {
   background-color: #6554be;
@@ -126,7 +219,8 @@ body {
     text-align: center;
     margin-bottom: 1.5em; }
   #page section#about .tagline {
-    font-size: 150%; }
+    font-size: 150%;
+    margin-bottom: 0.5em; }
   #page section#about .map-container::before {
     padding-top: 61.8047%; }
   #page section#faq h3 {
@@ -177,3 +271,10 @@ body {
       text-align: center;
       padding-bottom: 2em;
       margin-bottom: 0; }
+
+.social-buttons {
+  margin-bottom: 1.5rem; }
+  .social-buttons .social-link-icon img {
+    height: 4.8rem;
+    width: 4.8rem;
+    margin: 1rem; }
