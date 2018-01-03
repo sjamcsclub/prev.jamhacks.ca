@@ -95,10 +95,10 @@ gulp.task("static", function() {
   return gulp.src(paths.src.static)
     .pipe(gulp.dest(paths.dest.static))
     .pipe(browserSync.stream())
-    .pipe(notify({
-      title: "Success",
-      message: "Copied static file: <%= file.relative %>"
-    }));
+    // .pipe(notify({
+    //   title: "Success",
+    //   message: "Copied static file: <%= file.relative %>"
+    // }));
 });
 
 // function makeWatcher(fileType) {
