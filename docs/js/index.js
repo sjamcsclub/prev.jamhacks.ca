@@ -111,7 +111,7 @@ $(window).scroll(function () {
 });
 
 $(window).resize(function () {
-  scrollSectionOffset = $("#nav-header").height() + parseInt($("section").css("margin-bottom")) / 2;
+  scrollSectionOffset = Math.ceil($("#nav-header").height() + parseInt($("section").css("margin-bottom")) / 2);
   $("body").attr("data-offset", scrollSectionOffset);
 
   lastEventTransition.verticalOffset = $("#last-event").offset().top / screen.height - 5 / 6;
@@ -123,7 +123,7 @@ $(".nav-link").click(function () {
   var target = $(this).attr("href");
 
   $("html,body").stop().animate({
-    scrollTop: $(target).offset().top - scrollSectionOffset
+    scrollTop: $(target).offset().top - scrollSectionOffset + 1
   }, 400, "easeInOutQuad");
   return false;
 });
