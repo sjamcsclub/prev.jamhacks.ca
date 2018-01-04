@@ -2,10 +2,6 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var ease = {
@@ -51,7 +47,11 @@ var GooeyTransition = function () {
   _createClass(GooeyTransition, [{
     key: "getPath",
     value: function getPath(ease1, ease2) {
-      return "\n      M 0 1\n      V " + ease1 + "\n      Q 0.125 " + ease2 + " 0.25 " + ease1 + "\n      T 0.5 " + ease1 + "\n      T 0.75 " + ease1 + "\n      T 1 " + ease1 + "\n      V 1\n    ";
+      if (screen.height > screen.width) {
+        return "\n        M 0 1\n        V " + ease1 + "\n        Q 0.2 " + ease2 + " 0.4 " + ease1 + "\n        T 0.8 " + ease1 + "\n        T 1.2 " + ease1 + "\n        V 1\n      ";
+      } else {
+        return "\n        M 0 1\n        V " + ease1 + "\n        Q 0.125 " + ease2 + " 0.25 " + ease1 + "\n        T 0.5 " + ease1 + "\n        T 0.75 " + ease1 + "\n        T 1 " + ease1 + "\n        V 1\n      ";
+      }
     }
   }, {
     key: "render",
@@ -68,27 +68,23 @@ var GooeyTransition = function () {
   return GooeyTransition;
 }();
 
-var GooeyTransitionReverse = function (_GooeyTransition) {
-  _inherits(GooeyTransitionReverse, _GooeyTransition);
-
-  function GooeyTransitionReverse(svg) {
-    _classCallCheck(this, GooeyTransitionReverse);
-
-    var _this = _possibleConstructorReturn(this, (GooeyTransitionReverse.__proto__ || Object.getPrototypeOf(GooeyTransitionReverse)).call(this, svg));
-
-    _this.pathOffset = -_this.pathOffset;
-    return _this;
-  }
-
-  _createClass(GooeyTransitionReverse, [{
-    key: "getPath",
-    value: function getPath(ease1, ease2) {
-      return "\n      M 0 0\n      V " + ease2 + "\n      Q 0.125 " + ease2 + " 0.25 " + ease1 + "\n      T 0.5 " + ease1 + "\n      T 0.75 " + ease1 + "\n      T 1 " + ease2 + "\n      V 0\n    ";
-    }
-  }]);
-
-  return GooeyTransitionReverse;
-}(GooeyTransition);
+// class GooeyTransitionReverse extends GooeyTransition {
+//   constructor(svg) {
+//     super(svg);
+//     this.pathOffset = -this.pathOffset;
+//   }
+//   getPath(ease1, ease2) {
+//     return `
+//       M 0 0
+//       V ${ease2}
+//       Q 0.125 ${ease2} 0.25 ${ease1}
+//       T 0.5 ${ease1}
+//       T 0.75 ${ease1}
+//       T 1 ${ease2}
+//       V 0
+//     `;
+//   }
+// }
 
 var landingTransition = new GooeyTransition("#landing-transition");
 var lastEventTransition = new GooeyTransition("#last-event-transition");

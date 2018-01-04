@@ -37,15 +37,27 @@ class GooeyTransition {
     this.pathOffset = 0.04;
   }
   getPath(ease1, ease2) {
-    return `
-      M 0 1
-      V ${ease1}
-      Q 0.125 ${ease2} 0.25 ${ease1}
-      T 0.5 ${ease1}
-      T 0.75 ${ease1}
-      T 1 ${ease1}
-      V 1
-    `;
+    if (screen.height > screen.width) {
+      return `
+        M 0 1
+        V ${ease1}
+        Q 0.2 ${ease2} 0.4 ${ease1}
+        T 0.8 ${ease1}
+        T 1.2 ${ease1}
+        V 1
+      `;
+    }
+    else {
+      return `
+        M 0 1
+        V ${ease1}
+        Q 0.125 ${ease2} 0.25 ${ease1}
+        T 0.5 ${ease1}
+        T 0.75 ${ease1}
+        T 1 ${ease1}
+        V 1
+      `;
+    }
   }
   render(t) {
     var T = (t - this.verticalOffset) * this.transitionSpeed;
@@ -57,23 +69,23 @@ class GooeyTransition {
   }
 }
 
-class GooeyTransitionReverse extends GooeyTransition {
-  constructor(svg) {
-    super(svg);
-    this.pathOffset = -this.pathOffset;
-  }
-  getPath(ease1, ease2) {
-    return `
-      M 0 0
-      V ${ease2}
-      Q 0.125 ${ease2} 0.25 ${ease1}
-      T 0.5 ${ease1}
-      T 0.75 ${ease1}
-      T 1 ${ease2}
-      V 0
-    `;
-  }
-}
+// class GooeyTransitionReverse extends GooeyTransition {
+//   constructor(svg) {
+//     super(svg);
+//     this.pathOffset = -this.pathOffset;
+//   }
+//   getPath(ease1, ease2) {
+//     return `
+//       M 0 0
+//       V ${ease2}
+//       Q 0.125 ${ease2} 0.25 ${ease1}
+//       T 0.5 ${ease1}
+//       T 0.75 ${ease1}
+//       T 1 ${ease2}
+//       V 0
+//     `;
+//   }
+// }
 
 const landingTransition = new GooeyTransition("#landing-transition");
 const lastEventTransition = new GooeyTransition("#last-event-transition");
