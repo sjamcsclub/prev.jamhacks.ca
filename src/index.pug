@@ -64,10 +64,12 @@ doctype html
 html
   head
     meta(charset="UTF-8")
-    title JAMHacks
+    title JAMHacks 2
     meta(name="viewport" content="width=device-width, initial-scale=1")
     //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")
+
+    link(rel="stylesheet" href="css/style.css")
 
     //- Favicon/mobile stuff
     link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
@@ -78,17 +80,17 @@ html
     meta(name="theme-color" content="#6554be")
     
     //- Scraping/Sharing meta stuff
-    meta(name="description" content="JAMHacks is Waterloo's first high school hackathon. On April 9th, come join 160 other high school students for 12 hours of creativity, innovation and fun!")
+    meta(name="description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
         "@type": "Event",
-        "name": "JAMHacks",
-        "startDate": "2017-04-09T08:00",
-        "endDate": "2017-04-09T22:00",
-        "url": "http://jamhacks.ca/",
-        "image":"http://jamhacks.ca/img/og-image/png",
-        "description": "JAMHacks is Waterloo's first high school hackathon. On April 9th, come join 160 other high school students for 12 hours of creativity, innovation and fun!",
+        "name": "JAMHacks 2",
+        "startDate": "2018-04-14T14:00:00-05:00",
+        "endDate": "2018-04-15T20:00:00-05:00",
+        "url": "https://jamhacks.ca/",
+        "image":"https://jamhacks.ca/img/og-image.png",
+        "description": "JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full weekend of creating, learning and innovating.",
         "location": {
           "@type": "Place",
           "name": "Sir John A. Macdonald Secondary School",
@@ -96,17 +98,17 @@ html
         }
       }
     //- Facebook OpenGraph
-    meta(property="og:url" content="http://jamhacks.ca/")
-    meta(property="og:title" content="JAMHacks")
-    meta(property="og:description" content="JAMHacks is Waterloo's first high school hackathon. On April 9th, come join 160 other high school students for 12 hours of creativity, innovation and fun!")
-    meta(property="og:image" content="http://jamhacks.ca/img/og-image.png")
-
-    link(rel="stylesheet" href="css/style.css")
+    meta(property="og:url" content="https://jamhacks.ca/")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="JAMHacks 2")
+    meta(property="og:description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
+    meta(property="og:image" content="https://jamhacks.ca/img/og-image.png")
+    meta(property="og:image:alt" content="JAMHacks 2")
 
   body(data-spy="scroll" data-target="#nav-header" data-offset="10")
     #landing
-      #landing-wrapper
-        img#landing-logo(src="img/JAMHacks.svg" alt="JAMHacks")
+      #landing-content
+        img#landing-logo(src="img/JAMHacks Centered.svg" alt="JAMHacks")
         h2 April 14-15, 2018
         h3 Sir John A. Macdonald Secondary School, Waterloo
         .landing-email-signup#mc_embed_signup
@@ -120,8 +122,7 @@ html
         //- h4 #[a(href="/files/Participant_Waiver.pdf") Waiver] | #[a(href="/files/Guest_Contract.pdf") Guest Contract] (for non-SJAM students)
 
 
-    svg#gooey-bg(width="100%" height="100%" viewBox="0 0 100 1" preserveAspectRatio="none")
-
+    svg.transition-paths#landing-transition(width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none")
       //- defs
       //-   filter(xmlns="http://www.w3.org/2000/svg" id="dropshadow" height="130%")
       //-     feGaussianBlur(in="SourceAlpha" stdDeviation="1.5")
@@ -131,11 +132,21 @@ html
       //-     feMerge
       //-       feMergeNode
       //-       feMergeNode(in="SourceGraphic")
-
       path(id="path1" class="light-path" d="")
       path(id="path2" class="color-path" d="")
-      //- path(id="footer1" class="light-path" d="")
-      //- path(id="footer2" class="color-path" d="")
+
+    svg.transition-paths#last-event-transition(width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none")
+      //- defs
+      //-   filter(xmlns="http://www.w3.org/2000/svg" id="dropshadow" height="130%")
+      //-     feGaussianBlur(in="SourceAlpha" stdDeviation="0.015")
+      //-     feOffset(dx="0" dy="0" result="offsetblur")
+      //-     feComponentTransfer
+      //-       feFuncA(type="linear" slope="0.2")
+      //-     feMerge
+      //-       feMergeNode
+      //-       feMergeNode(in="SourceGraphic")
+      path(id="path1" class="light-path" d="")
+      path(id="path2" class="white-path" d="")
 
     #nav-header
       ul.nav
@@ -144,26 +155,26 @@ html
         li.nav-item
           a.nav-link(href="#faq") FAQ
         li.nav-item
-          a.nav-link(href="#schedule") Schedule
-        li.nav-item
           a.nav-link(href="#sponsors") Sponsors
+        li.nav-item
+          a.nav-link(href="#last-event") 2017
+        //- li.nav-item
+        //-   a.nav-link(href="#schedule") Schedule
+        //- li.nav-item
+        //-   a.nav-link(href="#sponsors") Sponsors
         //- li.nav-item.nav-register
         //-   a.nav-link(href="/register") Register
 
     #page
-      main
+      article#event
         .container
-          section#about
+          section.about#about
             .row.justify-content-center
               .col
                 h1 About
             .row.justify-content-center
               .col-lg-10
-                p.tagline
-                  em A huge thanks to everyone who attended, sponsored, or supported JAMHacks&nbsp;2017. Hope to see you again next year!
-            .row.justify-content-center
-              .col-lg-10
-                p.tagline JAMHacks is Waterloo's first high school hackathon. On April&nbsp;9th&nbsp;2017, 100&nbsp;high school students from all over Ontario came together for 12 jam-packed hours of creativity, innovation and learning!
+                p.tagline JAMHacks 2 is Waterloo's biggest high school hackathon! On April&nbsp;14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.
 
             .row.justify-content-center
               .social-buttons.container-fluid
@@ -181,14 +192,14 @@ html
                   iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11582.034386373409!2d-80.59938464999999!3d43.470855349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x375a3d40ac31533c!2sSir+John+A.+MacDonald+Secondary+School!5e0!3m2!1sen!2sca!4v1485054414351" allowfullscreen)
 
 
-          section#faq
+          section.faq#faq
             .row.justify-content-center
               .col
                 h1 FAQ
             .row
               .col-md-6
                 h3 What is JAMHacks?
-                p JAMHacks is a #[strong hackathon]&mdash;a 12-hour-long "innovation marathon." You'll work in teams of up to 4 to create an app, game, website, robot, gadget, or whatever your heart desires.
+                p JAMHacks is a #[strong hackathon]&mdash;a 24-hour-long "innovation marathon." You'll work in teams of up to 4 to create an app, game, website, robot, gadget, or whatever your heart desires.
               .col-md-6
                 h3 What else is JAMHacks?
                 p JAMHacks is also a #[strong learnathon]&mdash;We'll be running workshops to guide you through making a software or electronics project, even if you've never coded before!
@@ -200,7 +211,7 @@ html
                 p Nope! We'll have time for team formation at the event, which is a great way to meet cool new people. That said, if you have some friends who are interested, you can definitely form a team ahead of time!
               .col-md-6
                 h3 Can I build a hardware/electronics project?
-                p Absolutely! We'll have a shop open with soldering irons and small components (resistors etc.) for you to use. Also, Intel will be providing some kits!
+                p Absolutely! We'll have a shop open with soldering irons and small components (resistors etc.) for you to use.
               .col-md-6
                 h3 Who can participate?
                 p JAMHacks is open to any high school student in Ontario!
@@ -209,11 +220,10 @@ html
                 p Nope! The event will be free for all participants thanks to the generous contributions of our sponsors.
               .col-md-6
                 h3 How many people will be accepted?
-                p We should have enough room to accept everyone who applies!
+                p We should be accepting everyone who registers!
               .col-md-6
                 h3 What should I bring?
-                p You should bring your laptop, phone, charger, and your student card or some other form of ID. We will provide food and snacks!
-                //- (we will be able to provide a very limited number of computers)
+                p You should bring your laptop, phone, charger, and your student card or some other form of ID. We will provide meals and snacks!
               .col-md-6
                 h3 What if I'm not a high school student?
                 p We'd love to have you as a mentor! You can #[a(href="/mentor" target="_blank") register here].
@@ -225,7 +235,30 @@ html
                 p Feel free to email us at #[+mailto("hello@jamhacks.ca")] or send us a message on #[a(href="https://www.facebook.com/JAMHacks/") Facebook].
 
 
-          section#schedule
+          section.sponsors#sponsors
+            .row.justify-content-center
+              .col
+                h1 Sponsors
+            .row.justify-content-center
+              .col-lg-9
+                p.tagline Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
+
+
+      article#last-event
+        .container
+          section.about#about-2017
+            .row.justify-content-center
+              .col
+                h1 About (2017)
+            .row.justify-content-center
+              .col-lg-10
+                p.tagline JAMHacks&nbsp;2017 was Waterloo's first high school hackathon. On April&nbsp;9th&nbsp;2017, over 100&nbsp;high school students from all over Ontario came together for 12 jam-packed hours of creativity, innovation and learning!
+            .row.justify-content-center
+              .col-lg-10
+                p.tagline
+                  em A huge thanks to everyone who attended, sponsored, or supported JAMHacks&nbsp;2017. Hope to see you again in 2018!
+
+          section.schedule#schedule-2017
             .row.justify-content-center
               .col
                 h1 Schedule (2017)
@@ -234,7 +267,7 @@ html
                 p.tagline Want to know what we did last year? This was the schedule of the day.
                 
             .row.justify-content-center
-              .col-lg-11.col-xl-9.schedule
+              .col-lg-11.col-xl-9.schedule-table
 
                 +schedule-row("8:00&ndash;8:45am",
                   {title:"Sign In", location:"First floor foyer"})
@@ -273,13 +306,10 @@ html
                   {title:"Closing Ceremonies", location:"Auditorium"})
 
 
-          section#sponsors
+          section.sponsors#sponsors-2017
             .row.justify-content-center
               .col
                 h1 Sponsors (2017)
-            .row.justify-content-center
-              .col-lg-9
-                p.tagline Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
             .row.justify-content-center.align-items-center
               +logo-lg("Manulife.png", "Manulife")
             .row.justify-content-center.align-items-center
@@ -296,7 +326,7 @@ html
               
             .row.justify-content-center
               .col
-                h2 Partners
+                h2 Partners (2017)
             .row.justify-content-center.align-items-center
               +logo-md("Communitech.png", "Communitech")
               +logo-sm("Hack-the-North.png", "Hack the North")
@@ -306,7 +336,7 @@ html
       footer
         .container
           .col
-            p.copyright &copy; 2017 JAMHacks. Website by Ethan Guo.
+            p.copyright &copy; 2018 JAMHacks. Website by Ethan Guo.
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")

@@ -7,11 +7,13 @@
 
 $color-primary: #493A98;
 
+$color-white: #F5F5DC;
+
 $color-primary-light: lighten($color-primary, 12.5%);
 $color-primary-lighter: lighten($color-primary, 20%);
 $color-primary-lightest: lighten($color-primary, 30%);
 
-$color-secondary: #a1d083;
+$color-secondary: #A1D083;
 
 $color-secondary-dark: darken($color-secondary, 12.5%);
 
@@ -22,6 +24,8 @@ $font-headings: Baloo, $font-primary;
 $drop-shadow: 0 0.25rem;
 $drop-shadow-small: 0 0.2rem;
 $diffuse: 0.5rem;
+$diffuse-small: 0.2rem;
+$on-image: rgba(0,0,0, 0.5);
 $on-color: rgba(0,0,0, 0.3);
 $on-white: rgba(0,0,0, 0.15);
 $on-text: rgba(0,0,0, 0.225);
@@ -52,8 +56,7 @@ body {
   // -webkit-overflow-scrolling: touch;
   // height: 100%;
   
-  // background-color: white;
-  // min-height: 400%;
+  // background-color: $color-primary-light;
   font: 13pt $font-primary;
   line-height: 13pt * 4/3;
   // overflow: hidden;
@@ -62,29 +65,38 @@ body {
   background-color: $color-primary-lighter;
 }
 
-#gooey-bg {
-  z-index: 200;
+svg.transition-paths {
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
-  // border: 1px solid black;
-  path {
-    &.color-path {
-      fill: $color-primary-light;
-    }
-    &.light-path {
-      fill: $color-primary-lighter;
-    }
+  pointer-events: none;
+  path.color-path {
+    fill: $color-primary-light;
+  }
+  path.light-path {
+    fill: $color-primary-lighter;
+  }
+  path.white-path {
+    fill: white;
+  }
+  &#landing-transition {
+    z-index: 200;
+  }
+  &#last-event-transition {
+    z-index: 201;
   }
 }
 
 #landing {
-  z-index: 300;
-  position: absolute;
+  background-image: url("/img/landing-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  #landing-wrapper {
+  #landing-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +104,6 @@ body {
   }
   #landing-logo {
     position: relative;
-    left: 6%;
     height: 100vh * 1/3;
     max-width: 75vw;
     margin-bottom: 2rem;
@@ -100,7 +111,7 @@ body {
   h2, h3, h4 {
     color: white;
     text-align: center;
-    text-shadow: $drop-shadow $on-color;
+    text-shadow: $drop-shadow $diffuse-small $on-image;
     margin-bottom: 0.75rem;
   }
   h2 {
@@ -139,7 +150,7 @@ body {
       padding: 0.75rem;
       padding-left: 1.5rem;
       padding-right: 1.25rem;
-      background-color: $color-primary-light;
+      background: none;
       color: white;
       border-color: white;
       // border-radius: 100em;
@@ -158,11 +169,11 @@ body {
 
       font: 16pt $font-primary;
       text-align: left;
-      text-shadow: $drop-shadow $on-color;
-      box-shadow: $drop-shadow $on-color, $drop-shadow $on-color inset;
+      text-shadow: $drop-shadow $diffuse-small $on-image;
+      box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
 
       &::placeholder {
-        color: $color-primary-lightest;
+        color: white;
         text-shadow: none;
       }
 
@@ -171,7 +182,12 @@ body {
         background-color: white;
         border-color: white;
         text-shadow: none;
-        box-shadow: $drop-shadow $on-color;
+        box-shadow: $drop-shadow $diffuse-small $on-image;
+
+        &::placeholder {
+          color: $color-primary-lightest;
+          text-shadow: none;
+        }
       }
     }
 
@@ -181,7 +197,7 @@ body {
       padding: 0.75rem;
       padding-left: 1.25rem;
       padding-right: 2rem;
-      background-color: $color-primary-light;
+      background: none;
       color: white;
       border-color: white;
       // border-radius: 100em;
@@ -199,14 +215,14 @@ body {
       }
 
       font: 16pt $font-primary;
-      text-shadow: $drop-shadow $on-color;
-      box-shadow: $drop-shadow $on-color, $drop-shadow $on-color inset;
+      text-shadow: $drop-shadow $diffuse-small $on-image;
+      box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
       &:hover, &:active, &:focus {
         color: $color-primary-light;
         background-color: white;
         border-color: white;
         text-shadow: none;
-        box-shadow: $drop-shadow $on-color;
+        box-shadow: $drop-shadow $diffuse-small $on-image;
       }
     }
   }
@@ -238,7 +254,7 @@ body {
 }
 
 #nav-header {
-  background-color: $color-primary-light;
+  background-color: $color-primary-lighter;
   display: none; // fade in by js
   z-index: 400;
   position: fixed;
@@ -255,11 +271,11 @@ body {
     border-bottom: none;
   }
   .nav-link {
-    color: white;
+    color: $color-white;
     border: none;
     padding: 1em 1.5em;
     &.active {
-      background-color: $color-primary-lighter;
+      background-color: $color-primary-lightest;
     }
   }
   .nav-register {
@@ -273,9 +289,9 @@ body {
 }
 
 #page {
-  z-index: 100;
+  z-index: 300;
   position: relative;
-  top: 80vh; right: 0; bottom: 0; left: 0;
+  top: 105vh; right: 0; bottom: 0; left: 0;
   
   section {
     margin-bottom: 12.5vh;
@@ -285,22 +301,54 @@ body {
     font-size: 40pt;
     line-height: 40pt * 4/3;
     text-align: center;
-    color: $color-primary;
     font-family: $font-headings;
-    text-shadow: $drop-shadow-small $on-white;
   }
 
   a {
-    color: $color-secondary-dark;
+    color: $color-secondary;
     font-weight: 600;
   }
+}
 
+article#event {
+  color: $color-white;
+  text-shadow: $drop-shadow-small $diffuse-small $on-white;
+
+  h1, h2 {
+    color: $color-secondary;
+  }
+  h1 {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid $color-secondary;
+    box-shadow: $drop-shadow-small $on-white;
+  }
+}
+
+article#last-event {
+  margin-top: 100vh * 2/3 + 5vh;
+
+  h1, h2 {
+    color: $color-primary;
+    text-shadow: $drop-shadow-small $on-white;
+  }
+}
+
+
+.tagline {
+  // font-weight: 300;
+  font-size: 120%;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+section.about {
   .tagline {
-    // font-weight: 300;
-    font-size: 120%;
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 1.5em;
+    font-size: 150%;
+    margin-bottom: 0.5em;
+  }
+  .map-container::before {
+    padding-top: percentage(1 / 1.618);
   }
   // .map-container {
   //   position: relative;
@@ -309,111 +357,100 @@ body {
   //   height: 0;
   //   overflow: hidden;
   // }
+  .social-buttons {
+    margin-bottom: 1.5rem;
 
-  section#about {
-    .tagline {
-      font-size: 150%;
-      margin-bottom: 0.5em;
-    }
-    .map-container::before {
-      padding-top: percentage(1 / 1.618);
-    }
-  }
-
-  section#faq {
-    h3 {
-      font-size: 150%;
-      font-weight: 400;
-      margin-bottom: 0.5em;
-    }
-    p {
-      margin-bottom: 1.5em;
-    }
-    .centered {
-      text-align: center;
-    }
-  }
-
-  section#schedule {
-    .schedule {
-      .row {
+    .social-link-icon {
+      img {
+        height: 4.8rem;
+        width: 4.8rem;
+        margin: 1rem;
       }
-      .time {
-        padding-top: 0.75em;
-        // border-right: 1px dotted grey;
-        // height: 100%;
-      }
-      .event {
-        min-height: 5em;
-        // height: 100%;
-        padding: 0.5em 1em;
-        margin: 0.25em 0.5em;
-        // margin-bottom: 0.5em;
-        background-color: $color-primary-light;
-        color: white;
-        font-weight: 300;
-
-        .title {
-          font-weight: 700;
-        }
-        .subtitle {
-          font-style: italic;
-        }
-        .location {
-        }
-        &-workshop {
-          background-color: $color-secondary-dark;
-        }
-      }
-      .schedule-div {
-        height: 25%;
-        border-bottom: 1px solid grey;
-        text-align: center;
-        margin: 0.5em 0.5em;
-        .schedule-div-text {
-          font-size: 13pt;
-          background-color: white;
-          padding: 0 0.5em;
-        }
-      }
-    }
-  }
-
-  section#sponsors {
-    .logo {
-      padding: 1.5rem;
-    }
-    .logo-grow {
-      padding: 0.5rem;
-      margin-right: 1rem;
-    }
-    .logo-grow-2 {
-      padding: 0rem;
-      margin-right: 1.5rem;
-    }
-    h2 {
-      margin-top: 0.5em;
-    }
-  }
-
-  footer {
-    margin-top: 20vh;
-    .copyright {
-      text-align: center;
-      padding-bottom: 2em;
-      margin-bottom: 0;
     }
   }
 }
 
-.social-buttons {
-  margin-bottom: 1.5rem;
+section.faq {
+  h3 {
+    font-size: 150%;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+  p {
+    margin-bottom: 1.5em;
+  }
+  .centered {
+    text-align: center;
+  }
+}
 
-  .social-link-icon {
-    img {
-      height: 4.8rem;
-      width: 4.8rem;
-      margin: 1rem;
+section.schedule {
+  .schedule-table {
+    .row {
     }
+    .time {
+      padding-top: 0.75em;
+      // border-right: 1px dotted grey;
+      // height: 100%;
+    }
+    .event {
+      min-height: 5em;
+      // height: 100%;
+      padding: 0.5em 1em;
+      margin: 0.25em 0.5em;
+      // margin-bottom: 0.5em;
+      background-color: $color-primary-light;
+      color: white;
+      font-weight: 300;
+
+      .title {
+        font-weight: 700;
+      }
+      .subtitle {
+        font-style: italic;
+      }
+      .location {
+      }
+      &-workshop {
+        background-color: $color-secondary-dark;
+      }
+    }
+    .schedule-div {
+      height: 25%;
+      border-bottom: 1px solid grey;
+      text-align: center;
+      margin: 0.5em 0.5em;
+      .schedule-div-text {
+        font-size: 13pt;
+        background-color: white;
+        padding: 0 0.5em;
+      }
+    }
+  }
+}
+
+section.sponsors {
+  .logo {
+    padding: 1.5rem;
+  }
+  .logo-grow {
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+  .logo-grow-2 {
+    padding: 0rem;
+    margin-right: 1.5rem;
+  }
+  h2 {
+    margin-top: 0.5em;
+  }
+}
+
+footer {
+  margin-top: 20vh;
+  .copyright {
+    text-align: center;
+    padding-bottom: 2em;
+    margin-bottom: 0;
   }
 }

@@ -2,26 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>JAMHacks</title>
+    <title>JAMHacks 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6554be">
     <meta name="theme-color" content="#6554be">
-    <meta name="description" content="JAMHacks is Waterloo's first high school hackathon. On April 9th, come join 160 other high school students for 12 hours of creativity, innovation and fun!">
+    <meta name="description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "Event",
-        "name": "JAMHacks",
-        "startDate": "2017-04-09T08:00",
-        "endDate": "2017-04-09T22:00",
-        "url": "http://jamhacks.ca/",
-        "image":"http://jamhacks.ca/img/og-image/png",
-        "description": "JAMHacks is Waterloo's first high school hackathon. On April 9th, come join 160 other high school students for 12 hours of creativity, innovation and fun!",
+        "name": "JAMHacks 2",
+        "startDate": "2018-04-14T14:00:00-05:00",
+        "endDate": "2018-04-15T20:00:00-05:00",
+        "url": "https://jamhacks.ca/",
+        "image":"https://jamhacks.ca/img/og-image.png",
+        "description": "JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full weekend of creating, learning and innovating.",
         "location": {
           "@type": "Place",
           "name": "Sir John A. Macdonald Secondary School",
@@ -29,15 +30,16 @@
         }
       }
     </script>
-    <meta property="og:url" content="http://jamhacks.ca/">
-    <meta property="og:title" content="JAMHacks">
-    <meta property="og:description" content="JAMHacks is Waterloo's first high school hackathon. On April 9th, come join 160 other high school students for 12 hours of creativity, innovation and fun!">
-    <meta property="og:image" content="http://jamhacks.ca/img/og-image.png">
-    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:url" content="https://jamhacks.ca/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JAMHacks 2">
+    <meta property="og:description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.">
+    <meta property="og:image" content="https://jamhacks.ca/img/og-image.png">
+    <meta property="og:image:alt" content="JAMHacks 2">
   </head>
   <body data-spy="scroll" data-target="#nav-header" data-offset="10">
     <div id="landing">
-      <div id="landing-wrapper"><img id="landing-logo" src="img/JAMHacks.svg" alt="JAMHacks">
+      <div id="landing-content"><img id="landing-logo" src="img/JAMHacks Centered.svg" alt="JAMHacks">
         <h2>April 14-15, 2018</h2>
         <h3>Sir John A. Macdonald Secondary School, Waterloo</h3>
         <div class="landing-email-signup" id="mc_embed_signup">
@@ -49,22 +51,26 @@
         </div>
       </div>
     </div>
-    <svg id="gooey-bg" width="100%" height="100%" viewBox="0 0 100 1" preserveAspectRatio="none">
+    <svg class="transition-paths" id="landing-transition" width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none">
       <path class="light-path" id="path1" d=""></path>
       <path class="color-path" id="path2" d=""></path>
+    </svg>
+    <svg class="transition-paths" id="last-event-transition" width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none">
+      <path class="light-path" id="path1" d=""></path>
+      <path class="white-path" id="path2" d=""></path>
     </svg>
     <div id="nav-header">
       <ul class="nav">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
         <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
+        <li class="nav-item"><a class="nav-link" href="#last-event">2017</a></li>
       </ul>
     </div>
     <div id="page">
-      <main>
+      <article id="event">
         <div class="container">
-          <section id="about">
+          <section class="about" id="about">
             <div class="row justify-content-center">
               <div class="col">
                 <h1>About</h1>
@@ -72,12 +78,7 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-lg-10">
-                <p class="tagline"><em>A huge thanks to everyone who attended, sponsored, or supported JAMHacks&nbsp;2017. Hope to see you again next year!</em></p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <p class="tagline">JAMHacks is Waterloo's first high school hackathon. On April&nbsp;9th&nbsp;2017, 100&nbsp;high school students from all over Ontario came together for 12 jam-packed hours of creativity, innovation and learning!</p>
+                <p class="tagline">JAMHacks 2 is Waterloo's biggest high school hackathon! On April&nbsp;14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.</p>
               </div>
             </div>
             <div class="row justify-content-center">
@@ -93,7 +94,7 @@
               </div>
             </div>
           </section>
-          <section id="faq">
+          <section class="faq" id="faq">
             <div class="row justify-content-center">
               <div class="col">
                 <h1>FAQ</h1>
@@ -102,7 +103,7 @@
             <div class="row">
               <div class="col-md-6">
                 <h3>What is JAMHacks?</h3>
-                <p>JAMHacks is a <strong>hackathon</strong>&mdash;a 12-hour-long "innovation marathon." You'll work in teams of up to 4 to create an app, game, website, robot, gadget, or whatever your heart desires.</p>
+                <p>JAMHacks is a <strong>hackathon</strong>&mdash;a 24-hour-long "innovation marathon." You'll work in teams of up to 4 to create an app, game, website, robot, gadget, or whatever your heart desires.</p>
               </div>
               <div class="col-md-6">
                 <h3>What else is JAMHacks?</h3>
@@ -118,7 +119,7 @@
               </div>
               <div class="col-md-6">
                 <h3>Can I build a hardware/electronics project?</h3>
-                <p>Absolutely! We'll have a shop open with soldering irons and small components (resistors etc.) for you to use. Also, Intel will be providing some kits!</p>
+                <p>Absolutely! We'll have a shop open with soldering irons and small components (resistors etc.) for you to use.</p>
               </div>
               <div class="col-md-6">
                 <h3>Who can participate?</h3>
@@ -130,11 +131,11 @@
               </div>
               <div class="col-md-6">
                 <h3>How many people will be accepted?</h3>
-                <p>We should have enough room to accept everyone who applies!</p>
+                <p>We should be accepting everyone who registers!</p>
               </div>
               <div class="col-md-6">
                 <h3>What should I bring?</h3>
-                <p>You should bring your laptop, phone, charger, and your student card or some other form of ID. We will provide food and snacks!</p>
+                <p>You should bring your laptop, phone, charger, and your student card or some other form of ID. We will provide meals and snacks!</p>
               </div>
               <div class="col-md-6">
                 <h3>What if I'm not a high school student?</h3>
@@ -151,7 +152,41 @@
               </div>
             </div>
           </section>
-          <section id="schedule">
+          <section class="sponsors" id="sponsors">
+            <div class="row justify-content-center">
+              <div class="col">
+                <h1>Sponsors</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-9">
+                <p class="tagline">Interested in sponsoring? Shoot us an email at <a href="mailto:sponsor@jamhacks.ca" target="_blank">sponsor@jamhacks.ca</a>, or check out our <a href="sponsorship.pdf" target="_blank">sponsorship&nbsp;package</a>.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <article id="last-event">
+        <div class="container">
+          <section class="about" id="about-2017">
+            <div class="row justify-content-center">
+              <div class="col">
+                <h1>About (2017)</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <p class="tagline">JAMHacks&nbsp;2017 was Waterloo's first high school hackathon. On April&nbsp;9th&nbsp;2017, over 100&nbsp;high school students from all over Ontario came together for 12 jam-packed hours of creativity, innovation and learning!</p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <p class="tagline"><em>A huge thanks to everyone who attended, sponsored, or supported JAMHacks&nbsp;2017. Hope to see you again in 2018!</em></p>
+              </div>
+            </div>
+          </section>
+          <section class="schedule" id="schedule-2017">
             <div class="row justify-content-center">
               <div class="col">
                 <h1>Schedule (2017)</h1>
@@ -163,7 +198,7 @@
               </div>
             </div>
             <div class="row justify-content-center">
-              <div class="col-lg-11 col-xl-9 schedule">
+              <div class="col-lg-11 col-xl-9 schedule-table">
                 <div class="row no-gutters">
                   <div class="col-2">
                     <div class="time">8:00&ndash;8:45am</div>
@@ -317,16 +352,10 @@
               </div>
             </div>
           </section>
-          <section id="sponsors">
+          <section class="sponsors" id="sponsors-2017">
             <div class="row justify-content-center">
               <div class="col">
                 <h1>Sponsors (2017)</h1>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-9">
-                <p class="tagline">Interested in sponsoring? Shoot us an email at <a href="mailto:sponsor@jamhacks.ca" target="_blank">sponsor@jamhacks.ca</a>, or check out our <a href="sponsorship.pdf" target="_blank">sponsorship&nbsp;package</a>.
-                </p>
               </div>
             </div>
             <div class="row justify-content-center align-items-center">
@@ -347,7 +376,7 @@
             </div>
             <div class="row justify-content-center">
               <div class="col">
-                <h2>Partners</h2>
+                <h2>Partners (2017)</h2>
               </div>
             </div>
             <div class="row justify-content-center align-items-center">
@@ -357,11 +386,11 @@
             </div>
           </section>
         </div>
-      </main>
+      </article>
       <footer>
         <div class="container">
           <div class="col">
-            <p class="copyright">&copy; 2017 JAMHacks. Website by Ethan Guo.</p>
+            <p class="copyright">&copy; 2018 JAMHacks. Website by Ethan Guo.</p>
           </div>
         </div>
       </footer>

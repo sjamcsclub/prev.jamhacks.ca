@@ -1,9 +1,18 @@
 const ease = {
+  linear: (t) => {
+    if (t <= 0) return 0;
+    if (t >= 1) return 1;
+    return t;
+  },
   quadraticOut: (t) => {
+    if (t <= 0) return 0;
+    if (t >= 1) return 1;
     return -t * (t - 2);
   },
   quarticOut: (t) => {
-    return -Math.pow(t - 1, 4) + 1;
+    if (t <= 0) return 0;
+    if (t >= 1) return 1;
+    return 1 - Math.pow(t - 1, 4);
   }, //TODO: Try InOut (http://gizma.com/easing/)
 }
 
@@ -22,61 +31,64 @@ const isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini
 class GooeyTransition {
   constructor(svg) {
     this.svg = $(svg);
-    this.paths = $(svg).find("path");
-    this.limit = 0;
-    this.gap = 0.05;
+    this.paths = this.svg.find("path");
+    this.transitionSpeed = 1.5;
+    this.verticalOffset = 0;
+    this.pathOffset = 0.04;
   }
-  getPath(easeQuad, easeQuart) {
+  getPath(ease1, ease2) {
     return `
-      M 0 0
-      V ${easeQuart}
-      Q 12.5 ${easeQuart} 25 ${easeQuad}
-      T 50 ${easeQuad}
-      T 75 ${easeQuad}
-      T 100 ${easeQuart}
-      V 0
+      M 0 1
+      V ${ease1}
+      Q 0.125 ${ease2} 0.25 ${ease1}
+      T 0.5 ${ease1}
+      T 0.75 ${ease1}
+      T 1 ${ease1}
+      V 1
     `;
   }
   render(t) {
-    var easeQuad = mathx.scale(ease.quadraticOut(t), 1, 0, this.limit, $(window).height());
-    var easeQuart = mathx.scale(ease.quarticOut(t), 1, 0, this.limit, $(window).height());
-    var easeQuad2 = mathx.scale(ease.quadraticOut(t + this.gap), 1, 0, this.limit, $(window).height());
-    var easeQuart2 = mathx.scale(ease.quarticOut(t + this.gap), 1, 0, this.limit, $(window).height());
-    
-    var svgHeight = easeQuad + easeQuad - easeQuart;
-    if (isMobile) {
-      this.svg.css("height", svgHeight*1.1);
-    } else {
-      this.svg.css("height", svgHeight);
+    var T = (t - this.verticalOffset) * this.transitionSpeed;
+    for (var i = 0; i < this.paths.length; i++) {
+      var ease1 = 1 - ease.quadraticOut(T - i*this.pathOffset);
+      var ease2 = 1 - ease.quarticOut(T - i*this.pathOffset);
+      $(this.paths[i]).attr("d", this.getPath(ease1, ease2));
     }
-
-    this.svg.attr("viewBox", `0 0 100 ${svgHeight}`);
-    
-    $(this.paths[0]).attr("d", this.getPath(easeQuad, easeQuart));
-    $(this.paths[1]).attr("d", this.getPath(easeQuad2, easeQuart2));
   }
 }
 
-const landingTransitionScale = 1.5;
-const landingScrollScale = 0.4;
-const landingTransition = new GooeyTransition("#gooey-bg");
+class GooeyTransitionReverse extends GooeyTransition {
+  constructor(svg) {
+    super(svg);
+    this.pathOffset = -this.pathOffset;
+  }
+  getPath(ease1, ease2) {
+    return `
+      M 0 0
+      V ${ease2}
+      Q 0.125 ${ease2} 0.25 ${ease1}
+      T 0.5 ${ease1}
+      T 0.75 ${ease1}
+      T 1 ${ease2}
+      V 0
+    `;
+  }
+}
 
-// const footerTransition = new GooeyTransition(0.9, [footer1, footer2]);
+const landingTransition = new GooeyTransition("#landing-transition");
+const lastEventTransition = new GooeyTransition("#last-event-transition");
+
+var scrollSectionOffset; 
 
 // Update anytime page is scrolled.
 $(window).scroll(function() {
   // console.log($(".active").attr("href"));
-  
+
   var t = $(window).scrollTop() / screen.height;
-  
-  landingTransition.render(mathx.clamp(t*landingTransitionScale, 0, 1));
-  
-  // footerTransition.render(t*2 - 4);
-  
-  // Rescale landing
-  var landingHeight = mathx.scale(mathx.clamp(t, 0, landingScrollScale), landingScrollScale, 0, 0, $(this).height());
-  $("#landing").css("height", landingHeight);
-  
+
+  landingTransition.render(t);
+  lastEventTransition.render(t);
+
   // Fade in/out nav-header
   if ($("#nav-header").queue().length === 0) {
     if (t > 0.49) {
@@ -86,43 +98,41 @@ $(window).scroll(function() {
       $("#nav-header").fadeOut(200);
     }
   }
-  if (isMobile) {
-    if ($("#gooey-bg").queue().length === 0) {
-      if (t > 0.5) {
-        $("#gooey-bg").fadeOut(300);
-      }
-      else if (t < 0.49) {
-        $("#gooey-bg").fadeIn(200);
-      }
-    }
-  }
+  // if (isMobile) {
+  //   if ($("#landing-transition").queue().length === 0) {
+  //     if (t > 0.5) {
+  //       $("#landing-transition").fadeOut(300);
+  //     }
+  //     else if (t < 0.49) {
+  //       $("#landing-transition").fadeIn(200);
+  //     }
+  //   }
+  // }
 });
 
 $(window).resize(function() {
-  landingTransition.limit = $("#nav-header").height();
-  if (isMobile) {
-    landingTransition.limit += $(window).height()/11.6;
-  }
+  scrollSectionOffset = $("#nav-header").height() + parseInt($("section").css("margin-bottom")) / 2;
+  $("body").attr("data-offset", scrollSectionOffset);
 
-  var scrollSpyOffset = $("#nav-header").height() + parseInt($("section").css("margin-bottom")) / 2;
-  $("body").attr("data-offset", scrollSpyOffset);
+  lastEventTransition.verticalOffset = $("#last-event").offset().top / screen.height - 5/6;
 
   $(this).scroll(); // Trigger a scroll update
+
+
 }).resize();
 
 $(".nav-link").click(function() {
   var target = $(this).attr("href");
-  var offset = ($("#nav-header").height() + parseInt($("section").css("margin-bottom"))) / 2;
-  console.log("target", target);
+
   $("html,body").stop().animate({
-    scrollTop: $(target).offset().top - offset
+    scrollTop: $(target).offset().top - scrollSectionOffset
   }, 400, "easeInOutQuad");
   return false;
 });
 
 $(function() {
   if (isMobile) {
-    $("#gooey-bg").css("top", "-10%");
+    $("#landing-transition").css("top", "-10%");
   }
 });
 
@@ -130,7 +140,7 @@ $(function() {
 // $(function(){
 
 //   var $w = $(window),
-//       $background = $("#gooey-bg");
+//       $background = $("#landing-transition");
 
 //   // Fix background image jump on mobile
 //   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
