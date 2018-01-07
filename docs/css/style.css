@@ -1,4 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo|Nunito:300,400,600,800");
+@-webkit-keyframes pulsate {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  15% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-shadow: none;
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
+  85% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; } }
+@keyframes pulsate {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  15% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-shadow: none;
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
+  85% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; } }
+
 body {
   font: 13pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
   line-height: 17.33333pt; }
@@ -80,109 +123,32 @@ svg.transition-paths {
   #landing a {
     color: #A1D083;
     font-weight: 600; }
-  #landing .landing-email-signup {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    #landing .landing-email-signup form {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-    #landing .landing-email-signup .email {
-      margin: 0.5rem;
-      margin-right: 0;
-      padding: 0.75rem;
-      padding-left: 1.5rem;
-      padding-right: 1.25rem;
-      background: none;
-      color: white;
-      border-color: white;
-      border-width: 2px;
-      border-right-width: 1px;
-      border-top-left-radius: 100rem;
-      border-bottom-left-radius: 100rem;
-      font: 16pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
-      text-align: left;
-      text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
-      @media only screen and (max-width: 575px) {
-        #landing .landing-email-signup .email {
-          border-radius: 100rem;
-          border-width: 2px;
-          margin: 0.25rem;
-          padding: 0.5rem 1rem; } }
-      #landing .landing-email-signup .email::-webkit-input-placeholder {
-        color: white;
-        text-shadow: none; }
-      #landing .landing-email-signup .email:-ms-input-placeholder {
-        color: white;
-        text-shadow: none; }
-      #landing .landing-email-signup .email::placeholder {
-        color: white;
-        text-shadow: none; }
-      #landing .landing-email-signup .email:hover {
-        color: #6554be;
-        background-color: white;
-        border-color: white;
-        text-shadow: none;
-        box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
-        #landing .landing-email-signup .email:hover::-webkit-input-placeholder {
-          color: #9f95d6;
-          text-shadow: none; }
-        #landing .landing-email-signup .email:hover:-ms-input-placeholder {
-          color: #9f95d6;
-          text-shadow: none; }
-        #landing .landing-email-signup .email:hover::placeholder {
-          color: #9f95d6;
-          text-shadow: none; }
-    #landing .landing-email-signup .subscribe-button {
-      margin: 0.5rem;
-      margin-left: 0;
-      padding: 0.75rem;
-      padding-left: 1.25rem;
-      padding-right: 2rem;
-      background: none;
-      color: white;
-      border-color: white;
-      border-width: 2px;
-      border-left-width: 1px;
-      border-top-right-radius: 100rem;
-      border-bottom-right-radius: 100rem;
-      font: 16pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
-      text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
-      @media only screen and (max-width: 575px) {
-        #landing .landing-email-signup .subscribe-button {
-          border-radius: 100rem;
-          border-width: 2px;
-          margin: 0.25rem;
-          padding: 0.5rem 1.5rem; } }
-      #landing .landing-email-signup .subscribe-button:hover, #landing .landing-email-signup .subscribe-button:active, #landing .landing-email-signup .subscribe-button:focus {
-        color: #6554be;
-        background-color: white;
-        border-color: white;
-        text-shadow: none;
-        box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
+  #landing .landing-button {
+    margin: 0.5rem;
+    padding: 0.75rem 2rem;
+    background: none;
+    color: white;
+    border-color: white;
+    border-radius: 100em;
+    border-width: 2px;
+    font: 600 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset;
+    -webkit-animation: pulsate 5s infinite;
+            animation: pulsate 5s infinite; }
+    @media only screen and (max-width: 575px) {
+      #landing .landing-button {
+        border-radius: 100rem;
+        border-width: 2px;
+        margin: 0.25rem;
+        padding: 0.5rem 1.5rem; } }
+    #landing .landing-button:hover, #landing .landing-button:active, #landing .landing-button:focus {
+      -webkit-animation: none;
+              animation: none;
+      color: #6554be;
+      background-color: white;
+      text-shadow: none;
+      box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
 
 #nav-header {
   background-color: #7e70c8;
@@ -201,6 +167,8 @@ svg.transition-paths {
     border: none;
     padding: 1em 1.5em; }
     #nav-header .nav-link.active {
+      background-color: #9f95d6; }
+    #nav-header .nav-link:hover {
       background-color: #9f95d6; }
   #nav-header .nav-register {
     font-weight: 800; }

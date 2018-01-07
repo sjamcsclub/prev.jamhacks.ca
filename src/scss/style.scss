@@ -42,6 +42,34 @@ $on-text: rgba(0,0,0, 0.225);
   }
 }
 
+@keyframes pulsate {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: $drop-shadow $diffuse-small $on-image;
+    box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
+  }
+  15% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: $drop-shadow $diffuse-small $on-image;
+    box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-shadow: none;
+    box-shadow: $drop-shadow $diffuse-small $on-image;
+  }
+  85% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: $drop-shadow $diffuse-small $on-image;
+    box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: $drop-shadow $diffuse-small $on-image;
+    box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
+  }
+}
+
 html {
   // overflow: hidden;
   // width: 100%;
@@ -134,101 +162,33 @@ svg.transition-paths {
     font-weight: 600;
   }
 
-  .landing-email-signup {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .landing-button {
+    margin: 0.5rem;
+    padding: 0.75rem 2rem;
+    background: none;
+    color: white;
+    border-color: white;
+    border-radius: 100em;
+    border-width: 2px;
+    font: 600 18pt $font-primary;
+    text-shadow: $drop-shadow $diffuse-small $on-image;
+    box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
 
-    form {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
+    animation: pulsate 5s infinite;
+
+    @include xs-down {
+      border-radius: 100rem;
+      border-width: 2px;
+      margin: 0.25rem;
+      padding: 0.5rem 1.5rem;
     }
 
-    .email {
-      margin: 0.5rem;
-      margin-right: 0;
-      padding: 0.75rem;
-      padding-left: 1.5rem;
-      padding-right: 1.25rem;
-      background: none;
-      color: white;
-      border-color: white;
-      // border-radius: 100em;
-      border-width: 2px;
-      border-right-width: 1px;
-
-      border-top-left-radius: 100rem;
-      border-bottom-left-radius: 100rem;
-
-      @include xs-down {
-        border-radius: 100rem;
-        border-width: 2px;
-        margin: 0.25rem;
-        padding: 0.5rem 1rem;
-      }
-
-      font: 16pt $font-primary;
-      text-align: left;
-      text-shadow: $drop-shadow $diffuse-small $on-image;
-      box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
-
-      &::placeholder {
-        color: white;
-        text-shadow: none;
-      }
-
-      &:hover {
-        color: $color-primary-light;
-        background-color: white;
-        border-color: white;
-        text-shadow: none;
-        box-shadow: $drop-shadow $diffuse-small $on-image;
-
-        &::placeholder {
-          color: $color-primary-lightest;
-          text-shadow: none;
-        }
-      }
-    }
-
-    .subscribe-button {
-      margin: 0.5rem;
-      margin-left: 0;
-      padding: 0.75rem;
-      padding-left: 1.25rem;
-      padding-right: 2rem;
-      background: none;
-      color: white;
-      border-color: white;
-      // border-radius: 100em;
-      border-width: 2px;
-      border-left-width: 1px;
-
-      border-top-right-radius: 100rem;
-      border-bottom-right-radius: 100rem;
-
-      @include xs-down {
-        border-radius: 100rem;
-        border-width: 2px;
-        margin: 0.25rem;
-        padding: 0.5rem 1.5rem;
-      }
-
-      font: 16pt $font-primary;
-      text-shadow: $drop-shadow $diffuse-small $on-image;
-      box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
-      &:hover, &:active, &:focus {
-        color: $color-primary-light;
-        background-color: white;
-        border-color: white;
-        text-shadow: none;
-        box-shadow: $drop-shadow $diffuse-small $on-image;
-      }
+    &:hover, &:active, &:focus {
+      animation: none;
+      color: $color-primary-light;
+      background-color: white;
+      text-shadow: none;
+      box-shadow: $drop-shadow $diffuse-small $on-image;
     }
   }
 
@@ -240,7 +200,7 @@ svg.transition-paths {
   //     width: 40%;
   //     min-width: 7.5em;
   //   }
-  //   background-color: $color-primary-light;
+  //   background: none;
   //   color: white;
   //   border-color: white;
   //   border-radius: 100em;
@@ -280,6 +240,9 @@ svg.transition-paths {
     border: none;
     padding: 1em 1.5em;
     &.active {
+      background-color: $color-primary-lightest;
+    }
+    &:hover {
       background-color: $color-primary-lightest;
     }
   }
