@@ -67,7 +67,7 @@ svg.transition-paths {
     fill: white; }
   svg.transition-paths#landing-transition {
     z-index: 200; }
-  svg.transition-paths#last-event-transition {
+  svg.transition-paths#white-transition {
     z-index: 201; }
 
 #landing {
@@ -194,19 +194,19 @@ svg.transition-paths {
     color: #A1D083;
     font-weight: 600; }
 
-article#event {
+article#on-color {
   color: #F5F5DC;
   text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15); }
-  article#event h1, article#event h2 {
+  article#on-color h1, article#on-color h2 {
     color: #A1D083; }
-  article#event h1 {
+  article#on-color h1 {
     margin-bottom: 2rem;
     border-bottom: 2px solid #A1D083;
     box-shadow: 0 0.2rem rgba(0, 0, 0, 0.15); }
 
-article#last-event {
-  margin-top: 71.66667vh; }
-  article#last-event h1, article#last-event h2 {
+article#on-white {
+  margin-top: 60vh; }
+  article#on-white h1, article#on-white h2 {
     color: #493A98;
     text-shadow: 0 0.2rem rgba(0, 0, 0, 0.15); }
 

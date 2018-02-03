@@ -111,7 +111,7 @@ svg.transition-paths {
   &#landing-transition {
     z-index: 200;
   }
-  &#last-event-transition {
+  &#white-transition {
     z-index: 201;
   }
 }
@@ -278,7 +278,7 @@ svg.transition-paths {
   }
 }
 
-article#event {
+article#on-color {
   color: $color-white;
   text-shadow: $drop-shadow-small $diffuse-small $on-white;
 
@@ -292,8 +292,8 @@ article#event {
   }
 }
 
-article#last-event {
-  margin-top: 100vh * 2/3 + 5vh;
+article#on-white {
+  margin-top: 60vh;
 
   h1, h2 {
     color: $color-primary;

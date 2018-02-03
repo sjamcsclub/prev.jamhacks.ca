@@ -88,7 +88,7 @@ class GooeyTransition {
 // }
 
 const landingTransition = new GooeyTransition("#landing-transition");
-const lastEventTransition = new GooeyTransition("#last-event-transition");
+const whiteTransition = new GooeyTransition("#white-transition");
 
 var scrollSectionOffset; 
 
@@ -99,7 +99,7 @@ $(window).scroll(function() {
   var t = $(window).scrollTop() / screen.height;
 
   landingTransition.render(t);
-  lastEventTransition.render(t);
+  whiteTransition.render(t);
 
   // Fade in/out nav-header
   if ($("#nav-header").queue().length === 0) {
@@ -116,7 +116,7 @@ $(window).resize(function() {
   scrollSectionOffset =  Math.ceil($("#nav-header").height() + parseInt($("section").css("margin-bottom")) / 2);
   $("body").attr("data-offset", scrollSectionOffset);
 
-  lastEventTransition.verticalOffset = $("#last-event").offset().top / screen.height - 5/6;
+  whiteTransition.verticalOffset = $("#on-white").offset().top / screen.height - 1;
 
   $(this).scroll(); // Trigger a scroll update
 }).resize();
