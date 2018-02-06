@@ -3,27 +3,27 @@ mixin mailto(email)
 
 mixin logo-sm(src, alt)
   .logo.col-6.col-sm-5.col-md-4.col-lg-3
-    img.img-fluid(src="img/logos/"+src, alt=alt)
+    img.img-fluid(src="/img/logos/"+src, alt=alt)
 
 mixin logo-sm-md(src, alt)
   .logo.col-6.col-md-4
-    img.img-fluid(src="img/logos/"+src, alt=alt)
+    img.img-fluid(src="/img/logos/"+src, alt=alt)
 
 mixin logo-intel(src, alt)
   .logo.col-6.col-sm-5.col-md-4.col-lg-3.logo-grow
-    img.img-fluid(src="img/logos/"+src, alt=alt)
+    img.img-fluid(src="/img/logos/"+src, alt=alt)
 
 mixin logo-md(src, alt)
   .logo.col-8.col-md-5
-    img.img-fluid(src="img/logos/"+src, alt=alt)
+    img.img-fluid(src="/img/logos/"+src, alt=alt)
 
 mixin logo-christie(src, alt)
   .logo.col-8.col-md-5.logo-grow-2
-    img.img-fluid(src="img/logos/"+src, alt=alt)
+    img.img-fluid(src="/img/logos/"+src, alt=alt)
 
 mixin logo-lg(src, alt)
   .logo.col-12.col-lg-10
-    img.img-fluid(src="img/logos/"+src, alt=alt)
+    img.img-fluid(src="/img/logos/"+src, alt=alt)
 
 //- event = {title, subtitle?, location}
 mixin schedule-row(time, event)
@@ -238,6 +238,9 @@ html
             .row.justify-content-center
               .col-lg-9
                 p.tagline Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
+            .row.justify-content-center
+              +logo-md("Rapid-Novor.png", "Rapid Novor")
+              +logo-sm("Jetbrains.png", "Jetbrains")
 
 
       footer
