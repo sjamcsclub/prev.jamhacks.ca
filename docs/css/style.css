@@ -71,6 +71,7 @@ svg.transition-paths {
     z-index: 201; }
 
 #landing {
+  background-color: #6554be;
   background-image: url("/img/landing-bg.jpg");
   background-size: cover;
   background-position: center;
