@@ -5,6 +5,10 @@ mixin logo-sm(src, alt)
   .logo.col-6.col-sm-5.col-md-4.col-lg-3
     img.img-fluid(src="/img/logos/"+src, alt=alt)
 
+mixin logo-sm-padded(src, alt)
+  .logo.col-6.col-sm-5.col-md-4.col-lg-3
+    img.img-fluid(src="/img/logos/"+src, alt=alt, style="padding:20px;")
+
 mixin logo-sm-md(src, alt)
   .logo.col-6.col-md-4
     img.img-fluid(src="/img/logos/"+src, alt=alt)
@@ -242,9 +246,11 @@ html
               +logo-md("Rapid-Novor.png", "Rapid Novor")
               +logo-md("Waterloo-Engineering.png", "University of Waterloo Faculty of Engineering")
               +logo-sm("Balsamiq.png", "Balsamiq")
+              +logo-sm-padded("EA.png", "EA")
               +logo-sm("Google.png", "Google")
               +logo-sm("Indico.png", "Indico")
-              +logo-sm("Jetbrains.png", "Jetbrains")
+              +logo-sm-padded("Jetbrains.png", "Jetbrains")
+              +logo-sm("Microsoft.png", "Microsoft")
               +logo-sm("Sketch.png", "Sketch")
 
 
