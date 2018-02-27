@@ -21,6 +21,11 @@ mixin logo-md(src, alt)
   .logo.col-8.col-md-6
     img.img-fluid(src="/img/logos/"+src, alt=alt)
 
+
+mixin logo-md-wide(src, alt)
+  .logo.col-12.col-lg-6
+    img.img-fluid(src="/img/logos/"+src, alt=alt)
+
 mixin logo-christie(src, alt)
   .logo.col-8.col-md-6.logo-grow-2
     img.img-fluid(src="/img/logos/"+src, alt=alt)
@@ -243,14 +248,15 @@ html
               .col-lg-9
                 p.tagline Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
             .row.justify-content-center.align-items-center
-              +logo-md("Rapid-Novor.png", "Rapid Novor")
-              +logo-md("Waterloo-Engineering.png", "University of Waterloo Faculty of Engineering")
+              +logo-md-wide("Rapid-Novor.png", "Rapid Novor")
+              +logo-md-wide("Waterloo-Engineering.png", "University of Waterloo Faculty of Engineering")
               +logo-sm("Balsamiq.png", "Balsamiq")
               +logo-sm-padded("EA.png", "EA")
               +logo-sm("Google.png", "Google")
               +logo-sm("Indico.png", "Indico")
               +logo-sm-padded("Jetbrains.png", "Jetbrains")
               +logo-sm("Microsoft.png", "Microsoft")
+                //- Move to Partners section
               +logo-sm("Sketch.png", "Sketch")
 
 
