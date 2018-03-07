@@ -272,13 +272,8 @@ section.schedule .schedule-table .schedule-div {
 section.sponsors .logo {
   padding: 1.5rem; }
 
-section.sponsors .logo-grow {
-  padding: 0.5rem;
-  margin-right: 1rem; }
-
-section.sponsors .logo-grow-2 {
-  padding: 0rem;
-  margin-right: 1.5rem; }
+section.sponsors .logo-square img {
+  padding: 0 10%; }
 
 section.sponsors h2 {
   margin-top: 0.5em; }
