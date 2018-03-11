@@ -1,3 +1,6 @@
+mixin non-breaking-ndash
+  | &#8288;&ndash;&#8288;
+
 mixin mailto(email)
   a(href="mailto:"+email, target="_blank")= email
 
@@ -31,7 +34,7 @@ mixin schedule-row(time, event)
     .col-2
       .time!= time
     .col-10.col-lg-8
-      div(class=(event.type ? "event event-" + event.type : "event"))
+      .event(class=(event.type ? "event event-" + event.type : ""))
         .title!= event.title
         .subtitle!= event.subtitle || ""
         .location!= event.location || "&nbsp;"
@@ -41,12 +44,12 @@ mixin schedule-row-2(time, event1, event2)
     .col-2
       .time!= time
     .col-5.col-lg-4
-      div(class=(event1.type ? "event event-" + event1.type : "event"))
+      .event(class=(event1.type ? "event event-" + event1.type : ""))
         .title!= event1.title
         .subtitle!= event1.subtitle || ""
         .location!= event1.location || "&nbsp;"
     .col-5.col-lg-4
-      div(class=(event2.type ? "event event-" + event2.type : "event"))
+      .event(class=(event2.type ? "event event-" + event2.type : ""))
         .title!= event2.title
         .subtitle!= event2.subtitle || ""
         .location!= event2.location || "&nbsp;"
@@ -54,10 +57,15 @@ mixin schedule-row-2(time, event1, event2)
 mixin schedule-div(time, title)
   .row.no-gutters
     .col-2
-      .time!= time
+      .time.schedule-div-time!= time
     .col-10.col-lg-8
-      .schedule-div
+      .schedule-div-hr
         span.schedule-div-text!= title
+
+mixin schedule-day(title, isFirst)
+  .row.no-gutters
+    .col-12.col-lg-10
+      .schedule-day-title(id=(isFirst ? "schedule-day-title-first" : ""))!= title
 
 
 doctype html
@@ -89,7 +97,7 @@ html
         "startDate": "2018-04-14T14:00:00-05:00",
         "endDate": "2018-04-15T20:00:00-05:00",
         "url": "https://jamhacks.ca/",
-        "image":"https://jamhacks.ca/img/og-image.png",
+        "image": "https://jamhacks.ca/img/og-image.png",
         "description": "JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full weekend of creating, learning and innovating.",
         "location": {
           "@type": "Place",
@@ -117,28 +125,10 @@ html
 
 
     svg.transition-paths#landing-transition(width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none")
-      //- defs
-      //-   filter(xmlns="http://www.w3.org/2000/svg" id="dropshadow" height="130%")
-      //-     feGaussianBlur(in="SourceAlpha" stdDeviation="1.5")
-      //-     feOffset(dx="0" dy="4" result="offsetblur")
-      //-     feComponentTransfer
-      //-       feFuncA(type="linear" slope="0.3")
-      //-     feMerge
-      //-       feMergeNode
-      //-       feMergeNode(in="SourceGraphic")
       path(id="path1" class="light-path" d="")
       path(id="path2" class="color-path" d="")
 
     svg.transition-paths#white-transition(width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none")
-      //- defs
-      //-   filter(xmlns="http://www.w3.org/2000/svg" id="dropshadow" height="130%")
-      //-     feGaussianBlur(in="SourceAlpha" stdDeviation="0.015")
-      //-     feOffset(dx="0" dy="0" result="offsetblur")
-      //-     feComponentTransfer
-      //-       feFuncA(type="linear" slope="0.2")
-      //-     feMerge
-      //-       feMergeNode
-      //-       feMergeNode(in="SourceGraphic")
       path(id="path1" class="light-path" d="")
       path(id="path2" class="white-path" d="")
 
@@ -149,15 +139,13 @@ html
         li.nav-item
           a.nav-link(href="#faq") FAQ
         li.nav-item
+          a.nav-link(href="#schedule") Schedule
+        li.nav-item
           a.nav-link(href="#sponsors") Sponsors
         li.nav-item
           a.nav-link(href="/2017") 2017 (Archive)
         li.nav-item.nav-register
           a.nav-link(href="/register") Register
-        //- li.nav-item
-        //-   a.nav-link(href="#schedule") Schedule
-        //- li.nav-item
-        //-   a.nav-link(href="#sponsors") Sponsors
 
     #page
       article#on-color
@@ -231,6 +219,67 @@ html
 
       article#on-white
         .container
+          section.schedule#schedule
+            .row.justify-content-center
+              .col
+                h1 Schedule
+
+            .row.justify-content-center
+              .col-lg-10.col-xl-9
+                p.tagline Here is a (tentative) schedule of the weekend! Please plan to arrive between 2:00#[+non-breaking-ndash]2:30pm to sign in, find a spot and get settled in.
+                
+            .row.justify-content-center
+              .col-lg-11.col-xl-9.schedule-table
+
+                +schedule-day("Saturday April 14", true)
+
+                +schedule-row("2:00&ndash;2:45pm",
+                  {title:"Sign In", location:"2nd Floor Foyer"})
+
+                +schedule-row("3:00&ndash;3:30pm",
+                  {title:"Opening Ceremonies", location:"Auditorium"})
+
+                +schedule-div("4:00pm", "Hacking begins!")
+
+                +schedule-row("4:00&ndash;4:30pm",
+                  {title:"Team Formation", location:"Auditorium"})
+
+                //- +schedule-row-2("4:30&ndash;5:30pm",
+                //-   {title:"[Beginner Workshop 1]", type:"workshop"},
+                //-   {title:"[Workshop]", type:"workshop"})
+
+                +schedule-row("6:00&ndash;7:00pm",
+                  {title:"Dinner", location:"Cafeteria", type:"food"})
+
+                //- +schedule-row-2("7:30&ndash;8:30pm",
+                //-   {title:"[Beginner Workshop 2]", type:"workshop"},
+                //-   {title:"[Workshop]", type:"workshop"})
+
+                //- +schedule-row("8:30&ndash;9:30pm",
+                //-   {title:"[Workshop]", location:""})
+
+                +schedule-day("Sunday April 15")
+
+                +schedule-row("8:00&ndash;9:00am",
+                  {title:"Breakfast", location:"Cafeteria", type:"food"})
+
+                //- +schedule-row("10:30&ndash;11:30am",
+                //-   {title:"Pitch Workshop", location:"", type:"workshop"})
+
+                +schedule-row("12:00&ndash;1:00pm",
+                  {title:"Lunch", location:"Cafeteria", type:"food"})
+
+                +schedule-div("3:00pm", "Submission deadline")
+
+                +schedule-row("4:00&ndash;5:00pm",
+                  {title:"Project Showcase and Judging", location:""})
+
+                +schedule-row("5:00&ndash;6:00pm",
+                  {title:"Dinner", location:"Cafeteria", type:"food"})
+
+                +schedule-row("6:00&ndash;6:30pm",
+                  {title:"Closing Ceremonies", location:"Auditorium"})
+
           section.sponsors#sponsors
             .row.justify-content-center
               .col

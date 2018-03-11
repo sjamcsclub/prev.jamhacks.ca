@@ -212,13 +212,13 @@ article#on-white {
     text-shadow: 0 0.2rem rgba(0, 0, 0, 0.15); }
 
 .tagline {
-  font-size: 120%;
+  font-size: 16pt;
   line-height: 150%;
   text-align: center;
   margin-bottom: 1.5em; }
 
 section.about .tagline {
-  font-size: 150%;
+  font-size: 20pt;
   margin-bottom: 0.5em; }
 
 section.about .map-container::before {
@@ -253,21 +253,34 @@ section.schedule .schedule-table .event {
   color: white;
   font-weight: 300; }
   section.schedule .schedule-table .event .title {
-    font-weight: 700; }
+    font-weight: 800; }
   section.schedule .schedule-table .event .subtitle {
     font-style: italic; }
-  section.schedule .schedule-table .event-workshop {
+  section.schedule .schedule-table .event-food {
     background-color: #7ebe55; }
 
-section.schedule .schedule-table .schedule-div {
+section.schedule .schedule-table .schedule-div-time {
+  padding-top: 0.5em; }
+
+section.schedule .schedule-table .schedule-div-hr {
   height: 25%;
   border-bottom: 1px solid grey;
   text-align: center;
   margin: 0.5em 0.5em; }
-  section.schedule .schedule-table .schedule-div .schedule-div-text {
+  section.schedule .schedule-table .schedule-div-hr .schedule-div-text {
     font-size: 13pt;
     background-color: white;
     padding: 0 0.5em; }
+
+section.schedule .schedule-table .schedule-day-title {
+  font-size: 20pt;
+  color: #493A98;
+  font-weight: 800;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em; }
+
+section.schedule .schedule-table #schedule-day-title-first {
+  margin-top: 0.75em; }
 
 section.sponsors .logo {
   padding: 1.5rem; }
