@@ -128,6 +128,11 @@ $(".nav-link").click(function () {
   return false;
 });
 
+$(function () {
+  var hash = window.location.hash;
+  $(".nav-link[href=\"" + hash + "\"]").click();
+});
+
 // $(function() {
 //   if (isMobile) {
 //     $("#landing-transition").css("top", "-10%");
