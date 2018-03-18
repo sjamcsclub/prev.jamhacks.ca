@@ -288,6 +288,9 @@ section.sponsors .logo {
 section.sponsors .logo-square img {
   padding: 0 10%; }
 
+section.sponsors .logo-tall img {
+  padding: 0 15%; }
+
 section.sponsors h2 {
   margin-top: 0.5em; }
 
