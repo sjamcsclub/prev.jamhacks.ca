@@ -282,14 +282,33 @@ section.schedule .schedule-table .schedule-day-title {
 section.schedule .schedule-table #schedule-day-title-first {
   margin-top: 0.75em; }
 
+section.sponsors .sponsors-section {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
 section.sponsors .logo {
   padding: 1.5rem; }
 
-section.sponsors .logo-square img {
+section.sponsors .logo-reduce-5 {
+  padding: 0 5%; }
+
+section.sponsors .logo-reduce-10 {
   padding: 0 10%; }
 
-section.sponsors .logo-tall img {
+section.sponsors .logo-reduce-15 {
   padding: 0 15%; }
+
+section.sponsors .logo-reduce-20 {
+  padding: 0 20%; }
+
+section.sponsors .logo-reduce-25 {
+  padding: 0 20%; }
 
 section.sponsors h2 {
   margin-top: 0.5em; }

@@ -4,17 +4,9 @@ mixin non-breaking-ndash
 mixin mailto(email)
   a(href="mailto:"+email, target="_blank")= email
 
-mixin logo-sm(src, alt)
+mixin logo-sm(src, alt, reducePercent)
   .logo.col-6.col-sm-5.col-md-4.col-lg-3
-    img.img-fluid(src="/img/logos/"+src, alt=alt)
-
-mixin logo-sm-square(src, alt)
-  .logo.col-6.col-sm-5.col-md-4.col-lg-3.logo-square
-    img.img-fluid(src="/img/logos/"+src, alt=alt)
-
-mixin logo-sm-tall(src, alt)
-  .logo.col-6.col-sm-5.col-md-4.col-lg-3.logo-tall
-    img.img-fluid(src="/img/logos/"+src, alt=alt)
+    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
 
 //- mixin logo-sm-md(src, alt)
 //-   .logo.col-6.col-md-4
@@ -24,13 +16,13 @@ mixin logo-sm-tall(src, alt)
 //-   .logo.col-8.col-md-6
 //-     img.img-fluid(src="/img/logos/"+src, alt=alt)
 
-mixin logo-md(src, alt)
-  .logo.col-10.col-lg-6
-    img.img-fluid(src="/img/logos/"+src, alt=alt)
+mixin logo-md(src, alt, reducePercent)
+  .logo.col-10.col-lg-5
+    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
 
-mixin logo-lg(src, alt)
+mixin logo-lg(src, alt, reducePercent)
   .logo.col-12.col-lg-9
-    img.img-fluid(src="/img/logos/"+src, alt=alt)
+    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
 
 //- event = {title, subtitle?, location}
 mixin schedule-row(time, event)
@@ -291,31 +283,31 @@ html
             .row.justify-content-center.align-items-center
               .col-lg-9
                 p.tagline Interested in sponsoring? Shoot us an email at #[+mailto("sponsor@jamhacks.ca")], or check out our #[a(href="sponsorship.pdf" target="_blank") sponsorship&nbsp;package].
-            .row.justify-content-center.align-items-center
+            .row.sponsors-section
               +logo-lg("TechMasters.png", "TechMasters")
-            .row.justify-content-center.align-items-center
+            .row.sponsors-section
               +logo-md("Rapid-Novor.png", "Rapid Novor")
-              +logo-md("The-Hub.png", "The Hub")
-              +logo-md("TutorBright.jpg", "TutorBright")
+              +logo-md("The-Hub.png", "The Hub", 5)
+              +logo-md("TutorBright.jpg", "TutorBright", 5)
               +logo-md("Waterloo-Engineering.png", "University of Waterloo Faculty of Engineering")
-            .row.justify-content-center.align-items-center
+            .row.sponsors-section
               +logo-sm("Balsamiq.png", "Balsamiq")
               +logo-sm("Canada-Learning-Code.png", "Canada Learning Code")
               +logo-sm("Communitech.png", "Communitech")
               +logo-sm("Cloudflare.png", "Cloudflare")
               +logo-sm("Ctrl-V.png", "Ctrl V")
-              +logo-sm-square("EA.png", "EA")
+              +logo-sm("EA.png", "EA", 10)
               +logo-sm("Esri-Canada.png", "Esri Canada")
               +logo-sm("Google.png", "Google")
               +logo-sm("Indico.png", "Indico")
-              +logo-sm-square("Jetbrains.png", "Jetbrains")
+              +logo-sm("Jetbrains.png", "Jetbrains", 10)
               +logo-sm("Lakes-Software.png", "Lakes Software")
               +logo-sm("Lett-Go-Travel.png", "Lett Go Travel")
               +logo-sm("Microsoft.png", "Microsoft")
                 //- Move to Partners section
               +logo-sm("Panago.png", "Panago")
               +logo-sm("Sketch.png", "Sketch")
-              +logo-sm-tall("Stem-Labs-Robotics.png", "Stem Labs Robotics")
+              +logo-sm("Stem-Labs-Robotics.png", "Stem Labs Robotics", 15)
               +logo-sm("Dot-tech.png", ".tech")
 
 
