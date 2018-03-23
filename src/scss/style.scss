@@ -30,6 +30,12 @@ $on-color: rgba(0,0,0, 0.3);
 $on-white: rgba(0,0,0, 0.15);
 $on-text: rgba(0,0,0, 0.225);
 
+@mixin md-down {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
 @mixin sm-down {
   @media only screen and (max-width: 767px) {
     @content;
@@ -418,7 +424,11 @@ section.sponsors {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+
+    @include md-down {
+      margin-bottom: 2rem;
+    }
   }
   .logo {
     padding: 1.5rem;
