@@ -177,21 +177,21 @@ svg.transition-paths {
     #nav-header {
       font-size: 12pt; } }
 
-#page {
+.page {
   z-index: 300;
   position: relative;
   top: 105vh;
   right: 0;
   bottom: 0;
   left: 0; }
-  #page section {
+  .page section {
     margin-bottom: 12.5vh; }
-  #page h1, #page h2 {
+  .page h1, .page h2 {
     font-size: 40pt;
     line-height: 53.33333pt;
     text-align: center;
     font-family: Baloo, "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
-  #page a {
+  .page a {
     color: #A1D083;
     font-weight: 600; }
 
@@ -317,8 +317,17 @@ section.sponsors h2 {
   margin-top: 0.5em; }
 
 footer {
-  margin-top: 20vh; }
+  margin-top: 20vh;
+  text-align: center; }
+  footer .archive-link {
+    color: #A1D083;
+    border-color: #A1D083;
+    margin-bottom: 1.5em; }
+    footer .archive-link:hover, footer .archive-link:active, footer .archive-link:focus {
+      text-decoration: underline;
+      color: #A1D083;
+      background: none;
+      border-color: #A1D083; }
   footer .copyright {
-    text-align: center;
     padding-bottom: 2em;
     margin-bottom: 0; }

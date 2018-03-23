@@ -263,7 +263,7 @@ svg.transition-paths {
   }
 }
 
-#page {
+.page {
   z-index: 300;
   position: relative;
   top: 105vh; right: 0; bottom: 0; left: 0;
@@ -455,8 +455,23 @@ section.sponsors {
 
 footer {
   margin-top: 20vh;
+  text-align: center;
+  .archive-link {
+    color: $color-secondary;
+    border-color: $color-secondary;
+    margin-bottom: 1.5em;
+
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+      color: $color-secondary;
+      background: none;
+      border-color: $color-secondary;
+      // color: white;
+      // background-color: $color-secondary;
+      // border-color: $color-secondary;
+    }
+  }
   .copyright {
-    text-align: center;
     padding-bottom: 2em;
     margin-bottom: 0;
   }
