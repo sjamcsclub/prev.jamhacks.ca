@@ -170,8 +170,8 @@ svg.transition-paths {
   }
 
   .landing-button {
-    margin: 0.5rem;
-    padding: 0.75rem 2rem;
+    margin: 0.5em 0 1em;
+    padding: 0.5em 1.5em;
     background: none;
     color: white;
     border-color: white;
@@ -180,8 +180,6 @@ svg.transition-paths {
     font: 600 18pt $font-primary;
     text-shadow: $drop-shadow $diffuse-small $on-image;
     box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
-
-    animation: pulsate 5s infinite;
 
     @include xs-down {
       border-radius: 100rem;
@@ -197,6 +195,14 @@ svg.transition-paths {
       text-shadow: none;
       box-shadow: $drop-shadow $diffuse-small $on-image;
     }
+  }
+
+  .landing-button-highlight {
+    animation: pulsate 5s infinite;
+  }
+
+  .landing-button-small {
+    font-size: 14pt;
   }
 
   // .landing-button {

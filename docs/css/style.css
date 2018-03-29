@@ -125,8 +125,8 @@ svg.transition-paths {
     color: #A1D083;
     font-weight: 600; }
   #landing .landing-button {
-    margin: 0.5rem;
-    padding: 0.75rem 2rem;
+    margin: 0.5em 0 1em;
+    padding: 0.5em 1.5em;
     background: none;
     color: white;
     border-color: white;
@@ -134,9 +134,7 @@ svg.transition-paths {
     border-width: 2px;
     font: 600 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
     text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset;
-    -webkit-animation: pulsate 5s infinite;
-            animation: pulsate 5s infinite; }
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
     @media only screen and (max-width: 575px) {
       #landing .landing-button {
         border-radius: 100rem;
@@ -150,6 +148,11 @@ svg.transition-paths {
       background-color: white;
       text-shadow: none;
       box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
+  #landing .landing-button-highlight {
+    -webkit-animation: pulsate 5s infinite;
+            animation: pulsate 5s infinite; }
+  #landing .landing-button-small {
+    font-size: 14pt; }
 
 #nav-header {
   background-color: #7e70c8;
