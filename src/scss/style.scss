@@ -459,8 +459,30 @@ section.sponsors {
   }
 }
 
+section.team {
+  .team-member {
+    margin-bottom: 2.5em;
+    flex-grow: 1;
+  }
+  .team-spacer {
+    padding-left: 0;
+    flex-grow: 0.5;
+  }
+  .team-member-photo {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+  }
+  .team-member-name {
+    font-weight: 800;
+    margin-bottom: 0.25em;
+    text-align: center;
+  }
+  .team-member-title {
+    text-align: center;
+  }
+}
+
 footer {
-  margin-top: 20vh;
   text-align: center;
   .archive-link {
     color: $color-secondary;
