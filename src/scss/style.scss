@@ -5,17 +5,17 @@
 // $color-primary: hsl($hue-primary, $sat-primary, 55%);
 // $color-primary-lighter: hsl($hue-primary, $sat-primary, 67%);
 
+$color-offwhite: #F5F5DC;
+
 $color-primary: #493A98;
-
-$color-white: #F5F5DC;
-
 $color-primary-light: lighten($color-primary, 12.5%);
 $color-primary-lighter: lighten($color-primary, 20%);
 $color-primary-lightest: lighten($color-primary, 30%);
 
 $color-secondary: #A1D083;
-
 $color-secondary-dark: darken($color-secondary, 12.5%);
+
+$color-tertiary: #3B97D4;
 
 $font-primary: "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
 
@@ -97,6 +97,15 @@ body {
 ::selection {
   background-color: $color-primary-lighter;
 }
+
+// .col-4pt5 {
+//   -webkit-box-flex: 0;
+//   -webkit-flex: 0 0 37.5%;
+//   -ms-flex: 0 0 37.5%;
+//   flex: 0 0 37.5%;
+//   max-width: 37.5%;
+// }
+
 
 svg.transition-paths {
   position: fixed;
@@ -249,7 +258,7 @@ svg.transition-paths {
     border-bottom: none;
   }
   .nav-link {
-    color: $color-white;
+    color: $color-offwhite;
     border: none;
     padding: 1em 1.5em;
     &.active {
@@ -292,7 +301,7 @@ svg.transition-paths {
 }
 
 article#on-color {
-  color: $color-white;
+  color: $color-offwhite;
   text-shadow: $drop-shadow-small $diffuse-small $on-white;
 
   h1, h2 {
@@ -394,6 +403,9 @@ section.schedule {
       .location {
       }
       &-food {
+        background-color: $color-primary-light;
+      }
+      &-workshop {
         background-color: $color-secondary-dark;
       }
     }
