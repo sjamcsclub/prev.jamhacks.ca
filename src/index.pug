@@ -1,33 +1,16 @@
+//---HELPERS---
 mixin non-breaking-ndash
   | &#8288;&ndash;&#8288;
 
 mixin mailto(email)
   a(href="mailto:"+email, target="_blank")= email
 
-mixin logo-sm(src, alt, reducePercent)
-  .logo.col-6.col-sm-5.col-md-4.col-lg-3
-    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
 
-//- mixin logo-sm-md(src, alt)
-//-   .logo.col-6.col-md-4
-//-     img.img-fluid(src="/img/logos/"+src, alt=alt)
-
-//- mixin logo-md(src, alt)
-//-   .logo.col-8.col-md-6
-//-     img.img-fluid(src="/img/logos/"+src, alt=alt)
-
-mixin logo-md(src, alt, reducePercent)
-  .logo.col-10.col-lg-5
-    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
-
-mixin logo-lg(src, alt, reducePercent)
-  .logo.col-12.col-lg-9
-    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
-
+//---SCHEDULE---
 //- event = {title, subtitle?, location}
 mixin schedule-row(time, event)
   .row.no-gutters
-    .col-2
+    .col-sm-2
       .time!= time
     .col-10.col-lg-8
       .event(class=(event.type ? "event event-" + event.type : ""))
@@ -37,7 +20,7 @@ mixin schedule-row(time, event)
 
 mixin schedule-row-2(time, event1, event2)
   .row.no-gutters
-    .col-2
+    .col-sm-2
       .time!= time
     .col-5.col-lg-4
       .event(class=(event1.type ? "event event-" + event1.type : ""))
@@ -52,7 +35,7 @@ mixin schedule-row-2(time, event1, event2)
 
 mixin schedule-div(time, title)
   .row.no-gutters
-    .col-2
+    .col-sm-2
       .time.schedule-div-time!= time
     .col-10.col-lg-8
       .schedule-div-hr
@@ -62,6 +45,20 @@ mixin schedule-day(title, isFirst)
   .row.no-gutters
     .col-12.col-lg-10
       .schedule-day-title(id=(isFirst ? "schedule-day-title-first" : ""))!= title
+
+
+//---SPONSORS---
+mixin logo-sm(src, alt, reducePercent)
+  .logo.col-6.col-sm-5.col-md-4.col-lg-3
+    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
+
+mixin logo-md(src, alt, reducePercent)
+  .logo.col-10.col-lg-5
+    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
+
+mixin logo-lg(src, alt, reducePercent)
+  .logo.col-12.col-lg-9
+    img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
 
 
 doctype html
