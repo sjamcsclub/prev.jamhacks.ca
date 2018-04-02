@@ -10,9 +10,9 @@ mixin mailto(email)
 //- event = {title, subtitle?, location}
 mixin schedule-row(time, event)
   .row.no-gutters
-    .col-sm-2
+    .col-3.col-md-2
       .time!= time
-    .col-10.col-lg-8
+    .col-9.col-md-10.col-lg-8
       .event(class=(event.type ? "event event-" + event.type : ""))
         .title!= event.title
         .subtitle!= event.subtitle || ""
@@ -20,14 +20,13 @@ mixin schedule-row(time, event)
 
 mixin schedule-row-2(time, event1, event2)
   .row.no-gutters
-    .col-sm-2
+    .col-3.col-md-2
       .time!= time
-    .col-5.col-lg-4
+    .col-9.col-md-10.col-lg-8.d-flex.flex-wrap
       .event(class=(event1.type ? "event event-" + event1.type : ""))
         .title!= event1.title
         .subtitle!= event1.subtitle || ""
         .location!= event1.location || "&nbsp;"
-    .col-5.col-lg-4
       .event(class=(event2.type ? "event event-" + event2.type : ""))
         .title!= event2.title
         .subtitle!= event2.subtitle || ""
@@ -35,15 +34,15 @@ mixin schedule-row-2(time, event1, event2)
 
 mixin schedule-div(time, title)
   .row.no-gutters
-    .col-sm-2
+    .col-3.col-md-2
       .time.schedule-div-time!= time
-    .col-10.col-lg-8
+    .col-9.col-md-10.col-lg-8
       .schedule-div-hr
         span.schedule-div-text!= title
 
 mixin schedule-day(title, isFirst)
   .row.no-gutters
-    .col-12.col-lg-10
+    .col-12
       .schedule-day-title(id=(isFirst ? "schedule-day-title-first" : ""))!= title
 
 

@@ -42,7 +42,7 @@ $on-text: rgba(0,0,0, 0.225);
   }
 }
 
-@mixin xs-down {
+@mixin xs-only {
   @media only screen and (max-width: 575px) {
     @content;
   }
@@ -181,7 +181,7 @@ svg.transition-paths {
     text-shadow: $drop-shadow $diffuse-small $on-image;
     box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
 
-    @include xs-down {
+    @include xs-only {
       border-radius: 100rem;
       border-width: 2px;
       margin: 0.25rem;
@@ -208,7 +208,7 @@ svg.transition-paths {
   // .landing-button {
   //   margin: 0.5rem;
   //   width: 100%;
-  //   @include xs-down {
+  //   @include xs-only {
   //     margin-bottom: 0.25rem;
   //     width: 40%;
   //     min-width: 7.5em;
@@ -375,6 +375,7 @@ section.schedule {
       // height: 100%;
     }
     .event {
+      flex: 1;
       min-height: 5em;
       // height: 100%;
       padding: 0.5em 1em;
