@@ -5,17 +5,17 @@
 // $color-primary: hsl($hue-primary, $sat-primary, 55%);
 // $color-primary-lighter: hsl($hue-primary, $sat-primary, 67%);
 
+$color-offwhite: #F5F5DC;
+
 $color-primary: #493A98;
-
-$color-white: #F5F5DC;
-
 $color-primary-light: lighten($color-primary, 12.5%);
 $color-primary-lighter: lighten($color-primary, 20%);
 $color-primary-lightest: lighten($color-primary, 30%);
 
 $color-secondary: #A1D083;
-
 $color-secondary-dark: darken($color-secondary, 12.5%);
+
+$color-tertiary: #3B97D4;
 
 $font-primary: "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
 
@@ -231,27 +231,24 @@ svg.transition-paths {
   // }
 }
 
-#nav-header {
+.navbar {
   background-color: $color-primary-lighter;
   display: none; // fade in by js
   z-index: 400;
   position: fixed;
   top: 0; right: 0; left: 0;
-  
-  .nav {
-    box-shadow: $drop-shadow $diffuse $on-text;
-    // padding: 0.75em 2.5em 0;
-    // font-size: 12pt;
-    // display: flex;
-    // justify-content: flex-start;
-  }
-  .nav-tabs {
-    border-bottom: none;
-  }
-  .nav-link {
-    color: $color-white;
+  padding: 0;
+  box-shadow: $drop-shadow $diffuse $on-text;
+
+  align-items: center;
+
+  .navbar-toggler {
+    color: $color-offwhite;
+
+    margin-left: 0.75rem;
     border: none;
-    padding: 1em 1.5em;
+    border-radius: none;
+    
     &.active {
       background-color: $color-primary-lightest;
     }
@@ -259,13 +256,47 @@ svg.transition-paths {
       background-color: $color-primary-lightest;
     }
   }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='" + $color-offwhite + "' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+  }
+
+  .navbar-brand {
+    float: right;
+    margin-right: 0;
+    padding: 1em 1.5em;
+
+    font-size: inherit;
+    font-weight: 800;
+    color: $color-offwhite;
+    
+    &.active {
+      background-color: $color-primary-lightest;
+    }
+    &:hover {
+      background-color: $color-primary-lightest;
+    }
+  }
+
+  .nav-link {
+    color: $color-offwhite !important;
+    border: none;
+    padding: 1em 1.5em !important;
+    &.active {
+      background-color: $color-primary-lightest;
+    }
+    &:hover {
+      background-color: $color-primary-lightest;
+    }
+  }
+
   .nav-register {
     font-weight: 800;
     // margin-left: auto;
   }
 
   @include sm-down {
-    font-size: 12pt;
+    font-size: 12pt !important;
   }
 }
 
@@ -292,7 +323,7 @@ svg.transition-paths {
 }
 
 article#on-color {
-  color: $color-white;
+  color: $color-offwhite;
   text-shadow: $drop-shadow-small $diffuse-small $on-white;
 
   h1, h2 {
