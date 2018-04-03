@@ -91,6 +91,8 @@ var whiteTransition = new GooeyTransition("#white-transition");
 
 var scrollSectionOffset;
 
+$("#navbar").css("display", "flex").hide();
+
 // Update anytime page is scrolled.
 $(window).scroll(function () {
   // console.log($(".active").attr("href"));
@@ -126,13 +128,13 @@ $(".nav-link").click(function () {
     scrollTop: $(target).offset().top - scrollSectionOffset + 1
   }, 400, "easeInOutQuad");
 
+  history.replaceState(null, null, target);
+
   $('.collapse').collapse("hide");
   return false;
 });
 
 $(function () {
-  $("#navbar").css("display", "flex").hide();
-
   var hash = window.location.hash;
   $(".nav-link[href=\"" + hash + "\"]").click();
 });
