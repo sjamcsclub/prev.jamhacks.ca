@@ -167,7 +167,7 @@ svg.transition-paths {
   #nav-header .nav-tabs {
     border-bottom: none; }
   #nav-header .nav-link {
-    color: #F5F5DC;
+    color: #F5F5DC !important;
     border: none;
     padding: 1em 1.5em; }
     #nav-header .nav-link.active {

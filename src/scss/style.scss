@@ -258,7 +258,7 @@ svg.transition-paths {
     border-bottom: none;
   }
   .nav-link {
-    color: $color-offwhite;
+    color: $color-offwhite !important;
     border: none;
     padding: 1em 1.5em;
     &.active {
