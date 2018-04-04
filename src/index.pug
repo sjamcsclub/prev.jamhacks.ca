@@ -13,7 +13,7 @@ mixin schedule-row(time, event)
     .col-3.col-md-2
       .time!= time
     .col-9.col-md-10.col-lg-8
-      .event(class=(event.type ? "event event-" + event.type : ""))
+      .event(class=(event.type ? "event-" + event.type : ""))
         .title!= event.title
         .subtitle!= event.subtitle || ""
         .location!= event.location || "&nbsp;"
@@ -23,11 +23,11 @@ mixin schedule-row-2(time, event1, event2)
     .col-3.col-md-2
       .time!= time
     .col-9.col-md-10.col-lg-8.d-flex.flex-wrap
-      .event(class=(event1.type ? "event event-" + event1.type : ""))
+      .event(class=(event1.type ? "event-" + event1.type : ""))
         .title!= event1.title
         .subtitle!= event1.subtitle || ""
         .location!= event1.location || "&nbsp;"
-      .event(class=(event2.type ? "event event-" + event2.type : ""))
+      .event(class=(event2.type ? "event-" + event2.type : ""))
         .title!= event2.title
         .subtitle!= event2.subtitle || ""
         .location!= event2.location || "&nbsp;"
@@ -230,35 +230,41 @@ html
                 +schedule-row("2:00&ndash;2:45pm",
                   {title:"Sign In", location:"2nd Floor Foyer"})
 
-                +schedule-row("3:00&ndash;3:30pm",
+                +schedule-row("3:00&ndash;4:00pm",
                   {title:"Opening Ceremonies", location:"Auditorium"})
 
                 +schedule-div("4:00pm", "Hacking begins!")
 
-                +schedule-row("4:00&ndash;4:30pm",
-                  {title:"Team Formation", location:"Auditorium"})
+                +schedule-row-2("4:00&ndash;5:00pm",
+                  {title:"Web Design 101", type:"workshop"},
+                  {title:"Intro to Robotics", subtitle:"By Stem Labs Robotics", type:"workshop"})
 
-                //- +schedule-row-2("4:30&ndash;5:30pm",
-                //-   {title:"[Beginner Workshop 1]", type:"workshop"},
-                //-   {title:"[Workshop]", type:"workshop"})
+                +schedule-row-2("5:00&ndash;6:00pm",
+                  {title:"Python 101", type:"workshop"},
+                  {title:"Workshop", subtitle:"By Microsoft", type:"workshop"})
+                    //- TODO: Get real title
 
                 +schedule-row("6:00&ndash;7:00pm",
                   {title:"Dinner", location:"Cafeteria", type:"food"})
 
-                //- +schedule-row-2("7:30&ndash;8:30pm",
-                //-   {title:"[Beginner Workshop 2]", type:"workshop"},
-                //-   {title:"[Workshop]", type:"workshop"})
+                +schedule-row-2("7:30&ndash;8:30pm",
+                  {title:"Python 102", type:"workshop"},
+                  {title:"Workshop", subtitle:"By Esri Canada", type:"workshop"})
+                    //- TODO: Get real title
 
-                //- +schedule-row("8:30&ndash;9:30pm",
-                //-   {title:"[Workshop]", location:""})
+                +schedule-row("8:30&ndash;9:30pm",
+                  {title:"Intro to Android", subtitle:"By Conestoga College", type:"workshop"})
+
+                +schedule-row("12:00am",
+                  {title:"Midnight Snack", location:"", type:"food"})
 
                 +schedule-day("Sunday April 15")
 
                 +schedule-row("8:00&ndash;9:00am",
                   {title:"Breakfast", location:"Cafeteria", type:"food"})
 
-                //- +schedule-row("10:30&ndash;11:30am",
-                //-   {title:"Pitch Workshop", location:"", type:"workshop"})
+                +schedule-row("10:30&ndash;11:30am",
+                  {title:"Pitching Workshop", subtitle:"By Conestoga College", type:"workshop"})
 
                 +schedule-row("12:00&ndash;1:00pm",
                   {title:"Lunch", location:"Cafeteria", type:"food"})
@@ -266,7 +272,7 @@ html
                 +schedule-div("3:00pm", "Submission deadline")
 
                 +schedule-row("4:00&ndash;5:00pm",
-                  {title:"Project Showcase and Judging", location:""})
+                  {title:"Project Showcase and Judging", location:"Cafeteria"})
 
                 +schedule-row("5:00&ndash;6:00pm",
                   {title:"Dinner", location:"Cafeteria", type:"food"})
