@@ -60,6 +60,14 @@ mixin logo-lg(src, alt, reducePercent)
     img.img-fluid(src="/img/logos/"+src, alt=alt, class=(reducePercent ? "logo-reduce-" + reducePercent : ""))
 
 
+//---TEAM---
+mixin team-member(src, name, title)
+  .col-9.col-sm-6.col-md-4.col-lg.team-member
+    img.img-fluid.rounded-circle.team-member-photo(src="/img/team/"+src, alt=name, onerror="this.src='/img/team/Blank.png'")
+    .team-member-name= name
+    .team-member-title= title
+
+
 doctype html
 html
   head
@@ -138,6 +146,8 @@ html
             a.nav-link(href="#schedule") Schedule
           li.nav-item
             a.nav-link(href="#sponsors") Sponsors
+          li.nav-item
+            a.nav-link(href="#team") Team
           li.nav-item.nav-register.d-none.d-sm-block
             a.nav-link(href="/register") Register
 
@@ -315,6 +325,26 @@ html
               +logo-sm("Stem-Labs-Robotics.png", "Stem Labs Robotics", 15)
               +logo-sm("Dot-tech.png", ".tech")
 
+          section.team#team
+            .row.justify-content-center
+              .col
+                h1 The Team
+            .row.justify-content-center.align-items-center
+              .col-lg-9
+                p.tagline Meet the people behind JAMHacks 2!
+            .row.justify-content-center
+              +team-member("Ethan.jpg", "Ethan Guo", "Lead Organizer")
+              +team-member("Zach.jpg", "Zach Chapman", "Sponsorships")
+              +team-member("Fred.jpg", "Fred Chun", "Logistics")
+              +team-member("Leon.jpg", "Leon Fattakhov", "Food")
+              +team-member("Bob.jpg", "Bob Huang", "Finance")
+              .w-100.d-none.d-lg-block
+              .col.team-spacer.d-none.d-lg-block
+              +team-member("Hyunzee.jpg", "Hyunzee Kim", "Promotions")
+              +team-member("Advait.jpg", "Advait Maybhate", "Hacker Experience")
+              +team-member("Kyungbin.jpg", "Kyungbin Son", "Promotions")
+              +team-member("Calder.jpg", "Calder White", "Logistics")
+              .col.team-spacer.d-none.d-lg-block
 
       footer
         .container
