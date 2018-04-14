@@ -120,8 +120,15 @@ html
         h3 Sir John A. Macdonald Secondary School, Waterloo
         //- a.btn.btn-outline.btn-lg.landing-button.landing-button-highlight(href="/register") Register
         //- a.btn.btn-outline.btn-lg.landing-button.landing-button-small(href="/mentor") Register as a mentor
-        h4 Registrations are now closed! Make sure to get your forms signed:
-        h4 #[a(href="/files/Participant_Waiver.pdf") Waiver] | #[a(href="/files/Guest_Contract.pdf") Guest Contract] (for non-SJAM students)
+        
+        h4
+          .landing-social-buttons
+            a.social-link-icon(href="/slack" target="_blank")
+              img(src="/img/slack-icon.png" alt="Slack")
+              span Slack
+            a.social-link-icon(href="https://jamhacks2.devpost.com/" target="_blank")
+              img(src="/img/devpost-icon.png" alt="Devpost")
+              span Devpost
 
 
     svg.transition-paths#landing-transition(width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none")

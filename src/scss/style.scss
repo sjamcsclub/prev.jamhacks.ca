@@ -214,6 +214,24 @@ svg.transition-paths {
     font-size: 14pt;
   }
 
+
+  .landing-social-buttons {
+    display: flex;
+    justify-content: center;
+
+    .social-link-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        height: 6rem;
+        width: 6rem;
+        margin: 0rem 1rem 0.25rem;
+      }
+    }
+  }
+
   // .landing-button {
   //   margin: 0.5rem;
   //   width: 100%;

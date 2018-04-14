@@ -153,6 +153,28 @@ svg.transition-paths {
             animation: pulsate 5s infinite; }
   #landing .landing-button-small {
     font-size: 14pt; }
+  #landing .landing-social-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #landing .landing-social-buttons .social-link-icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #landing .landing-social-buttons .social-link-icon img {
+        height: 6rem;
+        width: 6rem;
+        margin: 0rem 1rem 0.25rem; }
 
 .navbar {
   background-color: #7e70c8;
