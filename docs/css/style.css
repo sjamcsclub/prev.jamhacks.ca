@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo|Nunito:300,400,600,800");
+@import url("https://fonts.googleapis.com/css?family=Baloo|Nunito:300,400,600,800,900");
 @-webkit-keyframes pulsate {
   0% {
     background-color: rgba(255, 255, 255, 0);
@@ -72,7 +72,6 @@ svg.transition-paths {
 
 #landing {
   background-color: #6554be;
-  background-image: url("/img/landing-bg.jpg");
   background-size: cover;
   background-position: center;
   z-index: 100;
@@ -109,18 +108,24 @@ svg.transition-paths {
     height: 33.33333vh;
     max-width: 75vw;
     margin-bottom: 2rem; }
-  #landing h2, #landing h3, #landing h4 {
+  #landing h1, #landing h2, #landing h3, #landing h4 {
     color: white;
     text-align: center;
     text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
     margin-bottom: 0.75rem; }
+  #landing .strikethrough {
+    text-decoration: line-through; }
+  #landing h1 {
+    font: 700 36pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    #landing h1 strong {
+      font-weight: 900; }
   #landing h2 {
     font: 600 30pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing h3 {
     font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
     margin-bottom: 2rem; }
   #landing h4 {
-    font: 700 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    font: 600 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing a {
     color: #A1D083;
     font-weight: 600; }
