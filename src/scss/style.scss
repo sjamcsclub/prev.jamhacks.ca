@@ -454,7 +454,7 @@ section.schedule {
       &-food {
         background-color: $color-primary-light;
       }
-      &-workshop {
+      &-workshop, &-activity {
         background-color: $color-secondary-dark;
       }
     }

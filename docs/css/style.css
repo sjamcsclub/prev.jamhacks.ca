@@ -309,7 +309,7 @@ section.schedule .schedule-table .event {
     font-style: italic; }
   section.schedule .schedule-table .event-food {
     background-color: #6554be; }
-  section.schedule .schedule-table .event-workshop {
+  section.schedule .schedule-table .event-workshop, section.schedule .schedule-table .event-activity {
     background-color: #7ebe55; }
 
 section.schedule .schedule-table .schedule-div-time {
