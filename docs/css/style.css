@@ -115,15 +115,17 @@ svg.transition-paths {
     text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
     margin-bottom: 0.75rem; }
   #landing h2 {
-    font: 600 30pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    font: 400 30pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing h3 {
     font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
     margin-bottom: 2rem; }
   #landing h4 {
-    font: 700 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    font: 800 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing a {
     color: #A1D083;
     font-weight: 600; }
+  #landing strong {
+    font-weight: 800; }
   #landing .landing-button {
     margin: 0.5em 0 1em;
     padding: 0.5em 1.5em;

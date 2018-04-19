@@ -87,7 +87,7 @@ html
     meta(name="theme-color" content="#6554be")
     
     //- Scraping/Sharing meta stuff
-    meta(name="description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
+    meta(name="description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
@@ -97,7 +97,7 @@ html
         "endDate": "2018-04-15T20:00:00-05:00",
         "url": "https://jamhacks.ca/",
         "image": "https://jamhacks.ca/img/og-image.png",
-        "description": "JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full weekend of creating, learning and innovating.",
+        "description": "JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full weekend of creating, learning and innovating.",
         "location": {
           "@type": "Place",
           "name": "Sir John A. Macdonald Secondary School",
@@ -108,7 +108,7 @@ html
     meta(property="og:url" content="https://jamhacks.ca/")
     meta(property="og:type" content="website")
     meta(property="og:title" content="JAMHacks 2")
-    meta(property="og:description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On April 14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
+    meta(property="og:description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
     meta(property="og:image" content="http://jamhacks.ca/img/og-image.png")
     meta(property="og:image:alt" content="JAMHacks 2")
 
@@ -116,10 +116,10 @@ html
     #landing
       #landing-content
         img#landing-logo(src="img/JAMHacks Centered.svg" alt="JAMHacks")
-        h2 April 14-15, 2018
+        h2 Rescheduled to #[strong May 5&ndash;6, 2018]
         h3 Sir John A. Macdonald Secondary School, Waterloo
-        //- a.btn.btn-outline.btn-lg.landing-button.landing-button-highlight(href="/register") Register
-        //- a.btn.btn-outline.btn-lg.landing-button.landing-button-small(href="/mentor") Register as a mentor
+        a.btn.btn-outline.btn-lg.landing-button.landing-button-highlight(href="/register") Register
+        a.btn.btn-outline.btn-lg.landing-button.landing-button-small(href="/mentor") Register as a mentor
         
         h4
           .landing-social-buttons
@@ -167,7 +167,7 @@ html
                 h1 About
             .row.justify-content-center
               .col-lg-10
-                p.tagline JAMHacks 2 is Waterloo's biggest high school hackathon! On April&nbsp;14-15, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.
+                p.tagline JAMHacks 2 is Waterloo's biggest high school hackathon! On May&nbsp;5&ndash;6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.
 
             .row.justify-content-center
               .social-buttons.container-fluid
@@ -244,7 +244,7 @@ html
             .row.justify-content-center
               .col-lg-11.col-xl-9.schedule-table
 
-                +schedule-day("Saturday April 14", true)
+                +schedule-day("Saturday May 5", true)
 
                 +schedule-row("2:00&ndash;2:45pm",
                   {title:"Sign In", location:"2nd Floor Foyer"})
@@ -276,19 +276,19 @@ html
                 +schedule-row("9:30&ndash;10:30pm",
                   {title:"Machine Learning with TensorFlow", subtitle:"By Google", location:"Peach (2602)", type:"workshop"})
                 
-                +schedule-row("11:00-11:45pm",
+                +schedule-row("11:00&ndash;11:45pm",
                   {title:"Cup Stacking", location:"2nd Floor Foyer", type:"activity"})
 
                 +schedule-row("12:00am",
                   {title:"Midnight Snack", location:"2nd Floor Foyer", type:"food"})
 
 
-                +schedule-day("Sunday April 15")
+                +schedule-day("Sunday May 6")
 
                 //- +schedule-row("12:30-1:00am",
                 //-   {title:"Paper Airplanes", location:"2nd Floor Foyer", type:"activity"})
 
-                +schedule-row("12:30-1:00am",
+                +schedule-row("12:30&ndash;1:00am",
                   {title:"Werewolf", location:"Strawberry (2601)", type:"activity"})
 
                 +schedule-row("8:00&ndash;9:00am",
