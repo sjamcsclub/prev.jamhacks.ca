@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo|Nunito:300,400,600,800,900');
+@import url('https://fonts.googleapis.com/css?family=Baloo|Nunito:300,400,600,800');
 
 // $hue-primary: 255; //degrees
 // $sat-primary: 67%;
@@ -133,7 +133,7 @@ svg.transition-paths {
 
 #landing {
   background-color: $color-primary-light;
-  // background-image: url("/img/landing-bg.jpg");
+  background-image: url("/img/landing-bg.jpg");
   background-size: cover;
   background-position: center;
   z-index: 100;
@@ -157,20 +157,11 @@ svg.transition-paths {
     max-width: 75vw;
     margin-bottom: 2rem;
   }
-  h1, h2, h3, h4 {
+  h2, h3, h4 {
     color: white;
     text-align: center;
     text-shadow: $drop-shadow $diffuse-small $on-image;
     margin-bottom: 0.75rem;
-  }
-  .strikethrough {
-    text-decoration: line-through;
-  }
-  h1 {
-    font: 700 36pt $font-primary;
-    strong {
-      font-weight: 900;
-    }
   }
   h2 {
     font: 600 30pt $font-primary;
@@ -180,7 +171,7 @@ svg.transition-paths {
     margin-bottom: 2rem;
   }
   h4 {
-    font: 600 18pt $font-primary;
+    font: 700 18pt $font-primary;
   }
   a {
     color: $color-secondary;
