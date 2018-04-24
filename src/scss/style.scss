@@ -151,6 +151,15 @@ svg.transition-paths {
     align-items: center;
     justify-content: center;
   }
+  /* 
+   * The logo's positoning was incorrect, most likely due to the navbar's
+   * behavoir. A quick fix was to simply insert a spacer div the height of the navbar
+   */
+  #spacer {
+    position: relative;
+    display: block;
+    height: 55px;
+  }
   #landing-logo {
     position: relative;
     height: 100vh * 1/3;
@@ -228,8 +237,8 @@ svg.transition-paths {
       align-items: center;
 
       img {
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         margin: 0rem 1rem 0.25rem;
       }
     }
