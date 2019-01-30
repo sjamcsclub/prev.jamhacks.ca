@@ -49,21 +49,21 @@ mixin schedule-day(title, isFirst)
 //---SPONSORS---
 mixin logo-sm(src, alt, reducePercent)
   .logo.col-6.col-sm-5.col-md-4.col-lg-3
-    img.img-fluid(src="/img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
+    img.img-fluid(src="img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
 
 mixin logo-md(src, alt, reducePercent)
   .logo.col-10.col-lg-5
-    img.img-fluid(src="/img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
+    img.img-fluid(src="img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
 
 mixin logo-lg(src, alt, reducePercent)
   .logo.col-12.col-lg-9
-    img.img-fluid(src="/img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
+    img.img-fluid(src="img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
 
 
 //---TEAM---
 mixin team-member(src, name, title)
   .col-9.col-sm-6.col-md-4.col-lg.team-member
-    img.img-fluid.rounded-circle.team-member-photo(src="/img/team/"+src, alt=name, onerror="this.src='/img/team/Blank.png'")
+    img.img-fluid.rounded-circle.team-member-photo(src="img/team/"+src, alt=name, onerror="this.src='img/team/Blank.png'")
     .team-member-name= name
     .team-member-title= title
 
@@ -121,15 +121,15 @@ html
         //- a.btn.btn-outline.btn-lg.landing-button.landing-button-highlight(href="/register") Register
         //- a.btn.btn-outline.btn-lg.landing-button.landing-button-small(href="/mentor") Register as a mentor
         h4 Registrations are now closed! Make sure to get your forms signed:
-        h4 #[a(href="/files/Participant_Waiver.pdf") Waiver] | #[a(href="/files/Guest_Contract.pdf") Guest Contract] (for non-SJAM students)
+        h4 #[a(href="files/Participant_Waiver.pdf") Waiver] | #[a(href="files/Guest_Contract.pdf") Guest Contract] (for non-SJAM students)
         
         h4
           .landing-social-buttons
             a.social-link-icon(href="/slack" target="_blank")
-              img(src="/img/slack-icon.png" alt="Slack")
+              img(src="img/slack-icon.png" alt="Slack")
               span Slack
             a.social-link-icon(href="https://jamhacks2.devpost.com/" target="_blank")
-              img(src="/img/devpost-icon.png" alt="Devpost")
+              img(src="img/devpost-icon.png" alt="Devpost")
               span Devpost
 
 
@@ -175,13 +175,13 @@ html
               .social-buttons.container-fluid
                 .row.justify-content-center
                   a.social-link-icon(href="/slack" target="_blank")
-                    img(src="/img/slack-icon.png" alt="Slack")
+                    img(src="img/slack-icon.png" alt="Slack")
                   a.social-link-icon(href="https://www.facebook.com/JAMHacks/" target="_blank")
-                    img(src="/img/fb-icon.png" alt="Facebook")
+                    img(src="img/fb-icon.png" alt="Facebook")
                   a.social-link-icon(href="https://twitter.com/jam_hacks" target="_blank")
-                    img(src="/img/twitter-icon.png" alt="Twitter")
+                    img(src="img/twitter-icon.png" alt="Twitter")
                   a.social-link-icon(href="https://jamhacks2.devpost.com/" target="_blank")
-                    img(src="/img/devpost-icon.png" alt="Devpost")
+                    img(src="img/devpost-icon.png" alt="Devpost")
 
             .row.justify-content-center
               .col-md-9.col-lg-7
