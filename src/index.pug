@@ -72,7 +72,7 @@ doctype html
 html
   head
     meta(charset="UTF-8")
-    title JAMHacks 2
+    title JAMHacks 3
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
 
@@ -87,17 +87,17 @@ html
     meta(name="theme-color" content="#6554be")
     
     //- Scraping/Sharing meta stuff
-    meta(name="description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
+    meta(name="description" content="Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
         "@type": "Event",
-        "name": "JAMHacks 2",
+        "name": "JAMHacks 3",
         "startDate": "2018-04-14T14:00:00-05:00",
         "endDate": "2018-04-15T20:00:00-05:00",
         "url": "https://jamhacks.ca/",
         "image": "https://jamhacks.ca/img/og-image.png",
-        "description": "JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full weekend of creating, learning and innovating.",
+        "description": "Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.",
         "location": {
           "@type": "Place",
           "name": "Sir John A. Macdonald Secondary School",
@@ -107,22 +107,20 @@ html
     //- Facebook OpenGraph
     meta(property="og:url" content="https://jamhacks.ca/")
     meta(property="og:type" content="website")
-    meta(property="og:title" content="JAMHacks 2")
-    meta(property="og:description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
+    meta(property="og:title" content="JAMHacks 3")
+    meta(property="og:description" content="Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
     meta(property="og:image" content="http://jamhacks.ca/img/og-image.png")
-    meta(property="og:image:alt" content="JAMHacks 2")
+    meta(property="og:image:alt" content="JAMHacks 3")
 
   body(data-spy="scroll" data-target="#navbar" data-offset="10")
     #landing
       #landing-content
-        img#landing-logo(src="img/JAMHacks Centered.svg" alt="JAMHacks")
-        h2 Rescheduled to #[strong May 5&ndash;6, 2018]
+        #landing-background
+          img#landing-logo(src="img/JAMHacks.svg" alt="JAMHacks")
+        h2 May 4&ndash;5, 2018
         h3 Sir John A. Macdonald Secondary School, Waterloo
-        //- a.btn.btn-outline.btn-lg.landing-button.landing-button-highlight(href="/register") Register
-        //- a.btn.btn-outline.btn-lg.landing-button.landing-button-small(href="/mentor") Register as a mentor
-        h4 Registrations are now closed! Make sure to get your forms signed:
-        h4 #[a(href="/files/Participant_Waiver.pdf") Waiver] | #[a(href="/files/Guest_Contract.pdf") Guest Contract] (for non-SJAM students)
-        
+        a.btn.btn-outline.btn-lg.landing-button.landing-button-highlight(href="/register") Register
+        a.btn.btn-outline.btn-lg.landing-button.landing-button-small(href="/mentor") Register as a mentor
         h4
           .landing-social-buttons
             a.social-link-icon(href="/slack" target="_blank")
@@ -157,8 +155,8 @@ html
             a.nav-link(href="#sponsors") Sponsors
           li.nav-item
             a.nav-link(href="#team") Team
-          //- li.nav-item.nav-register.d-none.d-sm-block
-          //-   a.nav-link(href="/register") Register
+          li.nav-item.nav-register.d-none.d-sm-block
+            a.nav-link(href="/register") Register
 
     .page
       article#on-color
@@ -169,7 +167,7 @@ html
                 h1 About
             .row.justify-content-center
               .col-lg-10
-                p.tagline JAMHacks 2 is Waterloo's biggest high school hackathon! On May&nbsp;5&ndash;6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.
+                p.tagline JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.
 
             .row.justify-content-center
               .social-buttons.container-fluid
@@ -246,7 +244,7 @@ html
             .row.justify-content-center
               .col-lg-11.col-xl-9.schedule-table
 
-                +schedule-day("Saturday May 5", true)
+                +schedule-day("Saturday May 4", true)
 
                 +schedule-row("2:00&ndash;2:45pm",
                   {title:"Sign In", location:"2nd Floor Foyer"})
@@ -285,7 +283,7 @@ html
                   {title:"Midnight Snack", location:"2nd Floor Foyer", type:"food"})
 
 
-                +schedule-day("Sunday May 6")
+                +schedule-day("Sunday May 5")
 
                 //- +schedule-row("12:30-1:00am",
                 //-   {title:"Paper Airplanes", location:"2nd Floor Foyer", type:"activity"})
@@ -363,7 +361,7 @@ html
                 h1 The Team
             .row.justify-content-center.align-items-center
               .col-lg-9
-                p.tagline Meet the people behind JAMHacks 2!
+                p.tagline Meet the people behind JAMHacks 3!
             .row.justify-content-center
               +team-member("Ethan.jpg", "Ethan Guo", "Lead Organizer")
               +team-member("Zach.jpg", "Zach Chapman", "Sponsorships")
@@ -382,7 +380,7 @@ html
         .container
           .col
             a.archive-link.btn.btn-outline-secondary(href="/2017") 2017 Website (Archive)
-            p.copyright &copy; 2018 JAMHacks. Website by Ethan Guo.
+            p.copyright &copy; 2019 JAMHacks. Website by Ethan Guo.
 
     script(src="https://code.jquery.com/jquery-3.3.1.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
