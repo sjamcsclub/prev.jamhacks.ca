@@ -131,40 +131,11 @@ svg.transition-paths {
   }
 }
 
-
-
-.gal {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  z-index: -10;
-}
-
-#bg0 {
-  background-image: url("/img/landing-bg.jpg");
-  display: none;
-}
-
-#bg1 {
-  background-image: url("/img/landing-bg1.jpg");
-  display: none;
-}
-
-#bg2 {
-  background-image: url("/img/landing-bg2.jpg");
-  display: none;
-}
-
-#bg3 {
-  background-image: url("/img/landing-bg3.jpg");
-  display: none;
-}
-
-
 #landing {
   background-color: $color-primary-light;
+  background-image: url("/img/landing-bg.jpg");
+  background-size: cover;
+  background-position: center;
   z-index: 100;
   position: fixed;
   height: 100vh;
@@ -175,92 +146,29 @@ svg.transition-paths {
   align-items: center;
   justify-content: center;
   #landing-content {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // margin-top: -10em; 
-    top: 36vh;
   }
-  #landing-curve {
-    position: absolute;
-    z-index: -1;
-  }
-
-  @media only screen and (max-width: 1200px) {
-    #gary {
-      display: none;
-    }
-  }
-
-  // #landing-logo {
-  //   position: relative;
-  //   height: 100vh * 1/4;
-  //   max-width: 50vw;
-  //   margin-bottom: 2rem;
-  //   background: white;
-  //   border-radius: 100px;
-  // }
-
-  #landing-background {
-    position: absolute;
-    top: -5vh;
-  }
-
   #landing-logo {
     position: relative;
-    height: 40vh;
-    width: 100vh;
-    max-width: 100vw;
-    // margin-top: -10em; 
-    padding: 0px;
+    height: 100vh * 1/3;
+    max-width: 75vw;
     margin-bottom: 2rem;
-    /* background: white; */
-    border-radius: 100px; 
-    z-index: 10;
-  }
-  #landing-medialogo {
-    display: none;
-    position: relative;
-    height: 40vh;
-    max-width: 100vw;
-    padding: 60px;
-    margin-bottom: 2rem;
-    /* background: white; */
-    border-radius: 100px;;
-  }
-  .landing-rects {
-    display: none;
-  }
-  @media only screen and (max-width: 800px) {
-    .landing-curves {
-      display: none;
-    }
-    .landing-rects {
-      display: inline;
-    }
-  }
-  @media only screen and (max-width: 800px) {
-    #landing-logo {
-      display: none;
-    }
-    #landing-medialogo {
-      display: inline;
-    }
   }
   h2, h3, h4 {
     color: white;
     text-align: center;
     text-shadow: $drop-shadow $diffuse-small $on-image;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
   }
   h2 {
-    font: 400 24pt $font-primary;
+    font: 400 30pt $font-primary;
   }
   h3 {
-    font: 300 15pt $font-primary;
-    margin-bottom: 0.5rem;
+    font: 300 18pt $font-primary;
+    margin-bottom: 2rem;
   }
   h4 {
     font: 800 18pt $font-primary;
@@ -274,16 +182,23 @@ svg.transition-paths {
   }
 
   .landing-button {
-    margin: 0.5em 0 0.5em;
+    margin: 0.5em 0 1em;
     padding: 0.5em 1.5em;
     background: none;
     color: white;
     border-color: white;
     border-radius: 100em;
     border-width: 2px;
-    font: 600 15pt $font-primary;
+    font: 600 18pt $font-primary;
     text-shadow: $drop-shadow $diffuse-small $on-image;
     box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
+
+    @include xs-only {
+      border-radius: 100rem;
+      border-width: 2px;
+      margin: 0.25rem;
+      padding: 0.5rem 1.5rem;
+    }
 
     &:hover, &:active, &:focus {
       animation: none;
@@ -292,14 +207,6 @@ svg.transition-paths {
       text-shadow: none;
       box-shadow: $drop-shadow $diffuse-small $on-image;
     }
-
-    @include xs-only {
-      border-radius: 100rem;
-      border-width: 2px;
-      margin-top: 0;
-      margin: 0.25rem;
-      padding: 0.5rem 1.5rem;
-    }
   }
 
   .landing-button-highlight {
@@ -307,13 +214,11 @@ svg.transition-paths {
   }
 
   .landing-button-small {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 
 
   .landing-social-buttons {
-    top: 0;
-    position: relative;
     display: flex;
     justify-content: center;
 

@@ -70,32 +70,11 @@ svg.transition-paths {
   svg.transition-paths#white-transition {
     z-index: 201; }
 
-.gal {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  z-index: -10; }
-
-#bg0 {
-  background-image: url("/img/landing-bg.jpg");
-  display: none; }
-
-#bg1 {
-  background-image: url("/img/landing-bg1.jpg");
-  display: none; }
-
-#bg2 {
-  background-image: url("/img/landing-bg2.jpg");
-  display: none; }
-
-#bg3 {
-  background-image: url("/img/landing-bg3.jpg");
-  display: none; }
-
 #landing {
   background-color: #6554be;
+  background-image: url("/img/landing-bg.jpg");
+  background-size: cover;
+  background-position: center;
   z-index: 100;
   position: fixed;
   height: 100vh;
@@ -112,7 +91,6 @@ svg.transition-paths {
       -ms-flex-pack: center;
           justify-content: center; }
   #landing #landing-content {
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,58 +103,22 @@ svg.transition-paths {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    top: 36vh; }
-  #landing #landing-curve {
-    position: absolute;
-    z-index: -1; }
-  @media only screen and (max-width: 1200px) {
-    #landing #gary {
-      display: none; } }
-  #landing #landing-background {
-    position: absolute;
-    top: -5vh; }
+            justify-content: center; }
   #landing #landing-logo {
     position: relative;
-    height: 40vh;
-    width: 100vh;
-    max-width: 100vw;
-    padding: 0px;
-    margin-bottom: 2rem;
-    /* background: white; */
-    border-radius: 100px;
-    z-index: 10; }
-  #landing #landing-medialogo {
-    display: none;
-    position: relative;
-    height: 40vh;
-    max-width: 100vw;
-    padding: 60px;
-    margin-bottom: 2rem;
-    /* background: white; */
-    border-radius: 100px; }
-  #landing .landing-rects {
-    display: none; }
-  @media only screen and (max-width: 800px) {
-    #landing .landing-curves {
-      display: none; }
-    #landing .landing-rects {
-      display: inline; } }
-  @media only screen and (max-width: 800px) {
-    #landing #landing-logo {
-      display: none; }
-    #landing #landing-medialogo {
-      display: inline; } }
+    height: 33.33333vh;
+    max-width: 75vw;
+    margin-bottom: 2rem; }
   #landing h2, #landing h3, #landing h4 {
     color: white;
     text-align: center;
     text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.75rem; }
   #landing h2 {
-    font: 400 24pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
+    font: 400 30pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing h3 {
-    font: 300 15pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
-    margin-bottom: 0.5rem; }
+    font: 300 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    margin-bottom: 2rem; }
   #landing h4 {
     font: 800 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; }
   #landing a {
@@ -184,16 +126,22 @@ svg.transition-paths {
   #landing strong {
     font-weight: 800; }
   #landing .landing-button {
-    margin: 0.5em 0 0.5em;
+    margin: 0.5em 0 1em;
     padding: 0.5em 1.5em;
     background: none;
     color: white;
     border-color: white;
     border-radius: 100em;
     border-width: 2px;
-    font: 600 15pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    font: 600 18pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
     text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+    @media only screen and (max-width: 575px) {
+      #landing .landing-button {
+        border-radius: 100rem;
+        border-width: 2px;
+        margin: 0.25rem;
+        padding: 0.5rem 1.5rem; } }
     #landing .landing-button:hover, #landing .landing-button:active, #landing .landing-button:focus {
       -webkit-animation: none;
               animation: none;
@@ -201,21 +149,12 @@ svg.transition-paths {
       background-color: white;
       text-shadow: none;
       box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
-    @media only screen and (max-width: 575px) {
-      #landing .landing-button {
-        border-radius: 100rem;
-        border-width: 2px;
-        margin-top: 0;
-        margin: 0.25rem;
-        padding: 0.5rem 1.5rem; } }
   #landing .landing-button-highlight {
     -webkit-animation: pulsate 5s infinite;
             animation: pulsate 5s infinite; }
   #landing .landing-button-small {
-    font-size: 12pt; }
+    font-size: 14pt; }
   #landing .landing-social-buttons {
-    top: 0;
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
