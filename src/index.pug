@@ -49,21 +49,21 @@ mixin schedule-day(title, isFirst)
 //---SPONSORS---
 mixin logo-sm(src, alt, reducePercent)
   .logo.col-6.col-sm-5.col-md-4.col-lg-3
-    img.img-fluid(src="img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
+    img.img-fluid(src="/img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
 
 mixin logo-md(src, alt, reducePercent)
   .logo.col-10.col-lg-5
-    img.img-fluid(src="img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
+    img.img-fluid(src="/img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
 
 mixin logo-lg(src, alt, reducePercent)
   .logo.col-12.col-lg-9
-    img.img-fluid(src="img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
+    img.img-fluid(src="/img/logos/"+src, alt=alt, style=(reducePercent ? `padding: 0 ${reducePercent}%` : ""))
 
 
 //---TEAM---
 mixin team-member(src, name, title)
   .col-9.col-sm-6.col-md-4.col-lg.team-member
-    img.img-fluid.rounded-circle.team-member-photo(src="img/team/"+src, alt=name, onerror="this.src='img/team/Blank.png'")
+    img.img-fluid.rounded-circle.team-member-photo(src="/img/team/"+src, alt=name, onerror="this.src='/img/team/Blank.png'")
     .team-member-name= name
     .team-member-title= title
 
@@ -72,7 +72,7 @@ doctype html
 html
   head
     meta(charset="UTF-8")
-    title JAMHacks 2
+    title JAMHacks 3
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
 
@@ -87,17 +87,17 @@ html
     meta(name="theme-color" content="#6554be")
     
     //- Scraping/Sharing meta stuff
-    meta(name="description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
+    meta(name="description" content="Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
         "@type": "Event",
-        "name": "JAMHacks 2",
+        "name": "JAMHacks 3",
         "startDate": "2018-04-14T14:00:00-05:00",
         "endDate": "2018-04-15T20:00:00-05:00",
         "url": "https://jamhacks.ca/",
         "image": "https://jamhacks.ca/img/og-image.png",
-        "description": "JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full weekend of creating, learning and innovating.",
+        "description": "Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.",
         "location": {
           "@type": "Place",
           "name": "Sir John A. Macdonald Secondary School",
@@ -107,31 +107,51 @@ html
     //- Facebook OpenGraph
     meta(property="og:url" content="https://jamhacks.ca/")
     meta(property="og:type" content="website")
-    meta(property="og:title" content="JAMHacks 2")
-    meta(property="og:description" content="JAMHacks 2 is Waterloo's biggest high school hackathon! On May 5-6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
+    meta(property="og:title" content="JAMHacks 3")
+    meta(property="og:description" content="Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.")
     meta(property="og:image" content="http://jamhacks.ca/img/og-image.png")
-    meta(property="og:image:alt" content="JAMHacks 2")
+    meta(property="og:image:alt" content="JAMHacks 3")
 
   body(data-spy="scroll" data-target="#navbar" data-offset="10")
     #landing
+      svg#landing-curve(width="100%" height="100%" viewBox="0 0 10 10" preserveAspectRatio="none")
+        path(class="landing-curves" d="M 0 0 V 7 C 0 0, 10 6, 10 0 Z" stroke-width="0" fill="#FFFFFF" fill-opacity="0.8")
+        path(class="landing-curves" d="M 0 7 C 0 0, 10 6, 10 0 C 10 0, 10 9, 6 10 L 0 10 Z" stroke-width="0" fill="#6554BE" fill-opacity="0.3")
+        path(class="landing-curves" d="M 10 0 C 10 0, 10 9, 6 10 H 10 Z" stroke-width="0" fill="#FFFFFF" fill-opacity="0.8")
+        rect(class="landing-rects" x="0" y="0" width="10" height="3" stroke-width="0" fill="#FFFFFF" fill-opacity="0.8")
+        rect(class="landing-rects" x="0" y="3" width="10" height="9" stroke-width="0" fill="#6554BE" fill-opacity="0.3")
+        rect(class="landing-rects" x="0" y="9" width="10" height="10" stroke-width="0" fill="#FFFFFF" fill-opacity="0.8")
+      #landing-background
+        img#landing-medialogo(src="img/negative.svg" alt="JAMHacks")
+        img#landing-logo(src="img/JAMHacks.svg" alt="JAMHacks")
       #landing-content
-        img#landing-logo(src="img/JAMHacks Centered.svg" alt="JAMHacks")
-        h2 Rescheduled to #[strong May 5&ndash;6, 2018]
+        h2 May 4&ndash;5, 2018
         h3 Sir John A. Macdonald Secondary School, Waterloo
-        //- a.btn.btn-outline.btn-lg.landing-button.landing-button-highlight(href="/register") Register
-        //- a.btn.btn-outline.btn-lg.landing-button.landing-button-small(href="/mentor") Register as a mentor
-        h4 Registrations are now closed! Make sure to get your forms signed:
-        h4 #[a(href="files/Participant_Waiver.pdf") Waiver] | #[a(href="files/Guest_Contract.pdf") Guest Contract] (for non-SJAM students)
-        
-        h4
+        a.btn.btn-outline.btn-lg.landing-button.landing-button-highlight(href="/register") Register
+        span(class="blob-btn__blobs")
+          span(class="blob-btn__blob")
+          span(class="blob-btn__blob")
+          span(class="blob-btn__blob")
+          span(class="blob-btn__blob")
+
+        a.btn.btn-outline.btn-lg.landing-button.landing-button-small(href="/mentor") Register as a mentor
+        span(class="blob-btn__blobs")
+          span(class="blob-btn__blob")
+          span(class="blob-btn__blob")
+          span(class="blob-btn__blob")
+          span(class="blob-btn__blob")
+        //- h4
           .landing-social-buttons
             a.social-link-icon(href="/slack" target="_blank")
-              img(src="img/slack-icon.png" alt="Slack")
+              img(src="/img/slack-icon.png" alt="Slack")
               span Slack
             a.social-link-icon(href="https://jamhacks2.devpost.com/" target="_blank")
-              img(src="img/devpost-icon.png" alt="Devpost")
+              img(src="/img/devpost-icon.png" alt="Devpost")
               span Devpost
-
+      #bg0(class="gal")
+      #bg1(class="gal")
+      #bg2(class="gal")
+      #bg3(class="gal")
 
     svg.transition-paths#landing-transition(width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none")
       path(id="path1" class="light-path" d="")
@@ -151,14 +171,14 @@ html
             a.nav-link(href="#about") About
           li.nav-item
             a.nav-link(href="#faq") FAQ
-          li.nav-item
+          //- li.nav-item
             a.nav-link(href="#schedule") Schedule
-          li.nav-item
+          //- li.nav-item
             a.nav-link(href="#sponsors") Sponsors
-          li.nav-item
+          //- li.nav-item
             a.nav-link(href="#team") Team
-          //- li.nav-item.nav-register.d-none.d-sm-block
-          //-   a.nav-link(href="/register") Register
+          li.nav-item.nav-register.d-none.d-sm-block
+            a.nav-link(href="/register") Register
 
     .page
       article#on-color
@@ -169,19 +189,19 @@ html
                 h1 About
             .row.justify-content-center
               .col-lg-10
-                p.tagline JAMHacks 2 is Waterloo's biggest high school hackathon! On May&nbsp;5&ndash;6, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.
+                p.tagline JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.
 
             .row.justify-content-center
               .social-buttons.container-fluid
                 .row.justify-content-center
-                  a.social-link-icon(href="/slack" target="_blank")
-                    img(src="img/slack-icon.png" alt="Slack")
+                  //- a.social-link-icon(href="/slack" target="_blank")
+                    img(src="/img/slack-icon.png" alt="Slack")
                   a.social-link-icon(href="https://www.facebook.com/JAMHacks/" target="_blank")
-                    img(src="img/fb-icon.png" alt="Facebook")
+                    img(src="/img/fb-icon.png" alt="Facebook")
                   a.social-link-icon(href="https://twitter.com/jam_hacks" target="_blank")
-                    img(src="img/twitter-icon.png" alt="Twitter")
-                  a.social-link-icon(href="https://jamhacks2.devpost.com/" target="_blank")
-                    img(src="img/devpost-icon.png" alt="Devpost")
+                    img(src="/img/twitter-icon.png" alt="Twitter")
+                  //- a.social-link-icon(href="https://jamhacks2.devpost.com/" target="_blank")
+                    img(src="/img/devpost-icon.png" alt="Devpost")
 
             .row.justify-content-center
               .col-md-9.col-lg-7
@@ -234,7 +254,7 @@ html
 
       article#on-white
         .container
-          section.schedule#schedule
+          //- section.schedule#schedule
             .row.justify-content-center
               .col
                 h1 Schedule
@@ -246,7 +266,7 @@ html
             .row.justify-content-center
               .col-lg-11.col-xl-9.schedule-table
 
-                +schedule-day("Saturday May 5", true)
+                +schedule-day("Saturday May 4", true)
 
                 +schedule-row("2:00&ndash;2:45pm",
                   {title:"Sign In", location:"2nd Floor Foyer"})
@@ -285,7 +305,7 @@ html
                   {title:"Midnight Snack", location:"2nd Floor Foyer", type:"food"})
 
 
-                +schedule-day("Sunday May 6")
+                +schedule-day("Sunday May 5")
 
                 //- +schedule-row("12:30-1:00am",
                 //-   {title:"Paper Airplanes", location:"2nd Floor Foyer", type:"activity"})
@@ -317,7 +337,7 @@ html
               .col-lg-10.col-xl-9
                 p.end-tagline Please arrange to be picked up between 5:30#[+non-breaking-ndash]6:00pm!
 
-          section.sponsors#sponsors
+          //- section.sponsors#sponsors
             .row.justify-content-center
               .col
                 h1 Sponsors
@@ -357,13 +377,13 @@ html
               +logo-sm("Microsoft.png", "Microsoft")
               +logo-sm("Omicron.png", "Omicron", 5)
 
-          section.team#team
+          //- section.team#team
             .row.justify-content-center
               .col
                 h1 The Team
             .row.justify-content-center.align-items-center
               .col-lg-9
-                p.tagline Meet the people behind JAMHacks 2!
+                p.tagline Meet the people behind JAMHacks 3!
             .row.justify-content-center
               +team-member("Ethan.jpg", "Ethan Guo", "Lead Organizer")
               +team-member("Zach.jpg", "Zach Chapman", "Sponsorships")
@@ -381,7 +401,7 @@ html
       footer
         .container
           .col
-            a.archive-link.btn.btn-outline-secondary(href="/2018") 2018 Website (Archive)
+            a.archive-link.btn.btn-outline-secondary(href="/2017") 2017 Website (Archive)
             p.copyright &copy; 2019 JAMHacks. Website by Ethan Guo.
 
     script(src="https://code.jquery.com/jquery-3.3.1.min.js")

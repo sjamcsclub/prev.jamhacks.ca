@@ -91,6 +91,20 @@ var whiteTransition = new GooeyTransition("#white-transition");
 
 var scrollSectionOffset;
 
+var bg = Math.round(Math.random() * 5);
+// $("#bg"+bg).fadeIn(1000);
+
+function process() {
+  var bgn = (bg + 1) % 4;
+  $("#bg" + bg).fadeOut(3000);
+  $("#bg" + bgn).fadeIn(3000, function () {
+    bg = bgn;
+  });
+  setTimeout(function () {
+    process();
+  }, 9000);
+}
+
 $("#navbar").css("display", "flex").hide();
 
 // Update anytime page is scrolled.
@@ -135,6 +149,8 @@ $(".nav-link").click(function () {
 });
 
 $(function () {
+
+  process();
   var hash = window.location.hash;
   $(".nav-link[href=\"" + hash + "\"]").click();
 });
