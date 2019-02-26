@@ -92,17 +92,6 @@ const whiteTransition = new GooeyTransition("#white-transition");
 
 var scrollSectionOffset; 
 
-var bg = Math.round(Math.random()*5);
-// $("#bg"+bg).fadeIn(1000);
-
-function process() {
-  var bgn = (bg+1) % 4;
-  $("#bg"+bg).fadeOut(3000);
-  $("#bg"+bgn).fadeIn(3000, function() {
-    bg = bgn;
-  });
-  setTimeout(function(){process();},9000);
-}
 
 $("#navbar")
   .css("display", "flex")
@@ -137,8 +126,6 @@ $(window).resize(function() {
   $(this).scroll(); // Trigger a scroll update
 }).resize();
 
-
-
 $(".nav-link").click(function() {
   var target = $(this).attr("href");
 
@@ -153,13 +140,9 @@ $(".nav-link").click(function() {
 });
 
 $(function() {
-  
-  process();
   var hash = window.location.hash;
   $(`.nav-link[href="${hash}"]`).click();
 });
-
-
 
 // $(function() {
 //   if (isMobile) {
