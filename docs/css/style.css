@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo|Nunito:300,400,600,800");
+@-webkit-keyframes pulsate {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  15% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-shadow: none;
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
+  85% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; } }
 @keyframes pulsate {
   0% {
     background-color: rgba(255, 255, 255, 0);
@@ -35,7 +56,8 @@ svg.transition-paths {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   pointer-events: none; }
   svg.transition-paths path.color-path {
     fill: #6554be; }
@@ -78,23 +100,32 @@ svg.transition-paths {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   #landing #landing-content {
     position: absolute;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     top: 36vh; }
   #landing #landing-curve {
     position: absolute;
@@ -164,7 +195,8 @@ svg.transition-paths {
     text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
     #landing .landing-button:hover, #landing .landing-button:active, #landing .landing-button:focus {
-      animation: none;
+      -webkit-animation: none;
+              animation: none;
       color: #6554be;
       background-color: white;
       text-shadow: none;
@@ -177,23 +209,30 @@ svg.transition-paths {
         margin: 0.25rem;
         padding: 0.5rem 1.5rem; } }
   #landing .landing-button-highlight {
-    animation: pulsate 5s infinite; }
+    -webkit-animation: pulsate 5s infinite;
+            animation: pulsate 5s infinite; }
   #landing .landing-button-small {
     font-size: 12pt; }
   #landing .landing-social-buttons {
     top: 0;
     position: relative;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     #landing .landing-social-buttons .social-link-icon {
+      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-align: center;
-          align-items: center; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       #landing .landing-social-buttons .social-link-icon img {
         height: 6rem;
         width: 6rem;
@@ -209,8 +248,9 @@ svg.transition-paths {
   left: 0;
   padding: 0;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.225);
-  -ms-flex-align: center;
-      align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .navbar .navbar-toggler {
     color: #F5F5DC;
     margin-left: 0.75rem;
@@ -320,8 +360,9 @@ section.schedule .schedule-table .time {
   padding-top: 0.75em; }
 
 section.schedule .schedule-table .event {
-  -ms-flex: 1;
-      flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   min-height: 5em;
   padding: 0.5em 1em;
   margin: 0.25em 0.5em;
@@ -361,10 +402,12 @@ section.schedule .schedule-table #schedule-day-title-first {
   margin-top: 0.75em; }
 
 section.sponsors .sponsors-section {
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2rem;
   margin-bottom: 4rem; }
   @media only screen and (max-width: 991px) {
@@ -379,13 +422,15 @@ section.sponsors h2 {
 
 section.team .team-member {
   margin-bottom: 2.5em;
-  -ms-flex-positive: 1;
-      flex-grow: 1; }
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 section.team .team-spacer {
   padding-left: 0;
-  -ms-flex-positive: 0.5;
-      flex-grow: 0.5; }
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5; }
 
 section.team .team-member-photo {
   margin-bottom: 0.5em;
