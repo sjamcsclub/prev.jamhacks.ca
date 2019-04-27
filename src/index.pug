@@ -254,7 +254,7 @@ html
 
       article#on-white
         .container
-          //- section.schedule#schedule
+          section.schedule#schedule
             .row.justify-content-center
               .col
                 h1 Schedule
@@ -276,34 +276,31 @@ html
 
                 +schedule-div("4:00pm", "Hacking begins!")
 
-                +schedule-row("4:00&ndash;5:00pm",
-                  {title:"Web Design 101", location:"Strawberry (2601)", type:"workshop"})
+                +schedule-row("4:00&ndash;6:00pm",
+                  {title:"Workshops", location:"To be determined", type:"workshop"})
 
-                +schedule-row-2("5:00&ndash;6:00pm",
-                  {title:"Python 101", location:"Strawberry (2601)", type:"workshop"},
-                  {title:"Making Chat Bots with Cognitive Services", subtitle:"By Microsoft", location:"Peach (2602)", type:"workshop"})
+                //- +schedule-row-2("5:00&ndash;6:00pm",
+                //-   {title:"Python 101", location:"Strawberry (2601)", type:"workshop"},
+                //-   {title:"Making Chat Bots with Cognitive Services", subtitle:"By Microsoft", location:"Peach (2602)", type:"workshop"})
 
                 +schedule-row("6:00&ndash;7:00pm",
                   {title:"Dinner", location:"Cafeteria", type:"food"})
 
-                +schedule-row-2("7:30&ndash;8:30pm",
-                  {title:"Python 102", location:"Strawberry (2601)", type:"workshop"},
-                  {title:"Maps and Apps — Spatial Data with ArcGIS", subtitle:"By Esri", location:"Peach (2602)", type:"workshop"})
-                    //- TODO: Get real title
+                +schedule-row("7:30&ndash;10:30pm",
+                  {title:"Workshops", location:"To be determined", type:"workshop"})
 
-                +schedule-row-2("8:30&ndash;9:30pm",
-                  {title:"Web Design 102", location:"Strawberry (2601)", type:"workshop"},
-                  {title:"Build Serverless Web Apps with Firebase", subtitle:"By Google", location:"Peach (2602)", type:"workshop"})
+                //- +schedule-row-2("8:30&ndash;9:30pm",
+                //-   {title:"Web Design 102", location:"Strawberry (2601)", type:"workshop"},
+                //-   {title:"Build Serverless Web Apps with Firebase", subtitle:"By Google", location:"Peach (2602)", type:"workshop"})
 
-                +schedule-row("9:30&ndash;10:30pm",
-                  {title:"Machine Learning with TensorFlow", subtitle:"By Google", location:"Peach (2602)", type:"workshop"})
+                //- +schedule-row("9:30&ndash;10:30pm",
+                //-   {title:"Machine Learning with TensorFlow", subtitle:"By Google", location:"Peach (2602)", type:"workshop"})
                 
                 +schedule-row("11:00&ndash;11:45pm",
                   {title:"Cup Stacking", location:"2nd Floor Foyer", type:"activity"})
 
                 +schedule-row("12:00am",
                   {title:"Midnight Snack", location:"2nd Floor Foyer", type:"food"})
-
 
                 +schedule-day("Sunday May 5")
 
@@ -317,7 +314,9 @@ html
                   {title:"Breakfast", location:"Cafeteria", type:"food"})
 
                 +schedule-row("10:30&ndash;11:30am",
-                  {title:"How to Pitch", location:"Strawberry (2601)", subtitle:"By Omicron", type:"workshop"})
+                  {title:"How to Pitch", location:"To be determined", type:"workshop"})
+                
+                //- , subtitle:"By Omicron"
 
                 +schedule-row("12:00&ndash;1:00pm",
                   {title:"Lunch", location:"Cafeteria", type:"food"})
