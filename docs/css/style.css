@@ -194,13 +194,6 @@ svg.transition-paths {
     font: 600 15pt "Nunito", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
     text-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5) inset; }
-    #landing .landing-button:hover, #landing .landing-button:active, #landing .landing-button:focus {
-      -webkit-animation: none;
-              animation: none;
-      color: #6554be;
-      background-color: white;
-      text-shadow: none;
-      box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.5); }
     @media only screen and (max-width: 575px) {
       #landing .landing-button {
         border-radius: 100rem;

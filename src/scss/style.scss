@@ -285,13 +285,13 @@ svg.transition-paths {
     text-shadow: $drop-shadow $diffuse-small $on-image;
     box-shadow: $drop-shadow $diffuse-small $on-image, $drop-shadow $diffuse-small $on-image inset;
 
-    &:hover, &:active, &:focus {
-      animation: none;
-      color: $color-primary-light;
-      background-color: white;
-      text-shadow: none;
-      box-shadow: $drop-shadow $diffuse-small $on-image;
-    }
+    // &:hover, &:active, &:focus {
+    //   animation: none;
+    //   color: $color-primary-light;
+    //   background-color: white;
+    //   text-shadow: none;
+    //   box-shadow: $drop-shadow $diffuse-small $on-image;
+    // }
 
     @include xs-only {
       border-radius: 100rem;
