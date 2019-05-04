@@ -162,6 +162,12 @@ svg.transition-paths {
   display: none;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 #landing {
   background-color: $color-primary-light;

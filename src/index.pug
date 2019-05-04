@@ -168,6 +168,8 @@ html
           li.nav-item
             a.nav-link(href="#schedule") Schedule
           li.nav-item
+            a.nav-link(href="#map") Map
+          li.nav-item
             a.nav-link(href="#sponsors") Sponsors
           //- li.nav-item
             a.nav-link(href="#team") Team
@@ -290,7 +292,7 @@ html
                   {title:"Intro to Web Dev", location:"Peach (2602)", type:"workshop"})
 
                 +schedule-row("9:30&ndash;10:30pm",
-                  {title:"Intro to APIs", location:"Strawberry (2601)", type:"workshop"})
+                  {title:"Intro to APIs", location:"Peach (2602)", type:"workshop"})
 
 
                 //- +schedule-row-2("8:30&ndash;9:30pm",
@@ -312,7 +314,7 @@ html
                 //-   {title:"Paper Airplanes", location:"2nd Floor Foyer", type:"activity"})
 
                 +schedule-row("12:15&ndash;1:00am",
-                  {title:"Werewolf", location:"Peach (2602)", type:"activity"})
+                  {title:"Werewolf", location:"Strawberry (2601)", type:"activity"})
 
                 +schedule-row("8:30&ndash;9:30am",
                   {title:"Breakfast", location:"Cafeteria", type:"food"})
@@ -339,6 +341,11 @@ html
             .row.justify-content-center
               .col-lg-10.col-xl-9
                 p.end-tagline Please arrange to be picked up between 4:30#[+non-breaking-ndash]5:00pm!
+
+          section.map#map
+          h1 Map
+          p.tagline Here is a map to help you get around!
+          img.img-fluid.center(src="img/map.png")
 
           section.sponsors#sponsors
             .row.justify-content-center
@@ -401,7 +408,7 @@ html
               +team-member("Kyungbin.jpg", "Kyungbin Son", "Promotions")
               +team-member("Calder.jpg", "Calder White", "Logistics")
               .col.team-spacer.d-none.d-lg-block
-
+          
       footer
         .container
           .col

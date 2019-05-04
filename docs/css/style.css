@@ -94,6 +94,12 @@ svg.transition-paths {
   background-image: url("../img/landing-bg3.jpg");
   display: none; }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
 #landing {
   background-color: #6554be;
   z-index: 100;
