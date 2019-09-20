@@ -1,448 +1,573 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>JAMHacks 3</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#6554be">
-    <meta name="theme-color" content="#6554be">
-    <meta name="description" content="Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Event",
-        "name": "JAMHacks 3",
-        "startDate": "2019-04-14T14:00:00-05:00",
-        "endDate": "2019-04-15T20:00:00-05:00",
-        "url": "https://jamhacks.ca/",
-        "image": "https://jamhacks.ca/img/og-image.png",
-        "description": "Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.",
-        "location": {
-          "@type": "Place",
-          "name": "Sir John A. Macdonald Secondary School",
-          "address": "650 Laurelwood Drive, Waterloo, ON N2V 2V1"
-        }
-      }
-    </script>
-    <meta property="og:url" content="https://jamhacks.ca/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="JAMHacks 3">
-    <meta property="og:description" content="Coming back for a third year, JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.">
-    <meta property="og:image" content="http://jamhacks.ca/img/og-image.png">
-    <meta property="og:image:alt" content="JAMHacks 3">
-  </head>
-  <body data-spy="scroll" data-target="#navbar" data-offset="10">
-    <div id="landing">
-      <svg id="landing-curve" width="100%" height="100%" viewBox="0 0 10 10" preserveAspectRatio="none">
-        <path class="landing-curves" d="M 0 0 V 7 C 0 0, 10 6, 10 0 Z" stroke-width="0" fill="#FFFFFF" fill-opacity="0.8"></path>
-        <path class="landing-curves" d="M 0 7 C 0 0, 10 6, 10 0 C 10 0, 10 9, 6 10 L 0 10 Z" stroke-width="0" fill="#6554BE" fill-opacity="0.3"></path>
-        <path class="landing-curves" d="M 10 0 C 10 0, 10 9, 6 10 H 10 Z" stroke-width="0" fill="#FFFFFF" fill-opacity="0.8"></path>
-        <rect class="landing-rects" x="0" y="0" width="10" height="3" stroke-width="0" fill="#FFFFFF" fill-opacity="0.8"></rect>
-        <rect class="landing-rects" x="0" y="3" width="10" height="9" stroke-width="0" fill="#6554BE" fill-opacity="0.3"></rect>
-        <rect class="landing-rects" x="0" y="9" width="10" height="10" stroke-width="0" fill="#FFFFFF" fill-opacity="0.8"></rect>
-      </svg>
-      <div id="landing-background"><img id="landing-medialogo" src="img/negative.svg" alt="JAMHacks"><img id="landing-logo" src="img/JAMHacks.svg" alt="JAMHacks"></div>
-      <div id="landing-content">
-        <h2>May 4&ndash;5, 2019</h2>
-        <h3>Sir John A. Macdonald Secondary School, Waterloo</h3><a class="btn btn-outline btn-lg landing-button" href="https://jamhacks3.typeform.com/to/JgFDOi">Registrations Closed</a>
-        <h4>
-          <div class="landing-social-buttons"><a class="social-link-icon" href="slack" target="_blank"><img src="img/slack-icon.png" alt="Slack"><span>Slack</span></a><a class="social-link-icon" href="https://jamhacks-3.devpost.com/" target="_blank"><img src="img/devpost-icon.png" alt="Devpost"><span>Devpost</span></a></div>
-        </h4>
-      </div>
-      <div class="gal" id="bg0"></div>
-      <div class="gal" id="bg1"></div>
-      <div class="gal" id="bg2"></div>
-      <div class="gal" id="bg3"></div>
-    </div>
-    <svg class="transition-paths" id="landing-transition" width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none">
-      <path class="light-path" id="path1" d=""></path>
-      <path class="color-path" id="path2" d=""></path>
-    </svg>
-    <svg class="transition-paths" id="white-transition" width="100%" height="100%" viewBox="0 0 1 1" preserveAspectRatio="none">
-      <path class="light-path" id="path1" d=""></path>
-      <path class="white-path" id="path2" d=""></path>
-    </svg>
-    <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand d-sm-none" href="https://jamhacks3.typeform.com/to/JgFDOi">Register</a>
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="navbar-nav mt-2 mt-sm-0">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
-          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
-          <li class="nav-item nav-register d-none d-sm-block"><a class="nav-link" href="https://jamhacks3.typeform.com/to/JgFDOi">Register</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="page">
-      <article id="on-color">
-        <div class="container">
-          <section class="about" id="about">
-            <div class="row justify-content-center">
-              <div class="col">
-                <h1>About</h1>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Fri Sep 20 2019 21:37:17 GMT+0000 (UTC)  -->
+<html data-wf-page="5d7174e55cd61f2c5fa668e7" data-wf-site="5d7174e55cd61ff8aaa668e1">
+<head>
+  <meta charset="utf-8">
+  <title>Jamhacks 4</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/jamhacks-2020.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Varela Round:400","Cabin:regular,500,500italic,600,600italic,700"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon-32x32.png" rel="apple-touch-icon">
+</head>
+<body class="body-2">
+  <header class="header-nav">
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="lnd_navigation w-nav">
+      <div class="nav01_container">
+        <div class="lnd_nav_left"><a href="index.html" class="nav01_logo w-nav-brand w--current"><img src="images/max.svg" alt="" class="image-43"><img src="images/jamhacks3.svg" width="130" alt="" class="nav04_image"></a></div>
+        <div class="nav01_right_wrap">
+          <nav role="navigation" class="nav01_links w-nav-menu"><a href="index.html" class="lnd_nav_link w-nav-link w--current">Apply Now</a>
+            <div data-delay="150" data-hover="1" class="dropdown w-dropdown">
+              <div class="lnd_toggle_primary w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <div class="dropdown-text">Apply Now</div>
               </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <p class="tagline">JAMHacks 3 is the largest high school hackathon in Waterloo! On May 4-5, we are bringing together 200 students from high schools all over Ontario for a full 24 hours of creating, learning and innovating.</p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="social-buttons container-fluid">
-                <div class="row justify-content-center"><a class="social-link-icon" href="https://www.facebook.com/JAMHacks/" target="_blank"><img src="img/fb-icon.png" alt="Facebook"></a><a class="social-link-icon" href="https://twitter.com/jam_hacks" target="_blank"><img src="img/twitter-icon.png" alt="Twitter"></a></div>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-md-9 col-lg-7">
-                <div class="map-container embed-responsive">
-                  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11582.034386373409!2d-80.59938464999999!3d43.470855349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x375a3d40ac31533c!2sSir+John+A.+MacDonald+Secondary+School!5e0!3m2!1sen!2sca!4v1485054414351" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="faq" id="faq">
-            <div class="row justify-content-center">
-              <div class="col">
-                <h1>FAQ</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <h3>What is JAMHacks?</h3>
-                <p>JAMHacks is a <strong>hackathon</strong>&mdash;a 24-hour-long "innovation marathon." You'll work in teams of up to 4 to create an app, game, website, robot, gadget, or whatever your heart desires.</p>
-              </div>
-              <div class="col-md-6">
-                <h3>What else is JAMHacks?</h3>
-                <p>JAMHacks is also a <strong>learnathon</strong>&mdash;We'll be running workshops to guide you through making a software or electronics project, even if you've never coded before!</p>
-              </div>
-              <div class="col-md-6">
-                <h3>What if I don't know how to code?</h3>
-                <p>No problem! A hackathon is a great way to quickly pick up new skills. We'll have workshops and mentors to guide you from your first line of code to writing your own app or website!</p>
-              </div>
-              <div class="col-md-6">
-                <h3>Do I need to have a team?</h3>
-                <p>Nope! We'll have time for team formation at the event, which is a great way to meet cool new people. That said, if you have some friends who are interested, you can definitely form a team ahead of time!</p>
-              </div>
-              <div class="col-md-6">
-                <h3>Can I build a hardware/electronics project?</h3>
-                <p>Absolutely! We'll have a shop open with soldering irons and small components (resistors etc.) for you to use.</p>
-              </div>
-              <div class="col-md-6">
-                <h3>Who can participate?</h3>
-                <p>JAMHacks is open to any high school student in Ontario! You don't need to have any experience!</p>
-              </div>
-              <div class="col-md-6">
-                <h3>Is there any cost?</h3>
-                <p>Nope! The event will be free for all participants thanks to the generous contributions of our sponsors.</p>
-              </div>
-              <div class="col-md-6">
-                <h3>How many people will be accepted?</h3>
-                <p>We should be accepting everyone who registers!</p>
-              </div>
-              <div class="col-md-6">
-                <h3>What should I bring?</h3>
-                <p>You should bring your laptop, phone, charger, a reusable water bottle, sleeping bag, toiletries, and your student card or some other form of ID. We will be providing meals and snacks, and quiet rooms for sleeping!</p>
-              </div>
-              <div class="col-md-6">
-                <h3>What if I'm not a high school student?</h3>
-                <p>We'd love to have you as a mentor! You can <a href="mentor" target="_blank">register here</a>.</p>
-              </div>
-              <div class="col-md-6">
-                <h3>Is there a code of conduct?</h3>
-                <p>Yes. In short, be respectful to other people. You can read the full version <a href="conduct" target="_blank">here</a>.</p>
-              </div>
-              <div class="col-md-6">
-                <h3>I have another question.</h3>
-                <p>Feel free to email us at <a href="mailto:hello@jamhacks.ca" target="_blank">hello@jamhacks.ca</a> or send us a message on <a href="https://www.facebook.com/JAMHacks/">Facebook</a>.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </article>
-      <article id="on-white">
-        <div class="container">
-          <section class="schedule" id="schedule">
-            <div class="row justify-content-center">
-              <div class="col">
-                <h1>Schedule</h1>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-xl-9">
-                <p class="tagline">Here is the schedule of the weekend! Please plan to arrive between 2:00&#8288;&ndash;&#8288;2:30pm to sign in, find a spot and get settled in.
-                </p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-11 col-xl-9 schedule-table">
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <div class="schedule-day-title" id="schedule-day-title-first">Saturday May 4</div>
+              <nav class="lnd_dropdown_list w-dropdown-list">
+                <div class="dropdown-base div_block_08 div_block_08 div_block_06 lnd_dropdown_base">
+                  <div class="div_block_07 hide-3"></div>
+                  <div class="text-block-39 hide1">Other</div>
+                  <a href="#" class="lnd_nav_item hide2 w-inline-block">
+                    <div class="icon-wrap"><img src="https://uploads-ssl.webflow.com/5beab1239ac88487c3a6608f/5c77dff44ef58159286a4261_package.svg" width="8" alt="" class="image-41"></div>
+                    <div class="div_block_05">
+                      <div class="lnd_nav_link_text">Videos</div>
+                      <div>Community videos</div>
+                    </div>
+                  </a>
+                  <div class="lnd_nav_col_1">
+                    <div class="lnd_nav_title">COMPONENTS</div>
+                    <a href="navigation.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Navigation</div>
+                      </div>
+                    </a>
+                    <a href="headers.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Headers</div>
+                      </div>
+                    </a>
+                    <a href="contents.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Content</div>
+                      </div>
+                    </a>
+                    <a href="features.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Features</div>
+                      </div>
+                    </a>
+                    <a href="testimonials.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Testimonials</div>
+                      </div>
+                    </a>
+                    <a href="cta.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">CTA</div>
+                      </div>
+                    </a>
+                    <a href="pricing.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Pricing</div>
+                      </div>
+                    </a>
+                    <a href="team.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Team</div>
+                      </div>
+                    </a>
+                    <a href="clients.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Clients</div>
+                      </div>
+                    </a>
+                    <a href="tabs.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Tabs</div>
+                      </div>
+                    </a>
+                    <a href="blogs.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Blogs</div>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">2:00&ndash;2:45pm</div>
+                  <div class="lnd_nav_col_1">
+                    <div class="lnd_nav_title">COMPONENTS</div>
+                    <a href="footers.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Footers</div>
+                      </div>
+                    </a>
+                    <a href="faq.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">FAQ</div>
+                      </div>
+                    </a>
+                    <a href="modules.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Modules</div>
+                      </div>
+                    </a>
+                    <a href="forms.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Forms</div>
+                      </div>
+                    </a>
+                    <a href="gallery.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Gallery</div>
+                      </div>
+                    </a>
+                    <div class="lnd_nav_title">TEMPLATES</div>
+                    <a href="template/collaboration.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Collaboration </div>
+                      </div>
+                    </a>
+                    <a href="template/integrations.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Integrations</div>
+                      </div>
+                    </a>
+                    <a href="template/marketing.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Marketing </div>
+                      </div>
+                    </a>
+                    <a href="template/development.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Development</div>
+                      </div>
+                    </a>
+                    <a href="template/saas-template-resource.html" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Agency</div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event">
-                      <div class="title">Sign In</div>
-                      <div class="subtitle"></div>
-                      <div class="location">2nd Floor Foyer</div>
+                  <div class="lnd_nav_col_3">
+                    <div class="lnd_nav_title">STYLE ELEMENTS</div>
+                    <a href="https://forest-kit.webflow.io/style#S_Colour" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Colour</div>
+                      </div>
+                    </a>
+                    <a href="https://forest-kit.webflow.io/style#S_Heading" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Typography</div>
+                      </div>
+                    </a>
+                    <a href="https://forest-kit.webflow.io/style#S_Shadows" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Shadow</div>
+                      </div>
+                    </a>
+                    <a href="https://forest-kit.webflow.io/style#S_Avatar" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Avatars</div>
+                      </div>
+                    </a>
+                    <a href="https://forest-kit.webflow.io/style#S_Button" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Buttons</div>
+                      </div>
+                    </a>
+                    <a href="https://forest-kit.webflow.io/style#S_Form" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Fields</div>
+                      </div>
+                    </a>
+                    <a href="https://forest-kit.webflow.io/style#S_Alerts" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Alert Bars</div>
+                      </div>
+                    </a>
+                    <a href="https://forest-kit.webflow.io/style#S_Badges" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Badges</div>
+                      </div>
+                    </a>
+                    <a href="https://forest-kit.webflow.io/style#S_Icons" class="lnd_nav_item w-inline-block">
+                      <div class="div_block_05">
+                        <div class="lnd_nav_link_text">Icons</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lnd_nav_col_4">
+                    <div class="div-block-110-copy">
+                      <div class="nav_details_wrap">
+                        <h6 class="lnd_h6_white">ON SALE</h6>
+                        <h4 class="lnd_card_title_white">GRAB A COPY!</h4><a href="https://webflow.com/templates/html/forest-ui-kit-website-template?rfsn=1238427.48b8d" target="_blank" class="lnd_btn_02 w-button">BUY NOW</a></div>
+                    </div>
+                    <div class="div-block-110">
+                      <div class="nav_details_wrap">
+                        <h6 class="lnd_h6_white-copy">ALIGN YOUR DESIGN</h6>
+                        <h4 class="lnd_card_title_white-copy">STYLE GUIDE</h4><a href="style-guide.html" class="lnd_btn_02 w-button">VIEW NOW</a></div>
                     </div>
                   </div>
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">3:00&ndash;4:00pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event">
-                      <div class="title">Opening Ceremonies</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Auditorium</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time schedule-div-time">4:00pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="schedule-div-hr"><span class="schedule-div-text">Hacking begins!</span></div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">4:00&ndash;5:00pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-workshop">
-                      <div class="title">Intro to Hardware</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Strawberry (2601)</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">5:00&ndash;6:00pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-workshop">
-                      <div class="title">Intro to Python</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Peach (2602)</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">6:00&ndash;7:00pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-food">
-                      <div class="title">Dinner</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Cafeteria</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">7:30&ndash;8:30pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-workshop">
-                      <div class="title">Intro to Optimization with R</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Strawberry (2601)</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">8:30&ndash;9:30pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-workshop">
-                      <div class="title">Intro to Web Dev</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Peach (2602)</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">9:30&ndash;10:30pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-workshop">
-                      <div class="title">Intro to APIs</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Peach (2602)</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">11:00&ndash;11:45pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-activity">
-                      <div class="title">Cup Stacking</div>
-                      <div class="subtitle"></div>
-                      <div class="location">2nd Floor Foyer</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">12:00am</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-food">
-                      <div class="title">Midnight Snack</div>
-                      <div class="subtitle"></div>
-                      <div class="location">2nd Floor Foyer</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <div class="schedule-day-title" id="">Sunday May 5</div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">12:15&ndash;1:00am</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-activity">
-                      <div class="title">Werewolf</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Strawberry (2601)</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">8:30&ndash;9:30am</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-food">
-                      <div class="title">Breakfast</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Cafeteria</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">12:00&ndash;1:00pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event event-food">
-                      <div class="title">Lunch</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Cafeteria</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time schedule-div-time">2:00pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="schedule-div-hr"><span class="schedule-div-text">Submission deadline</span></div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">2:30&ndash;4:00pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event">
-                      <div class="title">Project Showcase and Judging</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Cafeteria</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-3 col-md-2">
-                    <div class="time">4:00&ndash;4:30pm</div>
-                  </div>
-                  <div class="col-9 col-md-10 col-lg-8">
-                    <div class="event">
-                      <div class="title">Closing Ceremonies</div>
-                      <div class="subtitle"></div>
-                      <div class="location">Auditorium</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </nav>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-xl-9">
-                <p class="end-tagline">Please arrange to be picked up between 4:30&#8288;&ndash;&#8288;5:00pm!
-                </p>
-              </div>
+            <div class="nav01_line"></div><a href="index.html" class="lnd_nav_link w-nav-link w--current">Sponsor Us</a><a href="index.html" class="lnd_nav_link w-nav-link w--current">FAQ</a>
+            <div data-delay="150" class="lnd_dropdown_wrap w-dropdown">
+              <div class="lnd_toggle w-hidden-medium w-hidden-small w-hidden-tiny w-dropdown-toggle"><img src="https://uploads-ssl.webflow.com/5beab1239ac88487c3a6608f/5c792e641e4e85eaf740a19b_dots.svg" width="16" alt="" class="image-47"></div>
+              <nav class="lnd_dropdown w-dropdown-list">
+                <a href="landing-page/licences.html" class="lnd_dropdown_link w-inline-block">
+                  <div class="lnd_dropdown_text">Licence Details</div>
+                </a>
+                <a href="mailto:tom@flowbase.co?subject=Forest%20Support" class="lnd_dropdown_link w-inline-block">
+                  <div class="lnd_dropdown_text">Contact Support</div>
+                </a>
+              </nav>
             </div>
-          </section>
-          <section class="map" id="map"></section>
-          <h1>Map</h1>
-          <p class="tagline">Here is a map to help you get around!</p><img class="img-fluid center" src="img/map.PNG">
-          <section class="sponsors" id="sponsors">
-            <div class="row justify-content-center">
-              <div class="col">
-                <h1>Sponsors</h1>
-              </div>
-            </div>
-            <div class="row justify-content-center align-items-center">
-              <div class="col-lg-9">
-                <p class="tagline">Interested in sponsoring? Shoot us an email at <a href="mailto:sponsor@jamhacks.ca" target="_blank">sponsor@jamhacks.ca</a>, or check out our <a href="sponsorship.pdf" target="_blank">sponsorship&nbsp;package</a>.
-                </p>
-              </div>
-            </div>
-            <div class="row sponsors-section">
-              <div class="logo col-12 col-lg-9"><img class="img-fluid" src="img/logos/VitalImages.png" alt="Vital Images" style="padding: 0 10%"/></div>
-            </div>
-            <div class="row sponsors-section">
-              <div class="logo col-10 col-lg-5"><img class="img-fluid" src="img/logos/The-Hub.png" alt="The Hub" style="padding: 0 5%"/></div>
-              <div class="logo col-10 col-lg-5"><img class="img-fluid" src="img/logos/TutorBright.jpg" alt="TutorBright" style="padding: 0 5%"/></div>
-            </div>
-            <div class="row sponsors-section">
-              <div class="logo col-6 col-sm-5 col-md-4 col-lg-3"><img class="img-fluid" src="img/logos/Balsamiq.png" alt="Balsamiq"/></div>
-              <div class="logo col-6 col-sm-5 col-md-4 col-lg-3"><img class="img-fluid" src="img/logos/Indico.png" alt="Indico"/></div>
-              <div class="logo col-6 col-sm-5 col-md-4 col-lg-3"><img class="img-fluid" src="img/logos/Waterloo-Engineering.png" alt="University of Waterloo Faculty of Engineering"/></div>
-              <div class="logo col-6 col-sm-5 col-md-4 col-lg-3"><img class="img-fluid" src="img/logos/Sketch.png" alt="Sketch"/></div>
-              <div class="logo col-6 col-sm-5 col-md-4 col-lg-3"><img class="img-fluid" src="img/logos/Hack-the-North.png" alt="Hack the North"/></div>
-            </div>
-          </section>
-        </div>
-      </article>
-      <footer>
-        <div class="container">
-          <div class="col"><a class="archive-link btn btn-outline-secondary" href="2018">2018 Website (Archive)</a>
-            <p class="copyright">&copy; 2019 JAMHacks. Website by Ethan Guo.</p>
+          </nav><a href="https://webflow.com/templates/html/forest-ui-kit-website-template?rfsn=1238427.48b8d" target="_blank" class="lnd_btn w-button">BUY FOREST $49</a>
+          <div class="nav01_burger w-nav-button">
+            <div class="nav01_icon_burger w-icon-nav-menu"></div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha256-rD86dXv7/J2SvI9ebmNi5dSuQdvzzrrN2puPca/ILls=" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
-  </body>
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="lnd_navigation_mobile w-nav">
+      <div class="nav01_container">
+        <div class="lnd_nav_left"><a href="index.html" class="nav01_logo w-nav-brand w--current"><img src="images/logo_forest_primary.svg" width="130" alt="" class="lnd_logo_forest"></a>
+          <nav role="navigation" class="nav01_links w-nav-menu"><a href="index.html" class="lnd_nav_link w-nav-link w--current">Overview</a>
+            <div data-delay="0" class="w-dropdown">
+              <div class="dropdown-toggle-10 w-dropdown-toggle">
+                <div class="w-icon-dropdown-toggle"></div>
+                <div>Components (v1)</div>
+              </div>
+              <nav class="w-dropdown-list"><a href="navigation.html" class="mobile_dropdown_link w-dropdown-link">Navigation</a><a href="headers.html" class="mobile_dropdown_link w-dropdown-link">Headers</a><a href="contents.html" class="mobile_dropdown_link w-dropdown-link">Content</a><a href="features.html" class="mobile_dropdown_link w-dropdown-link">Features</a><a href="testimonials.html" class="mobile_dropdown_link w-dropdown-link">Testimonials</a><a href="cta.html" class="mobile_dropdown_link w-dropdown-link">CTA</a><a href="pricing.html" class="mobile_dropdown_link w-dropdown-link">Pricing</a></nav>
+            </div>
+            <div data-delay="0" class="w-dropdown">
+              <div class="lnd_drop_down_toggle w-dropdown-toggle">
+                <div class="w-icon-dropdown-toggle"></div>
+                <div>Components (v2)</div>
+              </div>
+              <nav class="w-dropdown-list"><a href="team.html" class="mobile_dropdown_link w-dropdown-link">Team</a><a href="clients.html" class="mobile_dropdown_link w-dropdown-link">Clients</a><a href="tabs.html" class="mobile_dropdown_link w-dropdown-link">Tabs</a><a href="blogs.html" class="mobile_dropdown_link w-dropdown-link">Blogs</a><a href="footers.html" class="mobile_dropdown_link w-dropdown-link">Footers</a><a href="faq.html" class="mobile_dropdown_link w-dropdown-link">FAQ</a><a href="modules.html" class="mobile_dropdown_link w-dropdown-link">Modules</a><a href="forms.html" class="mobile_dropdown_link w-dropdown-link">Forms</a><a href="gallery.html" class="mobile_dropdown_link w-dropdown-link">Gallery</a></nav>
+            </div>
+            <div data-delay="0" class="w-dropdown">
+              <div class="lnd_drop_down_toggle w-dropdown-toggle">
+                <div class="w-icon-dropdown-toggle"></div>
+                <div>Style Elements (v1)</div>
+              </div>
+              <nav class="dropdown-list-8 w-dropdown-list"><a href="https://forest-kit.webflow.io/style#S_Colour" class="mobile_dropdown_link w-dropdown-link">Colour</a><a href="https://forest-kit.webflow.io/style#S_Heading" class="mobile_dropdown_link w-dropdown-link">Typography</a><a href="https://forest-kit.webflow.io/style#S_Shadows" class="mobile_dropdown_link w-dropdown-link">Shadow</a><a href="https://forest-kit.webflow.io/style#S_Avatar" class="mobile_dropdown_link w-dropdown-link">Avatars</a><a href="https://forest-kit.webflow.io/style#S_Button" class="mobile_dropdown_link w-dropdown-link">Buttons</a></nav>
+            </div>
+            <div data-delay="0" class="w-dropdown">
+              <div class="lnd_drop_down_toggle w-dropdown-toggle">
+                <div class="w-icon-dropdown-toggle"></div>
+                <div>Style Elements  (v2)</div>
+              </div>
+              <nav class="dropdown-list-8 w-dropdown-list"><a href="#" class="mobile_dropdown_link w-dropdown-link">Forms</a><a href="#" class="mobile_dropdown_link w-dropdown-link">Selections</a><a href="https://forest-kit.webflow.io/style#S_Alerts" class="mobile_dropdown_link w-dropdown-link">Alert Bars</a><a href="https://forest-kit.webflow.io/style#S_Badges" class="mobile_dropdown_link w-dropdown-link">Badges</a><a href="https://forest-kit.webflow.io/style#S_Icons" class="mobile_dropdown_link w-dropdown-link">Icons</a></nav>
+            </div>
+            <div data-delay="0" class="w-dropdown">
+              <div class="lnd_drop_down_toggle w-dropdown-toggle">
+                <div class="w-icon-dropdown-toggle"></div>
+                <div>Templates</div>
+              </div>
+              <nav class="w-dropdown-list"><a href="template/collaboration.html" class="mobile_dropdown_link w-dropdown-link">Collaboration</a><a href="template/integrations.html" class="mobile_dropdown_link w-dropdown-link">Integrations</a><a href="template/marketing.html" class="mobile_dropdown_link w-dropdown-link">Marketing</a><a href="template/development.html" class="mobile_dropdown_link w-dropdown-link">Development</a><a href="template/saas-template-resource.html" class="mobile_dropdown_link w-dropdown-link">Collaboration</a></nav>
+            </div><a href="landing-page/faq.html" class="lnd_nav_link w-nav-link">FAQ</a><a href="mailto:tom@flowbase.co?subject=Hello" class="lnd_nav_link w-nav-link">Contact Us</a><a href="https://webflow.com/templates/html/forest-ui-kit-website-template?rfsn=1238427.48b8d" class="lnd_nav_link_button w-nav-link">Buy Forest $49</a></nav>
+        </div>
+        <div class="nav01_right_wrap"><a href="https://webflow.com/templates/html/forest-ui-kit-website-template?rfsn=1238427.48b8d" target="_blank" class="lnd_btn w-button">BUY FOREST $49</a>
+          <div class="nav01_burger w-nav-button">
+            <div class="nav01_icon_burger w-icon-nav-menu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="lnd_hero">
+    <div class="lnd_container_hero">
+      <div class="lnd_hero_block"><img src="images/max.svg" alt="" class="image-44">
+        <div class="lnd_badge">
+          <div class="lnd_badge_circle"><img src="images/ico_f.svg" width="15" alt="" class="lnd_tag_image"></div>
+          <div class="lnd_badge_text">VERSION 1.0.6</div>
+        </div>
+        <h1 class="ldn_h1">Learn, Connect, Innovate</h1>
+        <h2 class="lnd_h2">Sir John A. Macdonald Secondary School, Waterloo<br></h2>
+        <p class="lnd_paragraph">May 4–5, 2019<br></p>
+        <div class="lnd_button_wrap"><a href="index.html" class="lnd_button w-button w--current">Register now</a><a href="index.html" class="lnd_button_explore w-button w--current">Register as a mentor</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="lnd_cta">
+    <div class="lnd_cta_bar"><img src="images/ptn.png" alt="" class="lnd_cta_image">
+      <div class="lnd_cta_text_wrap"><img src="images/logo_forest_primary.svg" width="100" alt="" class="lnd_logo">
+        <div class="lnd_cta_tex_plain">The ultimate webflow component library. </div>
+      </div>
+    </div><img src="images/peach.svg" alt="" class="image-45">
+    <div class="lnd_container_main">
+      <h4 data-w-id="a1d37852-0467-4a49-a5aa-fd89c33c925c" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_cta_text">JAMHacks 3 is the largest high school hackathon in Waterloo!</h4>
+    </div><img src="images/strawb.svg" alt="" class="image-46"></div>
+  <div class="lnd_content">
+    <div class="lnd_container lnd_first">
+      <div data-w-id="82ee0ee3-fb24-2a7e-258c-050c82444b88" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_img_block"><img src="images/grapes.svg" data-w-id="2e3269ad-d16f-eda3-995a-72e6c5de2daf" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" alt="" class="lnd_image lnd_grape"></div>
+      <div data-w-id="af219504-0676-bf35-5f54-e17b503fd54f" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_content_block"><img src="images/icon_01.svg" width="55" alt="" class="lnd_icon">
+        <h4 class="lnd_h4">What is JAMHacks?</h4>
+        <p class="lnd_paragraph">JAMHacks is a <strong>hackathon</strong>—a 24-hour-long “innovation marathon.” You’ll work in teams of up to 4 to create an app, game, website, robot, gadget, or whatever your heart desires.</p>
+        <div class="lnd_checks">
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">Rapidly build your own design system</p>
+          </div>
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">Maintain consistancy across your website</p>
+          </div>
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">Save hours in production time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lnd_container_reverse">
+      <div data-w-id="bf917d58-ef05-65d0-86ca-463363c5b1b1" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_content_block"><img src="images/icon_02.svg" width="55" alt="" class="lnd_icon">
+        <h4 class="lnd_h4">What else is JAMHacks?</h4>
+        <p class="lnd_paragraph">JAMHacks is also a <strong>learnathon</strong>—We’ll be running workshops to guide you through making a software or electronics project, even if you’ve never coded before!</p>
+        <div class="lnd_checks">
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">40+ navigations, headers, footers</p>
+          </div>
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">50+ content, features, pricing</p>
+          </div>
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">Forms, modules, buttons and more</p>
+          </div>
+        </div>
+      </div>
+      <div class="lnd_img_block"><img src="images/blueb.svg" data-w-id="8add8ab8-a937-034c-10dd-871e4c55f380" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" alt="" class="lnd_image lnd_blueberry"></div>
+    </div>
+    <div class="lnd_container">
+      <div data-w-id="51f5c6fa-6ce0-5538-5e61-3e884d7dd9c0" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_img_block">
+        <div class="main_img_wrap"></div><img src="images/phone_img.png" srcset="images/phone_img-p-500.png 500w, images/phone_img.png 654w" sizes="100vw" alt="" class="lnd_image"></div>
+      <div data-w-id="51f5c6fa-6ce0-5538-5e61-3e884d7dd9c6" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_content_block"><img src="images/icon_03.svg" width="55" alt="" class="lnd_icon">
+        <h4 class="lnd_h4">Modern landing pages</h4>
+        <p class="lnd_paragraph">Beautiful start-up inspired landing pages, ready to be edited to suit your own projects. Modern and responsive designs based on Forest components.</p>
+        <div class="lnd_checks">
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">5 startup inspired templates</p>
+          </div>
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">Beautiful and unique</p>
+          </div>
+          <div class="lnd_check_wrap"><img src="images/check.svg" width="21" alt="" class="lnd_check_icon">
+            <p class="lnd_paragraph_02">Responsive and clean</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lnd_content">
+    <div class="lnd_title_wrap">
+      <p data-w-id="78749be2-8926-fe8c-ae99-67fb4edf92f2" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_title">INTRODUCING FOREST</p>
+      <h3 data-w-id="1c8761bf-fa66-9010-8812-17f26e3101d7" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_h3">Frequently Asked Questions</h3>
+    </div>
+    <div class="lnd_container_flex">
+      <div class="lnd_services">
+        <div data-w-id="1df6e47b-706b-374d-06d8-10c1050bbe46" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_service_wrap">
+          <h2 class="lnd_h2">What if I don’t know how to code?</h2>
+          <p class="lnd_paragraph">JAMHacks is a <strong>hackathon</strong>—a 24-hour-long “innovation marathon.” You’ll work in teams of up to 4 to create an app, game, website, robot, gadget, or whatever your heart desires.</p><img src="images/copy_1.svg" width="55" alt="" class="lnd_service_icon"></div>
+        <div data-w-id="f52a57ae-77e3-d965-b25c-741b9ca31ee8" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_service_wrap">
+          <h2 class="lnd_h2">Do I need to have a team?</h2>
+          <p class="lnd_paragraph">Nope! We’ll have time for team formation at the event, which is a great way to meet cool new people. That said, if you have some friends, you can definitely form a team ahead of time!</p><img src="images/guide.svg" width="55" alt="" class="lnd_service_icon"></div>
+        <div data-w-id="be349074-199a-4390-776c-305cc4b403d4" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_service_wrap">
+          <h2 class="lnd_h2">Can I build a hardware/electronics project?</h2>
+          <p class="lnd_paragraph">Absolutely! We’ll have a shop open with soldering irons and small components (resistors etc.) for you to use.</p><img src="images/templates.svg" width="55" alt="" class="lnd_service_icon"></div>
+        <div data-w-id="bdafa141-81de-ecc2-0af8-f70917a11072" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_service_wrap">
+          <h2 class="lnd_h2">Who can participate?</h2>
+          <p class="lnd_paragraph">JAMHacks is open to any high school student in Ontario! You don’t need to have any experience! We will be accepting everyone who registers!</p><img src="images/tools.svg" width="55" alt="" class="lnd_service_icon"></div>
+      </div>
+      <div class="lnd_services">
+        <div data-w-id="f4fa55f8-40ef-05b2-059d-90e0efa67852" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_service_wrap">
+          <h2 class="lnd_h2">Is there any cost?</h2>
+          <p class="lnd_paragraph">Nope! The event will be free for all participants thanks to the generous contributions of our sponsors.</p><img src="images/copy_1.svg" width="55" alt="" class="lnd_service_icon"></div>
+        <div data-w-id="f4fa55f8-40ef-05b2-059d-90e0efa6785c" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_service_wrap">
+          <h2 class="lnd_h2">What should I bring?</h2>
+          <p class="lnd_paragraph">Bring your laptop, phone, charger, a reusable water bottle, sleeping bag, toiletries, and your student card or some form of ID. We will be providing meals and snacks, and sleeping rooms!</p><img src="images/guide.svg" width="55" alt="" class="lnd_service_icon"></div>
+        <div data-w-id="f4fa55f8-40ef-05b2-059d-90e0efa67862" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_service_wrap">
+          <h2 class="lnd_h2">What if I’m not a high school student?</h2>
+          <p class="lnd_paragraph">We’d love to have you as a mentor! You can <a href="https://jamhacks.ca/mentor" target="_blank"><strong>register here</strong></a>.</p><img src="images/templates.svg" width="55" alt="" class="lnd_service_icon"></div>
+        <div data-w-id="f4fa55f8-40ef-05b2-059d-90e0efa67868" style="-webkit-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_service_wrap">
+          <h2 class="lnd_h2">Is there a code of conduct?</h2>
+          <p class="lnd_paragraph">Is there a code of conduct?Yes. In short, be respectful to other people. You can read the full version <a href="https://jamhacks.ca/conduct" target="_blank"><strong>here</strong></a>.</p><img src="images/tools.svg" width="55" alt="" class="lnd_service_icon"></div>
+      </div>
+      <div href="#LND_features" data-w-id="afa4b184-821d-670b-c165-d9c240227568" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_link_wrap">
+        <div class="lnd_link_text">More questions? Feel free to email us at <a href="mailto:hello@jamhacks.ca" target="_blank"><strong>hello@jamhacks.ca</strong></a></div><img src="images/Icon.svg" alt="" class="lnd_link_arrow"></div>
+    </div>
+  </div>
+  <div id="LND_started" class="lnd_content lnd_collection">
+    <div data-w-id="e80a33f3-78ad-be88-352e-6c82521b1075" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_title_wrap_02">
+      <p class="lnd_title">OUR FEATURES</p>
+      <h3 class="lnd_h3_02">View the entire collection </h3>
+      <p class="lnd_paragraph_03">Preview over 300 cloneable components from the Forest library.</p>
+    </div>
+    <div id="LND_features" class="lnd_container_02">
+      <div data-w-id="ec6fafae-5243-f3a3-2187-35ef157e6893" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_glossary">
+        <a href="navigation.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">NAVIGATION</div>
+        </a>
+        <a href="headers.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">HEADERS</div>
+        </a>
+        <a href="contents.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">CONTENT</div>
+        </a>
+        <a href="features.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">FEATURES</div>
+        </a>
+        <a href="testimonials.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">TESTIMONIAL</div>
+        </a>
+        <a href="cta.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">CTA</div>
+        </a>
+        <a href="pricing.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">PRICING</div>
+        </a>
+        <a href="team.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">TEAM</div>
+        </a>
+        <a href="clients.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">CLIENTS</div>
+        </a>
+        <a href="tabs.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">TABS</div>
+        </a>
+        <a href="blogs.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">BLOGS</div>
+        </a>
+        <a href="footers.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">FOOTERS</div>
+        </a>
+        <a href="faq.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">FAQS</div>
+        </a>
+        <a href="modules.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">MODULES</div>
+        </a>
+        <a href="forms.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">FORMS</div>
+        </a>
+        <a href="gallery.html" class="lnd_component_button w-inline-block">
+          <div class="lnd_tab_text">GALLERY</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Colour" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">COLOURS</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Heading" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">TYPOGRAPHY</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Shadows" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">SHADOWS</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Avatar" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">AVATARS</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Button" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">BUTTONS</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Form" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">FIELDS</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Alerts" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">ALERTS</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Badges" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">BADGES</div>
+        </a>
+        <a href="https://forest-kit.webflow.io/style#S_Icons" class="lnd_component_button_02 w-inline-block">
+          <div class="lnd_tab_text">ICONS</div>
+        </a>
+      </div>
+      <div data-w-id="9553fc0c-94d5-cf88-90a1-d4672b0906a5" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_title_wrap_02">
+        <h3 class="lnd_h3_02">Landing Page Templates</h3>
+        <p class="lnd_paragraph_03">Modern landing pages included - preview now.</p>
+      </div>
+      <div data-w-id="d257a973-da34-cc42-a4c4-1574e8f758b4" style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="lnd_template_wrap">
+        <div class="lnd_template_column">
+          <div class="lnd_card_template_01">
+            <div class="lnd_card_text_wrap">
+              <h6 class="lnd_h6">TEMPLATE 01</h6>
+              <h6 class="lnd_card_title">COLLABORATION</h6>
+              <a href="template/collaboration.html" class="lnd_link_card w-inline-block">
+                <div class="lnd_link_text">Preview<span class="link"></span></div><img src="images/log-out.svg" alt="" class="lnd_link_arrow"></a>
+            </div><a href="template/collaboration.html" class="lnd_card_link w-inline-block"></a></div>
+        </div>
+        <div class="lnd_template_column">
+          <div class="lnd_card_template_02">
+            <div class="lnd_card_text_wrap">
+              <h6 class="lnd_h6">TEMPLATE 02</h6>
+              <h6 class="lnd_card_title">INTEGRATIONS</h6>
+              <a href="template/integrations.html" class="lnd_link_card w-inline-block">
+                <div class="lnd_link_text">Preview<span class="link"></span></div><img src="images/log-out.svg" alt="" class="lnd_link_arrow"></a>
+            </div><a href="template/integrations.html" class="lnd_card_link w-inline-block"></a></div>
+        </div>
+        <div class="lnd_template_column">
+          <div class="lnd_card_template_03">
+            <div class="lnd_card_text_wrap">
+              <h6 class="lnd_h6">TEMPLATE 03</h6>
+              <h6 class="lnd_card_title">MARKETING</h6>
+              <a href="template/marketing.html" class="lnd_link_card w-inline-block">
+                <div class="lnd_link_text">Preview<span class="link"></span></div><img src="images/log-out.svg" alt="" class="lnd_link_arrow"></a>
+            </div><a href="template/marketing.html" class="lnd_card_link w-inline-block"></a></div>
+        </div>
+        <div class="lnd_template_column">
+          <div class="lnd_card_template_04">
+            <div class="lnd_card_text_wrap">
+              <h6 class="lnd_h6">TEMPLATE 04</h6>
+              <h6 class="lnd_card_title">DEVELOPMENT</h6>
+              <a href="template/development.html" class="lnd_link_card w-inline-block">
+                <div class="lnd_link_text">Preview<span class="link"></span></div><img src="images/log-out.svg" alt="" class="lnd_link_arrow"></a>
+            </div><a href="template/development.html" class="lnd_card_link w-inline-block"></a></div>
+        </div>
+        <div class="lnd_template_column">
+          <div class="lnd_card_template_05">
+            <div class="lnd_card_text_wrap">
+              <h6 class="lnd_h6_05">TEMPLATE 05</h6>
+              <h4 class="lnd_card_title">RESOURCE</h4>
+              <a href="#" class="lnd_link_card w-inline-block">
+                <div class="lnd_link_text">Preview<span class="link"></span></div><img src="images/log-out.svg" alt="" class="lnd_link_arrow"></a>
+            </div><a href="style-guide.html" class="lnd_card_link w-inline-block"></a></div>
+        </div>
+        <div class="lnd_template_column">
+          <div class="lnd_card_template_buy">
+            <div class="lnd_card_text_wrap_02">
+              <h6 class="lnd_h6_white">TAKE CONTROL</h6>
+              <h4 class="lnd_card_title_white">BUY FOREST</h4><a href="https://webflow.com/templates?rfsn=1238427.48b8d" target="_blank" class="lnd_btn_02 w-button">BUY NOW</a></div><a href="#" class="lnd_card_link w-inline-block"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lnd_footer">
+    <div class="lnd_footer_wrap">
+      <div class="lnd_top_wrap">
+        <div><a href="#" class="w-nav-brand"><img src="images/max.svg" width="250" alt="" class="logo_forest"></a></div>
+        <div class="lnd_footer_link_wrap w-hidden-tiny">
+          <div class="lnd_footer_caption"><a href="index.html" target="_blank" class="link-11 w--current">© 2020 JAMHacks Website by Andrew Wang</a></div><a href="index.html" target="_blank" class="lnd_button_4 w-button w--current">2019 Website</a></div>
+      </div>
+      <div class="lnd_footer_columns w-row">
+        <div class="lnd_footer_column w-col w-col-2 w-col-small-small-stack">
+          <div class="lnd_footer_title">Forest</div><a href="index.html" class="lnd_link w--current">Overview</a><a href="https://forest-kit.webflow.io/#LND_started" class="lnd_link">Glossary</a><a href="landing-page/faq.html" class="lnd_link">FAQ</a><a href="style.html" class="lnd_link">Style Guide</a><a href="landing-page/licences.html" class="lnd_link">Licence</a><a href="https://webflow.com/templates/html/forest-ui-kit-website-template?rfsn=1238427.48b8d" class="lnd_link">Buy Now</a></div>
+        <div class="lnd_footer_column w-col w-col-2 w-col-small-small-stack">
+          <div class="lnd_footer_title">Style Elements</div><a href="https://forest-kit.webflow.io/style#S_Colour" class="lnd_link">Colours</a><a href="https://forest-kit.webflow.io/style#S_Heading" class="lnd_link">Typography</a><a href="https://forest-kit.webflow.io/style#S_Shadows" class="lnd_link">Shadow</a><a href="https://forest-kit.webflow.io/style#S_Avatar" class="lnd_link">Avatar</a><a href="https://forest-kit.webflow.io/style#S_Button" class="lnd_link">Buttons</a><a href="https://forest-kit.webflow.io/style#S_Form" class="lnd_link">Fields</a><a href="https://forest-kit.webflow.io/style#S_Alerts" class="lnd_link">Alert Bars</a><a href="https://forest-kit.webflow.io/style#S_Badges" class="lnd_link">Badges</a><a href="https://forest-kit.webflow.io/style#S_Icons" class="lnd_link">Icons</a></div>
+        <div class="lnd_footer_column w-col w-col-2 w-col-small-small-stack">
+          <div class="lnd_footer_title">Components</div><a href="navigation.html" class="lnd_link">Navigation</a><a href="headers.html" class="lnd_link">Header</a><a href="contents.html" class="lnd_link">Content</a><a href="features.html" class="lnd_link">Features</a><a href="testimonials.html" class="lnd_link">Testimonials</a><a href="cta.html" class="lnd_link">Call to Actions</a><a href="pricing.html" class="lnd_link">Pricing</a><a href="team.html" class="lnd_link">Team</a><a href="clients.html" class="lnd_link">Clients</a></div>
+        <div class="lnd_footer_column w-col w-col-2 w-col-small-small-stack">
+          <div class="lnd_footer_title">  </div><a href="tabs.html" class="lnd_link">Tabs</a><a href="blogs.html" class="lnd_link">Blog</a><a href="footers.html" class="lnd_link">Footers</a><a href="faq.html" class="lnd_link">FAQ</a><a href="modules.html" class="lnd_link">Modules</a><a href="forms.html" class="lnd_link">Forms</a><a href="gallery.html" class="lnd_link">Gallery</a></div>
+        <div class="lnd_footer_column_right w-clearfix w-col w-col-4 w-col-small-small-stack">
+          <div class="lnd_footer_text">© Flowbase.co<br></div>
+          <div class="lnd_social_wrap"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
 </html>
