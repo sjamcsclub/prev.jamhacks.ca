@@ -27446,6 +27446,8 @@ blockquote {
 .columns {
   height: 300px;
   margin-top: -300px;
+  width: 50em;
+  float: right;
 }
 
 .column-2 {
