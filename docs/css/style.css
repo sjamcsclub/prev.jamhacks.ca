@@ -31401,3 +31401,7 @@ blockquote {
 html, body {
   overflow-x: hidden;
 }
+
+.double_space {
+  line-height: 2;
+}
