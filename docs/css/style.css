@@ -1689,6 +1689,11 @@ blockquote {
   font-weight: 500;
 }
 
+.lnd_paragraph_red {
+  color: red;
+  font-size: 30px;
+}
+
 .b03_details_text {
   margin-right: 4px;
   color: #4e5d78;
