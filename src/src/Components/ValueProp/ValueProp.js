@@ -28,7 +28,7 @@ class ValueProp extends Component {
                 </div> */}
 
                 <div className="value-prop-content-row-div">
-                    <div style={{width : "60%", marginTop : "10%"}}>
+                    <div style={{width : "60%", marginTop : "10%", minWidth : "260px"}}>
                         <div className="value-prop-title-div" data-aos="fade-up">Waterloo’s biggest high school hackathon</div>
                         <div className="about-content-subheading" data-aos="fade-up" style={{textAlign : "left", width : "100%"}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor vitae felis at fermentum. Nulla facilisi. Pellentesque faucibus nisi eget rhoncus suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor vitae felis at fermentum. Nulla facilisi. Pellentesque faucibus nisi eget rhoncus suscipit. 
@@ -42,7 +42,7 @@ class ValueProp extends Component {
 
                     </div>
                 </div>
-                <div className="value-prop-content-row-div">
+                <div className="value-prop-content-row-div" style={{flexWrap : "wrap-reverse"}}>
                     <div className="jam-image-div" data-aos="fade-up">
 
                     </div>

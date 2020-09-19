@@ -44,7 +44,7 @@
 .navbar-link-item{
     margin: 10px;
     color: #222130;
-    font-family: Inter;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -146,7 +146,7 @@ transform: translateY(-7px) rotate(-45deg);
 
 .navbar-mobile-link-item{
 
-    font-family: Inter;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -158,6 +158,14 @@ transform: translateY(-7px) rotate(-45deg);
 
     color: #222130;
     margin-bottom: 25px;
+}
+
+.navbar-scrolled-link{
+    color: white;
+}
+
+.navbar-scrolled-link:hover{
+    color: white;
 }
 
 .navbar-mobile-link-item:hover{

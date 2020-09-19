@@ -22,8 +22,17 @@ class Navbar extends Component {
 
             if (scrollTop > 10){
                 document.getElementsByClassName("navbar-div")[0].classList.add("scrolled-navbar")
+                // for (item in document.getElementsByClassName("navbar-link-item")){
+                for (var i = 0; i < document.getElementsByClassName("navbar-link-item").length; i++) {
+
+                    document.getElementsByClassName("navbar-link-item")[i].classList.add("navbar-scrolled-link")
+                }
             }else{
                 document.getElementsByClassName("navbar-div")[0].classList.remove("scrolled-navbar")
+                for (var i = 0; i < document.getElementsByClassName("navbar-link-item").length; i++) {
+
+                    document.getElementsByClassName("navbar-link-item")[i].classList.remove("navbar-scrolled-link")
+                }
             }
         })
 

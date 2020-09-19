@@ -10,9 +10,9 @@
 }
 
 .sponsor-display-title-div{
-    font-family: Space Grotesk;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 32px;
     line-height: 43px;
     display: flex;
