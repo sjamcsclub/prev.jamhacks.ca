@@ -28,7 +28,7 @@ class ValueProp extends Component {
                 </div> */}
 
                 <div className="value-prop-content-row-div">
-                    <div style={{width : "60%", marginTop : "10%", minWidth : "260px"}}>
+                    <div style={{width : "60%", minWidth : "260px"}}>
                         <div className="value-prop-title-div" data-aos="fade-up">Waterloo’s biggest high school hackathon</div>
                         <div className="about-content-subheading" data-aos="fade-up" style={{textAlign : "left", width : "100%"}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor vitae felis at fermentum. Nulla facilisi. Pellentesque faucibus nisi eget rhoncus suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor vitae felis at fermentum. Nulla facilisi. Pellentesque faucibus nisi eget rhoncus suscipit. 
@@ -49,18 +49,14 @@ class ValueProp extends Component {
                     <div style={{width : "60%"}}>
                         <div className="value-prop-title-div" data-aos="fade-up">All Hackers Welcome</div>
                         <div className="about-content-subheading" data-aos="fade-up" style={{textAlign : "left", width : "100%"}}>
-                            Visionary Fellowship will combine your interests and skills, and 
-                            match you with a team of 5 along with a company. Our Visionary Fellows
-                            will work directly with their assigned company to complete a comprehensive software project,
-                            courtesy of the companies. The program will assist in guiding each team with weekly objectives,
-                            workshops, and guidelines to meet project deadlines and improve your skills.
-                            <br></br>
-                            <br></br>
-                            Visionary Fellowship will combine your interests and skills, and 
-                            match you with a team of 5 along with a 
-                            will work directly with their 
-                            courtesy of the companies. The program will assist in guiding each team with weekly objectives,
-                            workshops, and guidelines to meet project deadlines and improve your skills.
+                        Some stuff about how like we are very inclusive and have stuff for everyone no matter who. stuff
+                        Some stuff about how like we are very inclusive and have stuff for everyone no matter who. stuff
+                        <br></br>
+                        <br></br>
+                        Ut elementum lorem ligula, eget luctus lorem accumsan vel. Donec vel elit non mauris commodo tempor. 
+                        Donec eget justo tempus metus auctor tincidunt et et odio. Aliquam in consectetur tellus, tempus consequat elit
+                        Ut elementum lorem ligula, eget luctus lorem accumsan vel. Donec vel elit non mauris commodo tempor. 
+                        Donec eget justo tempus metus auctor tincidunt et et odio. Aliquam in consectetur tellus, tempus consequat elit
                         </div>
                     </div>
                     

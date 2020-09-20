@@ -20,7 +20,7 @@ class SponsorDisplay extends Component {
     render() { 
         return (
             <div className="sponsor-display-div">
-                <div className="sponsor-display-title-div" data-aos="fade-up" style={{fontSize : "45px"}}>Sponsors</div>
+                <div className="sponsor-display-title-div large-title" data-aos="fade-up" >Sponsors</div>
                 {/* <div className="sponsor-display-content-div" data-aos="fade-up">
                     <Collapse expandIcon={({ isActive }) => <Arrow style={isActive ? {transform : "rotate(90deg)", transformOrigin : "75% 25%"}:{}}rotate={isActive ? 90 : 0} />}>
                         <Panel header="Is this a paid internship?" key="1" className="site-collapse-custom-panel">

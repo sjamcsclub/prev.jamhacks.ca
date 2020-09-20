@@ -38,7 +38,7 @@
 
     /* text/headings */
 
-    color: #0E3256;
+    color: #1e0e56;
     margin-bottom: 25px;
 }
 
@@ -89,6 +89,10 @@
     background-repeat: no-repeat;
 }
 
+.large-title{
+    font-size: 45px;
+}
+
 @media only screen and (max-width: 1000px) {
     .sponsor-title-div{
         font-size: 28px;
@@ -100,6 +104,12 @@
     }
     .sponsor-title-div{
         margin-top: 40px;
+    }
+    .large-title{
+        font-size: 38px;
+    }
+    .larger-sponsor-text{
+        font-size: 18px;
     }
 }
 
@@ -115,7 +125,12 @@
     .sponsor-title-div{
         margin-top: 40px;
     }
-    
+    .large-title{
+        font-size: 32px;
+    }
+    .larger-sponsor-text{
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 450px) {

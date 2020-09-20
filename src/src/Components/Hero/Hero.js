@@ -34,7 +34,7 @@ class Hero extends Component {
                         </div>
                     </div>
                     <div className="hero-subtitle-div">
-                        <div style={{color : "#222130", fontSize : "20px"}}>
+                        <div style={{color : "#222130", fontSize : "20px", textAlign : "left"}}>
                             Sir John A. Macdonald Secondary School
                         </div>
                     </div>
@@ -43,11 +43,14 @@ class Hero extends Component {
                             May 2 to 3, 2021
                         </div>
                     </div>
-                    <a href="https://bit.ly/visionaryapplication" target="_blank" className="hero-button-div">
-                        <Button type="primary" ghost={false} style={{width : "180px", height : "40px", zIndex : "50"}}>
-                            Register
-                        </Button>
-                    </a>
+                    <div className="hero-button-div">
+                        <a href="https://bit.ly/visionaryapplication" target="_blank">
+                            <Button type="primary" ghost={false} style={{width : "180px", height : "40px", zIndex : "50"}}>
+                                Register
+                            </Button>
+                        </a>
+                    </div>
+                    
                     <div className="hero-subtitle-div">
                         <div style={{color : "#222130", fontSize : "16px"}}>
                             Interested in sponsoring?

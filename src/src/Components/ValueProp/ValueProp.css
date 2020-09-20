@@ -33,7 +33,7 @@
 
     /* text/headings */
 
-    color: #0E3256;
+    color: #1e0e56;
     margin-bottom: 40px;
     margin-top: 40px;
 }
@@ -46,6 +46,7 @@
     height: fit-content;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     z-index: 5;
     margin-bottom: 40px;

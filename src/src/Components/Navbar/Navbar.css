@@ -80,7 +80,7 @@
 .line{
   width: 20px;
   height: 2px;
-  background-color: #0E3256;
+  background-color: #1e0e56;
   display: block;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -115,7 +115,7 @@ transform: translateY(-7px) rotate(-45deg);
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: #F9FFFF;
+    background: #fbf9ff;
     top: 0px;
     /* margin-top: calc(100vh - 70px); */
     /* margin-top: calc(50vh - 35px); */
@@ -171,6 +171,15 @@ transform: translateY(-7px) rotate(-45deg);
 .navbar-mobile-link-item:hover{
     cursor: pointer;
 }
+
+.navbar-social-icon-scrolled{
+    display: none;
+}
+
+.navbar-scrolled-social-icon{
+    display: none;
+}
+
 @media only screen and (max-width: 780px) {
     .navbar-div{
         height: 70px;
@@ -186,10 +195,10 @@ transform: translateY(-7px) rotate(-45deg);
     }
 
     .navbar-logo{
-        width: 17px;
-        height: 28px;
-        background: url("../../Assets/NoWordsLogo.svg");
-        background-size: 17px 28px;
+        background-image: url("../../Assets/Logo.svg");
+        background-size: 30px 60px ;
+        width: 30px;
+        height: 60px;
     }
     .navbar-logo-div{
         margin-left: 30px;

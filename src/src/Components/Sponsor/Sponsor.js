@@ -19,10 +19,10 @@ class Sponsor extends Component {
                     <div className="sponsor-content-half" data-aos="fade-up">
                         <div className="sponsor-title-div">Sponsor the Next Generation</div>
                         <div className="sponsor-content-text">
-                            We are open to connecting with both sponsors and partner companies. As a partner company, 
-                            you will provide a real or practice project for our talented fellows to work on. We ensure 
-                            a smooth and easy process for you - our team takes care of all the administration work, 
-                            so you get to focus on collaborating with our participants. 
+                        Some text about the benefit of sponsoring us as well as the sponsorship package details stuff. see our sponsorship package here.
+                        <br></br>
+                        <br></br>
+                        Interested in sponsoring? Email us at <a href="mailto:sponsor@jamhacks.com">sponsor@jamhacks.com</a>
                         </div>
                         <a href="https://bit.ly/visionarysponsoring" target="_blank">
                             <Button type="primary" ghost={true} style={{width : "260px", height : "40px"}}>Become a Sponsor</Button>

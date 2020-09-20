@@ -20,6 +20,16 @@
     background-repeat: no-repeat;
 }
 
+.larger-sponsor-text{
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 700px) {
+    .larger-sponsor-text{
+        font-size: 18px;
+    }
+}
+
 @media only screen and (max-width: 450px) {
     .mentor1{
         width: 280px;

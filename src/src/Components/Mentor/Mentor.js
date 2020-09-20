@@ -19,8 +19,8 @@ class Mentor extends Component {
             <>
                 <div className="sponsor-div" style={{height : "fit-content", minHeight : "0px"}}>
                     <div className="sponsor-content-div" style={{margin : "0px", padding : "0px", height : "fit-content", minHeight : "0px", flexWrap : "wrap"}} data-aos="fade-up">
-                        <div className="sponsor-title-div" style={{width : "100%", textAlign : "left", height : "fit-content", fontSize : "45px"}}>We Need You!</div>
-                        <div className="sponsor-content-text" style={{fontSize : "22px"}}>
+                        <div className="sponsor-title-div large-title" style={{width : "100%", textAlign : "left", height : "fit-content"}}>We Need You!</div>
+                        <div className="sponsor-content-text larger-sponsor-text">
                             Some stuff about we need whether you are a 
                             <br></br>
                             hacker or a mentor or as a volunteer we need you.

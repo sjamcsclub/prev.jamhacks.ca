@@ -15,6 +15,7 @@ import Footer from "./Components/Footer/Footer"
 import Privacy from "./Components/Privacy/Privacy"
 import PrivNav from "./Components/PrivNav/Navbar"
 import Faq from "./Components/Faq/Faq"
+import Contact from "./Components/Contact/Contact"
 
 import AOS from 'aos'
 import "aos/dist/aos.css";
@@ -105,6 +106,7 @@ Copyright (c) 2020 Visionary Development Studios. 
               <SponsorDisplay></SponsorDisplay>
               <Faq></Faq>
               <Team></Team>
+              <Contact></Contact>
               <Footer></Footer>
             </Route>
           </Switch>

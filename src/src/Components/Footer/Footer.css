@@ -93,6 +93,19 @@
     background: url("../../Assets/mailH.svg")
 }
 
+.twitter{
+    background: url("../../Assets/twitterH.svg")
+}
+
+.facebook{
+    /* background-image: no-repeat url("../../Assets/facebook.svg");
+    background-size: 24px 24px;
+    width: 24px;
+    width: 24px; */
+    background: no-repeat url("../../Assets/facebookH.svg")
+
+}
+
 .social-icon:hover{
     cursor: pointer;
 }
