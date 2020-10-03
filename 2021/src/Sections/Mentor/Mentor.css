@@ -1,0 +1,67 @@
+.mentor-div {
+  padding-top: 3rem;
+  min-height: 50vh;
+  height: fit-content;
+  width: 100%;
+  background: #fbf9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentor1 {
+  width: 380px;
+  height: 95px;
+  background: url("../../Assets/Mentor1.svg");
+  background-size: 380px 95px;
+  background-repeat: no-repeat;
+}
+.mentor2 {
+  width: 330px;
+  height: 100px;
+  background: url("../../Assets/Mentor2.svg");
+  background-size: 330px 100px;
+  background-repeat: no-repeat;
+}
+.mentor3 {
+  width: 380px;
+  height: 95px;
+  background: url("../../Assets/Mentor3.svg");
+  background-size: 380px 95px;
+  background-repeat: no-repeat;
+}
+
+.larger-mentor-text {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 700px) {
+  .larger-mentor-text {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .mentor1 {
+    width: 280px;
+    height: 85px;
+    background: url("../../Assets/Mentor1.svg");
+    background-size: 280px 85px;
+    background-repeat: no-repeat;
+  }
+  .mentor2 {
+    width: 280px;
+    height: 85px;
+    background: url("../../Assets/Mentor2.svg");
+    background-size: 280px 85px;
+    background-repeat: no-repeat;
+  }
+  .mentor3 {
+    width: 280px;
+    height: 85px;
+    background: url("../../Assets/Mentor3.svg");
+    background-size: 280px 85px;
+    background-repeat: no-repeat;
+  }
+}

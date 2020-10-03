@@ -1,0 +1,262 @@
+.hero-div {
+  min-height: calc(100vh);
+  height: fit-content;
+  padding-top: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+
+  background: linear-gradient(-45deg, #ffffff, #23d5ab, #23a6d5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wave-div {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.wave-wrapper {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.wave-top {
+  background-size: 50% 100px;
+}
+
+.wave-middle {
+  background-size: 50% 120px;
+}
+
+.wave-bottom {
+  background-size: 50% 100px;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url("../../Assets/waves.png");
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.wave-animation .wave-top {
+  animation: move-wave 3s linear infinite;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.wave-animation .wave-middle {
+  animation: move_wave 10s linear infinite;
+}
+
+.wave-animation .wave-bottom {
+  animation: move_wave 15s linear infinite;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+.hero-logo-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+
+.hero-title-div {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 65px;
+  color: #7b0ff7;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  z-index: 5;
+}
+
+.hero-subtitle-div {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 28px;
+  text-align: center;
+  color: #3b00c3;
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  z-index: 5;
+}
+
+.sponsor-action {
+  position: relative;
+}
+
+.sponsor-action:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  font-size: 0;
+  height: 3px;
+  display: inline-block;
+  background: rgb(34, 33, 48);
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  width: 0;
+}
+
+.sponsor-action:hover:after {
+  width: 100%;
+}
+
+.hero-button-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  z-index: 5;
+}
+
+.hero-background-div {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-partners-div {
+  min-height: 20vh;
+  height: fit-content;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero-partners-content-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo-container-div {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.logo-div {
+  margin-left: 17.5px;
+  margin-right: 17.5px;
+}
+
+.background-diamond-1 {
+  background-image: url("../../Assets/PNGDiamonds/1.png");
+  background-position: center center;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.hero-content-div {
+  width: 850px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-content-div {
+    width: 600px;
+  }
+
+  .hero-subtitle-div {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hero-partners-div {
+    font-size: 22px;
+    line-height: 38px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-title-div {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .hero-content-div {
+    width: 300px;
+  }
+  .hero-subtitle-div {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .hero-partners-div {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .hero-div {
+    min-height: calc(100vh - 70px);
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (min-height: 800px) {
+  .hero-partners-div {
+    min-height: 25vh;
+    height: 25vh;
+    justify-content: center;
+  }
+  .hero-partners-content-div {
+    margin-bottom: 50px;
+  }
+}

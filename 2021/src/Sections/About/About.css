@@ -1,0 +1,139 @@
+.about-div {
+  width: 100%;
+  height: fit-content;
+  background: #7b0ff7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-background-div {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title-div {
+  /* margin-left: 10vw;
+    margin-right: 10vw; */
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+
+  /* text/headings */
+
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.about-content-row-div {
+  width: 80%;
+  /* margin-left: 10vw;
+    margin-right: 10vw; */
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 5;
+  margin-bottom: 2rem;
+}
+
+.about-content-item {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  margin-bottom: 30px;
+}
+
+.about-content-item-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+
+  /* text/secondary heading */
+
+  color: #0a56e9;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.about-content-item-content {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  /* text/body */
+
+  color: #0a0a0a;
+}
+
+.about-content-item-image {
+  width: 80px;
+  height: 80px;
+  background: #8dc740;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jam-image-div {
+  width: 300px;
+  height: 650px;
+  background-size: 300px 650px;
+  background-image: url("../../Assets/JamImage.svg");
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-title-div {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .about-content-item-image {
+    width: 60px;
+    height: 60px;
+  }
+  .about-content-item-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+  .jam-image-div {
+    width: 200px;
+    height: 344px;
+    background-size: 200px 344px;
+    background-image: url("../../Assets/JamImage.svg");
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about-title-div {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .about-content-item-title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+}
