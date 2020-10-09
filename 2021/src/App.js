@@ -5,7 +5,7 @@ import "./App.less";
 import Navbar from "./Sections/Navbar/Navbar";
 import Hero from "./Sections/Hero/Hero";
 import About from "./Sections/About";
-import Mentor from "./Sections/Mentor/Mentor";
+import Mentor from "./Sections/Mentor";
 import Schedule from "./Sections/Schedule";
 import Sponsor from "./Sections/Sponsor/Sponsor";
 import SponsorDisplay from "./Sections/SponsorDisplay/SponsorDisplay";
@@ -44,22 +44,30 @@ Copyright (c) 2020 JAMHacks. 
         <div className="App">
           <Switch>
             <Route exact path="/privacy-policy">
-              <PrivNav></PrivNav>
+              <PrivNav />
               <Privacy></Privacy>
-              <Footer></Footer>
+              <Footer register={process.env.REACT_APP_REGISTER}></Footer>
+            </Route>
+            <Route exact path="/code-of-conduct">
+              <PrivNav />
+              <Privacy></Privacy>
+              <Footer register={process.env.REACT_APP_REGISTER}></Footer>
             </Route>
             <Route path="/">
               <Navbar />
-              <Hero />
+              <Hero register={process.env.REACT_APP_REGISTER} />
               <About />
-              <Mentor />
-              <Schedule />
+              <Mentor
+                mentor={process.env.REACT_APP_MENTOR_REGISTER}
+                volunteer={process.env.REACT_APP_VOLUNTEER_REGISTER}
+              />
+              {process.env.REACT_APP_SCHEDULE === "open" && <Schedule />}
               <Sponsor />
               <SponsorDisplay />
               <Faq />
               <Team />
               <Contact />
-              <Footer />
+              <Footer register={process.env.REACT_APP_REGISTER} />
             </Route>
           </Switch>
         </div>

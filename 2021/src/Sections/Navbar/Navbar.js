@@ -10,10 +10,35 @@ import { ReactComponent as Instagram } from "../../Assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../Assets/twitter.svg";
 import { ReactComponent as Facebook } from "../../Assets/facebook.svg";
 
-import { ReactComponent as LinkedinS } from "../../Assets/linkedinS.svg";
-import { ReactComponent as InstagramS } from "../../Assets/instagramS.svg";
-import { ReactComponent as TwitterS } from "../../Assets/twitterS.svg";
-import { ReactComponent as FacebookS } from "../../Assets/facebookS.svg";
+const navLinks = [
+  {
+    label: "About",
+    id: "about-section",
+  },
+  {
+    label: "Schedule",
+    id: "schedule-section",
+  },
+  {
+    label: "Sponsors",
+    id: "sponsors-section",
+  },
+  {
+    label: "FAQ",
+    id: "faq-section",
+  },
+  {
+    label: "Contact",
+    id: "contact-section",
+  },
+];
+
+const socialURLS = {
+  instagram: "https://www.instagram.com/jamhacks",
+  facebook: "https://www.facebook.com/JAMHacks",
+  linkedin: "https://www.linkedin.com/company/jamhacks/",
+  twitter: "https://twitter.com/jam_hacks?lang=en",
+};
 
 //animation variants
 const MobileVariants = {
@@ -25,6 +50,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.register = process.env.REACT_APP_REGISTER;
   }
 
   componentDidMount() {
@@ -119,108 +145,23 @@ class Navbar extends Component {
           transition={{ ease: "easeOut", duration: 0.25 }}
         >
           <div className="navbar-mobile-links-div">
-            <div className="navbar-mobile-link-container">
-              <div
-                className="navbar-mobile-link-item"
-                onClick={() => {
-                  this.handleClick();
-                  window.scrollTo({
-                    top:
-                      document.getElementsByClassName("about-div")[0]
-                        .offsetTop - 80,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                About
+            {navLinks.map((link) => (
+              <div className="navbar-mobile-link-container">
+                <div
+                  className="navbar-mobile-link-item"
+                  onClick={() => {
+                    this.handleClick();
+                    window.scrollTo({
+                      top: document.getElementById(link.id).offsetTop - 80,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                >
+                  {link.label}
+                </div>
               </div>
-            </div>
-            <div className="navbar-mobile-link-container">
-              <div
-                className="navbar-mobile-link-item"
-                onClick={() => {
-                  this.handleClick();
-                  window.scrollTo({
-                    top:
-                      document.getElementsByClassName("about-div")[0]
-                        .offsetTop - 80,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                Register
-              </div>
-            </div>
-            <div className="navbar-mobile-link-container">
-              <div
-                className="navbar-mobile-link-item"
-                onClick={() => {
-                  this.handleClick();
-                  window.scrollTo({
-                    top:
-                      document.getElementsByClassName("projects-div")[0]
-                        .offsetTop - 80,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                Schedule
-              </div>
-            </div>
-            <div className="navbar-mobile-link-container">
-              <div
-                className="navbar-mobile-link-item"
-                onClick={() => {
-                  this.handleClick();
-                  window.scrollTo({
-                    top:
-                      document.getElementsByClassName("faq-div")[0].offsetTop -
-                      80,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                Sponsors
-              </div>
-            </div>
-            <div className="navbar-mobile-link-container">
-              <div
-                className="navbar-mobile-link-item"
-                onClick={() => {
-                  this.handleClick();
-                  window.scrollTo({
-                    top:
-                      document.getElementsByClassName("sponsor-div")[0]
-                        .offsetTop - 80,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                FAQ
-              </div>
-            </div>
-            <div className="navbar-mobile-link-container">
-              <div
-                className="navbar-mobile-link-item"
-                onClick={() => {
-                  this.handleClick();
-                  window.scrollTo({
-                    top:
-                      document.getElementsByClassName("sponsor-div")[1]
-                        .offsetTop - 80,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                Contact
-              </div>
-            </div>
+            ))}
           </div>
           <a
             href="/"
@@ -232,10 +173,12 @@ class Navbar extends Component {
           >
             <Button
               type="primary"
-              ghost={false}
+              disabled={this.register === "finished"}
               style={{ height: "40px", fontSize: "14px" }}
             >
-              Register
+              {this.props.register === "finished"
+                ? "Register"
+                : "Applications Closed"}
             </Button>
           </a>
           <div
@@ -247,27 +190,29 @@ class Navbar extends Component {
             }}
           >
             <a
-              href="https://www.linkedin.com/company/visionary-development-studios/"
+              href={socialURLS.linkedin}
               target="_blank"
               className="social-icon linkedin "
             >
               <Linkedin className="hover-icon"></Linkedin>
             </a>
             <a
-              href="https://www.instagram.com/visionary_app/"
+              href={socialURLS.instagram}
               target="_blank"
               className="social-icon instagram "
             >
               <Instagram className="hover-icon"></Instagram>
             </a>
             <a
-              href="mailto:markos@visionary.app"
+              target="_blank"
+              href={socialURLS.twitter}
               className="social-icon twitter "
             >
               <Twitter className="hover-icon"></Twitter>
             </a>
             <a
-              href="mailto:markos@visionary.app"
+              target="_blank"
+              href={socialURLS.facebook}
               className="social-icon facebook "
             >
               <Facebook className="hover-icon"></Facebook>
@@ -286,132 +231,69 @@ class Navbar extends Component {
             }
           ></div>
         </div>
+
         <div className="navbar-links-div">
-          <div
-            className="navbar-link-item"
-            onClick={() =>
-              window.scrollTo({
-                top:
-                  document.getElementsByClassName("about-content-row-div")[0]
-                    .offsetTop - 80,
-                left: 0,
-                behavior: "smooth",
-              })
-            }
-          >
-            About
-          </div>
-          <div
-            className="navbar-link-item"
-            onClick={() =>
-              window.scrollTo({
-                top:
-                  document.getElementsByClassName("about-content-row-div")[1]
-                    .offsetTop - 80,
-                left: 0,
-                behavior: "smooth",
-              })
-            }
-          >
-            Register
-          </div>
-          <div
-            className="navbar-link-item"
-            onClick={() =>
-              window.scrollTo({
-                top:
-                  document.getElementsByClassName("faq-div")[0].offsetTop - 80,
-                left: 0,
-                behavior: "smooth",
-              })
-            }
-          >
-            Schedule
-          </div>
-          <div
-            className="navbar-link-item"
-            onClick={() =>
-              window.scrollTo({
-                top:
-                  document.getElementsByClassName("sponsor-div")[0].offsetTop -
-                  80,
-                left: 0,
-                behavior: "smooth",
-              })
-            }
-          >
-            Sponsors
-          </div>
-          <div
-            className="navbar-link-item"
-            onClick={() =>
-              window.scrollTo({
-                top:
-                  document.getElementsByClassName("faq-div")[0].offsetTop - 80,
-                left: 0,
-                behavior: "smooth",
-              })
-            }
-          >
-            FAQ
-          </div>
-          <div
-            className="navbar-link-item"
-            onClick={() =>
-              window.scrollTo({
-                top:
-                  document.getElementsByClassName("contact-div")[0].offsetTop -
-                  80,
-                left: 0,
-                behavior: "smooth",
-              })
-            }
-          >
-            Contact
-          </div>
+          {navLinks.map((link) => (
+            <div
+              className="navbar-link-item"
+              onClick={() =>
+                window.scrollTo({
+                  top: document.getElementById(link.id).offsetTop - 80,
+                  left: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+              {link.label}
+            </div>
+          ))}
         </div>
         <div className="navbar-filler-div"></div>
         <div className="navbar-icons-div">
           <a
-            href="https://www.linkedin.com/company/visionary-development-studios/"
+            href={socialURLS.linkedin}
             target="_blank"
             className="social-icon linkedin navbar-social-icon"
           >
             <Linkedin className="hover-icon"></Linkedin>
           </a>
           <a
-            href="https://www.instagram.com/visionary_app/"
+            href="https://www.instagram.com/jamhacks"
             target="_blank"
             className="social-icon instagram navbar-social-icon"
           >
             <Instagram className="hover-icon"></Instagram>
           </a>
           <a
-            href="mailto:markos@visionary.app"
+            href={socialURLS.twitter}
+            target="_blank"
             className="social-icon twitter navbar-social-icon"
           >
             <Twitter className="hover-icon"></Twitter>
           </a>
           <a
-            href="mailto:markos@visionary.app"
+            href={socialURLS.facebook}
+            target="_blank"
             className="social-icon facebook navbar-social-icon"
           >
             <Facebook className="hover-icon"></Facebook>
           </a>
         </div>
-        <a
-          href="https://bit.ly/visionaryapplication"
-          target="_blank"
-          className="navbar-action-div"
-        >
-          <Button
-            type="primary"
-            ghost={false}
-            style={{ height: "40px", fontSize: "14px" }}
-          >
-            Register
-          </Button>
-        </a>
+        {this.register === "close" ? (
+          ""
+        ) : (
+          <a href="" target="_blank" className="navbar-action-div">
+            <Button
+              type="primary"
+              disabled={this.register === "finished"}
+              style={{ height: "40px", fontSize: "14px" }}
+            >
+              {this.props.register === "finished"
+                ? "Register"
+                : "Applications Closed"}
+            </Button>
+          </a>
+        )}
         <div
           class="hamburger"
           id="hamburger-1"

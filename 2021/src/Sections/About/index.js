@@ -1,92 +1,139 @@
-import React, { Component } from "react";
-
-import { ReactComponent as ValuePropRectangle } from "../../Assets/Rectangles/ValuePropRectangle.svg";
-import { ReactComponent as Image } from "../../Assets/JamImage.svg";
-
-import { ReactComponent as Clipboard } from "../../Assets/BenefitsIcons/clipboard.svg";
-import { ReactComponent as Code } from "../../Assets/BenefitsIcons/code.svg";
-import { ReactComponent as Gift } from "../../Assets/BenefitsIcons/gift.svg";
-import { ReactComponent as MessageCircle } from "../../Assets/BenefitsIcons/message-circle.svg";
-import { ReactComponent as Monitor } from "../../Assets/BenefitsIcons/monitor.svg";
-import { ReactComponent as Users } from "../../Assets/BenefitsIcons/users.svg";
-
+import React, { useRef, useState } from "react";
+import { Carousel } from "antd";
 import "./About.css";
+import { Spring } from "react-spring/renderprops";
+import VisibilitySensor from "react-visibility-sensor";
+import past1 from "../../Assets/PastPhotos/1.png";
+import past2 from "../../Assets/PastPhotos/2.png";
+import past3 from "../../Assets/PastPhotos/3.png";
+import past4 from "../../Assets/PastPhotos/4.png";
+import past5 from "../../Assets/PastPhotos/5.png";
+import past6 from "../../Assets/PastPhotos/6.png";
 
-class About extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <div className="about-div">
-        {/* <div className="about-background-div">
-                    <div style={{width : "90%", height : "100%", display: "flex", justifyContent : "flex-end", marginTop : "0vh"}}>
-                        <img src="https://firebasestorage.googleapis.com/v0/b/social-media-59b42.appspot.com/o/Rectangle%2034%20(2).png?alt=media&token=c1eb529e-7344-4e6b-a68e-876c5bbe7afa" width="112" height="112"></img>
-                    </div>
-                </div> */}
+const About = () => {
+  const [statsShown, setStatsShown] = useState(false);
+  const carousel = useRef();
 
-        <div className="about-content-row-div">
-          <div style={{ width: "60%", minWidth: "260px" }}>
-            <div className="about-title-div" data-aos="fade-up">
-              Waterloo’s biggest high school hackathon
-            </div>
-            <div
-              className="about-content-subheading"
-              data-aos="fade-up"
-              style={{ textAlign: "left", width: "100%" }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              auctor vitae felis at fermentum. Nulla facilisi. Pellentesque
-              faucibus nisi eget rhoncus suscipit. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nam auctor vitae felis at fermentum.
-              Nulla facilisi. Pellentesque faucibus nisi eget rhoncus suscipit.
-              <br></br>
-              <br></br>
-              Ut elementum lorem ligula, eget luctus lorem accumsan vel. Donec
-              vel elit non mauris commodo tempor. Donec eget justo tempus metus
-              auctor tincidunt et et odio. Aliquam in consectetur tellus, tempus
-              consequat elit. Ut elementum lorem ligula, eget luctus lorem
-              accumsan vel. Donec vel elit non mauris commodo tempor. Donec eget
-              justo tempus metus auctor tincidunt et et odio. Aliquam in
-              consectetur tellus, tempus consequat elit.
-            </div>
+  const animateStats = (isVisible) => {
+    setStatsShown(isVisible);
+  };
+
+  return (
+    <div className="about-div" id="about-section">
+      <div className="about-content-row-div">
+        <div style={{ width: "60%", minWidth: "260px" }}>
+          <div className="about-title-div" data-aos="fade-up">
+            Waterloo’s biggest high school hackathon
           </div>
+          <div
+            className="about-content-subheading"
+            data-aos="fade-up"
+            style={{ textAlign: "left", width: "100%" }}
+          >
+            Waterloo’s largest high school hackathon is back! JAMHacks V will
+            take place from May 22nd to 23rd. This year, we’re bringing together
+            over 200 students from high schools all over North America for a
+            full 24 hours of learning and creating!
+            <br></br>
+            <br></br>
+            During this 24 hour long innovation marathon, you’ll be able to work
+            in teams of up to 4 to create an app, game, website, robot, gadget,
+            or whatever your heart desires.
+          </div>
+        </div>
 
-          <div className="jam-image-div" data-aos="fade-up"></div>
+        <VisibilitySensor
+          partialVisibility={true}
+          offset={{ top: 120 }}
+          onChange={animateStats}
+          active={!statsShown}
+        >
+          {({ isVisible }) => (
+            <div className="jam-image-div" data-aos="fade-up">
+              <div className="about-stats">
+                <div className="about-stat-container">
+                  <Spring
+                    from={{ people: 0 }}
+                    to={{ people: isVisible ? 200 : 0 }}
+                  >
+                    {({ people }) => (
+                      <h2 className="about-stat">{people.toFixed(0) + "+"}</h2>
+                    )}
+                  </Spring>
+                  <h3 className="about-stat-title">hackers</h3>
+                </div>
+                <div className="about-stat-container">
+                  <Spring
+                    from={{ prizes: 0 }}
+                    to={{ prizes: isVisible ? 4000 : 0 }}
+                  >
+                    {({ prizes }) => (
+                      <h2 className="about-stat">{"$" + prizes.toFixed(0)}</h2>
+                    )}
+                  </Spring>
+                  <h3 className="about-stat-title">in prizes</h3>
+                </div>
+              </div>
+            </div>
+          )}
+        </VisibilitySensor>
+      </div>
+      <div
+        className="about-content-row-div"
+        style={{ flexWrap: "wrap-reverse" }}
+      >
+        <div style={{ width: "60%" }}>
+          <div className="about-title-div" data-aos="fade-up">
+            All Hackers Welcome
+          </div>
+          <div
+            className="about-content-subheading"
+            data-aos="fade-up"
+            style={{ textAlign: "left", width: "100%" }}
+          >
+            Hackers of all skill levels and backgrounds are welcome to
+            participate in JAMHacks! JAMHacks is also a learnathon—there will
+            workshops and mentors to guide you through making a software or
+            hardware project, even if you’ve never coded before! If you’re an
+            experienced hacker, consider JAMHacks an opportunity to start your
+            next passion project and compete for prizes at the same time!
+          </div>
         </div>
         <div
-          className="about-content-row-div"
-          style={{ flexWrap: "wrap-reverse" }}
+          style={{ width: "35%" }}
+          onClick={() => carousel.current.slick.slickNext()}
+          data-aos="fade-up"
         >
-          <div className="jam-image-div" data-aos="fade-up"></div>
-          <div style={{ width: "60%" }}>
-            <div className="about-title-div" data-aos="fade-up">
-              All Hackers Welcome
+          <Carousel
+            autoplaySpeed={2000}
+            ref={carousel}
+            autoplay
+            effect={"fade"}
+            dots={false}
+          >
+            <div className="carousel-item-container">
+              <img className="carousel-item" src={past1} />
             </div>
-            <div
-              className="about-content-subheading"
-              data-aos="fade-up"
-              style={{ textAlign: "left", width: "100%" }}
-            >
-              Some stuff about how like we are very inclusive and have stuff for
-              everyone no matter who. stuff Some stuff about how like we are
-              very inclusive and have stuff for everyone no matter who. stuff
-              <br></br>
-              <br></br>
-              Ut elementum lorem ligula, eget luctus lorem accumsan vel. Donec
-              vel elit non mauris commodo tempor. Donec eget justo tempus metus
-              auctor tincidunt et et odio. Aliquam in consectetur tellus, tempus
-              consequat elit Ut elementum lorem ligula, eget luctus lorem
-              accumsan vel. Donec vel elit non mauris commodo tempor. Donec eget
-              justo tempus metus auctor tincidunt et et odio. Aliquam in
-              consectetur tellus, tempus consequat elit
+            <div className="carousel-item-container">
+              <img className="carousel-item" src={past2} />
             </div>
-          </div>
+            <div className="carousel-item-container">
+              <img className="carousel-item" src={past3} />
+            </div>
+            <div className="carousel-item-container">
+              <img className="carousel-item" src={past4} />
+            </div>
+            <div className="carousel-item-container">
+              <img className="carousel-item" src={past5} />
+            </div>
+            <div className="carousel-item-container">
+              <img className="carousel-item" src={past6} />
+            </div>
+          </Carousel>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default About;

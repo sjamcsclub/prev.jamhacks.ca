@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Button } from "antd";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import Newsletter from "../../Components/Newsletter";
 
 import "./Hero.css";
 
 class Hero extends Component {
   constructor(props) {
     super(props);
+    console.log(props);
     this.state = {};
   }
   render() {
@@ -32,17 +33,25 @@ class Hero extends Component {
               May 2 to 3, 2021
             </div>
           </div>
-          <div className="hero-button-div">
-            <a href="https://bit.ly/visionaryapplication" target="_blank">
-              <Button
-                type="primary"
-                ghost={false}
-                style={{ width: "180px", height: "40px", zIndex: "50" }}
-              >
-                Register
-              </Button>
-            </a>
-          </div>
+          {this.props.register === "close" ? (
+            <div style={{ marginTop: "30px" }}>
+              <Newsletter />
+            </div>
+          ) : (
+            <div className="hero-button-div">
+              <a href="https://bit.ly/visionaryapplication" target="_blank">
+                <Button
+                  type="primary"
+                  disabled={this.props.register === "finished"}
+                  style={{ width: "180px", height: "40px", zIndex: "50" }}
+                >
+                  {this.props.register === "finished"
+                    ? "Applications Closed"
+                    : "Register"}
+                </Button>
+              </a>
+            </div>
+          )}
 
           <div className="hero-subtitle-div">
             <Link

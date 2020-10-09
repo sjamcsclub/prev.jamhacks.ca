@@ -1,3 +1,37 @@
+/*carousel*/
+.carousel-item-container {
+}
+.carousel-item {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about-stats {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-stat-container {
+  text-align: center;
+}
+.about-stat {
+  color: #7b0ff7;
+  font-size: 2rem;
+  margin: 0;
+}
+.about-stat-title {
+  font-size: 1.5rem;
+}
+
+.jam-image-div {
+  width: 300px;
+  height: 531px;
+  background-size: 300px 531px;
+  background-image: url("../../Assets/Jar.svg");
+}
+
 .about-div {
   width: 100%;
   height: fit-content;
@@ -34,6 +68,19 @@
 
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+.about-content-subheading {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  /* text/body */
+  margin-bottom: 25px;
+  margin-right: 20px;
 }
 
 .about-content-row-div {
@@ -97,14 +144,11 @@
   justify-content: center;
 }
 
-.jam-image-div {
-  width: 300px;
-  height: 650px;
-  background-size: 300px 650px;
-  background-image: url("../../Assets/JamImage.svg");
-}
-
 @media only screen and (max-width: 1000px) {
+  .about-content-subheading {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .about-title-div {
     font-size: 28px;
     line-height: 40px;
@@ -119,10 +163,16 @@
     margin-top: 30px;
   }
   .jam-image-div {
-    width: 200px;
+    width: 195px;
     height: 344px;
-    background-size: 200px 344px;
-    background-image: url("../../Assets/JamImage.svg");
+    background-size: 195px 344px;
+    background-image: url("../../Assets/Jar.svg");
+  }
+  .about-stat {
+    font-size: 1.5rem;
+  }
+  .about-stat-title {
+    font-size: 1rem;
   }
 }
 
@@ -130,6 +180,10 @@
   .about-title-div {
     font-size: 24px;
     line-height: 36px;
+  }
+  .about-content-subheading {
+    font-size: 14px;
+    line-height: 22px;
   }
   .about-content-item-title {
     font-size: 20px;
