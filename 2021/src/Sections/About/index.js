@@ -80,27 +80,12 @@ const About = () => {
       </div>
       <div
         className="about-content-row-div"
-        style={{ flexWrap: "wrap-reverse" }}
+        style={{ flexWrap: "wrap-reverse", marginBottom: "100px"}}
       >
-        <div style={{ width: "60%" }}>
-          <div className="about-title-div" data-aos="fade-up">
-            All Hackers Welcome
-          </div>
-          <div
-            className="about-content-subheading"
-            data-aos="fade-up"
-            style={{ textAlign: "left", width: "100%" }}
-          >
-            Hackers of all skill levels and backgrounds are welcome to
-            participate in JAMHacks! JAMHacks is also a learnathon—there will
-            workshops and mentors to guide you through making a software or
-            hardware project, even if you’ve never coded before! If you’re an
-            experienced hacker, consider JAMHacks an opportunity to start your
-            next passion project and compete for prizes at the same time!
-          </div>
-        </div>
+        
         <div
-          style={{ width: "35%" }}
+          // style={{ width: "100%" }}
+          className="about-carousel-image"
           onClick={() => carousel.current.slick.slickNext()}
           data-aos="fade-up"
         >
@@ -130,6 +115,23 @@ const About = () => {
               <img className="carousel-item" src={past6} />
             </div>
           </Carousel>
+        </div>
+        <div style={{ width: "60%", minWidth: "260px" }}>
+          <div className="about-title-div" data-aos="fade-up">
+            All Hackers Welcome
+          </div>
+          <div
+            className="about-content-subheading"
+            data-aos="fade-up"
+            style={{ textAlign: "left", width: "100%" }}
+          >
+            Hackers of all skill levels and backgrounds are welcome to
+            participate in JAMHacks! JAMHacks is also a learnathon—there will
+            workshops and mentors to guide you through making a software or
+            hardware project, even if you’ve never coded before! If you’re an
+            experienced hacker, consider JAMHacks an opportunity to start your
+            next passion project and compete for prizes at the same time!
+          </div>
         </div>
       </div>
     </div>

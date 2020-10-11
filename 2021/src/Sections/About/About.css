@@ -1,5 +1,6 @@
 /*carousel*/
 .carousel-item-container {
+
 }
 .carousel-item {
   width: 100%;
@@ -26,10 +27,12 @@
 }
 
 .jam-image-div {
-  width: 300px;
-  height: 531px;
-  background-size: 300px 531px;
+  width: 280px;
+  height: 495px;
+  background-size: 280px 495px;
   background-image: url("../../Assets/Jar.svg");
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .about-div {
@@ -144,6 +147,13 @@
   justify-content: center;
 }
 
+.about-carousel-image{
+  width: 35%;
+  
+  min-width: 260px;
+  margin-right: 30px;
+}
+
 @media only screen and (max-width: 1000px) {
   .about-content-subheading {
     font-size: 16px;
@@ -189,5 +199,6 @@
     font-size: 20px;
     line-height: 26px;
     margin-top: 30px;
+    
   }
 }

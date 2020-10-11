@@ -96,13 +96,6 @@ class Footer extends Component {
             >
               Privacy Policy
             </a>
-            <a
-              target="_blank"
-              href="\code-of-conduct"
-              className="footer-privacy"
-            >
-              Code of Conduct
-            </a>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ class Privacy extends Component {
             <div className="privacy-policy-div">
                 <h1>Privacy Policy</h1>
 
-                <p>Last updated: July 16, 2020</p>
+                <p>Last updated: October 11, 2020</p>
 
                 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 
@@ -31,11 +31,11 @@ class Privacy extends Component {
                         <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
                         </li>
                     <li>
-                        <p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Visionary Development Studios, 300 Hazel St, Waterloo, ON N2L 3P2.</p>
+                        <p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Jamhacks, 650 Laurelwood Dr, Waterloo, ON N2V 2V1.</p>
                         </li>
                     <li><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
                     <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
-                <li><strong>Website</strong> refers to Visionary Development Studios, accessible from www.visionary.app</li>        <li><strong>Service</strong> refers to the Website.</li>
+                <li><strong>Website</strong> refers to Jamhacks, accessible from www.jamhacks.ca</li>        <li><strong>Service</strong> refers to the Website.</li>
                     <li><strong>Country</strong> refers to: Ontario, Canada</li>
                     <li>
                         <p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
@@ -193,7 +193,7 @@ class Privacy extends Component {
                 <h1>Contact Us</h1>
                 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
                 <ul>
-                        <li>By email: markos@visionary.app</li>
+                        <li>By email: contact@jamhacks.com</li>
                 </ul>
 
 

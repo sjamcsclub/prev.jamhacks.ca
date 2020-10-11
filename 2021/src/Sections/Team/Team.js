@@ -58,7 +58,7 @@ const MemberData = [
     name: "Daniel Yu",
     role: "Website",
     headshot: Daniel,
-    link: "https://danielyu2004.github.io/",
+    link: "https://www.linkedin.com/in/danielyu2004/",
   },
   {
     name: "Trevor Du",
@@ -67,7 +67,7 @@ const MemberData = [
     link: "github.com/tdude92",
   },
   {
-    name: "Aditiya Keerthi",
+    name: "Aditya Keerthi",
     role: "Workshops",
     headshot: Aditiya,
     link: "https://www.linkedin.com/in/aditya-keerthi-b93726197/",
@@ -94,8 +94,8 @@ const MemberData = [
 
 const Team = () => {
   return (
-    <div className="team-display-div">
-      <div className="team-display-title-div large-title" data-aos="fade-up">
+    <div className="team-display-div" id="team-section">
+      <div className="team-display-title-div" data-aos="fade-up">
         Meet the Team
       </div>
 

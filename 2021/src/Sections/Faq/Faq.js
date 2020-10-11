@@ -61,7 +61,7 @@ class Faq extends Component {
     return (
       <div className="faq-div" id="faq-section">
         <div
-          className="sponsor-display-title-div large-title"
+          className="sponsor-display-title-div"
           data-aos="fade-up"
         >
           Frequently Asked Questions

@@ -3,20 +3,36 @@ import { Input } from "antd";
 import styled from "styled-components";
 import "./Newsletter.css";
 
+import * as firebase from "firebase/app";
+
+
 const Newsletter = (props) => {
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
 
+ 
   const validateEmail = (email) => {
-    return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-      email
-    );
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)){
+      return firebase.firestore().collection("emails").doc(email).set({
+        email: email
+      })
+      .then(function(docRef) {
+          return true
+      })
+      .catch(function(error) {
+          return false
+      });
+    }
+    else {
+      return false
+    }
+    
   };
 
-  const submitEmail = (email) => {
+  const submitEmail = async (email) => {
     setLoading(true);
-    const valid = validateEmail(email);
-    if (valid) {
+    const valid = await validateEmail(email);
+    if (valid == true) {
       setStatus("success");
     } else {
       setStatus("error");

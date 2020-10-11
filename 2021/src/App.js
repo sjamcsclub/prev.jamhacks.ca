@@ -20,6 +20,24 @@ import PrivNav from "./Sections/PrivNav/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import * as firebase from "firebase/app";
+import "firebase/analytics";
+import "firebase/firestore";
+
+var firebaseConfig = {
+  apiKey: "AIzaSyCDdAEQqSy8Pni1iKOyOB8xUDAR4I0f9Q0",
+  authDomain: "jamhacks-4d6a6.firebaseapp.com",
+  databaseURL: "https://jamhacks-4d6a6.firebaseio.com",
+  projectId: "jamhacks-4d6a6",
+  storageBucket: "jamhacks-4d6a6.appspot.com",
+  messagingSenderId: "224359886930",
+  appId: "1:224359886930:web:793771bdb963fd1831ef8b",
+  measurementId: "G-YBCXKJL5HW"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
 class App extends React.Component {
   constructor() {
     super();
@@ -36,6 +54,7 @@ Developed by: Daniel Yu, Kevin Gao
 Copyright (c) 2020 JAMHacks. 
 `;
     console.log(art);
+
   }
 
   render() {
@@ -63,7 +82,7 @@ Copyright (c) 2020 JAMHacks. 
               />
               {process.env.REACT_APP_SCHEDULE === "open" && <Schedule />}
               <Sponsor />
-              <SponsorDisplay />
+              {/* <SponsorDisplay /> */}
               <Faq />
               <Team />
               <Contact />

@@ -15,17 +15,21 @@ const navLinks = [
     label: "About",
     id: "about-section",
   },
-  {
-    label: "Schedule",
-    id: "schedule-section",
-  },
+  // {
+  //   label: "Schedule",
+  //   id: "schedule-section",
+  // },
   {
     label: "Sponsors",
-    id: "sponsors-section",
+    id: "sponsor-section",
   },
   {
     label: "FAQ",
     id: "faq-section",
+  },
+  {
+    label: "Team",
+    id: "team-section",
   },
   {
     label: "Contact",
@@ -144,6 +148,7 @@ class Navbar extends Component {
           animate={this.state.open ? "open" : "closed"}
           transition={{ ease: "easeOut", duration: 0.25 }}
         >
+          <div className="test-navbar">
           <div className="navbar-mobile-links-div">
             {navLinks.map((link) => (
               <div className="navbar-mobile-link-container">
@@ -163,6 +168,8 @@ class Navbar extends Component {
               </div>
             ))}
           </div>
+          
+          
           <a
             href="/"
             target="_blank"
@@ -181,15 +188,18 @@ class Navbar extends Component {
                 : "Applications Closed"}
             </Button>
           </a>
+
+
+
           <div
             className="footer-icons-div"
             style={{
-              marginTop: "10px",
+              marginTop: "30px",
               marginLeft: "70px",
               justifyContent: "space-between",
             }}
           >
-            <a
+             <a
               href={socialURLS.linkedin}
               target="_blank"
               className="social-icon linkedin "
@@ -216,8 +226,12 @@ class Navbar extends Component {
               className="social-icon facebook "
             >
               <Facebook className="hover-icon"></Facebook>
-            </a>
+            </a> 
           </div>
+        
+        
+        </div>
+        
         </motion.div>
         <div className="navbar-logo-div">
           <div

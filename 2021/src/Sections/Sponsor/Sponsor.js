@@ -13,7 +13,7 @@ class Sponsor extends Component {
   }
   render() {
     return (
-      <div className="sponsor-div">
+      <div className="sponsor-div" id="sponsor-section">
         <div className="sponsor-content-div">
           <div className="sponsor-content-half" data-aos="fade-up">
             <div className="sponsor-title-div">Sponsor the Next Generation</div>
@@ -28,7 +28,7 @@ class Sponsor extends Component {
               <a href={SponsorPackage} target="_blank">
                 prospectus
               </a>{" "}
-              and contact us at{" "}
+              or contact us at{" "}
               <a href="mailto:sponsor@jamhacks.com">sponsor@jamhacks.com</a>
             </div>
             <a href="mailto:sponsor@jamhacks.com" target="_blank">

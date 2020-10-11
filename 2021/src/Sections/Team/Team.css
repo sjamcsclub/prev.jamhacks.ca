@@ -50,7 +50,8 @@
 
 
 .team-display-content-item{
-    margin: 30px;
+    /* margin: 30px; */
+    margin-bottom: 40px;
     margin-top: 0px;
     display: flex;
     flex-direction: column;
@@ -62,11 +63,14 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 26px;
     letter-spacing: 0em;
     text-align: center;
     color: #1e0e56;
-    margin-top: 10px;
+    margin-top: 20px;
+    max-width: 260px;
+    width: 260px;
+    margin-bottom: 10px;
 }
 
 .team-display-content-item-second{
@@ -74,29 +78,37 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
     color: #1e0e56;
+    max-width: 260px;
+    width: 260px;
 }
 
 
 @media only screen and (max-width: 1000px) {
     .team-display-title-div{
         font-size: 28px;
-        line-height: 40px;
+        line-height: 30px;
     }
     .team-display-content-item-main{
         font-size: 20px;
+        max-width: 190px;
+        width: 190px;
+        margin-bottom: 5px;
     }
     .team-display-content-item-second{
         font-size: 16px;
+        max-width: 190px;
+        width: 190px;
     }
     .team-display-headshot{
         width: 150px;
     }
     .team-display-content-item{
-        margin: 20px;
+        /* margin: 20px; */
+        margin-bottom: 20px;
         margin-top: 0px;
     }
 }
@@ -104,19 +116,24 @@
 @media only screen and (max-width: 700px) {
     .team-display-title-div{
         font-size: 24px;
-        line-height: 36px;
+        line-height: 26px;
     }
     .team-display-content-item-main{
         font-size: 18px;
+        max-width: 130px;
+        width: 130px;
     }
     .team-display-content-item-second{
         font-size: 14px;
+        max-width: 130px;
+        width: 130px;
     }
     .team-display-headshot{
         width: 100px;
     }
     .team-display-content-item{
-        margin: 15px;
+        /* margin: 15px; */
         margin-top: 0px;
+        margin-bottom: 15px;
     }
 }
