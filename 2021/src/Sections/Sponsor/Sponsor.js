@@ -29,9 +29,9 @@ class Sponsor extends Component {
                 prospectus
               </a>{" "}
               or contact us at{" "}
-              <a href="mailto:sponsor@jamhacks.com">sponsor@jamhacks.com</a>
+              <a href="mailto:sponsor@jamhacks.ca">sponsor@jamhacks.ca</a>
             </div>
-            <a href="mailto:sponsor@jamhacks.com" target="_blank">
+            <a href="mailto:sponsor@jamhacks.ca" target="_blank">
               <Button type="primary" style={{ width: "260px", height: "40px" }}>
                 Become a Sponsor
               </Button>

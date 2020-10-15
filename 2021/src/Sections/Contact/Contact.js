@@ -16,7 +16,7 @@ class Contact extends Component {
             <div className="contact-title-div">Still got a question?</div>
             <div className="contact-content-text">
               Feel free to send us an email at
-              <a href="mailto:contact@jamhacks.com"> contact@jamhacks.com</a>
+              <a href="mailto:contact@jamhacks.ca"> contact@jamhacks.ca</a>
             </div>
             <div className="contact-title-div">Subscribe to Newsletter</div>
             <Newsletter />

@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div className="about-div" id="about-section">
       <div className="about-content-row-div">
-        <div style={{ width: "60%", minWidth: "260px" }}>
+        <div className="about-content">
           <div className="about-title-div" data-aos="fade-up">
             Waterloo’s biggest high school hackathon
           </div>
@@ -80,11 +80,9 @@ const About = () => {
       </div>
       <div
         className="about-content-row-div"
-        style={{ flexWrap: "wrap-reverse", marginBottom: "100px"}}
+        style={{ flexWrap: "wrap-reverse", marginBottom: "100px" }}
       >
-        
         <div
-          // style={{ width: "100%" }}
           className="about-carousel-image"
           onClick={() => carousel.current.slick.slickNext()}
           data-aos="fade-up"
@@ -116,7 +114,7 @@ const About = () => {
             </div>
           </Carousel>
         </div>
-        <div style={{ width: "60%", minWidth: "260px" }}>
+        <div className="about-content">
           <div className="about-title-div" data-aos="fade-up">
             All Hackers Welcome
           </div>

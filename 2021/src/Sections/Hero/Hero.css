@@ -101,20 +101,6 @@
   z-index: 5;
 }
 
-.hero-title-div {
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  font-size: 70px;
-  line-height: 65px;
-  color: #7b0ff7;
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  text-align: center;
-  z-index: 5;
-}
-
 .hero-subtitle-div {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -205,15 +191,14 @@
 }
 
 .hero-content-div {
-  width: 850px;
+  width: 80%;
   z-index: 1;
 }
 
-@media only screen and (max-width: 1000px) {
-  .hero-content-div {
-    width: 600px;
-  }
+@media only screen and (max-width: 1200px) {
+}
 
+@media only screen and (max-width: 992px) {
   .hero-subtitle-div {
     font-size: 16px;
     line-height: 24px;
@@ -225,32 +210,11 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .hero-title-div {
-    font-size: 32px;
-    line-height: 45px;
-  }
-  .hero-content-div {
-    width: 300px;
-  }
-  .hero-subtitle-div {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .hero-partners-div {
-    font-size: 20px;
-    line-height: 36px;
-  }
-}
-
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 786px) {
   .hero-div {
     min-height: calc(100vh - 70px);
     padding-top: 70px;
   }
-}
-
-@media only screen and (min-height: 800px) {
   .hero-partners-div {
     min-height: 25vh;
     height: 25vh;
@@ -258,5 +222,16 @@
   }
   .hero-partners-content-div {
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-subtitle-div {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .hero-partners-div {
+    font-size: 20px;
+    line-height: 36px;
   }
 }

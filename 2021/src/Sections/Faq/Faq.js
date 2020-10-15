@@ -38,7 +38,7 @@ const questions = [
   {
     question: "How will we communicate during the event?",
     answer:
-      "We will be mainly using discord to communicate any announcements and will be using twitch to bring you our events. We also have social media account that will provide you with the latest including instagram and twitter.",
+      "We will be mainly using Discord to communicate any announcements and will be using Twitch to bring you our events. We also have social media account that will provide you with the latest including Instagram and Twitter.",
   },
   {
     question: "What can my project be about?",

@@ -149,89 +149,87 @@ class Navbar extends Component {
           transition={{ ease: "easeOut", duration: 0.25 }}
         >
           <div className="test-navbar">
-          <div className="navbar-mobile-links-div">
-            {navLinks.map((link) => (
-              <div className="navbar-mobile-link-container">
-                <div
-                  className="navbar-mobile-link-item"
-                  onClick={() => {
-                    this.handleClick();
-                    window.scrollTo({
-                      top: document.getElementById(link.id).offsetTop - 80,
-                      left: 0,
-                      behavior: "smooth",
-                    });
-                  }}
-                >
-                  {link.label}
+            <div className="navbar-mobile-links-div">
+              {navLinks.map((link) => (
+                <div className="navbar-mobile-link-container">
+                  <div
+                    className="navbar-mobile-link-item"
+                    onClick={() => {
+                      this.handleClick();
+                      window.scrollTo({
+                        top: document.getElementById(link.id).offsetTop - 80,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    {link.label}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            {this.props.register === "close" ? (
+              ""
+            ) : (
+              <a
+                href="/"
+                target="_blank"
+                style={{
+                  marginLeft: "70px",
+                  marginTop: "10px",
+                }}
+              >
+                <Button
+                  type="primary"
+                  disabled={this.register === "finished"}
+                  style={{ height: "40px", fontSize: "14px" }}
+                >
+                  {this.props.register === "finished"
+                    ? "Applications Closed"
+                    : "Register"}
+                </Button>
+              </a>
+            )}
+
+            <div
+              className="footer-icons-div"
+              style={{
+                marginTop: "30px",
+                marginLeft: "70px",
+                justifyContent: "space-between",
+              }}
+            >
+              <a
+                href={socialURLS.linkedin}
+                target="_blank"
+                className="social-icon linkedin "
+              >
+                <Linkedin className="hover-icon"></Linkedin>
+              </a>
+              <a
+                href={socialURLS.instagram}
+                target="_blank"
+                className="social-icon instagram "
+              >
+                <Instagram className="hover-icon"></Instagram>
+              </a>
+              <a
+                target="_blank"
+                href={socialURLS.twitter}
+                className="social-icon twitter "
+              >
+                <Twitter className="hover-icon"></Twitter>
+              </a>
+              <a
+                target="_blank"
+                href={socialURLS.facebook}
+                className="social-icon facebook "
+              >
+                <Facebook className="hover-icon"></Facebook>
+              </a>
+            </div>
           </div>
-          
-          
-          <a
-            href="/"
-            target="_blank"
-            style={{
-              marginLeft: "70px",
-              marginTop: "10px",
-            }}
-          >
-            <Button
-              type="primary"
-              disabled={this.register === "finished"}
-              style={{ height: "40px", fontSize: "14px" }}
-            >
-              {this.props.register === "finished"
-                ? "Register"
-                : "Applications Closed"}
-            </Button>
-          </a>
-
-
-
-          <div
-            className="footer-icons-div"
-            style={{
-              marginTop: "30px",
-              marginLeft: "70px",
-              justifyContent: "space-between",
-            }}
-          >
-             <a
-              href={socialURLS.linkedin}
-              target="_blank"
-              className="social-icon linkedin "
-            >
-              <Linkedin className="hover-icon"></Linkedin>
-            </a>
-            <a
-              href={socialURLS.instagram}
-              target="_blank"
-              className="social-icon instagram "
-            >
-              <Instagram className="hover-icon"></Instagram>
-            </a>
-            <a
-              target="_blank"
-              href={socialURLS.twitter}
-              className="social-icon twitter "
-            >
-              <Twitter className="hover-icon"></Twitter>
-            </a>
-            <a
-              target="_blank"
-              href={socialURLS.facebook}
-              className="social-icon facebook "
-            >
-              <Facebook className="hover-icon"></Facebook>
-            </a> 
-          </div>
-        
-        
-        </div>
-        
         </motion.div>
         <div className="navbar-logo-div">
           <div

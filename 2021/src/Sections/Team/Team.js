@@ -15,7 +15,7 @@ import Trevor from "../../Assets/Headshots/Trevor.png";
 import Aditiya from "../../Assets/Headshots/Aditiya.png";
 import Fred from "../../Assets/Headshots/Fred.png";
 import Qianxu from "../../Assets/Headshots/Qianxu.png";
-//import Arnav from "../../Assets/Headshots/Arnav";
+import Arnav from "../../Assets/Headshots/Arnav.png";
 
 const MemberData = [
   {
@@ -87,7 +87,7 @@ const MemberData = [
   {
     name: "Arnav Tripathi",
     role: "Finance",
-    headshot: Placeholder,
+    headshot: Arnav,
     link: null,
   },
 ];

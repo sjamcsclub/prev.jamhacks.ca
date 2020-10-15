@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Button } from "antd";
 import { Link } from "react-router-dom";
 import Newsletter from "../../Components/Newsletter";
+import styled from "styled-components";
+import { media } from "../../utils/media";
 
 import "./Hero.css";
 
@@ -15,45 +17,31 @@ class Hero extends Component {
     return (
       <div className="hero-div">
         <div className="hero-content-div">
-          <div className="hero-title-div">
-            <div>JAMHacks V</div>
-          </div>
-          <div className="hero-subtitle-div">
-            <div>Learn, Connect, Innovate</div>
-          </div>
-          <div className="hero-subtitle-div">
-            <div
-              style={{ color: "#222130", fontSize: "20px", textAlign: "left" }}
-            >
-              Sir John A. Macdonald Secondary School
-            </div>
-          </div>
-          <div className="hero-subtitle-div" style={{ marginTop: "10px" }}>
-            <div style={{ color: "#222130", fontSize: "16px", opacity: "90%" }}>
-              May 2 to 3, 2021
-            </div>
-          </div>
-          {this.props.register === "close" ? (
-            <div style={{ marginTop: "30px" }}>
+          <Title>JAMHacks V</Title>
+          <Subtitle>Learn, Connect, Innovate</Subtitle>
+          <LocationText>Virtual Event</LocationText>
+          <DateText>May 22 to 23, 2021</DateText>
+          <div style={{ margin: "1.5rem 0" }}>
+            {this.props.register === "close" ? (
               <Newsletter />
-            </div>
-          ) : (
-            <div className="hero-button-div">
-              <a href="https://bit.ly/visionaryapplication" target="_blank">
-                <Button
-                  type="primary"
-                  disabled={this.props.register === "finished"}
-                  style={{ width: "180px", height: "40px", zIndex: "50" }}
-                >
-                  {this.props.register === "finished"
-                    ? "Applications Closed"
-                    : "Register"}
-                </Button>
-              </a>
-            </div>
-          )}
+            ) : (
+              <div className="hero-button-div">
+                <a href="https://bit.ly/visionaryapplication" target="_blank">
+                  <Button
+                    type="primary"
+                    disabled={this.props.register === "finished"}
+                    style={{ width: "180px", height: "40px", zIndex: "50" }}
+                  >
+                    {this.props.register === "finished"
+                      ? "Applications Closed"
+                      : "Register"}
+                  </Button>
+                </a>
+              </div>
+            )}
+          </div>
 
-          <div className="hero-subtitle-div">
+          <DateText className="hero-subtitle-div">
             <Link
               to="/"
               onClick={() => {
@@ -70,7 +58,7 @@ class Hero extends Component {
             >
               <div>Interested in sponsoring?</div>
             </Link>
-          </div>
+          </DateText>
         </div>
         <div className="wave-div wave-animation">
           <div className="wave-wrapper">
@@ -87,5 +75,84 @@ class Hero extends Component {
     );
   }
 }
+
+const Title = styled.h1`
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #7b0ff7;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  z-index: 5;
+  ${media("md")`
+    font-size: 3.5rem;
+    justify-content: center;
+  `}
+  ${media("sm")`
+    font-size: 2.5rem;
+  `}
+`;
+
+const Subtitle = styled.h3`
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #3b00c3;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 5;
+  ${media("md")`
+    font-size: 1.5rem;
+    justify-content: center;
+  `}
+  ${media("sm")`
+    font-size: 1rem;
+  `}
+`;
+
+const LocationText = styled.h4`
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 5;
+  color: #222130;
+  font-size: 1.5rem;
+  text-align: left;
+  ${media("md")`
+    justify-content: center;
+  `}
+  ${media("sm")`
+    font-size: 1rem;
+  `}
+`;
+
+const DateText = styled.h4`
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 5;
+  color: #222130;
+  font-size: 1rem;
+  opacity: 90%;
+  ${media("md")`
+    justify-content: center;
+  `}
+`;
 
 export default Hero;

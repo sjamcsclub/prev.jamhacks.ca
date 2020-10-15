@@ -32,7 +32,7 @@ var firebaseConfig = {
   storageBucket: "jamhacks-4d6a6.appspot.com",
   messagingSenderId: "224359886930",
   appId: "1:224359886930:web:793771bdb963fd1831ef8b",
-  measurementId: "G-YBCXKJL5HW"
+  measurementId: "G-YBCXKJL5HW",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -54,7 +54,6 @@ Developed by: Daniel Yu, Kevin Gao
 Copyright (c) 2020 JAMHacks. 
 `;
     console.log(art);
-
   }
 
   render() {
@@ -73,7 +72,7 @@ Copyright (c) 2020 JAMHacks. 
               <Footer register={process.env.REACT_APP_REGISTER}></Footer>
             </Route>
             <Route path="/">
-              <Navbar />
+              <Navbar register={process.env.REACT_APP_REGISTER} />
               <Hero register={process.env.REACT_APP_REGISTER} />
               <About />
               <Mentor

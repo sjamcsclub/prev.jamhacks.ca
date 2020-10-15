@@ -1,32 +1,35 @@
 import React, { useState } from "react";
 import { Input } from "antd";
 import styled from "styled-components";
-import "./Newsletter.css";
-
+import { media } from "../../utils/media";
 import * as firebase from "firebase/app";
-
 
 const Newsletter = (props) => {
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
 
- 
   const validateEmail = (email) => {
-    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)){
-      return firebase.firestore().collection("emails").doc(email).set({
-        email: email
-      })
-      .then(function(docRef) {
-          return true
-      })
-      .catch(function(error) {
-          return false
-      });
+    if (
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+        email
+      )
+    ) {
+      return firebase
+        .firestore()
+        .collection("emails")
+        .doc(email)
+        .set({
+          email: email,
+        })
+        .then(function (docRef) {
+          return true;
+        })
+        .catch(function (error) {
+          return false;
+        });
+    } else {
+      return false;
     }
-    else {
-      return false
-    }
-    
   };
 
   const submitEmail = async (email) => {
@@ -50,22 +53,51 @@ const Newsletter = (props) => {
         onSearch={(email) => submitEmail(email)}
       />
       {status === "success" && (
-        <div className="success-message">
+        <SuccessMsg>
           Success, you have be subscribed to our newsletter
-        </div>
+        </SuccessMsg>
       )}
-      {status === "error" && (
-        <div className="error-message">Please submit a valid email</div>
-      )}
+      {status === "error" && <ErrorMsg>Please submit a valid email</ErrorMsg>}
     </div>
   );
 };
 
+const SuccessMsg = styled.div`
+  font-size: 1em;
+  color: green;
+`;
+
+const ErrorMsg = styled.div`
+  font-size: 1em;
+  color: red;
+`;
+
 const RoundSearch = styled(Input.Search)`
   .ant-input,
   .ant-input-group-addon {
-    border-radius: 25px;
+    border-radius: 20px;
   }
+  ${media("lg")`
+    .ant-input {
+      font-size: 0.95rem;
+    }
+    .ant-input-group {
+
+    }
+    .ant-input-search-button {
+      font-size: 0.9rem;
+      height: 37.29px;
+    }
+  `}
+  ${media("sm")`
+     .ant-input {
+      font-size: 0.8rem;
+    }
+    .ant-input-search-button {
+      font-size: 0.8rem;
+      height: 35px;
+    }
+  `}
 `;
 
 export default Newsletter;
