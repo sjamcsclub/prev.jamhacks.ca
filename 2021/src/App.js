@@ -43,7 +43,6 @@ class App extends React.Component {
     super();
     this.state = {};
     AOS.init();
-    console.log(AOS);
   }
 
   componentDidMount() {

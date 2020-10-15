@@ -93,7 +93,6 @@ class Navbar extends Component {
               i
             ].style.display = "flex";
           }
-          // console.log(document.getElementsByClassName("navbar-scrolled-social-icon"))
         }
       } else {
         document
