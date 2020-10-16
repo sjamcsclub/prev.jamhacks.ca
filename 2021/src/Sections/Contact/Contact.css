@@ -1,0 +1,111 @@
+.contact-div{
+    min-height: 50vh;
+    height: fit-content;
+    width: 100%;
+    background: #fbf9ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content-div{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    height: 80%;
+    min-height: 280px;
+    flex-wrap: wrap-reverse;
+}
+
+.contact-content-half{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title-div{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+
+    /* text/headings */
+
+    color: #1e0e56;
+    margin-bottom: 25px;
+}
+
+.contact-content-text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+
+    /* text/body */
+
+    color: #0A0A0A;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+.contact-logos-div{
+    width: 480px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.large-title{
+    font-size: 45px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-title-div{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .contact-content-text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contact-title-div{
+        margin-top: 40px;
+    }
+    .large-title{
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .contact-title-div{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .contact-content-text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .contact-title-div{
+        margin-top: 40px;
+    }
+    .large-title{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+ 
+}

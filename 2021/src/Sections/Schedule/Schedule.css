@@ -1,0 +1,25 @@
+.schedule-container {
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+  background: #fbf9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.schedule-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* text/headings */
+  color: #1e0e56;
+  margin-top: 40px;
+}
