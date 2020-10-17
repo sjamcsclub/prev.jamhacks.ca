@@ -17,6 +17,8 @@ import Footer from "./Sections/Footer/Footer";
 import Privacy from "./Sections/Privacy/Privacy";
 import PrivNav from "./Sections/PrivNav/Navbar";
 
+import Env from "./env.js";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -63,22 +65,22 @@ Copyright (c) 2020 JAMHacks. 
             <Route exact path="/privacy-policy">
               <PrivNav />
               <Privacy></Privacy>
-              <Footer register={process.env.REACT_APP_REGISTER}></Footer>
+              <Footer register={Env.register}></Footer>
             </Route>
             <Route exact path="/code-of-conduct">
               <PrivNav />
               <Privacy></Privacy>
-              <Footer register={process.env.REACT_APP_REGISTER}></Footer>
+              <Footer register={Env.register}></Footer>
             </Route>
             <Route path="/">
-              <Navbar register={process.env.REACT_APP_REGISTER} />
-              <Hero register={process.env.REACT_APP_REGISTER} />
+              <Navbar register={Env.register} />
+              <Hero register={Env.register} />
               <About />
               <Mentor
-                mentor={process.env.REACT_APP_MENTOR_REGISTER}
-                volunteer={process.env.REACT_APP_VOLUNTEER_REGISTER}
+                mentor={Env.mentor_register}
+                volunteer={Env.volunteer_register}
               />
-              {process.env.REACT_APP_SCHEDULE === "open" && <Schedule />}
+              {Env.schedule === "open" && <Schedule />}
               <Sponsor />
               {/* <SponsorDisplay /> */}
               <Faq />

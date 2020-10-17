@@ -91,6 +91,13 @@ class Footer extends Component {
             </div>
             <a
               target="_blank"
+              href="https://jamhacks.ca/2020/"
+              className="footer-link"
+            >
+              2020 Site
+            </a>
+            <a
+              target="_blank"
               href="\privacy-policy"
               className="footer-privacy"
             >
