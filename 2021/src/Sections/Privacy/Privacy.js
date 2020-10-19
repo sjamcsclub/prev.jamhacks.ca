@@ -32,7 +32,7 @@ class Privacy extends Component {
           .
         </p>
 
-        <h1>Interpretation and Definitions</h1>
+        <h1 id="definitions-section">Interpretation and Definitions</h1>
         <h2>Interpretation</h2>
         <p>
           The words of which the initial letter is capitalized have meanings
@@ -120,7 +120,7 @@ class Privacy extends Component {
           </li>
         </ul>
 
-        <h1>Collecting and Using Your Personal Data</h1>
+        <h1 id="data-section">Collecting and Using Your Personal Data</h1>
         <h2>Types of Data Collected</h2>
 
         <h3>Personal Data</h3>
@@ -439,7 +439,7 @@ class Privacy extends Component {
           </li>
         </ul>
 
-        <h1>Children's Privacy</h1>
+        <h1 id="privacy-section">Children's Privacy</h1>
         <p>
           Our Service does not address anyone under the age of 13. We do not
           knowingly collect personally identifiable information from anyone
@@ -456,7 +456,7 @@ class Privacy extends Component {
           information.
         </p>
 
-        <h1>Links to Other Websites</h1>
+        <h1 id="other-section">Links to Other Websites</h1>
         <p>
           Our Service may contain links to other websites that are not operated
           by Us. If You click on a third party link, You will be directed to
@@ -484,13 +484,16 @@ class Privacy extends Component {
           posted on this page.
         </p>
 
-        <h1>Contact Us</h1>
+        <h1 id="contact-section">Contact Us</h1>
         <p>
           If you have any questions about this Privacy Policy, You can contact
           us:
         </p>
         <ul>
-          <li>By email: contact@jamhacks.ca</li>
+          <li>
+            By email:{" "}
+            <a href="mailto:contact@jamhacks.ca">contact@jamhacks.ca</a>
+          </li>
         </ul>
       </div>
     );

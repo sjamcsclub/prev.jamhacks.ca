@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 import "./Navbar.css";
 
-import { ReactComponent as Linkedin } from "../../Assets/linkedin.svg";
-import { ReactComponent as Instagram } from "../../Assets/instagram.svg";
+import { ReactComponent as Linkedin } from "../../Assets/Icons/Social/linkedin.svg";
+import { ReactComponent as Instagram } from "../../Assets/Icons/Social/instagram.svg";
 
-import { ReactComponent as Twitter } from "../../Assets/twitter.svg";
-import { ReactComponent as Facebook } from "../../Assets/facebook.svg";
+import { ReactComponent as Twitter } from "../../Assets/Icons/Social/twitter.svg";
+import { ReactComponent as Facebook } from "../../Assets/Icons/Social/facebook.svg";
 
 const navLinks = [
   {
@@ -202,28 +202,28 @@ class Navbar extends Component {
               <a
                 href={socialURLS.linkedin}
                 target="_blank"
-                className="social-icon linkedin "
+                className="social-icon linkedin"
               >
                 <Linkedin className="hover-icon"></Linkedin>
               </a>
               <a
                 href={socialURLS.instagram}
                 target="_blank"
-                className="social-icon instagram "
+                className="social-icon instagram"
               >
                 <Instagram className="hover-icon"></Instagram>
               </a>
               <a
                 target="_blank"
                 href={socialURLS.twitter}
-                className="social-icon twitter "
+                className="social-icon twitter"
               >
                 <Twitter className="hover-icon"></Twitter>
               </a>
               <a
                 target="_blank"
                 href={socialURLS.facebook}
-                className="social-icon facebook "
+                className="social-icon facebook"
               >
                 <Facebook className="hover-icon"></Facebook>
               </a>

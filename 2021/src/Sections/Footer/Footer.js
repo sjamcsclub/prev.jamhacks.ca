@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Button } from "antd";
 
-import { ReactComponent as LinkedinS } from "../../Assets/linkedinS.svg";
-import { ReactComponent as InstagramS } from "../../Assets/instagramS.svg";
-import { ReactComponent as TwitterS } from "../../Assets/twitterS.svg";
-import { ReactComponent as FacebookS } from "../../Assets/facebookS.svg";
+import { ReactComponent as Linkedin } from "../../Assets/Icons/Social/linkedin.svg";
+import { ReactComponent as Instagram } from "../../Assets/Icons/Social/instagram.svg";
+import { ReactComponent as Twitter } from "../../Assets/Icons/Social/twitter.svg";
+import { ReactComponent as Facebook } from "../../Assets/Icons/Social/facebook.svg";
 
 import "./Footer.css";
 
@@ -45,30 +45,30 @@ class Footer extends Component {
             <a
               href={socialURLS.linkedin}
               target="_blank"
-              className="social-icon"
+              className="social-icon white linkedin"
             >
-              <LinkedinS></LinkedinS>
+              <Linkedin fill="white"></Linkedin>
             </a>
             <a
               href={socialURLS.instagram}
               target="_blank"
-              className="social-icon"
+              className="social-icon white instagram"
             >
-              <InstagramS></InstagramS>
+              <Instagram></Instagram>
             </a>
             <a
               href={socialURLS.twitter}
               target="_blank"
-              className="social-icon"
+              className="social-icon white twitter"
             >
-              <TwitterS></TwitterS>
+              <Twitter></Twitter>
             </a>
             <a
               href={socialURLS.facebook}
               target="_blank"
-              className="social-icon"
+              className="social-icon white facebook"
             >
-              <FacebookS></FacebookS>
+              <Facebook></Facebook>
             </a>
           </div>
         </div>

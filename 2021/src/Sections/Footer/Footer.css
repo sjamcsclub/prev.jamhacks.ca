@@ -1,6 +1,6 @@
 .footer-div {
   min-height: 330px;
-  background: #3b00c3;
+  background: #7b0ff7;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -72,34 +72,20 @@
   margin-bottom: 10px;
 }
 
-.social-icon {
+.social-icon.white {
   width: 24px;
   height: 24px;
   transition: 0.15s ease-in-out all;
 }
 
-
-
-.linkedin {
-  background: url("../../Assets/linkedinH.svg");
-}
-.instagram {
-  background: url("../../Assets/instagramH.svg");
-}
-.email {
-  background: url("../../Assets/mailH.svg");
+.social-icon.white.facebook path,
+.social-icon.white.twitter path,
+.social-icon.white.linkedin path {
+  fill: white;
 }
 
-.twitter {
-  background: url("../../Assets/twitterH.svg");
-}
-
-.facebook {
-  /* background-image: no-repeat url("../../Assets/facebook.svg");
-    background-size: 24px 24px;
-    width: 24px;
-    width: 24px; */
-  background: no-repeat url("../../Assets/facebookH.svg");
+.social-icon.white.instagram path {
+  stroke: white;
 }
 
 .social-icon:hover {
@@ -111,7 +97,7 @@
 }
 
 .hover-icon:hover {
-  opacity: 0%;
+  opacity: 50%;
 }
 
 .footer-icons-div {

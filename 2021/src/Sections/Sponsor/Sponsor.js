@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Button } from "antd";
-import SponsorPackage from "../../Assets/Sponsorship Package.pdf";
 
 import "./Sponsor.css";
 
-import { ReactComponent as SponsorImage } from "../../Assets/Sponsor.svg";
+import { ReactComponent as SponsorImage } from "../../Assets/Undraw/Sponsor.svg";
 
 class Sponsor extends Component {
   constructor(props) {
@@ -25,7 +24,7 @@ class Sponsor extends Component {
               <br></br>
               <br></br>
               Interested in sponsoring? Check out our{" "}
-              <a href={SponsorPackage} target="_blank">
+              <a href="/files/sponsorship.pdf" target="_blank">
                 prospectus
               </a>{" "}
               or contact us at{" "}

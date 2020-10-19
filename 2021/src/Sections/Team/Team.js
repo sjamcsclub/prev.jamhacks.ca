@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Team.css";
 
-import Placeholder from "../../Assets/Placeholder.png";
-
 import Cristian from "../../Assets/Headshots/Cristian.png";
 import Michelle from "../../Assets/Headshots/Michelle.png";
 import Yina from "../../Assets/Headshots/Yina.png";

@@ -31,7 +31,7 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 43px;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@
   margin-bottom: 25px;
 }
 
-.sponsor-image-container{
+.sponsor-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 28px;
   /* or 156% */
 
@@ -77,94 +77,51 @@
   flex-wrap: wrap;
 }
 
-.sponsor1 {
-  width: 380px;
-  height: 95px;
-  background: url("../../Assets/Sponsor1.svg");
-  background-size: 380px 95px;
-  background-repeat: no-repeat;
-}
-.sponsor2 {
-  width: 330px;
-  height: 100px;
-  background: url("../../Assets/Sponsor2.svg");
-  background-size: 330px 100px;
-  background-repeat: no-repeat;
-}
-.sponsor3 {
-  width: 380px;
-  height: 95px;
-  background: url("../../Assets/Sponsor3.svg");
-  background-size: 380px 95px;
-  background-repeat: no-repeat;
-}
-
 .large-title {
-  font-size: 45px;
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 1000px) {
   .sponsor-title-div {
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 40px;
   }
   .sponsor-content-text {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
   }
   .sponsor-title-div {
     margin-top: 40px;
   }
   .large-title {
-    font-size: 38px;
+    font-size: 2.5rem;
   }
   .larger-sponsor-text {
-    font-size: 18px;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .sponsor-title-div {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 36px;
   }
   .sponsor-content-text {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 22px;
   }
   .sponsor-title-div {
     margin-top: 40px;
   }
   .large-title {
-    font-size: 32px;
+    font-size: 2rem;
   }
   .larger-sponsor-text {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .sponsor1 {
-    width: 300px;
-    height: 87.5px;
-    background: url("../../Assets/Sponsor1.svg");
-    background-size: 300px 80px;
-    background-repeat: no-repeat;
-  }
-  .sponsor2 {
-    width: 280px;
-    height: 85px;
-    background: url("../../Assets/Sponsor2.svg");
-    background-size: 280px 85px;
-    background-repeat: no-repeat;
-  }
-  .sponsor3 {
-    width: 280px;
-    height: 85px;
-    background: url("../../Assets/Sponsor3.svg");
-    background-size: 280px 85px;
-    background-repeat: no-repeat;
-  }
   .sponsor-content-half {
     flex: 1;
     display: flex;

@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Button } from "antd";
 import "./Mentor.css";
 
-import { ReactComponent as MentorImage } from "../../Assets/Brainstorming.svg";
-import { ReactComponent as VolunteerImage } from "../../Assets/Volunteer.svg";
+import { ReactComponent as MentorImage } from "../../Assets/Undraw/Brainstorming.svg";
+import { ReactComponent as VolunteerImage } from "../../Assets/Undraw/Volunteer.svg";
 
 class Mentor extends Component {
   constructor(props) {

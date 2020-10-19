@@ -183,13 +183,6 @@
   margin-right: 17.5px;
 }
 
-.background-diamond-1 {
-  background-image: url("../../Assets/PNGDiamonds/1.png");
-  background-position: center center;
-  min-width: 50px;
-  min-height: 50px;
-}
-
 .hero-content-div {
   width: 80%;
   z-index: 1;

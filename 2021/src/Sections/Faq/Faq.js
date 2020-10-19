@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Faq.css";
 import { Collapse } from "antd";
 
-import { ReactComponent as Arrow } from "../../Assets/right.svg";
+import { ReactComponent as Arrow } from "../../Assets/Icons/RightArrow.svg";
 const { Panel } = Collapse;
 
 const questions = [
@@ -60,10 +60,7 @@ class Faq extends Component {
   render() {
     return (
       <div className="faq-div" id="faq-section">
-        <div
-          className="sponsor-display-title-div"
-          data-aos="fade-up"
-        >
+        <div className="sponsor-display-title-div" data-aos="fade-up">
           Frequently Asked Questions
         </div>
         <div className="sponsor-display-content-div" data-aos="fade-up">
@@ -96,15 +93,3 @@ class Faq extends Component {
 }
 
 export default Faq;
-
-/*{
-              questions.map((question, index) => (
-                <Panel
-                  header={{question.question}}
-                  key={{index}}
-                  className="site-collapse-custom-panel"
-                >
-                  <p>{{question.answer}}</p>
-                </Panel>
-              )
-            }*/

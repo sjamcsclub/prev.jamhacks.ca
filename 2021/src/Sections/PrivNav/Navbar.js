@@ -2,32 +2,28 @@ import React, { Component } from "react";
 import { Button } from "antd";
 import { motion } from "framer-motion";
 
-import { ReactComponent as Linkedin } from "../../Assets/linkedin.svg";
-import { ReactComponent as Instagram } from "../../Assets/instagram.svg";
+import { ReactComponent as Linkedin } from "../../Assets/Icons/Social/linkedin.svg";
+import { ReactComponent as Instagram } from "../../Assets/Icons/Social/instagram.svg";
 
-import { ReactComponent as Twitter } from "../../Assets/twitter.svg";
-import { ReactComponent as Facebook } from "../../Assets/facebook.svg";
+import { ReactComponent as Twitter } from "../../Assets/Icons/Social/twitter.svg";
+import { ReactComponent as Facebook } from "../../Assets/Icons/Social/facebook.svg";
 
 const navLinks = [
   {
-    label: "About",
-    id: "about-section",
-  },
-  // {
-  //   label: "Schedule",
-  //   id: "schedule-section",
-  // },
-  {
-    label: "Sponsors",
-    id: "sponsor-section",
+    label: "Definitions",
+    id: "definitions-section",
   },
   {
-    label: "FAQ",
-    id: "faq-section",
+    label: "Data",
+    id: "data-section",
   },
   {
-    label: "Team",
-    id: "team-section",
+    label: "Privacy",
+    id: "privacy-section",
+  },
+  {
+    label: "Other",
+    id: "other-section",
   },
   {
     label: "Contact",
@@ -150,31 +146,44 @@ class Navbar extends Component {
             <div className="navbar-mobile-links-div">
               {navLinks.map((link) => (
                 <div className="navbar-mobile-link-container">
-                  <a className="navbar-mobile-link-item" href="/">
+                  <a
+                    className="navbar-mobile-link-item"
+                    onClick={() =>
+                      window.scrollTo({
+                        top: document.getElementById(link.id).offsetTop - 80,
+                        left: 0,
+                        behavior: "smooth",
+                      })
+                    }
+                  >
                     {link.label}
                   </a>
                 </div>
               ))}
             </div>
 
-            <a
-              href="/"
-              target="_blank"
-              style={{
-                marginLeft: "70px",
-                marginTop: "10px",
-              }}
-            >
-              <Button
-                type="primary"
-                disabled={this.register === "finished"}
-                style={{ height: "40px", fontSize: "14px" }}
+            {this.props.register === "close" ? (
+              ""
+            ) : (
+              <a
+                href="/"
+                target="_blank"
+                style={{
+                  marginLeft: "70px",
+                  marginTop: "10px",
+                }}
               >
-                {this.props.register === "finished"
-                  ? "Register"
-                  : "Applications Closed"}
-              </Button>
-            </a>
+                <Button
+                  type="primary"
+                  disabled={this.register === "finished"}
+                  style={{ height: "40px", fontSize: "14px" }}
+                >
+                  {this.props.register === "finished"
+                    ? "Applications Closed"
+                    : "Register"}
+                </Button>
+              </a>
+            )}
 
             <div
               className="footer-icons-div"
@@ -216,21 +225,21 @@ class Navbar extends Component {
           </div>
         </motion.div>
         <div className="navbar-logo-div">
-          <div
-            className="navbar-logo"
-            onClick={() =>
-              window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth",
-              })
-            }
-          ></div>
+          <a href="/" className="navbar-logo"></a>
         </div>
 
         <div className="navbar-links-div">
           {navLinks.map((link) => (
-            <a href="/" className="navbar-link-item">
+            <a
+              onClick={() =>
+                window.scrollTo({
+                  top: document.getElementById(link.id).offsetTop - 80,
+                  left: 0,
+                  behavior: "smooth",
+                })
+              }
+              className="navbar-link-item"
+            >
               {link.label}
             </a>
           ))}
