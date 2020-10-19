@@ -63,12 +63,7 @@ Copyright (c) 2020 JAMHacks. 
         <div className="App">
           <Switch>
             <Route exact path="/privacy-policy">
-              <PrivNav />
-              <Privacy></Privacy>
-              <Footer register={Env.register}></Footer>
-            </Route>
-            <Route exact path="/code-of-conduct">
-              <PrivNav />
+              <PrivNav register={Env.register} />
               <Privacy></Privacy>
               <Footer register={Env.register}></Footer>
             </Route>

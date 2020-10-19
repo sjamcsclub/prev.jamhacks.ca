@@ -54,7 +54,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.register = process.env.REACT_APP_REGISTER;
+    this.register = props.register;
   }
 
   componentDidMount() {

@@ -52,7 +52,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.register = process.env.REACT_APP_REGISTER;
+    this.register = props.register;
   }
 
   componentDidMount() {
@@ -147,82 +147,73 @@ class Navbar extends Component {
           transition={{ ease: "easeOut", duration: 0.25 }}
         >
           <div className="test-navbar">
-          <div className="navbar-mobile-links-div">
-            {navLinks.map((link) => (
-              <div className="navbar-mobile-link-container">
-                <a
-                    className="navbar-mobile-link-item"
-                    href="/"
-                >
-                  {link.label}
-                </a>
-              </div>
-            ))}
+            <div className="navbar-mobile-links-div">
+              {navLinks.map((link) => (
+                <div className="navbar-mobile-link-container">
+                  <a className="navbar-mobile-link-item" href="/">
+                    {link.label}
+                  </a>
+                </div>
+              ))}
+            </div>
+
+            <a
+              href="/"
+              target="_blank"
+              style={{
+                marginLeft: "70px",
+                marginTop: "10px",
+              }}
+            >
+              <Button
+                type="primary"
+                disabled={this.register === "finished"}
+                style={{ height: "40px", fontSize: "14px" }}
+              >
+                {this.props.register === "finished"
+                  ? "Register"
+                  : "Applications Closed"}
+              </Button>
+            </a>
+
+            <div
+              className="footer-icons-div"
+              style={{
+                marginTop: "30px",
+                marginLeft: "70px",
+                justifyContent: "space-between",
+              }}
+            >
+              <a
+                href={socialURLS.linkedin}
+                target="_blank"
+                className="social-icon linkedin "
+              >
+                <Linkedin className="hover-icon"></Linkedin>
+              </a>
+              <a
+                href={socialURLS.instagram}
+                target="_blank"
+                className="social-icon instagram "
+              >
+                <Instagram className="hover-icon"></Instagram>
+              </a>
+              <a
+                target="_blank"
+                href={socialURLS.twitter}
+                className="social-icon twitter "
+              >
+                <Twitter className="hover-icon"></Twitter>
+              </a>
+              <a
+                target="_blank"
+                href={socialURLS.facebook}
+                className="social-icon facebook "
+              >
+                <Facebook className="hover-icon"></Facebook>
+              </a>
+            </div>
           </div>
-          
-          
-          <a
-            href="/"
-            target="_blank"
-            style={{
-              marginLeft: "70px",
-              marginTop: "10px",
-            }}
-          >
-            <Button
-              type="primary"
-              disabled={this.register === "finished"}
-              style={{ height: "40px", fontSize: "14px" }}
-            >
-              {this.props.register === "finished"
-                ? "Register"
-                : "Applications Closed"}
-            </Button>
-          </a>
-
-
-
-          <div
-            className="footer-icons-div"
-            style={{
-              marginTop: "30px",
-              marginLeft: "70px",
-              justifyContent: "space-between",
-            }}
-          >
-             <a
-              href={socialURLS.linkedin}
-              target="_blank"
-              className="social-icon linkedin "
-            >
-              <Linkedin className="hover-icon"></Linkedin>
-            </a>
-            <a
-              href={socialURLS.instagram}
-              target="_blank"
-              className="social-icon instagram "
-            >
-              <Instagram className="hover-icon"></Instagram>
-            </a>
-            <a
-              target="_blank"
-              href={socialURLS.twitter}
-              className="social-icon twitter "
-            >
-              <Twitter className="hover-icon"></Twitter>
-            </a>
-            <a
-              target="_blank"
-              href={socialURLS.facebook}
-              className="social-icon facebook "
-            >
-              <Facebook className="hover-icon"></Facebook>
-            </a> 
-          </div>
-        
-        
-        </div>
-        
         </motion.div>
         <div className="navbar-logo-div">
           <div
@@ -239,9 +230,7 @@ class Navbar extends Component {
 
         <div className="navbar-links-div">
           {navLinks.map((link) => (
-            <a href="/"
-              className="navbar-link-item"
-            >
+            <a href="/" className="navbar-link-item">
               {link.label}
             </a>
           ))}
