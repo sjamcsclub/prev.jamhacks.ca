@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.less";
 
 import Navbar from "./Sections/Navbar/Navbar";
@@ -16,6 +16,8 @@ import Contact from "./Sections/Contact/Contact";
 import Footer from "./Sections/Footer/Footer";
 import Privacy from "./Sections/Privacy/Privacy";
 import PrivNav from "./Sections/PrivNav/Navbar";
+
+import NotFoundPage from "./Sections/NotFoundPage";
 
 import Env from "./env.js";
 
@@ -67,7 +69,7 @@ Copyright (c) 2020 JAMHacks. 
               <Privacy></Privacy>
               <Footer register={Env.register}></Footer>
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <Navbar register={Env.register} />
               <Hero register={Env.register} />
               <About />
@@ -81,8 +83,10 @@ Copyright (c) 2020 JAMHacks. 
               <Faq />
               <Team />
               <Contact />
-              <Footer register={process.env.REACT_APP_REGISTER} />
+              <Footer register={Env.register} />
             </Route>
+            <Route path="/404" component={NotFoundPage} />
+            <Redirect to="/404" />
           </Switch>
         </div>
       </BrowserRouter>

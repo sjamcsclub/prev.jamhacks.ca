@@ -77,18 +77,6 @@ const RoundSearch = styled(Input.Search)`
   .ant-input-group-addon {
     border-radius: 20px;
   }
-  ${media("lg")`
-    .ant-input {
-      font-size: 0.95rem;
-    }
-    .ant-input-group {
-
-    }
-    .ant-input-search-button {
-      font-size: 0.9rem;
-      height: 37.29px;
-    }
-  `}
   ${media("sm")`
      .ant-input {
       font-size: 0.8rem;

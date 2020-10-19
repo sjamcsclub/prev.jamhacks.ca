@@ -3,6 +3,9 @@ import { Carousel } from "antd";
 import "./About.css";
 import { Spring } from "react-spring/renderprops";
 import VisibilitySensor from "react-visibility-sensor";
+import styled from "styled-components"
+import { media } from "../../utils/media";
+
 import past1 from "../../Assets/PastPhotos/1.png";
 import past2 from "../../Assets/PastPhotos/2.png";
 import past3 from "../../Assets/PastPhotos/3.png";
@@ -21,7 +24,7 @@ const About = () => {
   return (
     <div className="about-div" id="about-section">
       <div className="about-content-row-div">
-        <div className="about-content">
+        <div className="about-content jam-text">
           <div className="about-title-div" data-aos="fade-up">
             Waterloo’s biggest high school hackathon
           </div>
@@ -135,5 +138,6 @@ const About = () => {
     </div>
   );
 };
+
 
 export default About;

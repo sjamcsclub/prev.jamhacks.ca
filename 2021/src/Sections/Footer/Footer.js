@@ -19,22 +19,23 @@ class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.register = props.register;
   }
   render() {
     return (
       <div className="footer-div">
         <div className="footer-content-div">
           <div className="footer-title-content">Follow us on social media</div>
-          {this.props.register === "close" ? (
+          {this.register === "close" ? (
             ""
           ) : (
             <a href="" target="_blank">
               <Button
-                disabled={this.props.register === "finished"}
+                disabled={this.register === "finished"}
                 type="primary"
                 style={{ width: "180px", height: "40px" }}
               >
-                {this.props.register === "finished"
+                {this.register === "finished"
                   ? "Applications Closed"
                   : "Apply Now"}
               </Button>
