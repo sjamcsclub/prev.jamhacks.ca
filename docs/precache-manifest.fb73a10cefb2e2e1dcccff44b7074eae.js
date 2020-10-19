@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fceb17dae36ec20a226af3ed625b681d",
+    "revision": "e5c712a965fb13cbc2988cf1b8cb0d6c",
     "url": "/index.html"
   },
   {
-    "revision": "5ae70a6ba5621d86ae09",
+    "revision": "874b8a28ad06cdebf4f0",
     "url": "/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "cdde715219a9688a141e",
-    "url": "/static/css/main.5bd4ebed.chunk.css"
+    "revision": "a4880ac6f9ae39e72482",
+    "url": "/static/css/main.7e8d69f7.chunk.css"
   },
   {
-    "revision": "5ae70a6ba5621d86ae09",
-    "url": "/static/js/2.c6353d28.chunk.js"
+    "revision": "874b8a28ad06cdebf4f0",
+    "url": "/static/js/2.220dfd49.chunk.js"
   },
   {
     "revision": "da1ddcda7183b6313ab6bca1da290ddd",
-    "url": "/static/js/2.c6353d28.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.220dfd49.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cdde715219a9688a141e",
-    "url": "/static/js/main.151e5da4.chunk.js"
+    "revision": "a4880ac6f9ae39e72482",
+    "url": "/static/js/main.6689449f.chunk.js"
   },
   {
     "revision": "9b4e396c183e42c1fa5c",
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/JamhacksFull.42a82c48.svg"
   },
   {
-    "revision": "57f26a25ab64814e5952cd71778614d3",
-    "url": "/static/media/Jar.57f26a25.svg"
+    "revision": "bf0098f1baef9400f65d5677581279f7",
+    "url": "/static/media/Jar.bf0098f1.svg"
   },
   {
     "revision": "9026209dca7a69e1124296775c4f31dd",
@@ -116,12 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Michelle.63781b7f.png"
   },
   {
-    "revision": "21887130a24ea3237c3f114d538b4a57",
-    "url": "/static/media/Placeholder.21887130.png"
-  },
-  {
     "revision": "02673ef6c33dc0625c0d7910e5d5b343",
     "url": "/static/media/Qianxu.02673ef6.png"
+  },
+  {
+    "revision": "0dcba25e71b71cead4f1bb39e66695e8",
+    "url": "/static/media/RightArrow.0dcba25e.svg"
   },
   {
     "revision": "29a2d3b4bf5567bff0daaee13ab8c774",
@@ -134,22 +134,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0fc087ec2dc930c6e4d1ecfcf4b7c7a1",
     "url": "/static/media/Sponsor.0fc087ec.svg"
-  },
-  {
-    "revision": "d0ac0273b76ecb03b154a56e21b67ab0",
-    "url": "/static/media/Sponsor1.d0ac0273.svg"
-  },
-  {
-    "revision": "0c088e8d71bb715d7513d7169b50e3cc",
-    "url": "/static/media/Sponsor2.0c088e8d.svg"
-  },
-  {
-    "revision": "e0792ff85c4509980abaa7569a7ff829",
-    "url": "/static/media/Sponsor3.e0792ff8.svg"
-  },
-  {
-    "revision": "eadce7d79f6667e23b500a932606ab8c",
-    "url": "/static/media/Sponsorship Package.eadce7d7.pdf"
   },
   {
     "revision": "768fa315452afc0dac48726d00fc8a27",
@@ -168,56 +152,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/facebook.c66b4089.svg"
   },
   {
-    "revision": "16ec314848b86f4a8c8e44df4ecf4583",
-    "url": "/static/media/facebookH.16ec3148.svg"
-  },
-  {
-    "revision": "836af0b0174804ffec13da729c4734ed",
-    "url": "/static/media/facebookS.836af0b0.svg"
-  },
-  {
     "revision": "a85df877d98216f9696d86a33b4cc75e",
     "url": "/static/media/instagram.a85df877.svg"
-  },
-  {
-    "revision": "777094bae95723bf05c56cf41dcc912e",
-    "url": "/static/media/instagramH.777094ba.svg"
-  },
-  {
-    "revision": "3fe4d9b8834f5eb284b8559b696285c5",
-    "url": "/static/media/instagramS.3fe4d9b8.svg"
   },
   {
     "revision": "469c605823ca8cf587449aa8af607b51",
     "url": "/static/media/linkedin.469c6058.svg"
   },
   {
-    "revision": "c09f08dbb71a43fc9208fb310fdcae1f",
-    "url": "/static/media/linkedinH.c09f08db.svg"
-  },
-  {
-    "revision": "b182173c8371454f6c9af638a15b994c",
-    "url": "/static/media/linkedinS.b182173c.svg"
-  },
-  {
-    "revision": "f95089ccb4d648c8d1c1864e343a0779",
-    "url": "/static/media/mailH.f95089cc.svg"
-  },
-  {
-    "revision": "0dcba25e71b71cead4f1bb39e66695e8",
-    "url": "/static/media/right.0dcba25e.svg"
-  },
-  {
     "revision": "9c025d994eb65395b2ffd5c0b6a7eed8",
     "url": "/static/media/twitter.9c025d99.svg"
-  },
-  {
-    "revision": "a27ec425812f35c72716cd4287ccd5e8",
-    "url": "/static/media/twitterH.a27ec425.svg"
-  },
-  {
-    "revision": "a66744a41c6606ce9b9ab8288b4bed9a",
-    "url": "/static/media/twitterS.a66744a4.svg"
   },
   {
     "revision": "1ed2cf5d905779bb822a84d506306498",
