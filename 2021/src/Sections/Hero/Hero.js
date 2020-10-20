@@ -24,8 +24,8 @@ class Hero extends Component {
             {this.props.register === "close" ? (
               <Newsletter />
             ) : (
-              <div className="hero-button-div">
-                <a href="https://bit.ly/visionaryapplication" target="_blank">
+              <div className="hero-button-div" >
+                <a rel="noopener noreferrer" href="https://bit.ly/visionaryapplication" target="_blank" rel="noopener noreferrer">
                   <Button
                     type="primary"
                     disabled={this.props.register === "finished"}

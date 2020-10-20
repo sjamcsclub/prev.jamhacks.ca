@@ -29,7 +29,7 @@ class Footer extends Component {
           {this.register === "close" ? (
             ""
           ) : (
-            <a href="" target="_blank">
+            <a href="/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">
               <Button
                 disabled={this.register === "finished"}
                 type="primary"
@@ -44,28 +44,28 @@ class Footer extends Component {
           <div className="footer-icons-div" style={{ marginBottom: "20px" }}>
             <a
               href={socialURLS.linkedin}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="social-icon white linkedin"
             >
               <Linkedin fill="white"></Linkedin>
             </a>
             <a
               href={socialURLS.instagram}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="social-icon white instagram"
             >
               <Instagram></Instagram>
             </a>
             <a
               href={socialURLS.twitter}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="social-icon white twitter"
             >
               <Twitter></Twitter>
             </a>
             <a
               href={socialURLS.facebook}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="social-icon white facebook"
             >
               <Facebook></Facebook>
@@ -91,14 +91,14 @@ class Footer extends Component {
               reserved.
             </div>
             <a
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               href="https://jamhacks.ca/2020/"
               className="footer-link"
             >
               2020 Site
             </a>
             <a
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               href="\privacy-policy"
               className="footer-privacy"
             >

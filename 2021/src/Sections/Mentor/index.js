@@ -60,7 +60,7 @@ class Mentor extends Component {
                   answer our hackers’ questions and bring their ideas into
                   reality! Learn more about mentor expectations:
                 </div>
-                <a href="" target="_blank">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <Button
                     type="primary"
                     style={{ height: "40px" }}
@@ -102,7 +102,7 @@ class Mentor extends Component {
                   registration to post-event, all while gaining volunteer
                   experience, an inside look on how a hackathon runs, and swag!
                 </div>
-                <a href="" target="_blank">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Button
                     type="primary"
                     style={{ height: "40px" }}

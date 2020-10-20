@@ -62,7 +62,7 @@ const MemberData = [
     name: "Trevor Du",
     role: "Workshops",
     headshot: Trevor,
-    link: "github.com/tdude92",
+    link: "https://github.com/tdude92",
   },
   {
     name: "Aditya Keerthi",
@@ -100,13 +100,13 @@ const Team = () => {
       <div className="team-display-content-div" data-aos="fade-up">
         {MemberData.map((member) => {
           return (
-            <div className="team-display-content-item">
+            <div key={member.name} className="team-display-content-item">
               <motion.a
                 whileHover={{ scale: member.link ? 1.1 : 1 }}
                 href={member.link}
                 style={{ cursor: member.link ? "pointer" : "default" }}
               >
-                <img className="team-display-headshot" src={member.headshot} />
+                <img alt={member.name + " portrait"} className="team-display-headshot" src={member.headshot} />
               </motion.a>
               <div className="team-display-content-item-main">
                 {member.name}

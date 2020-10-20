@@ -35,7 +35,7 @@ const Newsletter = (props) => {
   const submitEmail = async (email) => {
     setLoading(true);
     const valid = await validateEmail(email);
-    if (valid == true) {
+    if (valid === true) {
       setStatus("success");
     } else {
       setStatus("error");

@@ -167,7 +167,7 @@ class Navbar extends Component {
             ) : (
               <a
                 href="/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 style={{
                   marginLeft: "70px",
                   marginTop: "10px",
@@ -195,27 +195,27 @@ class Navbar extends Component {
             >
               <a
                 href={socialURLS.linkedin}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="social-icon linkedin "
               >
                 <Linkedin className="hover-icon"></Linkedin>
               </a>
               <a
                 href={socialURLS.instagram}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="social-icon instagram "
               >
                 <Instagram className="hover-icon"></Instagram>
               </a>
               <a
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 href={socialURLS.twitter}
                 className="social-icon twitter "
               >
                 <Twitter className="hover-icon"></Twitter>
               </a>
               <a
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 href={socialURLS.facebook}
                 className="social-icon facebook "
               >
@@ -248,28 +248,28 @@ class Navbar extends Component {
         <div className="navbar-icons-div">
           <a
             href={socialURLS.linkedin}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="social-icon linkedin navbar-social-icon"
           >
             <Linkedin className="hover-icon"></Linkedin>
           </a>
           <a
             href="https://www.instagram.com/jamhacks"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="social-icon instagram navbar-social-icon"
           >
             <Instagram className="hover-icon"></Instagram>
           </a>
           <a
             href={socialURLS.twitter}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="social-icon twitter navbar-social-icon"
           >
             <Twitter className="hover-icon"></Twitter>
           </a>
           <a
             href={socialURLS.facebook}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="social-icon facebook navbar-social-icon"
           >
             <Facebook className="hover-icon"></Facebook>
@@ -278,7 +278,7 @@ class Navbar extends Component {
         {this.register === "close" ? (
           ""
         ) : (
-          <a href="" target="_blank" className="navbar-action-div">
+          <a href="" target="_blank" rel="noopener noreferrer" className="navbar-action-div">
             <Button
               type="primary"
               disabled={this.register === "finished"}
