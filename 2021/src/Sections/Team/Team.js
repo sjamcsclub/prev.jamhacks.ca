@@ -38,7 +38,7 @@ const MemberData = [
     name: "Rohan Shetty",
     role: "Logistics",
     headshot: Rohan,
-    link: "rohanshetty.me",
+    link: "https://rohanshetty.me",
   },
   {
     name: "Kegan Allen",
