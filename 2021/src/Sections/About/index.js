@@ -35,7 +35,7 @@ const About = () => {
           >
             Waterloo’s largest high school hackathon is back! JAMHacks V will
             take place from May 22nd to 23rd. This year, we’re bringing together
-            over 200 students from high schools all over North America for a
+            over 200+ students from high schools all over North America for a
             full 24 hours of learning and creating!
             <br></br>
             <br></br>
@@ -63,7 +63,7 @@ const About = () => {
                       <h2 className="about-stat">{people.toFixed(0) + "+"}</h2>
                     )}
                   </Spring>
-                  <h3 className="about-stat-title">hackers</h3>
+                  <h3 className="about-stat-title">hackers annually</h3>
                 </div>
                 <div className="about-stat-container">
                   <Spring
