@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e8149f8.chunk.css",
-    "main.js": "/static/js/main.f3e568b2.chunk.js",
-    "main.js.map": "/static/js/main.f3e568b2.chunk.js.map",
+    "main.css": "/static/css/main.1aafc307.chunk.css",
+    "main.js": "/static/js/main.b2b7547d.chunk.js",
+    "main.js.map": "/static/js/main.b2b7547d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7ede5035.js",
     "runtime-main.js.map": "/static/js/runtime-main.7ede5035.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.8c276840.chunk.js": "/static/js/2.8c276840.chunk.js",
-    "static/js/2.8c276840.chunk.js.map": "/static/js/2.8c276840.chunk.js.map",
+    "static/js/2.b29a10ec.chunk.js": "/static/js/2.b29a10ec.chunk.js",
+    "static/js/2.b29a10ec.chunk.js.map": "/static/js/2.b29a10ec.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.46f7202fb5ba1ff2a079d6f717f9c4d5.js": "/precache-manifest.46f7202fb5ba1ff2a079d6f717f9c4d5.js",
+    "precache-manifest.1782288b7382bee04fecec52bbad5242.js": "/precache-manifest.1782288b7382bee04fecec52bbad5242.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.5e8149f8.chunk.css.map": "/static/css/main.5e8149f8.chunk.css.map",
-    "static/js/2.8c276840.chunk.js.LICENSE.txt": "/static/js/2.8c276840.chunk.js.LICENSE.txt",
+    "static/css/main.1aafc307.chunk.css.map": "/static/css/main.1aafc307.chunk.css.map",
+    "static/js/2.b29a10ec.chunk.js.LICENSE.txt": "/static/js/2.b29a10ec.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.4d5147c8.png",
     "static/media/2.png": "/static/media/2.004df175.png",
     "static/media/3.png": "/static/media/3.8528776f.png",
@@ -28,7 +28,7 @@
     "static/media/Fred.png": "/static/media/Fred.728c4bd2.png",
     "static/media/index.css": "/static/media/SpaceGrotesk-Bold.6a965ac3.otf",
     "static/media/Footer.css": "/static/media/JamhacksFull.42a82c48.svg",
-    "static/media/About.css": "/static/media/Jar.57f26a25.svg",
+    "static/media/About.css": "/static/media/Jar.bf0098f1.svg",
     "static/media/Kegan.png": "/static/media/Kegan.9026209d.png",
     "static/media/Kevin.png": "/static/media/Kevin.2c8ce696.png",
     "static/media/Navbar.css": "/static/media/Logo.cbb8915d.svg",
@@ -49,8 +49,8 @@
   "entrypoints": [
     "static/js/runtime-main.7ede5035.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.8c276840.chunk.js",
-    "static/css/main.5e8149f8.chunk.css",
-    "static/js/main.f3e568b2.chunk.js"
+    "static/js/2.b29a10ec.chunk.js",
+    "static/css/main.1aafc307.chunk.css",
+    "static/js/main.b2b7547d.chunk.js"
   ]
 }
