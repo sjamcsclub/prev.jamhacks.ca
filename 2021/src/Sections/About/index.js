@@ -63,7 +63,7 @@ const About = () => {
                       <h2 className="about-stat">{people.toFixed(0) + "+"}</h2>
                     )}
                   </Spring>
-                  <h3 className="about-stat-title">hackers annually</h3>
+                  <h3 className="about-stat-title">students annually</h3>
                 </div>
                 <div className="about-stat-container">
                   <Spring
