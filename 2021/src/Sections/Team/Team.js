@@ -6,7 +6,6 @@ import Cristian from "../../Assets/Headshots/Cristian.png";
 import Michelle from "../../Assets/Headshots/Michelle.png";
 import Yina from "../../Assets/Headshots/Yina.png";
 import Rohan from "../../Assets/Headshots/Rohan.png";
-import Kegan from "../../Assets/Headshots/Kegan.png";
 import Kevin from "../../Assets/Headshots/Kevin.png";
 import Daniel from "../../Assets/Headshots/Daniel.png";
 import Trevor from "../../Assets/Headshots/Trevor.png";
@@ -39,12 +38,6 @@ const MemberData = [
     role: "Logistics",
     headshot: Rohan,
     link: "https://rohanshetty.me",
-  },
-  {
-    name: "Kegan Allen",
-    role: "Logistics",
-    headshot: Kegan,
-    link: "https://github.com/allek6496",
   },
   {
     name: "Kevin Gao",
