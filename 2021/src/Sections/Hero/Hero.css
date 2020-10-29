@@ -127,7 +127,7 @@
   font-size: 0;
   height: 3px;
   display: inline-block;
-  background: rgb(34, 33, 48);
+  background: white;
   transition: width 0.3s ease-in-out;
   position: absolute;
   left: 0;

@@ -53,7 +53,7 @@ class Hero extends Component {
                 });
               }}
               className="sponsor-action"
-              style={{ color: "#222130", fontSize: "16px" }}
+              style={{ color: "white", fontSize: "16px" }}
             >
               <div>Interested in sponsoring?</div>
             </Link>
@@ -106,6 +106,8 @@ const Subtitle = styled.h3`
   display: flex;
   justify-content: flex-start;
   z-index: 5;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
   ${media("md")`
     font-size: 1.5rem;
     justify-content: center;
@@ -125,9 +127,10 @@ const LocationText = styled.h4`
   display: flex;
   justify-content: flex-start;
   z-index: 5;
-  color: #222130;
+  color: white;
   font-size: 1.5rem;
   text-align: left;
+  letter-spacing: 0.025em;
   ${media("md")`
     justify-content: center;
   `}
@@ -146,7 +149,7 @@ const DateText = styled.h4`
   display: flex;
   justify-content: flex-start;
   z-index: 5;
-  color: #222130;
+  color: white;
   font-size: 1rem;
   opacity: 90%;
   ${media("md")`
