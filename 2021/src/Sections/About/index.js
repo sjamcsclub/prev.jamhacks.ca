@@ -35,7 +35,7 @@ const About = () => {
           >
             Waterloo’s largest high school hackathon is back! JAMHacks V will
             take place from May 22nd to 23rd. This year, we’re bringing together
-            over 200+ students from high schools all over North America for a
+            200+ students from high schools all over North America for a
             full 24 hours of learning and creating!
             <br></br>
             <br></br>
@@ -127,7 +127,7 @@ const About = () => {
             style={{ textAlign: "left", width: "100%" }}
           >
             Hackers of all skill levels and backgrounds are welcome to
-            participate in JAMHacks! JAMHacks is also a learnathon—there will
+            participate in JAMHacks! JAMHacks is also a learnathon—there will be
             workshops and mentors to guide you through making a software or
             hardware project, even if you’ve never coded before! If you’re an
             experienced hacker, consider JAMHacks an opportunity to start your
