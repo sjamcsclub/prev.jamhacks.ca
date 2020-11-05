@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.81944123.chunk.css",
+    "main.css": "/static/css/main.44554579.chunk.css",
     "main.js": "/static/js/main.947d3973.chunk.js",
     "main.js.map": "/static/js/main.947d3973.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7ede5035.js",
@@ -9,10 +9,10 @@
     "static/js/2.bc738941.chunk.js": "/static/js/2.bc738941.chunk.js",
     "static/js/2.bc738941.chunk.js.map": "/static/js/2.bc738941.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ffbf395476fed61f24d67cf24d958fe9.js": "/precache-manifest.ffbf395476fed61f24d67cf24d958fe9.js",
+    "precache-manifest.216f666746bf5c702e4844920cf46d9b.js": "/precache-manifest.216f666746bf5c702e4844920cf46d9b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.81944123.chunk.css.map": "/static/css/main.81944123.chunk.css.map",
+    "static/css/main.44554579.chunk.css.map": "/static/css/main.44554579.chunk.css.map",
     "static/js/2.bc738941.chunk.js.LICENSE.txt": "/static/js/2.bc738941.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.4d5147c8.png",
     "static/media/2.png": "/static/media/2.004df175.png",
@@ -27,10 +27,10 @@
     "static/media/Daniel.png": "/static/media/Daniel.21887130.png",
     "static/media/Fred.png": "/static/media/Fred.728c4bd2.png",
     "static/media/index.css": "/static/media/SpaceGrotesk-Bold.6a965ac3.otf",
-    "static/media/Footer.css": "/static/media/JamhacksFull.42a82c48.svg",
+    "static/media/Navbar.css": "/static/media/Logo.c21e42db.svg",
+    "static/media/Footer.css": "/static/media/JamhacksSolidFull.a3e2e97a.svg",
     "static/media/About.css": "/static/media/Jar.bf0098f1.svg",
     "static/media/Kevin.png": "/static/media/Kevin.2c8ce696.png",
-    "static/media/Navbar.css": "/static/media/Logo.cbb8915d.svg",
     "static/media/Michelle.png": "/static/media/Michelle.63781b7f.png",
     "static/media/Qianxu.png": "/static/media/Qianxu.02673ef6.png",
     "static/media/RightArrow.0dcba25e.svg": "/static/media/RightArrow.0dcba25e.svg",
@@ -49,7 +49,7 @@
     "static/js/runtime-main.7ede5035.js",
     "static/css/2.4707e12a.chunk.css",
     "static/js/2.bc738941.chunk.js",
-    "static/css/main.81944123.chunk.css",
+    "static/css/main.44554579.chunk.css",
     "static/js/main.947d3973.chunk.js"
   ]
 }
