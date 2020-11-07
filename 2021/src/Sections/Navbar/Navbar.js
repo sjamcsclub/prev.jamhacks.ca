@@ -230,6 +230,7 @@ class Navbar extends Component {
             </div>
           </div>
         </motion.div>
+        
         <div className="navbar-logo-div">
           <div
             className="navbar-logo"

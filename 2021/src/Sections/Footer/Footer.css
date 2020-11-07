@@ -95,10 +95,12 @@
 .hover-icon {
   transition: 0.15s ease-in-out all;
 }
-
-.hover-icon:hover {
+/* 
+.hover-icon:hover path{
   opacity: 50%;
-}
+  fill: #7B0FF7;
+  stroke: #7B0FF7;
+} */
 
 .footer-icons-div {
   /* flex: 1.3; */
