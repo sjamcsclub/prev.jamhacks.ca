@@ -77,31 +77,31 @@ class Hero extends Component {
 
 const Title = styled.h1`
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 4rem;
-  color: #7b0ff7;
+  font-size: 4.8rem;
+  color: #7B0FF7;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   text-align: center;
   z-index: 5;
   ${media("md")`
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     justify-content: center;
   `}
   ${media("sm")`
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   `}
 `;
 
 const Subtitle = styled.h3`
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+  font-weight: 600;
   font-size: 2rem;
-  color: #3b00c3;
+  color: #AB11F7;
   width: 100%;
   display: flex;
   justify-content: flex-start;

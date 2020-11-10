@@ -44,7 +44,7 @@
 
 .navbar-link-item {
   margin: 0 10px;
-  color: #222130;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -95,6 +95,7 @@
 
 #hamburger-1.is-active .line:nth-child(2) {
   opacity: 0;
+  background-color: black;
 }
 
 #hamburger-1.is-active .line:nth-child(1) {
@@ -150,7 +151,7 @@
   /* identical to box height, or 171% */
 
   /* text/headings */
-  color: #222130;
+  color: #7B0FF7;
   display: inline;
 }
 
@@ -158,6 +159,35 @@
   cursor: pointer;
 }
 
+.navbar-scrolled-link{
+  color: #7B0FF7;
+}
+
+.navbar-social-icon path{
+  fill: white;
+}
+
+.navbar-social-icon.instagram path{
+  fill: none;
+  stroke: white;
+}
+
+.navbar-social-icon-scrolled path{
+  fill: #7B0FF7;
+}
+.navbar-social-icon-scrolled.instagram path{
+  stroke: #7B0FF7;
+  fill: none;
+}
+
+.navbar-social-icon:hover path{
+  fill: #251d96;
+}
+
+.navbar-social-icon.instagram:hover path{
+  fill: none;
+  stroke: #251d96;
+}
 
 @media only screen and (max-width: 780px) {
   .navbar-div {
