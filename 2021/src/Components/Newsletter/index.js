@@ -25,10 +25,10 @@ const Newsletter = (props) => {
           return true;
         })
         .catch(function (error) {
-          return false;
+          return "database error";
         });
     } else {
-      return false;
+      return "email error";
     }
   };
 
@@ -37,8 +37,10 @@ const Newsletter = (props) => {
     const valid = await validateEmail(email);
     if (valid === true) {
       setStatus("success");
-    } else {
-      setStatus("error");
+    } else if(valid === "email error") {
+      setStatus("please submit a valid email");
+    } else if(valid === "database error"){
+      setStatus("out network is experiencing an issue please try again");
     }
     setLoading(false);
   };
@@ -57,7 +59,7 @@ const Newsletter = (props) => {
           Success, you have be subscribed to our newsletter
         </SuccessMsg>
       )}
-      {status === "error" && <ErrorMsg>Please submit a valid email</ErrorMsg>}
+      {status != "success" && <ErrorMsg>{status}</ErrorMsg>}
     </div>
   );
 };
