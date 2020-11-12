@@ -63,7 +63,7 @@ class Faq extends Component {
         <div className="sponsor-display-title-div" data-aos="fade-up">
           Frequently Asked Questions
         </div>
-        <div className="sponsor-display-content-div" data-aos="fade-up">
+        <div className="faq-content-div" data-aos="fade-up">
           <Collapse
             expandIcon={({ isActive }) => (
               <Arrow

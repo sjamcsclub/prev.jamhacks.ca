@@ -98,7 +98,7 @@ Copyright (c) 2020 JAMHacks. 
               />
               {Env.schedule === "open" && <Schedule />}
               <Sponsor />
-              {/* <SponsorDisplay /> */}
+              <SponsorDisplay />
               <Faq />
               <Team />
               <Contact />
