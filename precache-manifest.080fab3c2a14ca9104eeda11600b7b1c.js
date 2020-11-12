@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb4e8c0576ebd59882aaf53e83337c33",
+    "revision": "d9e7ec2500cdbac6f96891dc65b9b373",
     "url": "/index.html"
   },
   {
-    "revision": "509ca6a3ffbef7a5401f",
+    "revision": "7fcff0b08bf30b04786e",
     "url": "/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "1b932943adbfd2725cd8",
-    "url": "/static/css/main.094f9d74.chunk.css"
+    "revision": "3763780559d0f205e61f",
+    "url": "/static/css/main.9429d515.chunk.css"
   },
   {
-    "revision": "509ca6a3ffbef7a5401f",
-    "url": "/static/js/2.b8888b0a.chunk.js"
+    "revision": "7fcff0b08bf30b04786e",
+    "url": "/static/js/2.b50b5df9.chunk.js"
   },
   {
     "revision": "da1ddcda7183b6313ab6bca1da290ddd",
-    "url": "/static/js/2.b8888b0a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b50b5df9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1b932943adbfd2725cd8",
-    "url": "/static/js/main.9615f4aa.chunk.js"
+    "revision": "3763780559d0f205e61f",
+    "url": "/static/js/main.24eec0d9.chunk.js"
   },
   {
     "revision": "1d443d17ac082d7197f6",
@@ -104,12 +104,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/JamhacksFull.42a82c48.svg"
   },
   {
-    "revision": "0c6444daa8ff9e891e61298ad1ffe743",
-    "url": "/static/media/JamhacksSolidFull.0c6444da.svg"
+    "revision": "a3e2e97ac790c8c6ff7f66b70dc834b6",
+    "url": "/static/media/JamhacksSolidFull.a3e2e97a.svg"
   },
   {
-    "revision": "57f26a25ab64814e5952cd71778614d3",
-    "url": "/static/media/Jar.57f26a25.svg"
+    "revision": "bf0098f1baef9400f65d5677581279f7",
+    "url": "/static/media/Jar.bf0098f1.svg"
   },
   {
     "revision": "2c8ce696452b4fc1b7e8fad06b27fd0c",
@@ -120,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Linode.c51eaef4.png"
   },
   {
-    "revision": "f7b54f7694548982d11e7ad44d3f9431",
-    "url": "/static/media/Logo.f7b54f76.svg"
+    "revision": "c21e42db10cbe63ed393860e40235afc",
+    "url": "/static/media/Logo.c21e42db.svg"
   },
   {
     "revision": "63781b7f475e7b0897630e7950da045c",
