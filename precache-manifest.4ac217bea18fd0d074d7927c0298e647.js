@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "685028a52a142c87cff3be9d3e18fccc",
+    "revision": "cb4e8c0576ebd59882aaf53e83337c33",
     "url": "/index.html"
   },
   {
-    "revision": "7866769dd9ceae828ac8",
+    "revision": "509ca6a3ffbef7a5401f",
     "url": "/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "01f69f8b8391b1f679dc",
-    "url": "/static/css/main.3ace21b1.chunk.css"
+    "revision": "1b932943adbfd2725cd8",
+    "url": "/static/css/main.094f9d74.chunk.css"
   },
   {
-    "revision": "7866769dd9ceae828ac8",
-    "url": "/static/js/2.37f323a3.chunk.js"
+    "revision": "509ca6a3ffbef7a5401f",
+    "url": "/static/js/2.b8888b0a.chunk.js"
   },
   {
     "revision": "da1ddcda7183b6313ab6bca1da290ddd",
-    "url": "/static/js/2.37f323a3.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b8888b0a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "01f69f8b8391b1f679dc",
-    "url": "/static/js/main.119c22ab.chunk.js"
+    "revision": "1b932943adbfd2725cd8",
+    "url": "/static/js/main.9615f4aa.chunk.js"
   },
   {
     "revision": "1d443d17ac082d7197f6",
@@ -64,12 +64,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Brainstorming.9bcb7ad1.svg"
   },
   {
+    "revision": "a058b848ed95534013b212a9117f7c52",
+    "url": "/static/media/Cloudflare.a058b848.png"
+  },
+  {
     "revision": "1db72435deb13bb049a8b9cc540100f0",
     "url": "/static/media/Cristian.1db72435.png"
   },
   {
-    "revision": "21887130a24ea3237c3f114d538b4a57",
-    "url": "/static/media/Daniel.21887130.png"
+    "revision": "70074ef63d03a271c00b8ea6b558a6c1",
+    "url": "/static/media/CtrlV.70074ef6.png"
+  },
+  {
+    "revision": "3e590bf3ebb2a5afc8671853c79e6d19",
+    "url": "/static/media/Daniel.3e590bf3.png"
   },
   {
     "revision": "728c4bd24ceb62df0d4067d00c780aed",
@@ -108,6 +116,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Kevin.2c8ce696.png"
   },
   {
+    "revision": "c51eaef4af3dc9c047bf5a9e04ea8d57",
+    "url": "/static/media/Linode.c51eaef4.png"
+  },
+  {
     "revision": "f7b54f7694548982d11e7ad44d3f9431",
     "url": "/static/media/Logo.f7b54f76.svg"
   },
@@ -140,8 +152,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Trevor.768fa315.png"
   },
   {
+    "revision": "c5ecad12e8572cd35dfae06efb3b2008",
+    "url": "/static/media/TutorBright.c5ecad12.png"
+  },
+  {
     "revision": "6139e1543d1b40fc7e49e50c1cdcd4d8",
     "url": "/static/media/Volunteer.6139e154.svg"
+  },
+  {
+    "revision": "a977f817f62cf4cf5ae416dc391e3652",
+    "url": "/static/media/WolframAlpha.a977f817.png"
   },
   {
     "revision": "542a37175e834a05fdbbb1286395913f",
