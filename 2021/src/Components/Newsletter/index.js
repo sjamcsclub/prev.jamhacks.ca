@@ -56,7 +56,7 @@ const Newsletter = (props) => {
       />
       {status === "success" && (
         <SuccessMsg>
-          Success, you have be subscribed to our newsletter
+          Success, you have been subscribed to our newsletter
         </SuccessMsg>
       )}
       {status != "success" && <ErrorMsg>{status}</ErrorMsg>}

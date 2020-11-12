@@ -8,8 +8,6 @@ import TutorBright from "../../Assets/Logos/TutorBright.png";
 import Linode from "../../Assets/Logos/Linode.png";
 import CtrlV from "../../Assets/Logos/CtrlV.png";
 import Password from "../../Assets/Logos/1Password.png";
-// import Linode from "../../Assets/Logos/Linode.png"
-// import Linode from "../../Assets/Logos/Linode.png"
 
 class SponsorDisplay extends Component {
   constructor(props) {
