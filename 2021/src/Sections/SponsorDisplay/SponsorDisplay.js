@@ -28,7 +28,7 @@ class SponsorDisplay extends Component {
         <div className="sponsor-display-content-div" data-aos="fade-up">
           <img src={CloudFlare} className="sponsor-display-item"></img>
           <img src={WolframAlpha} className="sponsor-display-item"></img>
-          <img src={TutorBright} className="sponsor-display-item"></img>
+          {/* <img src={TutorBright} className="sponsor-display-item"></img> */}
           <img src={Linode} className="sponsor-display-item"></img>
           <img src={CtrlV} className="sponsor-display-item"></img>
           <img src={Password} className="sponsor-display-item"></img>
