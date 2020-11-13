@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.9429d515.chunk.css",
-    "main.js": "/static/js/main.24eec0d9.chunk.js",
-    "main.js.map": "/static/js/main.24eec0d9.chunk.js.map",
+    "main.css": "/static/css/main.7494ac8c.chunk.css",
+    "main.js": "/static/js/main.37516328.chunk.js",
+    "main.js.map": "/static/js/main.37516328.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7ede5035.js",
     "runtime-main.js.map": "/static/js/runtime-main.7ede5035.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.b50b5df9.chunk.js": "/static/js/2.b50b5df9.chunk.js",
-    "static/js/2.b50b5df9.chunk.js.map": "/static/js/2.b50b5df9.chunk.js.map",
+    "static/js/2.b8888b0a.chunk.js": "/static/js/2.b8888b0a.chunk.js",
+    "static/js/2.b8888b0a.chunk.js.map": "/static/js/2.b8888b0a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.080fab3c2a14ca9104eeda11600b7b1c.js": "/precache-manifest.080fab3c2a14ca9104eeda11600b7b1c.js",
+    "precache-manifest.d7094be99a37ed94c339faf38249f6eb.js": "/precache-manifest.d7094be99a37ed94c339faf38249f6eb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.9429d515.chunk.css.map": "/static/css/main.9429d515.chunk.css.map",
-    "static/js/2.b50b5df9.chunk.js.LICENSE.txt": "/static/js/2.b50b5df9.chunk.js.LICENSE.txt",
+    "static/css/main.7494ac8c.chunk.css.map": "/static/css/main.7494ac8c.chunk.css.map",
+    "static/js/2.b8888b0a.chunk.js.LICENSE.txt": "/static/js/2.b8888b0a.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.4d5147c8.png",
     "static/media/2.png": "/static/media/2.004df175.png",
     "static/media/3.png": "/static/media/3.8528776f.png",
@@ -29,9 +29,9 @@
     "static/media/Daniel.png": "/static/media/Daniel.3e590bf3.png",
     "static/media/Fred.png": "/static/media/Fred.728c4bd2.png",
     "static/media/index.css": "/static/media/SpaceGrotesk-Bold.6a965ac3.otf",
-    "static/media/Navbar.css": "/static/media/Logo.c21e42db.svg",
-    "static/media/Footer.css": "/static/media/JamhacksSolidFull.a3e2e97a.svg",
-    "static/media/About.css": "/static/media/Jar.bf0098f1.svg",
+    "static/media/Navbar.css": "/static/media/Logo.f7b54f76.svg",
+    "static/media/Footer.css": "/static/media/JamhacksSolidFull.0c6444da.svg",
+    "static/media/About.css": "/static/media/Jar.57f26a25.svg",
     "static/media/Kevin.png": "/static/media/Kevin.2c8ce696.png",
     "static/media/Linode.png": "/static/media/Linode.c51eaef4.png",
     "static/media/Michelle.png": "/static/media/Michelle.63781b7f.png",
@@ -53,8 +53,8 @@
   "entrypoints": [
     "static/js/runtime-main.7ede5035.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.b50b5df9.chunk.js",
-    "static/css/main.9429d515.chunk.css",
-    "static/js/main.24eec0d9.chunk.js"
+    "static/js/2.b8888b0a.chunk.js",
+    "static/css/main.7494ac8c.chunk.css",
+    "static/js/main.37516328.chunk.js"
   ]
 }
