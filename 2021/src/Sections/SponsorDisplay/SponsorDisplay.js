@@ -24,12 +24,21 @@ class SponsorDisplay extends Component {
           Sponsors
         </div>
         <div className="sponsor-display-content-div" data-aos="fade-up">
-          <img src={CloudFlare} className="sponsor-display-item"></img>
-          <img src={WolframAlpha} className="sponsor-display-item"></img>
-          {/* <img src={TutorBright} className="sponsor-display-item"></img> */}
-          <img src={Linode} className="sponsor-display-item"></img>
-          <img src={CtrlV} className="sponsor-display-item"></img>
-          <img src={Password} className="sponsor-display-item"></img>
+          <a href="https://www.cloudflare.com/" target="_blank">
+            <img src={CloudFlare} className="sponsor-display-item"></img>
+          </a>
+          <a href="https://www.wolfram.com/" target="_blank">
+            <img src={WolframAlpha} className="sponsor-display-item"></img>
+          </a>
+          <a href="https://www.linode.com/" target="_blank">
+            <img src={Linode} className="sponsor-display-item"></img>
+          </a>
+          <a href="https://ctrlv.ca/" target="_blank">
+            <img src={CtrlV} className="sponsor-display-item"></img>
+          </a>
+          <a href="https://1password.com/" target="_blank">
+            <img src={Password} className="sponsor-display-item"></img>
+          </a>
         </div>
       </div>
     );
