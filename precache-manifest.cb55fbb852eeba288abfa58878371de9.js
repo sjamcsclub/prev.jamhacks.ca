@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f7adbc0d0d1e0ac49b212f66f17ec6e",
+    "revision": "b239d19ee41829d7902610d0ecfb63ab",
     "url": "/index.html"
   },
   {
-    "revision": "509ca6a3ffbef7a5401f",
+    "revision": "155b47bf6a2c886743fb",
     "url": "/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "ba5267a926a2ab450143",
-    "url": "/static/css/main.7494ac8c.chunk.css"
+    "revision": "7f7c29ead304a982e347",
+    "url": "/static/css/main.b7d7b42b.chunk.css"
   },
   {
-    "revision": "509ca6a3ffbef7a5401f",
-    "url": "/static/js/2.b8888b0a.chunk.js"
+    "revision": "155b47bf6a2c886743fb",
+    "url": "/static/js/2.df133c69.chunk.js"
   },
   {
     "revision": "da1ddcda7183b6313ab6bca1da290ddd",
-    "url": "/static/js/2.b8888b0a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.df133c69.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba5267a926a2ab450143",
-    "url": "/static/js/main.37516328.chunk.js"
+    "revision": "7f7c29ead304a982e347",
+    "url": "/static/js/main.7518872f.chunk.js"
   },
   {
     "revision": "1d443d17ac082d7197f6",
@@ -124,8 +124,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Logo.f7b54f76.svg"
   },
   {
+    "revision": "fb982f44e87c4247ef2c41486cb86bca",
+    "url": "/static/media/MSU.fb982f44.png"
+  },
+  {
     "revision": "63781b7f475e7b0897630e7950da045c",
     "url": "/static/media/Michelle.63781b7f.png"
+  },
+  {
+    "revision": "fed847915d0f03fdfe02ff747f0c8705",
+    "url": "/static/media/Portis.fed84791.png"
   },
   {
     "revision": "02673ef6c33dc0625c0d7910e5d5b343",
@@ -146,6 +154,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0fc087ec2dc930c6e4d1ecfcf4b7c7a1",
     "url": "/static/media/Sponsor.0fc087ec.svg"
+  },
+  {
+    "revision": "05aa3025d8100d6c93aea777954fa247",
+    "url": "/static/media/SweaterPlanet.05aa3025.png"
   },
   {
     "revision": "768fa315452afc0dac48726d00fc8a27",
