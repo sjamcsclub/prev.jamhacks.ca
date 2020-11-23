@@ -63,11 +63,11 @@ var peach = [
     logo: Balsamiq
   },
   {
-    link: "https://www.portis.io/",
+    link: "https://matic.network",
     logo: Matic
   },
   {
-    link: "[https://www.portis.io](https://www.portis.io/)",
+    link: "https://www.portis.io/",
     logo: Portis
   },
   {
