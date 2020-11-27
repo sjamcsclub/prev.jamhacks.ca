@@ -16,6 +16,7 @@ import Devfolio from "../../Assets/Logos/Devfolio.png";
 import Matic from "../../Assets/Logos/Matic.png";
 import Portis from "../../Assets/Logos/Portis.png";
 import Tezos from "../../Assets/Logos/Tezos.png";
+import Framer from "../../Assets/Logos/Framer.svg";
 
 
 var grape = [
@@ -30,6 +31,10 @@ var grape = [
   {
     link: "https://devfolio.co",
     logo: Devfolio
+  },
+  {
+    link: "https://www.framer.com/",
+    logo: Framer
   }
 ]
 
