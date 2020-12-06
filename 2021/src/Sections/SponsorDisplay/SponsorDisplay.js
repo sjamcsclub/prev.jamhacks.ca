@@ -17,7 +17,14 @@ import Matic from "../../Assets/Logos/Matic.png";
 import Portis from "../../Assets/Logos/Portis.png";
 import Tezos from "../../Assets/Logos/Tezos.png";
 import Framer from "../../Assets/Logos/Framer.svg";
+import UW from "../../Assets/Logos/UW.png";
 
+var strawberry = [
+  {
+    link: "https://uwaterloo.ca/",
+    logo: UW
+  }
+]
 
 var grape = [
   {
@@ -107,6 +114,17 @@ class SponsorDisplay extends Component {
           data-aos="fade-up"
         >
           Sponsors
+        </div>
+        <div className="sponsor-display-content-div" data-aos="fade-up" style={{marginBottom: "0px"}}>
+          {
+            strawberry.map(val => {
+              return (
+                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}} style={{marginBottom: "0px"}}>
+                  <img src={val.logo} className="sponsor-display-item strawberry" style={{marginBottom: "0px"}}></img>
+                </a>
+              )
+            })
+          }
         </div>
         <div className="sponsor-display-content-div" data-aos="fade-up">
           {

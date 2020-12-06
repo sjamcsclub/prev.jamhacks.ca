@@ -63,6 +63,11 @@
     width: 360px;
 }
 
+.strawberry{
+    width: 560px;
+}
+
+
 .sponsor-display-item:hover{
     cursor: pointer;
     transform: scale(1.1);
@@ -91,5 +96,9 @@
     
     .grape{
         width: 280px;
+    }
+
+    .strawberry{
+        width: 320px;
     }
 }
