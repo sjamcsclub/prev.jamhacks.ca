@@ -18,6 +18,7 @@ import Portis from "../../Assets/Logos/Portis.png";
 import Tezos from "../../Assets/Logos/Tezos.png";
 import Framer from "../../Assets/Logos/Framer.svg";
 import UW from "../../Assets/Logos/UW.png";
+import Axure from "../../Assets/Logos/Axure.png";
 
 var strawberry = [
   {
@@ -85,6 +86,10 @@ var peach = [
   {
     link: "https://tezos.com",
     logo: Tezos
+  },
+  {
+    link: "https://www.axure.com/",
+    logo: Axure
   }
   
   // {
