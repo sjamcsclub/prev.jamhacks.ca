@@ -17,6 +17,7 @@ import Matic from "../../Assets/Logos/Matic.png";
 import Portis from "../../Assets/Logos/Portis.png";
 import Tezos from "../../Assets/Logos/Tezos.png";
 import Framer from "../../Assets/Logos/Framer.svg";
+import DigitalOcean from "../../Assets/Logos/DigitalOcean.svg";
 import UW from "../../Assets/Logos/UW.png";
 import Axure from "../../Assets/Logos/Axure.png";
 
@@ -24,6 +25,10 @@ var strawberry = [
   {
     link: "https://uwaterloo.ca/",
     logo: UW
+  },
+  {
+    link: "https://www.digitalocean.com/",
+    logo: DigitalOcean
   }
 ]
 
@@ -124,7 +129,7 @@ class SponsorDisplay extends Component {
           {
             strawberry.map(val => {
               return (
-                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}} style={{marginBottom: "0px"}}>
+                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "30px"}} >
                   <img src={val.logo} className="sponsor-display-item strawberry" style={{marginBottom: "0px"}}></img>
                 </a>
               )
