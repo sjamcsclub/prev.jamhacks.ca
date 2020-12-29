@@ -20,6 +20,7 @@ import Framer from "../../Assets/Logos/Framer.svg";
 import DigitalOcean from "../../Assets/Logos/DigitalOcean.svg";
 import UW from "../../Assets/Logos/UW.png";
 import Axure from "../../Assets/Logos/Axure.png";
+import Magoosh from "../../Assets/Logos/Magoosh.png";
 
 var strawberry = [
   {
@@ -95,6 +96,10 @@ var peach = [
   {
     link: "https://www.axure.com/",
     logo: Axure
+  },
+  {
+    link: "https://www.magoosh.com/",
+    logo: Magoosh
   }
   
   // {
