@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c8a2dbe.chunk.css",
-    "main.js": "/static/js/main.f29f6781.chunk.js",
-    "main.js.map": "/static/js/main.f29f6781.chunk.js.map",
+    "main.css": "/static/css/main.cd11b5ca.chunk.css",
+    "main.js": "/static/js/main.4ed6ea1a.chunk.js",
+    "main.js.map": "/static/js/main.4ed6ea1a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7ede5035.js",
     "runtime-main.js.map": "/static/js/runtime-main.7ede5035.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.21d74789.chunk.js": "/static/js/2.21d74789.chunk.js",
-    "static/js/2.21d74789.chunk.js.map": "/static/js/2.21d74789.chunk.js.map",
+    "static/js/2.cafd41e5.chunk.js": "/static/js/2.cafd41e5.chunk.js",
+    "static/js/2.cafd41e5.chunk.js.map": "/static/js/2.cafd41e5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.75d39f113798da5570536d3ba124a763.js": "/precache-manifest.75d39f113798da5570536d3ba124a763.js",
+    "precache-manifest.7b96fec060e78627d8bf5dfb1685d6bb.js": "/precache-manifest.7b96fec060e78627d8bf5dfb1685d6bb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.1c8a2dbe.chunk.css.map": "/static/css/main.1c8a2dbe.chunk.css.map",
-    "static/js/2.21d74789.chunk.js.LICENSE.txt": "/static/js/2.21d74789.chunk.js.LICENSE.txt",
+    "static/css/main.cd11b5ca.chunk.css.map": "/static/css/main.cd11b5ca.chunk.css.map",
+    "static/js/2.cafd41e5.chunk.js.LICENSE.txt": "/static/js/2.cafd41e5.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.4d5147c8.png",
     "static/media/2.png": "/static/media/2.004df175.png",
     "static/media/3.png": "/static/media/3.8528776f.png",
@@ -36,6 +36,7 @@
     "static/media/Footer.css": "/static/media/JamhacksSolidFull.0c6444da.svg",
     "static/media/About.css": "/static/media/Jar.57f26a25.svg",
     "static/media/Kevin.png": "/static/media/Kevin.2c8ce696.png",
+    "static/media/KuzoClass.png": "/static/media/KuzoClass.5e4bec67.png",
     "static/media/Linode.png": "/static/media/Linode.c51eaef4.png",
     "static/media/MSU.png": "/static/media/MSU.fb982f44.png",
     "static/media/Magoosh.png": "/static/media/Magoosh.4fd6c99a.png",
@@ -61,8 +62,8 @@
   "entrypoints": [
     "static/js/runtime-main.7ede5035.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.21d74789.chunk.js",
-    "static/css/main.1c8a2dbe.chunk.css",
-    "static/js/main.f29f6781.chunk.js"
+    "static/js/2.cafd41e5.chunk.js",
+    "static/css/main.cd11b5ca.chunk.css",
+    "static/js/main.4ed6ea1a.chunk.js"
   ]
 }
