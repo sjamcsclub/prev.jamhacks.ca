@@ -21,6 +21,7 @@ import DigitalOcean from "../../Assets/Logos/DigitalOcean.svg";
 import UW from "../../Assets/Logos/UW.png";
 import Axure from "../../Assets/Logos/Axure.png";
 import Magoosh from "../../Assets/Logos/Magoosh.png";
+import KuzoClass from "../../Assets/Logos/KuzoClass.png";
 
 var strawberry = [
   {
@@ -54,8 +55,8 @@ var grape = [
 
 var peach = [
   // {
-  //   link: "https://www.cloudflare.com/",
-  //   logo: CloudFlare 
+  //   link: "https://kuzoclass.com/",
+  //   logo: KuzoClass 
   // },
   {
     link: "https://www.wolfram.com/",
@@ -101,19 +102,7 @@ var peach = [
     link: "https://www.magoosh.com/",
     logo: Magoosh
   }
-  
-  // {
-  //   link: "",
-  //   logo: 
-  // },
-  // {
-  //   link: "",
-  //   logo: 
-  // },
-  // {
-  //   link: "",
-  //   logo: 
-  // }
+
 ]
 
 class SponsorDisplay extends Component {
