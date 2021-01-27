@@ -36,7 +36,7 @@ var strawberry = [
 
 var grape = [
   {
-    link: "https://thesweaterguys.com/",
+    link: "https://sweaterplanet.com/",
     logo: SweaterPlanet
   },
   {
