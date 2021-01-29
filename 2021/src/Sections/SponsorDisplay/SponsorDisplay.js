@@ -25,7 +25,7 @@ import KuzoClass from "../../Assets/Logos/KuzoClass.png";
 
 var strawberry = [
   {
-    link: "https://uwaterloo.ca/",
+    link: "https://www.uwaterloo.ca/",
     logo: UW
   },
   {
@@ -36,15 +36,15 @@ var strawberry = [
 
 var grape = [
   {
-    link: "https://sweaterplanet.com/",
+    link: "https://www.sweaterplanet.com/",
     logo: SweaterPlanet
   },
   {
-    link: "https://themuseum.ca/",
+    link: "https://www.themuseum.ca/",
     logo: Museum
   },
   {
-    link: "https://devfolio.co",
+    link: "https://www.devfolio.co",
     logo: Devfolio
   },
   {
@@ -67,23 +67,23 @@ var peach = [
     logo: Linode
   },
   {
-    link: "https://ctrlv.ca/",
+    link: "https://www.ctrlv.ca/",
     logo: CtrlV
   },
   {
-    link: "https://1password.com/",
+    link: "https://www.1password.com/",
     logo: Password
   },
   {
-    link: "https://msumcmaster.ca/",
+    link: "https://www.msumcmaster.ca/",
     logo: MSU
   },
   {
-    link: "https://balsamiq.com/",
+    link: "https://www.balsamiq.com/",
     logo: Balsamiq
   },
   {
-    link: "https://matic.network",
+    link: "https://www.matic.network",
     logo: Matic
   },
   {
@@ -91,7 +91,7 @@ var peach = [
     logo: Portis
   },
   {
-    link: "https://tezos.com",
+    link: "https://www.tezos.com",
     logo: Tezos
   },
   {
