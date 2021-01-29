@@ -54,10 +54,10 @@ var grape = [
 ]
 
 var peach = [
-  // {
-  //   link: "https://kuzoclass.com/",
-  //   logo: KuzoClass 
-  // },
+  {
+    link: "https://kuzoclass.com/",
+    logo: KuzoClass 
+  },
   {
     link: "https://www.wolfram.com/",
     logo: WolframAlpha
