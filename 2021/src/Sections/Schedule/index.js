@@ -9,7 +9,7 @@ const Schedule = () => (
     <div data-aos="fade-up" className="schedule-title large-title">
       Schedule
     </div>
-    <div className="schedule-component-container">
+    <div className="schedule-component-container" data-aos="fade-up">
       <ScheduleComponent></ScheduleComponent>
     </div>
   </div>

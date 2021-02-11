@@ -103,3 +103,22 @@ $blockLengths: 1, 2, 3, 4;
 	&.stage-saturn {background-color: #26C6DA};
 }
 
+@media only screen and (max-width: 700px) {
+	.event{
+		font-size: 0.7em;
+		padding: 0.25rem 0.7rem;
+	}
+	.time {
+		padding: 0 0.2rem;
+		font-size: 0.7rem;
+		&[class*="30"]:not(.start-1300) {
+			font-size: 0.7rem;
+			color: #ccc;
+		}
+	}
+
+	.scheduleContainer {
+		grid-gap: 0.2rem;
+		grid-template-columns: 3rem repeat(4, 1fr);	
+	}
+  }
