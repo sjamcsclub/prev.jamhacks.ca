@@ -96,7 +96,7 @@ Copyright (c) 2020 JAMHacks. 
                 mentor={Env.mentor_register}
                 volunteer={Env.volunteer_register}
               />
-              {Env.schedule === "open" && <Schedule />}
+              {Env.schedule === "close" && <Schedule />}
               <Sponsor />
               <SponsorDisplay />
               <Faq />

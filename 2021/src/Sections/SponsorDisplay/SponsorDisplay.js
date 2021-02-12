@@ -22,6 +22,8 @@ import UW from "../../Assets/Logos/UW.png";
 import Axure from "../../Assets/Logos/Axure.png";
 import Magoosh from "../../Assets/Logos/Magoosh.png";
 import KuzoClass from "../../Assets/Logos/KuzoClass.png";
+import Repl from "../../Assets/Logos/Replit.svg";
+import HackTheNorth from "../../Assets/Logos/HackTheNorth.png";
 
 var strawberry = [
   {
@@ -31,6 +33,10 @@ var strawberry = [
   {
     link: "https://www.digitalocean.com/",
     logo: DigitalOcean
+  },
+  {
+    link: "https://www.hackthenorth.ca/",
+    logo: HackTheNorth
   }
 ]
 
@@ -50,6 +56,10 @@ var grape = [
   {
     link: "https://www.framer.com/",
     logo: Framer
+  },
+  {
+    link: "https://repl.it/",
+    logo: Repl
   }
 ]
 
@@ -119,11 +129,11 @@ class SponsorDisplay extends Component {
         >
           Sponsors
         </div>
-        <div className="sponsor-display-content-div" data-aos="fade-up" style={{marginBottom: "0px"}}>
+        <div className="sponsor-display-content-div" data-aos="fade-up" style={{marginBottom: "60px"}}>
           {
             strawberry.map(val => {
               return (
-                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "30px"}} >
+                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "0px"}} className="strawberry-container">
                   <img src={val.logo} className="sponsor-display-item strawberry" style={{marginBottom: "0px"}}></img>
                 </a>
               )
@@ -134,7 +144,7 @@ class SponsorDisplay extends Component {
           {
             grape.map(val => {
               return (
-                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}}  className="grape-container">
                   <img src={val.logo} className="sponsor-display-item grape"></img>
                 </a>
               )
@@ -145,7 +155,7 @@ class SponsorDisplay extends Component {
           {
             peach.map(val => {
               return (
-                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}} className="peach-container">
                   <img src={val.logo} className="sponsor-display-item peach"></img>
                 </a>
               )
