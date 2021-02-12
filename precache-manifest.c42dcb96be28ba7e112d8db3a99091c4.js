@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "acd6c6f8080f993b56b3ccc24ec7e836",
+    "revision": "9c480753997400ddf1f416fdd4463a52",
     "url": "/index.html"
   },
   {
-    "revision": "d627c8f33a16f2ef3d4d",
+    "revision": "42fddb1ea08ff2a4e6a1",
     "url": "/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "e43ee36de89655d367dd",
-    "url": "/static/css/main.1c8a2dbe.chunk.css"
+    "revision": "b92e3967041fe4bfdd0f",
+    "url": "/static/css/main.79983c0a.chunk.css"
   },
   {
-    "revision": "d627c8f33a16f2ef3d4d",
-    "url": "/static/js/2.cafd41e5.chunk.js"
+    "revision": "42fddb1ea08ff2a4e6a1",
+    "url": "/static/js/2.23fda93c.chunk.js"
   },
   {
     "revision": "da1ddcda7183b6313ab6bca1da290ddd",
-    "url": "/static/js/2.cafd41e5.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.23fda93c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e43ee36de89655d367dd",
-    "url": "/static/js/main.1a79ff53.chunk.js"
+    "revision": "b92e3967041fe4bfdd0f",
+    "url": "/static/js/main.a5d9eda6.chunk.js"
   },
   {
     "revision": "1d443d17ac082d7197f6",
@@ -96,6 +96,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Fred.728c4bd2.png"
   },
   {
+    "revision": "3d572ab9900fc4eb9279d5519e788a4b",
+    "url": "/static/media/HackTheNorth.3d572ab9.png"
+  },
+  {
     "revision": "753bd86618b0faefb54da21403a261bb",
     "url": "/static/media/Inter-Bold.753bd866.otf"
   },
@@ -128,8 +132,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Kevin.2c8ce696.png"
   },
   {
-    "revision": "5e4bec67a6ef6b9365e25bcaffd70644",
-    "url": "/static/media/KuzoClass.5e4bec67.png"
+    "revision": "465044279f10ea248689d92aefafb44c",
+    "url": "/static/media/KuzoClass.46504427.png"
   },
   {
     "revision": "c51eaef4af3dc9c047bf5a9e04ea8d57",
@@ -158,6 +162,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "02673ef6c33dc0625c0d7910e5d5b343",
     "url": "/static/media/Qianxu.02673ef6.png"
+  },
+  {
+    "revision": "5486b7b3ce649a974b6dab9a3f361508",
+    "url": "/static/media/Replit.5486b7b3.svg"
   },
   {
     "revision": "0dcba25e71b71cead4f1bb39e66695e8",
