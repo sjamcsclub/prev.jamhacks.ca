@@ -131,6 +131,9 @@ const LocationText = styled.h4`
   font-size: 1.5rem;
   text-align: left;
   letter-spacing: 0.025em;
+
+  text-shadow: -2px 2px 0 rgba(0,0,0,0.3);
+
   ${media("md")`
     justify-content: center;
   `}
@@ -152,6 +155,7 @@ const DateText = styled.h4`
   color: white;
   font-size: 1rem;
   opacity: 90%;
+  text-shadow: -2px 2px 0 rgba(0,0,0,0.3);
   ${media("md")`
     justify-content: center;
   `}

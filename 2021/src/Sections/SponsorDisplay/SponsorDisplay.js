@@ -34,10 +34,10 @@ var strawberry = [
     link: "https://www.digitalocean.com/",
     logo: DigitalOcean
   },
-  {
-    link: "https://www.hackthenorth.ca/",
-    logo: HackTheNorth
-  }
+  // {
+  //   link: "https://hackthenorth.ca/",
+  //   logo: HackTheNorth
+  // }
 ]
 
 var grape = [
@@ -93,7 +93,7 @@ var peach = [
     logo: Balsamiq
   },
   {
-    link: "https://www.matic.network",
+    link: "https://matic.network/",
     logo: Matic
   },
   {
@@ -155,7 +155,7 @@ class SponsorDisplay extends Component {
           {
             peach.map(val => {
               return (
-                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}} className="peach-container">
+                <a href={val.link} target="_blank" className="peach-container">
                   <img src={val.logo} className="sponsor-display-item peach"></img>
                 </a>
               )

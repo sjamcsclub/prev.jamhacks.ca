@@ -50,8 +50,7 @@
 .sponsor-display-item{
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 50px;
-    transition: transform .2s
+    transition: transform .2s;
 }
 
 .peach{
@@ -69,23 +68,78 @@
 .peach-container{
     max-height: 180px;
     height: 180px;
-}
-.grape-container{
-    max-height: 250px;
-    height: 250px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.15s ease-in;
 }
 
-.sponsor-display-item:hover{
+.strawberry-container{
+    max-height: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.15s ease-in;
+}
+
+.peach-container:hover{
+    background: #ffecd4;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px #ffa331, 0 3px 3px #ffa331;
+}
+
+.grape-container:hover{
+    background: #f1e0ff;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px #b65cff, 0 3px 3px #b65cff;
+}
+
+.strawberry-container:hover{
+    background: #ffd9d9;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px #ff5050, 0 3px 3px #ff5050;
+}
+
+.peach-container:hover .sponsor-display-item{
     cursor: pointer;
     transform: scale(1.1);
 }
+
+.grape-container:hover .sponsor-display-item{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.strawberry-container:hover .sponsor-display-item{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.grape-container{
+    max-height: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.15s ease-in;
+}
+
+
+
+/* .sponsor-display-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+} */
 
 @media only screen and (max-width: 1000px) {
     .sponsor-display-title-div{
         font-size: 28px;
         line-height: 40px;
     }
-    
 }
 
 @media only screen and (max-width: 700px) {

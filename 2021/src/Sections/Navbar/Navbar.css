@@ -163,6 +163,10 @@
   color: #7B0FF7;
 }
 
+.navbar-social-icon{
+  margin-top: 10px;
+}
+
 .navbar-social-icon path{
   fill: white;
 }
@@ -188,6 +192,7 @@
   fill: none;
   stroke: #251d96;
 }
+
 
 @media only screen and (max-width: 780px) {
   .navbar-div {
