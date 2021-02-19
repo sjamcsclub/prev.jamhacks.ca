@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c480753997400ddf1f416fdd4463a52",
+    "revision": "16dc7ebb1b1d4ae8db61257b6691331d",
     "url": "/index.html"
   },
   {
-    "revision": "42fddb1ea08ff2a4e6a1",
+    "revision": "e506154a6067b03774fc",
     "url": "/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "b92e3967041fe4bfdd0f",
-    "url": "/static/css/main.79983c0a.chunk.css"
+    "revision": "b36dfc6e620adfc2ba89",
+    "url": "/static/css/main.ef4d5788.chunk.css"
   },
   {
-    "revision": "42fddb1ea08ff2a4e6a1",
-    "url": "/static/js/2.23fda93c.chunk.js"
+    "revision": "e506154a6067b03774fc",
+    "url": "/static/js/2.bd2fb259.chunk.js"
   },
   {
     "revision": "da1ddcda7183b6313ab6bca1da290ddd",
-    "url": "/static/js/2.23fda93c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.bd2fb259.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b92e3967041fe4bfdd0f",
-    "url": "/static/js/main.a5d9eda6.chunk.js"
+    "revision": "b36dfc6e620adfc2ba89",
+    "url": "/static/js/main.53f42335.chunk.js"
   },
   {
     "revision": "1d443d17ac082d7197f6",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Arnav.8a9296a9.png"
   },
   {
-    "revision": "3f29bceb4db9c4f6e6cf77868402d43e",
-    "url": "/static/media/Axure.3f29bceb.png"
+    "revision": "a312d2143e453a1a3ed9492c4100deef",
+    "url": "/static/media/Axure.a312d214.png"
   },
   {
     "revision": "9bcb7ad169c0b9968a46577ff22e42b4",
@@ -84,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Daniel.3e590bf3.png"
   },
   {
-    "revision": "3d0d304adc24a4a6a1cb4cd7b332065c",
-    "url": "/static/media/DigitalOcean.3d0d304a.svg"
+    "revision": "00a6fc6535aee4895a7d516284f973bd",
+    "url": "/static/media/DigitalOcean.00a6fc65.svg"
   },
   {
     "revision": "7200d04213293274c51a3027cddf93ff",
@@ -144,8 +144,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Logo.f7b54f76.svg"
   },
   {
-    "revision": "fb982f44e87c4247ef2c41486cb86bca",
-    "url": "/static/media/MSU.fb982f44.png"
+    "revision": "c0b7d637cb1b2c46eb8cbf4f18980493",
+    "url": "/static/media/MSU.c0b7d637.png"
   },
   {
     "revision": "4fd6c99aa1f22047fe912895846e6a35",
@@ -196,8 +196,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/TutorBright.c5ecad12.png"
   },
   {
-    "revision": "70850ccbecf63870ea85b55f26b4d271",
-    "url": "/static/media/UW.70850ccb.png"
+    "revision": "24ea568daf6984b300bcf00e923427a0",
+    "url": "/static/media/UW.24ea568d.png"
   },
   {
     "revision": "6139e1543d1b40fc7e49e50c1cdcd4d8",
