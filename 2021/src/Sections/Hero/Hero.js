@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Newsletter from "../../Components/Newsletter";
 import styled from "styled-components";
 import { media } from "../../utils/media";
+import { ReactComponent as Logo } from "../../Assets/JamhacksFullV.svg";
 
 import "./Hero.css";
 
@@ -16,7 +17,8 @@ class Hero extends Component {
     return (
       <div className="hero-div">
         <div className="hero-content-div">
-          <Title>JAMHacks V</Title>
+          <StyledLogo />
+          {/*<Title>JAMHacks V</Title>*/}
           <Subtitle>Learn, Connect, Innovate</Subtitle>
           <LocationText>Virtual Event</LocationText>
           <DateText>May 22 to 23, 2021</DateText>
@@ -24,8 +26,13 @@ class Hero extends Component {
             {this.props.register === "close" ? (
               <Newsletter />
             ) : (
-              <div className="hero-button-div" >
-                <a rel="noopener noreferrer" href="https://bit.ly/visionaryapplication" target="_blank" rel="noopener noreferrer">
+              <div className="hero-button-div">
+                <a
+                  rel="noopener noreferrer"
+                  href="https://bit.ly/visionaryapplication"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     type="primary"
                     disabled={this.props.register === "finished"}
@@ -75,12 +82,30 @@ class Hero extends Component {
   }
 }
 
+const StyledLogo = styled(Logo)`
+  height: 10rem;
+  width: auto;
+  margin: 0;
+  z-index: 5;
+  text-alight: center;
+  display: block;
+  ${media("md")`
+    height: 5rem;
+    margin: auto;
+  `}
+  ${media("sm")`
+    height: 3rem;
+    margin: auto;
+  `}
+`;
+
 const Title = styled.h1`
+  text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.3);
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 4.8rem;
-  color: #7B0FF7;
+  color: #7b0ff7;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -97,11 +122,10 @@ const Title = styled.h1`
 
 const Subtitle = styled.h3`
   margin: 0;
-  font-family: "Nunito", sans-serif;
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  color: #AB11F7;
+  color: #ab11f7;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -132,7 +156,7 @@ const LocationText = styled.h4`
   text-align: left;
   letter-spacing: 0.025em;
 
-  text-shadow: -2px 2px 0 rgba(0,0,0,0.3);
+  text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.3);
 
   ${media("md")`
     justify-content: center;
@@ -155,7 +179,7 @@ const DateText = styled.h4`
   color: white;
   font-size: 1rem;
   opacity: 90%;
-  text-shadow: -2px 2px 0 rgba(0,0,0,0.3);
+  text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.3);
   ${media("md")`
     justify-content: center;
   `}
