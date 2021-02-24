@@ -28,92 +28,67 @@ import HackTheNorth from "../../Assets/Logos/HackTheNorth.png";
 var strawberry = [
   {
     link: "https://www.uwaterloo.ca/",
-    logo: UW
+    logo: UW,
   },
-  {
-    link: "https://www.digitalocean.com/",
-    logo: DigitalOcean
-  },
-  {
-    link: "https://www.hackthenorth.ca/",
-    logo: HackTheNorth
-  }
-]
+];
 
 var grape = [
   {
     link: "https://www.sweaterplanet.com/",
-    logo: SweaterPlanet
+    logo: SweaterPlanet,
   },
   {
     link: "https://www.themuseum.ca/",
-    logo: Museum
+    logo: Museum,
   },
   {
-    link: "https://www.devfolio.co",
-    logo: Devfolio
+    link: "https://www.digitalocean.com/",
+    logo: DigitalOcean,
   },
-  {
-    link: "https://www.framer.com/",
-    logo: Framer
-  },
-  {
-    link: "https://repl.it/",
-    logo: Repl
-  }
-]
+];
 
 var peach = [
   {
-    link: "https://kuzoclass.com/",
-    logo: KuzoClass 
+    link: "https://www.framer.com/",
+    logo: Framer,
+  },
+  {
+    link: "https://repl.it/",
+    logo: Repl,
   },
   {
     link: "https://www.wolfram.com/",
-    logo: WolframAlpha
+    logo: WolframAlpha,
   },
   {
     link: "https://www.linode.com/",
-    logo: Linode
+    logo: Linode,
   },
   {
     link: "https://www.ctrlv.ca/",
-    logo: CtrlV
+    logo: CtrlV,
   },
   {
     link: "https://www.1password.com/",
-    logo: Password
+    logo: Password,
   },
   {
     link: "https://www.msumcmaster.ca/",
-    logo: MSU
+    logo: MSU,
   },
   {
     link: "https://www.balsamiq.com/",
-    logo: Balsamiq
-  },
-  {
-    link: "https://www.matic.network",
-    logo: Matic
-  },
-  {
-    link: "https://www.portis.io/",
-    logo: Portis
-  },
-  {
-    link: "https://www.tezos.com",
-    logo: Tezos
+    logo: Balsamiq,
   },
   {
     link: "https://www.axure.com/",
-    logo: Axure
+    logo: Axure,
   },
   {
     link: "https://www.magoosh.com/",
-    logo: Magoosh
-  }
-
-]
+    logo: Magoosh,
+  },
+];
 
 class SponsorDisplay extends Component {
   constructor(props) {
@@ -129,38 +104,65 @@ class SponsorDisplay extends Component {
         >
           Sponsors
         </div>
-        <div className="sponsor-display-content-div" data-aos="fade-up" style={{marginBottom: "60px"}}>
-          {
-            strawberry.map(val => {
-              return (
-                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "0px"}} className="strawberry-container">
-                  <img src={val.logo} className="sponsor-display-item strawberry" style={{marginBottom: "0px"}}></img>
-                </a>
-              )
-            })
-          }
+        <div
+          className="sponsor-display-content-div"
+          data-aos="fade-up"
+          style={{ marginBottom: "60px" }}
+        >
+          {strawberry.map((val) => {
+            return (
+              <a
+                href={val.link}
+                target="_blank"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginBottom: "0px",
+                }}
+                className="strawberry-container"
+              >
+                <img
+                  src={val.logo}
+                  className="sponsor-display-item strawberry"
+                  style={{ marginBottom: "0px" }}
+                ></img>
+              </a>
+            );
+          })}
         </div>
         <div className="sponsor-display-content-div" data-aos="fade-up">
-          {
-            grape.map(val => {
-              return (
-                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}}  className="grape-container">
-                  <img src={val.logo} className="sponsor-display-item grape"></img>
-                </a>
-              )
-            })
-          }
+          {grape.map((val) => {
+            return (
+              <a
+                href={val.link}
+                target="_blank"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                className="grape-container"
+              >
+                <img
+                  src={val.logo}
+                  className="sponsor-display-item grape"
+                ></img>
+              </a>
+            );
+          })}
         </div>
         <div className="sponsor-display-content-div" data-aos="fade-up">
-          {
-            peach.map(val => {
-              return (
-                <a href={val.link} target="_blank" style={{display: "flex", justifyContent: "center", alignItems: "center"}} className="peach-container">
-                  <img src={val.logo} className="sponsor-display-item peach"></img>
-                </a>
-              )
-            })
-          }
+          {peach.map((val) => {
+            return (
+              <a href={val.link} target="_blank" className="peach-container">
+                <img
+                  src={val.logo}
+                  className="sponsor-display-item peach"
+                ></img>
+              </a>
+            );
+          })}
         </div>
       </div>
     );

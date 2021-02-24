@@ -3,7 +3,7 @@ import { Button } from "antd";
 
 import "./Sponsor.css";
 
-import { ReactComponent as SponsorImage } from "../../Assets/Undraw/Sponsor.svg";
+import { ReactComponent as SponsorImage } from "../../Assets/Undraw/Business.svg";
 
 class Sponsor extends Component {
   constructor(props) {
@@ -24,13 +24,21 @@ class Sponsor extends Component {
               <br></br>
               <br></br>
               Interested in sponsoring? Check out our{" "}
-              <a href="/files/sponsorship.pdf" target="_blank" rel="noopener noreferrer">
+              <a
+                href="/files/sponsorship.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 prospectus
               </a>{" "}
               or contact us at{" "}
               <a href="mailto:sponsor@jamhacks.ca">sponsor@jamhacks.ca</a>
             </div>
-            <a href="mailto:sponsor@jamhacks.ca" target="_blank" rel="noopener noreferrer">
+            <a
+              href="mailto:sponsor@jamhacks.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button type="primary" style={{ width: "260px", height: "40px" }}>
                 Become a Sponsor
               </Button>

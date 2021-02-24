@@ -9,6 +9,8 @@ import Mentor from "./Sections/Mentor";
 import Schedule from "./Sections/Schedule";
 import Sponsor from "./Sections/Sponsor/Sponsor";
 import SponsorDisplay from "./Sections/SponsorDisplay/SponsorDisplay";
+import Partners from "./Sections/Partners/Partners";
+
 import Faq from "./Sections/Faq/Faq";
 import Team from "./Sections/Team/Team";
 import Contact from "./Sections/Contact/Contact";
@@ -99,6 +101,7 @@ Copyright (c) 2020 JAMHacks. 
               {Env.schedule === "close" && <Schedule />}
               <Sponsor />
               <SponsorDisplay />
+              <Partners />
               <Faq />
               <Team />
               <Contact />

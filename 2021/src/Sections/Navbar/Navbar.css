@@ -12,8 +12,8 @@
 .navbar-logo-div {
   display: flex;
   justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .navbar-links-div {
@@ -69,10 +69,19 @@
 }
 
 .navbar-logo {
-  width: 167px;
-  height: 50px;
-  background: url("../../Assets/JamhacksFull.svg");
+  background-size: 30px 60px;
+  width: 30px;
+  height: 60px;
+  background-image: url("../../Assets/Logo.svg");
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-position: center center;
+}
+
+.scrolled-navbar .navbar-logo {
+  opacity: 1;
 }
 
 .hamburger {
@@ -122,13 +131,12 @@
   justify-content: center;
 }
 
-.test-navbar{
+.test-navbar {
   height: calc(100% - 70px);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .navbar-mobile-links-div {
@@ -151,7 +159,7 @@
   /* identical to box height, or 171% */
 
   /* text/headings */
-  color: #7B0FF7;
+  color: #7b0ff7;
   display: inline;
 }
 
@@ -159,32 +167,36 @@
   cursor: pointer;
 }
 
-.navbar-scrolled-link{
-  color: #7B0FF7;
+.navbar-scrolled-link {
+  color: #7b0ff7;
 }
 
-.navbar-social-icon path{
+.navbar-social-icon {
+  margin-top: 10px;
+}
+
+.navbar-social-icon path {
   fill: white;
 }
 
-.navbar-social-icon.instagram path{
+.navbar-social-icon.instagram path {
   fill: none;
   stroke: white;
 }
 
-.navbar-social-icon-scrolled path{
-  fill: #7B0FF7;
+.navbar-social-icon-scrolled path {
+  fill: #7b0ff7;
 }
-.navbar-social-icon-scrolled.instagram path{
-  stroke: #7B0FF7;
+.navbar-social-icon-scrolled.instagram path {
+  stroke: #7b0ff7;
   fill: none;
 }
 
-.navbar-social-icon:hover path{
+.navbar-social-icon:hover path {
   fill: #251d96;
 }
 
-.navbar-social-icon.instagram:hover path{
+.navbar-social-icon.instagram:hover path {
   fill: none;
   stroke: #251d96;
 }
@@ -211,8 +223,8 @@
     height: 60px;
   }
   .navbar-logo-div {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -225,4 +237,3 @@
     opacity: 0%;
   }
 }
-
