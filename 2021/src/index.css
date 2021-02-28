@@ -1,44 +1,10 @@
+#root {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: bold;
-  src: url("./Assets/Fonts/Inter/Inter-Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 500;
-  src: url("./Assets/Fonts/Inter/Inter-SemiBold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 400;
-  src: url("./Assets/Fonts/Inter/Inter-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 300;
-  src: url("./Assets/Fonts/Inter/Inter-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Space Grotesk";
-  font-weight: bold;
-  src: url("./Assets/Fonts/SpaceGrotesk/SpaceGrotesk-Bold.otf")
-    format("opentype");
 }

@@ -1,0 +1,19 @@
+.faq-div {
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+  background: #fbf9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.faq-content-div {
+  width: 80%;
+  height: 100%;
+  min-height: fit-content;
+  margin-bottom: 40px;
+  min-width: 280px;
+  max-width: 850px;
+}
