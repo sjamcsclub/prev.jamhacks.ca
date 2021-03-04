@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import "./Privacy.css";
+import './Privacy.css';
 
 class Privacy extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class Privacy extends Component {
           We use Your Personal data to provide and improve the Service. By using
           the Service, You agree to the collection and use of information in
           accordance with this Privacy Policy. This Privacy Policy is maintained
-          by the{" "}
+          by the{' '}
           <a href="https://www.privacypolicies.com/privacy-policy-generator/">
             Privacy Policy Generator
           </a>
@@ -75,7 +75,7 @@ class Privacy extends Component {
           <li>
             <strong>Website</strong> refers to Jamhacks, accessible from
             www.jamhacks.ca
-          </li>{" "}
+          </li>{' '}
           <li>
             <strong>Service</strong> refers to the Website.
           </li>
@@ -108,7 +108,7 @@ class Privacy extends Component {
             computer, mobile device or any other device by a website, containing
             the details of Your browsing history on that website among its many
             uses.
-          </li>{" "}
+          </li>{' '}
           <li>
             <strong>Device</strong> means any device that can access the Service
             such as a computer, a cellphone or a digital tablet.
@@ -173,10 +173,10 @@ class Privacy extends Component {
           Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies
           remain on your personal computer or mobile device when You go offline,
           while Session Cookies are deleted as soon as You close your web
-          browser. Learn more about cookies in the{" "}
+          browser. Learn more about cookies in the{' '}
           <a href="https://www.privacypolicies.com/blog/cookies/">
             "What Are Cookies"
-          </a>{" "}
+          </a>{' '}
           article.
         </p>
         <p>
@@ -434,7 +434,7 @@ class Privacy extends Component {
             </p>
             <p>
               For more information on what type of information Google collects,
-              please visit the Terms of Use page of Google Analytics{" "}
+              please visit the Terms of Use page of Google Analytics{' '}
             </p>
           </li>
         </ul>
@@ -491,7 +491,7 @@ class Privacy extends Component {
         </p>
         <ul>
           <li>
-            By email:{" "}
+            By email:{' '}
             <a href="mailto:contact@jamhacks.ca">contact@jamhacks.ca</a>
           </li>
         </ul>

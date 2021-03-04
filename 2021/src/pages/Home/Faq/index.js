@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import './Faq.css';
 import { Collapse } from 'antd';
-
 import { ReactComponent as Arrow } from '../../../assets/Icons/RightArrow.svg';
-const { Panel } = Collapse;
-
 import Questions from '../../../data/faq';
+import './Faq.css';
+
+const { Panel } = Collapse;
 
 class Faq extends Component {
   constructor(props) {

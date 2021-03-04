@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
-import Newsletter from '../../../components/Newsletter';
+import Newsletter from '../../../Components/Newsletter';
 import styled from 'styled-components';
 import { media } from '../../../utils/media';
 import { ReactComponent as Logo } from '../../../assets/JamhacksFullV.svg';

@@ -1,8 +1,6 @@
-import React from "react";
-import ScheduleComponent from "./ScheduleComponent";
-import "./Schedule.css";
-
-
+import React from 'react';
+import ScheduleComponent from './ScheduleComponent';
+import './Schedule.css';
 
 const Schedule = () => (
   <div className="schedule-container" id="schedule-section">

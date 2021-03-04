@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Input } from "antd";
-import styled from "styled-components";
-import { media } from "../../utils/media";
-import * as firebase from "firebase/app";
+import React, { useState } from 'react';
+import { Input } from 'antd';
+import styled from 'styled-components';
+import { media } from '../../utils/media';
+import * as firebase from 'firebase/app';
 
 const Newsletter = (props) => {
   const [status, setStatus] = useState(null);
@@ -11,12 +11,12 @@ const Newsletter = (props) => {
   const validateEmail = (email) => {
     if (
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-        email
+        email,
       )
     ) {
       return firebase
         .firestore()
-        .collection("emails")
+        .collection('emails')
         .doc(email)
         .set({
           email: email,
@@ -25,10 +25,10 @@ const Newsletter = (props) => {
           return true;
         })
         .catch(function (error) {
-          return "database error";
+          return 'database error';
         });
     } else {
-      return "email error";
+      return 'email error';
     }
   };
 
@@ -36,11 +36,11 @@ const Newsletter = (props) => {
     setLoading(true);
     const valid = await validateEmail(email);
     if (valid === true) {
-      setStatus("success");
-    } else if(valid === "email error") {
-      setStatus("please submit a valid email");
-    } else if(valid === "database error"){
-      setStatus("out network is experiencing an issue please try again");
+      setStatus('success');
+    } else if (valid === 'email error') {
+      setStatus('please submit a valid email');
+    } else if (valid === 'database error') {
+      setStatus('out network is experiencing an issue please try again');
     }
     setLoading(false);
   };
@@ -54,12 +54,12 @@ const Newsletter = (props) => {
         enterButton="Subscribe"
         onSearch={(email) => submitEmail(email)}
       />
-      {status === "success" && (
+      {status === 'success' && (
         <SuccessMsg>
           Success, you have been subscribed to our newsletter
         </SuccessMsg>
       )}
-      {status != "success" && <ErrorMsg>{status}</ErrorMsg>}
+      {status != 'success' && <ErrorMsg>{status}</ErrorMsg>}
     </div>
   );
 };
@@ -80,7 +80,7 @@ const RoundSearch = styled(Input.Search)`
     border-radius: 20px;
   }
   max-width: 800px;
-  ${media("sm")`
+  ${media('sm')`
      .ant-input {
       font-size: 0.8rem;
     }

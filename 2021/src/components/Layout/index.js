@@ -1,13 +1,13 @@
-import React from 'react'
-import Footer from ;
-import Navbar;
+// import React from 'react'
+// import Footer from ;
+// import Navbar;
 
-const Layout = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+// const Layout = () => {
+//   return (
+//     <div>
 
-export default Layout
+//     </div>
+//   )
+// }
+
+// export default Layout

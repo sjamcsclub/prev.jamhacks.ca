@@ -4,10 +4,28 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 //aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+//components
+import Navbar from './Components/Layout/Navbar';
+import Footer from './Components/Layout/Footer';
+//pages
+import Home from './pages/Home';
+import Privacy from './pages/Privacy';
+import NotFound from './pages/NotFound';
+//data
+import HomeNavData from './data/Navbar/Home.js';
+import PrivacyNavData from './data/Navbar/Privacy.js';
+
+import './App.less';
+import Theme from './theme';
+import styled from 'styled-components';
+import { ThemeProvider } from 'styled-components';
+
 //firebase
 import * as firebase from 'firebase/app';
 import 'firebase/analytics';
 import 'firebase/firestore';
+
 var firebaseConfig = {
   apiKey: 'AIzaSyCDdAEQqSy8Pni1iKOyOB8xUDAR4I0f9Q0',
   authDomain: 'jamhacks-4d6a6.firebaseapp.com',
@@ -21,22 +39,6 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-
-//components
-import Navbar from './components/Layout/Navbar';
-import Footer from './components/Layout/Footer';
-//pages
-import Home from './pages/Home';
-import Privacy from './pages/Privacy';
-import NotFound from './pages/NotFound';
-//data
-import HomeNavData from './data/Navbar/Home.js';
-import PrivacyNavData from './data/Navbar/Privacy.js';
-
-import './App.less';
-import Theme from './theme';
-import styled from 'styled-components';
-import { ThemeProvider } from 'styled-components';
 
 class App extends React.Component {
   constructor() {

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './ScheduleComponent.scss';
 
 // https://codepen.io/liquidlight/pen/KjvgMQ
@@ -94,4 +94,4 @@ const ScheduleComponent = () => {
   );
 };
 
-export default ScheduleComponent
+export default ScheduleComponent;
