@@ -1,27 +1,25 @@
-@import "~antd/dist/antd.less";
-
-.App {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-}
-
-.ant-btn-primary {
-  border-radius: 20px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-}
+@import '~antd/dist/antd.less';
+@import './theme/antd-theme.less';
 
 ::-webkit-scrollbar {
   width: 5px;
   background: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #b6b6b6;
   border-radius: 100px;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: Poppins, Arial, sans-serif;
+}
+
+div,
+p {
+  font-family: Nunito, Arial, sans-serif;
 }
