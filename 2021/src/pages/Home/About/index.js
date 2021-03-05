@@ -13,6 +13,8 @@ import past4 from '../../../assets/PastPhotos/4.png';
 import past5 from '../../../assets/PastPhotos/5.png';
 import past6 from '../../../assets/PastPhotos/6.png';
 
+const Photos = [past1, past2, past3, past4, past5, past6];
+
 const About = () => {
   const [statsShown, setStatsShown] = useState(false);
   const carousel = useRef();
@@ -87,8 +89,8 @@ const About = () => {
       >
         <div
           className="about-carousel-image"
-          onClick={() => carousel.current.slick.slickNext()}
           data-aos="fade-up"
+          onClick={() => carousel.current.next()}
         >
           <Carousel
             autoplaySpeed={2000}
@@ -97,24 +99,11 @@ const About = () => {
             effect={'fade'}
             dots={false}
           >
-            <div className="carousel-item-container">
-              <img className="carousel-item" src={past1} />
-            </div>
-            <div className="carousel-item-container">
-              <img className="carousel-item" src={past2} />
-            </div>
-            <div className="carousel-item-container">
-              <img className="carousel-item" src={past3} />
-            </div>
-            <div className="carousel-item-container">
-              <img className="carousel-item" src={past4} />
-            </div>
-            <div className="carousel-item-container">
-              <img className="carousel-item" src={past5} />
-            </div>
-            <div className="carousel-item-container">
-              <img className="carousel-item" src={past6} />
-            </div>
+            {Photos.map((photo) => (
+              <div className="carousel-item-container">
+                <img className="carousel-item" src={photo} />
+              </div>
+            ))}
           </Carousel>
         </div>
         <div className="about-content">
