@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ab5d6ce.chunk.css",
-    "main.js": "/static/js/main.be6e78af.chunk.js",
-    "main.js.map": "/static/js/main.be6e78af.chunk.js.map",
+    "main.css": "/static/css/main.b49a825e.chunk.css",
+    "main.js": "/static/js/main.3705d0dd.chunk.js",
+    "main.js.map": "/static/js/main.3705d0dd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7ede5035.js",
     "runtime-main.js.map": "/static/js/runtime-main.7ede5035.js.map",
-    "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.32c344d6.chunk.js": "/static/js/2.32c344d6.chunk.js",
-    "static/js/2.32c344d6.chunk.js.map": "/static/js/2.32c344d6.chunk.js.map",
+    "static/css/2.451bf2e4.chunk.css": "/static/css/2.451bf2e4.chunk.css",
+    "static/js/2.1723c87b.chunk.js": "/static/js/2.1723c87b.chunk.js",
+    "static/js/2.1723c87b.chunk.js.map": "/static/js/2.1723c87b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.dc177840f12be752c306e998c62cbb2e.js": "/precache-manifest.dc177840f12be752c306e998c62cbb2e.js",
+    "precache-manifest.ff67620f1af22fb282bc87837906160b.js": "/precache-manifest.ff67620f1af22fb282bc87837906160b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.5ab5d6ce.chunk.css.map": "/static/css/main.5ab5d6ce.chunk.css.map",
-    "static/js/2.32c344d6.chunk.js.LICENSE.txt": "/static/js/2.32c344d6.chunk.js.LICENSE.txt",
+    "static/css/2.451bf2e4.chunk.css.map": "/static/css/2.451bf2e4.chunk.css.map",
+    "static/css/main.b49a825e.chunk.css.map": "/static/css/main.b49a825e.chunk.css.map",
+    "static/js/2.1723c87b.chunk.js.LICENSE.txt": "/static/js/2.1723c87b.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.4d5147c8.png",
     "static/media/2.png": "/static/media/2.004df175.png",
     "static/media/3.png": "/static/media/3.8528776f.png",
@@ -23,6 +23,7 @@
     "static/media/Aditiya.png": "/static/media/Aditiya.07bcae2c.png",
     "static/media/Arnav.png": "/static/media/Arnav.8a9296a9.png",
     "static/media/Axure.png": "/static/media/Axure.a312d214.png",
+    "static/media/Bestbuy.png": "/static/media/Bestbuy.8d8a6371.png",
     "static/media/Brainstorming.9bcb7ad1.svg": "/static/media/Brainstorming.9bcb7ad1.svg",
     "static/media/Business.0a6326db.svg": "/static/media/Business.0a6326db.svg",
     "static/media/Cloudflare.png": "/static/media/Cloudflare.a058b848.png",
@@ -63,9 +64,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7ede5035.js",
-    "static/css/2.4707e12a.chunk.css",
-    "static/js/2.32c344d6.chunk.js",
-    "static/css/main.5ab5d6ce.chunk.css",
-    "static/js/main.be6e78af.chunk.js"
+    "static/css/2.451bf2e4.chunk.css",
+    "static/js/2.1723c87b.chunk.js",
+    "static/css/main.b49a825e.chunk.css",
+    "static/js/main.3705d0dd.chunk.js"
   ]
 }
