@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Newsletter from '../../../Components/Newsletter';
+import Newsletter from '../../../components/Newsletter';
 
 import './Contact.css';
 

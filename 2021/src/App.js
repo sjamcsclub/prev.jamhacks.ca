@@ -6,15 +6,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 //components
-import Navbar from './Components/Layout/Navbar';
-import Footer from './Components/Layout/Footer';
+import Navbar from './components/Layout/Navbar';
+import Footer from './components/Layout/Footer';
 //pages
 import Home from './pages/Home';
 import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
 //data
-import HomeNavData from './data/Navbar/Home.js';
-import PrivacyNavData from './data/Navbar/Privacy.js';
+import HomeNavData from './data/navbar/Home.js';
+import PrivacyNavData from './data/navbar/Privacy.js';
 
 import './App.less';
 import Theme from './theme';
