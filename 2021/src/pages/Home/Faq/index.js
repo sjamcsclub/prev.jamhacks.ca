@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Collapse } from 'antd';
-import { ReactComponent as Arrow } from '../../../assets/Icons/RightArrow.svg';
-import Questions from '../../../data/faq';
 import './Faq.css';
+import { Collapse } from 'antd';
+
+import { ReactComponent as Arrow } from '../../../assets/Icons/RightArrow.svg';
+
+import Questions from '../../../data/faq';
 
 const { Panel } = Collapse;
 
@@ -19,20 +21,20 @@ class Faq extends Component {
         </div>
         <div className="faq-content-div" data-aos="fade-up">
           <Collapse
-            expandIcon={({ isActive }) => (
-              <Arrow
-                style={
-                  isActive
-                    ? {
-                        fill: '#7b0ff7',
-                        transform: 'rotate(90deg)',
-                        transformOrigin: '75% 25%',
-                      }
-                    : { fill: '#7b0ff7' }
-                }
-                rotate={isActive ? 90 : 0}
-              />
-            )}
+          // expandIcon={({ isActive }) => (
+          //   <Arrow
+          //     style={
+          //       isActive
+          //         ? {
+          //             fill: '#7b0ff7',
+          //             transform: 'rotate(90deg)',
+          //             transformOrigin: '75% 25%',
+          //           }
+          //         : { fill: '#7b0ff7' }
+          //     }
+          //     rotate={isActive ? 90 : 0}
+          //   />
+          // )}
           >
             {Questions.map((question, index) => (
               <Panel header={question.question} key={index}>
