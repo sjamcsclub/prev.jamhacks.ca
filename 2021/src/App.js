@@ -4,23 +4,6 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 //aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-//firebase
-import * as firebase from 'firebase/app';
-import 'firebase/analytics';
-import 'firebase/firestore';
-var firebaseConfig = {
-  apiKey: 'AIzaSyCDdAEQqSy8Pni1iKOyOB8xUDAR4I0f9Q0',
-  authDomain: 'jamhacks-4d6a6.firebaseapp.com',
-  databaseURL: 'https://jamhacks-4d6a6.firebaseio.com',
-  projectId: 'jamhacks-4d6a6',
-  storageBucket: 'jamhacks-4d6a6.appspot.com',
-  messagingSenderId: '224359886930',
-  appId: '1:224359886930:web:793771bdb963fd1831ef8b',
-  measurementId: 'G-YBCXKJL5HW',
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
 
 //components
 import Navbar from './components/Layout/Navbar';
@@ -37,6 +20,25 @@ import './App.less';
 import Theme from './theme';
 import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components';
+
+//firebase
+import * as firebase from 'firebase/app';
+import 'firebase/analytics';
+import 'firebase/firestore';
+
+var firebaseConfig = {
+  apiKey: 'AIzaSyCDdAEQqSy8Pni1iKOyOB8xUDAR4I0f9Q0',
+  authDomain: 'jamhacks-4d6a6.firebaseapp.com',
+  databaseURL: 'https://jamhacks-4d6a6.firebaseio.com',
+  projectId: 'jamhacks-4d6a6',
+  storageBucket: 'jamhacks-4d6a6.appspot.com',
+  messagingSenderId: '224359886930',
+  appId: '1:224359886930:web:793771bdb963fd1831ef8b',
+  measurementId: 'G-YBCXKJL5HW',
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 class App extends React.Component {
   constructor() {

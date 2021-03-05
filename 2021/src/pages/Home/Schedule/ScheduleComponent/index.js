@@ -1,38 +1,15 @@
-import React from "react";
+import React from 'react';
 import './ScheduleComponent.scss';
+
+import { times, events } from './data';
 
 // https://codepen.io/liquidlight/pen/KjvgMQ
 const ScheduleComponent = () => {
   return (
     <div class="scheduleContainer">
-      <div class="time start-800">8:00</div>
-      <div class="time start-830">8:30</div>
-      <div class="time start-900">9:00</div>
-      <div class="time start-930">9:30</div>
-      <div class="time start-1000">10:00</div>
-      <div class="time start-1030">10:30</div>
-      <div class="time start-1100">11:00</div>
-      <div class="time start-1130">11:30</div>
-      <div class="time start-1200">12:00</div>
-      <div class="time start-1230">12:30</div>
-      <div class="time start-1300">13:00</div>
-      <div class="time start-1330">13:30</div>
-      <div class="time start-1400">14:00</div>
-      <div class="time start-1430">14:30</div>
-      <div class="time start-1500">15:00</div>
-      <div class="time start-1530">15:30</div>
-      <div class="time start-1600">16:00</div>
-      <div class="time start-1630">16:30</div>
-      <div class="time start-1700">17:00</div>
-      <div class="time start-1730">17:30</div>
-      <div class="time start-1800">18:00</div>
-      <div class="time start-1830">18:30</div>
-      <div class="time start-1900">19:00</div>
-      <div class="time start-1930">19:30</div>
-      <div class="time start-2000">20:00</div>
-      <div class="time start-2030">20:30</div>
-      <div class="time start-2100">21:00</div>
-      <div class="time start-2130">21:30</div>
+      {times.map((val) => {
+        return <div class={`time start-${val.split(':').join('')}`}>{val}</div>;
+      })}
 
       <div class="event stage-saturn start-800 end-930 length-4">
         Arrival and registration <span>Registration Area</span>
@@ -59,7 +36,7 @@ const ScheduleComponent = () => {
       <div class="event stage-mars start-1200 end-1600 length-1">
         Speaker Seven <span>Mars Stage</span>
       </div>
-      <div class="event stage-saturn start-1200 end-1300 length-1">
+      <div class="event stage-saturn start-1200 end-1600 length-1">
         Lunch <span>Saturn Stage</span>
       </div>
 
@@ -94,4 +71,4 @@ const ScheduleComponent = () => {
   );
 };
 
-export default ScheduleComponent
+export default ScheduleComponent;

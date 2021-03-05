@@ -24,6 +24,7 @@ import Magoosh from '../../../assets/Logos/Magoosh.png';
 import KuzoClass from '../../../assets/Logos/KuzoClass.png';
 import Repl from '../../../assets/Logos/Replit.svg';
 import HackTheNorth from '../../../assets/Logos/HackTheNorth.png';
+import Bestbuy from '../../../assets/Logos/Bestbuy.png';
 
 var strawberry = [
   {
@@ -87,6 +88,10 @@ var peach = [
   {
     link: 'https://www.magoosh.com/',
     logo: Magoosh,
+  },
+  {
+    link: 'https://www.bestbuy.ca/',
+    logo: Bestbuy,
   },
 ];
 
