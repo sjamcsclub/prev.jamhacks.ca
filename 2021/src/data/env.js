@@ -3,7 +3,7 @@
 const Env = {
   //false, "open", "complete"
   register: false,
-  schedule: true,
+  schedule: false,
 };
 
 export default Env;
