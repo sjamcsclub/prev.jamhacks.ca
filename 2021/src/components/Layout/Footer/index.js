@@ -70,7 +70,7 @@ class Footer extends Component {
               <div className="footer-logo"></div>
             </a>
             <div className="footer-copyright">
-              Copyright © 2020 JAMHacks.{' '}
+              Copyright © 2021 JAMHacks.{' '}
               <br className="footer-copyright-linebreak"></br> All rights
               reserved.
             </div>
