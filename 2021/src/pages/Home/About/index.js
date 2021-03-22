@@ -4,7 +4,6 @@ import './About.css';
 import { Spring } from 'react-spring/renderprops';
 import VisibilitySensor from 'react-visibility-sensor';
 import styled from 'styled-components';
-import { media } from '../../../utils/media';
 
 import past1 from '../../../assets/PastPhotos/1.png';
 import past2 from '../../../assets/PastPhotos/2.png';
@@ -14,6 +13,9 @@ import past5 from '../../../assets/PastPhotos/5.png';
 import past6 from '../../../assets/PastPhotos/6.png';
 
 const Photos = [past1, past2, past3, past4, past5, past6];
+
+import Header from '../../../components/Typography/Header';
+import Text from '../../../components/Typography/Text';
 
 const About = () => {
   const [statsShown, setStatsShown] = useState(false);
@@ -26,24 +28,24 @@ const About = () => {
   return (
     <div className="about-div" id="about-section">
       <div className="about-content-row-div">
-        <div className="about-content jam-text">
-          <div className="about-title-div" data-aos="fade-up">
-            Waterloo’s biggest high school hackathon
-          </div>
+        <div className="about-content jam-text" data-aos="fade-up">
+          <Header dark>Waterloo’s biggest high school hackathon</Header>
           <div
             className="about-content-subheading"
-            data-aos="fade-up"
             style={{ textAlign: 'left', width: '100%' }}
           >
-            Waterloo’s largest high school hackathon is back! JAMHacks V will
-            take place from May 22nd to 23rd. This year, we’re bringing together
-            200+ students from high schools all over North America for a full 24
-            hours of learning and creating!
+            <Text dark>
+              Waterloo’s largest high school hackathon is back! JAMHacks V will
+              take place from May 22nd to 23rd. This year, we’re bringing
+              together 200+ students from high schools all over North America
+              for a full 24 hours of learning and creating!
+            </Text>
             <br></br>
-            <br></br>
-            During this 24 hour long innovation marathon, you’ll be able to work
-            in teams of up to 4 to create an app, game, website, robot, gadget,
-            or whatever your heart desires.
+            <Text dark>
+              During this 24 hour long innovation marathon, you’ll be able to
+              work in teams of up to 4 to create an app, game, website, robot,
+              gadget, or whatever your heart desires.
+            </Text>
           </div>
         </div>
 
@@ -106,21 +108,20 @@ const About = () => {
             ))}
           </Carousel>
         </div>
-        <div className="about-content">
-          <div className="about-title-div" data-aos="fade-up">
-            All Hackers Welcome
-          </div>
+        <div className="about-content" data-aos="fade-up">
+          <Header dark>All Hackers Welcome</Header>
           <div
             className="about-content-subheading"
-            data-aos="fade-up"
             style={{ textAlign: 'left', width: '100%' }}
           >
-            Hackers of all skill levels and backgrounds are welcome to
-            participate in JAMHacks! JAMHacks is also a learnathon—there will be
-            workshops and mentors to guide you through making a software or
-            hardware project, even if you’ve never coded before! If you’re an
-            experienced hacker, consider JAMHacks an opportunity to start your
-            next passion project and compete for prizes at the same time!
+            <Text dark>
+              Hackers of all skill levels and backgrounds are welcome to
+              participate in JAMHacks! JAMHacks is also a learnathon—there will
+              be workshops and mentors to guide you through making a software or
+              hardware project, even if you’ve never coded before! If you’re an
+              experienced hacker, consider JAMHacks an opportunity to start your
+              next passion project and compete for prizes at the same time!
+            </Text>
           </div>
         </div>
       </div>

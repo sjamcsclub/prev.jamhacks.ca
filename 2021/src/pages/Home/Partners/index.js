@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 
-import HackTheNorth from '../../../assets/Logos/HackTheNorth.png';
+import Header from '../../../components/Typography/Header';
 
-var peach = [
-  {
-    link: 'https://hackthenorth.ca/',
-    logo: HackTheNorth,
-  },
-];
+import { partners } from '../../../data/sponsors';
 
 class SponsorDisplay extends Component {
   constructor(props) {
@@ -17,18 +12,18 @@ class SponsorDisplay extends Component {
   render() {
     return (
       <div className="sponsor-display-div" id="sponsors-section">
-        <div
+        <Header
           className="sponsor-display-title-div large-title"
           data-aos="fade-up"
         >
           Partners
-        </div>
+        </Header>
         <div
           className="sponsor-display-content-div"
           data-aos="fade-up"
           style={{ marginBottom: '60px' }}
         >
-          {peach.map((val) => {
+          {partners.map((val) => {
             return (
               <a
                 href={val.link}

@@ -8,6 +8,14 @@ import { ReactComponent as Logo } from '../../../assets/JamhacksFullV.svg';
 
 import './Hero.css';
 
+const registerLinks = [
+  'https://wvmzd7k3wc0.typeform.com/to/hTLmCfSw',
+  'https://wvmzd7k3wc0.typeform.com/to/ZomNkpto',
+  'https://uhsftk4mjsw.typeform.com/to/nBOIo2cb',
+  'https://uhsftk4mjsw.typeform.com/to/Ef4CMC4A',
+  'https://uhsftk4mjsw.typeform.com/to/skRsl7ss',
+];
+
 const Hero = ({ register }) => {
   return (
     <div className="hero-div">
@@ -20,8 +28,11 @@ const Hero = ({ register }) => {
           {register ? (
             <div className="hero-button-div">
               <a
-                rel="noopener noreferrer"
-                href=""
+                href={
+                  registerLinks[
+                    Math.floor(Math.random() * registerLinks.length)
+                  ]
+                }
                 target="_blank"
                 rel="noopener noreferrer"
               >
