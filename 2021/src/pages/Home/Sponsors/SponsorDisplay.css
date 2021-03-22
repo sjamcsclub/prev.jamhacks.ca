@@ -10,7 +10,7 @@
 }
 
 .sponsor-display-title-div {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -19,19 +19,9 @@
   align-items: center;
   text-align: center;
 
-  /* text/headings */
-
   color: #1e0e56;
   margin-top: 40px;
   margin-bottom: 80px;
-}
-
-.ant-collapse-header {
-  background: white;
-}
-
-.ant-collapse-content-box {
-  background: #f5f8fe;
 }
 
 .sponsor-display-content-div {

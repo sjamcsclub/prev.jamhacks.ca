@@ -2,7 +2,7 @@
 
 const Env = {
   //false, "open", "complete"
-  register: false,
+  register: 'open',
   schedule: false,
 };
 

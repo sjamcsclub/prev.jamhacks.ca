@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Newsletter from '../../../components/Newsletter';
 
 import './Contact.css';
+import Header from '../../../components/Typography/Header';
+import Text from '../../../components/Typography/Text';
 
 class Contact extends Component {
   constructor(props) {
@@ -13,12 +15,12 @@ class Contact extends Component {
       <div className="contact-div" id="contact-section">
         <div className="contact-content-div">
           <div className="contact-content-half" data-aos="fade-up">
-            <div className="contact-title-div">Still got a question?</div>
-            <div className="contact-content-text">
+            <Header>Still got a question?</Header>
+            <Text>
               Feel free to send us an email at
               <a href="mailto:contact@jamhacks.ca"> contact@jamhacks.ca</a>
-            </div>
-            <div className="contact-title-div">Subscribe to Newsletter</div>
+            </Text>
+            <Header>Subscribe to Newsletter</Header>
             <Newsletter />
           </div>
         </div>
