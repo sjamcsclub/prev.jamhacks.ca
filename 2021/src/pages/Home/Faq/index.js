@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Faq.css';
 import { Collapse } from 'antd';
 
-import { ReactComponent as Arrow } from '../../../assets/Icons/RightArrow.svg';
+import { ReactComponent as Arrow } from '../../../assets/icons/RightArrow.svg';
 
 import Questions from '../../../data/faq';
 

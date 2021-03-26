@@ -10,7 +10,7 @@
   z-index: 9;
 
   background: linear-gradient(-45deg, #23a6d5, #23d5ab, #27f289);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: gradient 15s ease infinite;
 }
 
@@ -41,7 +41,6 @@
   width: 100%;
   overflow: hidden;
   height: 100%;
-  bottom: -1px;
 }
 
 .wave-top {
@@ -61,7 +60,7 @@
   left: 0;
   width: 200%;
   height: 100%;
-  background-image: url('../../../assets/waves.png');
+  background-image: url('../../../assets/waves.svg');
   background-repeat: repeat no-repeat;
   background-position: 0 bottom;
   transform-origin: center bottom;

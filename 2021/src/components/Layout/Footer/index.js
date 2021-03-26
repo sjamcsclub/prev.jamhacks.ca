@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
 
-import { ReactComponent as Linkedin } from '../../../assets/Icons/Social/linkedin.svg';
-import { ReactComponent as Instagram } from '../../../assets/Icons/Social/instagram.svg';
-import { ReactComponent as Twitter } from '../../../assets/Icons/Social/twitter.svg';
-import { ReactComponent as Facebook } from '../../../assets/Icons/Social/facebook.svg';
+import { ReactComponent as Linkedin } from '../../../assets/icons/social/linkedin.svg';
+import { ReactComponent as Instagram } from '../../../assets/icons/social/instagram.svg';
+import { ReactComponent as Twitter } from '../../../assets/icons/social/twitter.svg';
+import { ReactComponent as Facebook } from '../../../assets/icons/social/facebook.svg';
 
 import './Footer.css';
 
