@@ -6,7 +6,7 @@ import CtrlV from '../assets/sponsorlogos/CtrlV.png';
 import Password from '../assets/sponsorlogos/1Password.png';
 import MSU from '../assets/sponsorlogos/MSU.png';
 import Museum from '../assets/sponsorlogos/Museum.png';
-import Balsamiq from '../assets/sponsorlogos/Balsamiq.png';
+import Balsamiq from '../assets/sponsorlogos/Balsamiq.svg';
 import SweaterPlanet from '../assets/sponsorlogos/SweaterPlanet.png';
 import Framer from '../assets/sponsorlogos/Framer.svg';
 import DigitalOcean from '../assets/sponsorlogos/DigitalOcean.svg';
@@ -16,10 +16,18 @@ import Repl from '../assets/sponsorlogos/Replit.svg';
 import HackTheNorth from '../assets/sponsorlogos/HackTheNorth.png';
 import Bestbuy from '../assets/sponsorlogos/Bestbuy.png';
 
+import CockroachDB from '../assets/sponsorlogos/CockroachDB.svg';
+import RStudio from '../assets/sponsorlogos/RStudio.svg';
+import QCSYS from '../assets/sponsorlogos/QCSYS.png';
+
 const strawberry = [
   {
     link: 'https://www.uwaterloo.ca/',
     logo: UW,
+  },
+  {
+    link: 'https://www.cockroachlabs.com/',
+    logo: CockroachDB,
   },
 ];
 
@@ -78,6 +86,14 @@ const peach = [
   {
     link: 'https://www.bestbuy.ca/',
     logo: Bestbuy,
+  },
+  {
+    link: 'https://uwaterloo.ca/institute-for-quantum-computing/programs/qcsys',
+    logo: QCSYS,
+  },
+  {
+    link: 'https://www.rstudio.com/',
+    logo: RStudio,
   },
 ];
 

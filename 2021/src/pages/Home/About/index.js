@@ -5,12 +5,12 @@ import { Spring } from 'react-spring/renderprops';
 import VisibilitySensor from 'react-visibility-sensor';
 import styled from 'styled-components';
 
-import past1 from '../../../assets/pastphotos/1.png';
-import past2 from '../../../assets/pastphotos/2.png';
-import past3 from '../../../assets/pastphotos/3.png';
-import past4 from '../../../assets/pastphotos/4.png';
-import past5 from '../../../assets/pastphotos/5.png';
-import past6 from '../../../assets/pastphotos/6.png';
+import past1 from '../../../assets/pastphotos/1.jpg';
+import past2 from '../../../assets/pastphotos/2.jpg';
+import past3 from '../../../assets/pastphotos/3.jpg';
+import past4 from '../../../assets/pastphotos/4.jpg';
+import past5 from '../../../assets/pastphotos/5.jpg';
+import past6 from '../../../assets/pastphotos/6.jpg';
 
 const Photos = [past1, past2, past3, past4, past5, past6];
 
