@@ -1,48 +1,52 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Collapse } from 'antd';
+import { media } from '../../../utils/media';
 
 import './SponsorDisplay.css';
 
 import Header from '../../../components/Typography/Header';
-
-import { strawberry, grape, peach } from '../../../data/sponsors';
+import { motion } from 'framer-motion';
+import {
+  blueberry,
+  strawberry,
+  grape,
+  peach,
+  partners,
+} from '../../../data/sponsors';
 
 const SponsorDisplay = ({}) => {
   return (
     <Container>
       <Header data-aos="fade-up">Sponsors</Header>
-      <div
-        className="sponsor-display-content-div"
-        data-aos="fade-up"
-        style={{ marginBottom: '60px' }}
-      >
+      <Tier data-aos="fade-up">
+        {blueberry.map((val) => {
+          return (
+            <Blueberry href={val.link} target="_blank">
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                src={val.logo}
+              ></motion.img>
+            </Blueberry>
+          );
+        })}
+      </Tier>
+      <Tier data-aos="fade-up">
         {strawberry.map((val) => {
           return (
-            <a
-              href={val.link}
-              target="_blank"
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginBottom: '0px',
-              }}
-              className="strawberry-container"
-            >
-              <img
+            <Strawberry href={val.link} target="_blank">
+              <motion.img
+                whileHover={{ scale: 1.1 }}
                 src={val.logo}
-                className="sponsor-display-item strawberry"
-                style={{ marginBottom: '0px' }}
-              ></img>
-            </a>
+              ></motion.img>
+            </Strawberry>
           );
         })}
-      </div>
-      <div className="sponsor-display-content-div" data-aos="fade-up">
+      </Tier>
+      <Tier data-aos="fade-up">
         {grape.map((val) => {
           return (
-            <a
+            <Grape
               href={val.link}
               target="_blank"
               style={{
@@ -50,22 +54,45 @@ const SponsorDisplay = ({}) => {
                 justifyContent: 'center',
                 alignItems: 'center',
               }}
-              className="grape-container"
             >
-              <img src={val.logo} className="sponsor-display-item grape"></img>
-            </a>
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                src={val.logo}
+              ></motion.img>
+            </Grape>
           );
         })}
-      </div>
-      <div className="sponsor-display-content-div" data-aos="fade-up">
+      </Tier>
+      <Tier data-aos="fade-up">
         {peach.map((val) => {
           return (
-            <a href={val.link} target="_blank" className="peach-container">
-              <img src={val.logo} className="sponsor-display-item peach"></img>
-            </a>
+            <Peach href={val.link} target="_blank">
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                src={val.logo}
+              ></motion.img>
+            </Peach>
           );
         })}
-      </div>
+      </Tier>
+      <Header
+        className="sponsor-display-title-div large-title"
+        data-aos="fade-up"
+      >
+        Partners
+      </Header>
+      <Tier data-aos="fade-up">
+        {partners.map((val) => {
+          return (
+            <Partner href={val.link} target="_blank">
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                src={val.logo}
+              ></motion.img>
+            </Partner>
+          );
+        })}
+      </Tier>
     </Container>
   );
 };
@@ -75,6 +102,84 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 10%;
+`;
+
+const Tier = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+`;
+
+const Blueberry = styled.a`
+  width: 100%;
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+`;
+
+const Strawberry = styled.a`
+  width: 80%;
+  ${media('md')`
+    width: 85%;
+  `}
+  ${media('sm')`
+    width: 90%;
+  `}
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+`;
+
+const Grape = styled.a`
+  width: 32%;
+  ${media('sm')`
+    width: 48%;
+  `}
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+`;
+
+const Peach = styled.a`
+  ${media('md')`
+    width: 30%;
+  `}
+  ${media('sm')`
+    width: 45%;
+  `}
+  img {
+    width: 100%;
+  }
+  width: 22%;
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+`;
+
+const Partner = styled.a`
+  ${media('md')`
+    width: 45%;
+  `}
+  img {
+    width: 100%;
+  }
+  width: 31%;
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+  }
 `;
 
 export default SponsorDisplay;

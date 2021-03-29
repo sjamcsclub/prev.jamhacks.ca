@@ -27,7 +27,7 @@
   width: 280px;
   height: 495px;
   background-size: 280px 495px;
-  background-image: url('../../../assets/Jar.svg');
+  background-image: url('../../../assets/logo/Jar.svg');
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
@@ -176,7 +176,7 @@
     width: 195px;
     height: 344px;
     background-size: 195px 344px;
-    background-image: url('../../../assets/Jar.svg');
+    background-image: url('../../../assets/logo/Jar.svg');
   }
   .jam-text {
     max-width: calc(100% - 250px);

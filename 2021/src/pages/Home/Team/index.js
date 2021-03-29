@@ -2,17 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Team.css';
 
-import Cristian from '../../../assets/Headshots/Cristian.png';
-import Michelle from '../../../assets/Headshots/Michelle.png';
-import Yina from '../../../assets/Headshots/Yina.png';
-import Rohan from '../../../assets/Headshots/Rohan.png';
-import Kevin from '../../../assets/Headshots/Kevin.png';
-import Daniel from '../../../assets/Headshots/Daniel.png';
-import Trevor from '../../../assets/Headshots/Trevor.png';
-import Aditiya from '../../../assets/Headshots/Aditiya.png';
-import Fred from '../../../assets/Headshots/Fred.png';
-import Qianxu from '../../../assets/Headshots/Qianxu.png';
-import Arnav from '../../../assets/Headshots/Arnav.png';
+import Cristian from '../../../assets/headshots/Cristian.png';
+import Michelle from '../../../assets/headshots/Michelle.png';
+import Yina from '../../../assets/headshots/Yina.png';
+import Rohan from '../../../assets/headshots/Rohan.png';
+import Kevin from '../../../assets/headshots/Kevin.png';
+import Daniel from '../../../assets/headshots/Daniel.png';
+import Trevor from '../../../assets/headshots/Trevor.png';
+import Aditiya from '../../../assets/headshots/Aditiya.png';
+import Fred from '../../../assets/headshots/Fred.png';
+import Qianxu from '../../../assets/headshots/Qianxu.png';
+import Arnav from '../../../assets/headshots/Arnav.png';
 
 const MemberData = [
   {

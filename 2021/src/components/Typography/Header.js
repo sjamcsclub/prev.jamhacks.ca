@@ -7,6 +7,13 @@ const Header = styled.h2`
     props.dark
       ? props.theme.colors.text.dark.header
       : props.theme.colors.text.light.header};
+  &::selection {
+    background: ${(props) =>
+      props.dark
+        ? props.theme.colors.secondary.default
+        : props.theme.colors.primary.default};
+  }
+
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;

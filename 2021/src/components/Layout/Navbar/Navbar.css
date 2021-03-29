@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  transition: 0.25s ease-in background-color;
+  transition: 0.3s ease-in;
   z-index: 10;
 }
 
@@ -72,7 +72,7 @@
   background-size: 30px 60px;
   width: 30px;
   height: 60px;
-  background-image: url('../../../assets/Logo.svg');
+  background-image: url('../../../assets/logo/Logo.svg');
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -219,7 +219,7 @@
   }
 
   .navbar-logo {
-    background-image: url('../../../assets/Logo.svg');
+    background-image: url('../../../assets/logo/Logo.svg');
     background-size: 30px 60px;
     width: 30px;
     height: 60px;

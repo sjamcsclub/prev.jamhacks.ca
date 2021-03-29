@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Button } from 'antd';
 import './Mentor.css';
 
-import { ReactComponent as MentorImage } from '../../../assets/Undraw/Brainstorming.svg';
-import { ReactComponent as VolunteerImage } from '../../../assets/Undraw/Volunteer.svg';
+import { ReactComponent as MentorImage } from '../../../assets/undraw/Brainstorming.svg';
+import { ReactComponent as VolunteerImage } from '../../../assets/undraw/Volunteer.svg';
 import Header from '../../../components/Typography/Header';
 import Text from '../../../components/Typography/Text';
 

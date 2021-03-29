@@ -3,7 +3,7 @@ import { Button } from 'antd';
 
 import './Sponsor.css';
 
-import { ReactComponent as SponsorImage } from '../../../assets/Undraw/Business.svg';
+import { ReactComponent as SponsorImage } from '../../../assets/undraw/Business.svg';
 import Header from '../../../components/Typography/Header';
 import Text from '../../../components/Typography/Text';
 

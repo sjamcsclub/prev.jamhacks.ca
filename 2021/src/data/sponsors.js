@@ -1,31 +1,38 @@
-import CloudFlare from '../assets/Logos/Cloudflare.png';
-import WolframAlpha from '../assets/Logos/WolframAlpha.png';
-import TutorBright from '../assets/Logos/TutorBright.png';
-import Linode from '../assets/Logos/Linode.png';
-import CtrlV from '../assets/Logos/CtrlV.png';
-import Password from '../assets/Logos/1Password.png';
-import MSU from '../assets/Logos/MSU.png';
-import Museum from '../assets/Logos/Museum.png';
-import Balsamiq from '../assets/Logos/Balsamiq.png';
-import SweaterPlanet from '../assets/Logos/SweaterPlanet.png';
-import Devfolio from '../assets/Logos/Devfolio.png';
-import Matic from '../assets/Logos/Matic.png';
-import Portis from '../assets/Logos/Portis.png';
-import Tezos from '../assets/Logos/Tezos.png';
-import Framer from '../assets/Logos/Framer.svg';
-import DigitalOcean from '../assets/Logos/DigitalOcean.svg';
-import UW from '../assets/Logos/UW.png';
-import Axure from '../assets/Logos/Axure.png';
-import Magoosh from '../assets/Logos/Magoosh.png';
-import KuzoClass from '../assets/Logos/KuzoClass.png';
-import Repl from '../assets/Logos/Replit.svg';
-import HackTheNorth from '../assets/Logos/HackTheNorth.png';
-import Bestbuy from '../assets/Logos/Bestbuy.png';
+//import ETH from '../assets/sponsorlogos/blueberry/ETH.png';
+
+import UW from '../assets/sponsorlogos/strawberry/UW.png';
+import CockroachDB from '../assets/sponsorlogos/strawberry/CockroachDB.svg';
+
+import SweaterPlanet from '../assets/sponsorlogos/grape/SweaterPlanet.png';
+import Museum from '../assets/sponsorlogos/grape/Museum.png';
+import DigitalOcean from '../assets/sponsorlogos/grape/DigitalOcean.svg';
+
+import CloudFlare from '../assets/sponsorlogos/peach/Cloudflare.png';
+import WolframAlpha from '../assets/sponsorlogos/peach/WolframAlpha.png';
+import Linode from '../assets/sponsorlogos/peach/Linode.png';
+import CtrlV from '../assets/sponsorlogos/peach/CtrlV.png';
+import Password from '../assets/sponsorlogos/peach/1Password.png';
+import MSU from '../assets/sponsorlogos/peach/MSU.png';
+import Balsamiq from '../assets/sponsorlogos/peach/Balsamiq.svg';
+import Framer from '../assets/sponsorlogos/peach/Framer.svg';
+import Axure from '../assets/sponsorlogos/peach/Axure.png';
+import Repl from '../assets/sponsorlogos/peach/Replit.svg';
+import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
+import RStudio from '../assets/sponsorlogos/peach/RStudio.svg';
+import QCSYS from '../assets/sponsorlogos/peach/QCSYS.png';
+
+import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
+
+const blueberry = [];
 
 const strawberry = [
   {
     link: 'https://www.uwaterloo.ca/',
     logo: UW,
+  },
+  {
+    link: 'https://www.cockroachlabs.com/',
+    logo: CockroachDB,
   },
 ];
 
@@ -85,6 +92,14 @@ const peach = [
     link: 'https://www.bestbuy.ca/',
     logo: Bestbuy,
   },
+  {
+    link: 'https://uwaterloo.ca/institute-for-quantum-computing/programs/qcsys',
+    logo: QCSYS,
+  },
+  {
+    link: 'https://www.rstudio.com/',
+    logo: RStudio,
+  },
 ];
 
 const partners = [
@@ -94,4 +109,4 @@ const partners = [
   },
 ];
 
-export { strawberry, grape, peach, partners };
+export { blueberry, strawberry, grape, peach, partners };
