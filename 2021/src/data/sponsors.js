@@ -1,24 +1,29 @@
-import CloudFlare from '../assets/sponsorlogos/Cloudflare.png';
-import WolframAlpha from '../assets/sponsorlogos/WolframAlpha.png';
-import TutorBright from '../assets/sponsorlogos/TutorBright.png';
-import Linode from '../assets/sponsorlogos/Linode.png';
-import CtrlV from '../assets/sponsorlogos/CtrlV.png';
-import Password from '../assets/sponsorlogos/1Password.png';
-import MSU from '../assets/sponsorlogos/MSU.png';
-import Museum from '../assets/sponsorlogos/Museum.png';
-import Balsamiq from '../assets/sponsorlogos/Balsamiq.svg';
-import SweaterPlanet from '../assets/sponsorlogos/SweaterPlanet.png';
-import Framer from '../assets/sponsorlogos/Framer.svg';
-import DigitalOcean from '../assets/sponsorlogos/DigitalOcean.svg';
-import UW from '../assets/sponsorlogos/UW.png';
-import Axure from '../assets/sponsorlogos/Axure.png';
-import Repl from '../assets/sponsorlogos/Replit.svg';
-import HackTheNorth from '../assets/sponsorlogos/HackTheNorth.png';
-import Bestbuy from '../assets/sponsorlogos/Bestbuy.png';
+//import ETH from '../assets/sponsorlogos/blueberry/ETH.png';
 
-import CockroachDB from '../assets/sponsorlogos/CockroachDB.svg';
-import RStudio from '../assets/sponsorlogos/RStudio.svg';
-import QCSYS from '../assets/sponsorlogos/QCSYS.png';
+import UW from '../assets/sponsorlogos/strawberry/UW.png';
+import CockroachDB from '../assets/sponsorlogos/strawberry/CockroachDB.svg';
+
+import SweaterPlanet from '../assets/sponsorlogos/grape/SweaterPlanet.png';
+import Museum from '../assets/sponsorlogos/grape/Museum.png';
+import DigitalOcean from '../assets/sponsorlogos/grape/DigitalOcean.svg';
+
+import CloudFlare from '../assets/sponsorlogos/peach/Cloudflare.png';
+import WolframAlpha from '../assets/sponsorlogos/peach/WolframAlpha.png';
+import Linode from '../assets/sponsorlogos/peach/Linode.png';
+import CtrlV from '../assets/sponsorlogos/peach/CtrlV.png';
+import Password from '../assets/sponsorlogos/peach/1Password.png';
+import MSU from '../assets/sponsorlogos/peach/MSU.png';
+import Balsamiq from '../assets/sponsorlogos/peach/Balsamiq.svg';
+import Framer from '../assets/sponsorlogos/peach/Framer.svg';
+import Axure from '../assets/sponsorlogos/peach/Axure.png';
+import Repl from '../assets/sponsorlogos/peach/Replit.svg';
+import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
+import RStudio from '../assets/sponsorlogos/peach/RStudio.svg';
+import QCSYS from '../assets/sponsorlogos/peach/QCSYS.png';
+
+import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
+
+const blueberry = [];
 
 const strawberry = [
   {
@@ -104,4 +109,4 @@ const partners = [
   },
 ];
 
-export { strawberry, grape, peach, partners };
+export { blueberry, strawberry, grape, peach, partners };

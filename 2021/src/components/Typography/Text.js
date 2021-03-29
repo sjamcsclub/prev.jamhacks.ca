@@ -7,6 +7,13 @@ const Text = styled.p`
     props.dark
       ? props.theme.colors.text.dark.text
       : props.theme.colors.text.light.text};
+  &::selection {
+    background: ${(props) =>
+      props.dark
+        ? props.theme.colors.secondary.default
+        : props.theme.colors.primary.default};
+  }
+
   font-size: 1.2rem;
   font-style: normal;
   font-weight: normal;

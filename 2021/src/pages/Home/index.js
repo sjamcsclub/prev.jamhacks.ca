@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import Hero from './Hero';
 import About from './About';
@@ -6,7 +6,6 @@ import Mentor from './Mentor';
 import Schedule from './Schedule';
 import Sponsorship from './Sponsorship';
 import Sponsors from './Sponsors';
-import Partners from './Partners';
 import Faq from './Faq';
 import Team from './Team';
 import Contact from './Contact';
@@ -22,7 +21,6 @@ const Home = () => {
       {Env.schedule && <Schedule />}
       <Sponsorship />
       <Sponsors />
-      <Partners />
       <Faq />
       <Team />
       <Contact />

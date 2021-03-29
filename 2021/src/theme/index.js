@@ -11,7 +11,7 @@ const Theme = {
       dark: '#00ca57',
     },
     background: {
-      light: '#fbf9ff',
+      light: ['#ffffff', '#fbf9ff'],
     },
     text: {
       light: {
