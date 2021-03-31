@@ -72,22 +72,6 @@
   margin-bottom: 10px;
 }
 
-.social-icon.white {
-  width: 24px;
-  height: 24px;
-  transition: 0.15s ease-in-out all;
-}
-
-.social-icon.white.facebook path,
-.social-icon.white.twitter path,
-.social-icon.white.linkedin path {
-  fill: white;
-}
-
-.social-icon.white.instagram path {
-  stroke: white;
-}
-
 .social-icon:hover {
   cursor: pointer;
 }
