@@ -103,7 +103,11 @@ const About = () => {
           >
             {Photos.map((photo) => (
               <div className="carousel-item-container">
-                <img className="carousel-item" src={photo} />
+                <img
+                  className="carousel-item"
+                  src={photo}
+                  alt="past photo of jamhacks"
+                />
               </div>
             ))}
           </Carousel>

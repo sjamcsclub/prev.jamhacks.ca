@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import { motion } from 'framer-motion';
+import styled from 'styled-components';
 
 import {
   LinkedinIcon,
@@ -30,7 +31,7 @@ const Menu = ({ sections, open }) => {
           {sections.map((link) =>
             link.enabled ? (
               <div className="navbar-mobile-link-container">
-                <a
+                <Link
                   className="navbar-mobile-link-item"
                   onClick={() =>
                     window.scrollTo({
@@ -41,7 +42,7 @@ const Menu = ({ sections, open }) => {
                   }
                 >
                   {link.label}
-                </a>
+                </Link>
               </div>
             ) : (
               ' '
@@ -93,5 +94,14 @@ const Menu = ({ sections, open }) => {
     </motion.div>
   );
 };
+
+const Link = styled.div`
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: ${(props) =>
+      props.secondary ? props.secondary : props.theme.colors.secondary.default};
+  }
+`;
 
 export default Menu;

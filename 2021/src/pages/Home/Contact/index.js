@@ -18,7 +18,10 @@ class Contact extends Component {
             <Header>Still got a question?</Header>
             <Text>
               Feel free to send us an email at
-              <a href="mailto:contact@jamhacks.ca"> contact@jamhacks.ca</a>
+              <a rel="noopener noreferrer" href="mailto:contact@jamhacks.ca">
+                {' '}
+                contact@jamhacks.ca
+              </a>
             </Text>
             <Header>Subscribe to Newsletter</Header>
             <Newsletter />

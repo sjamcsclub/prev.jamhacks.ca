@@ -113,7 +113,7 @@ const Navbar = ({ sections, color }) => {
       <div className="navbar-links-div">
         {sections.map((link) =>
           link.enabled ? (
-            <a
+            <Link
               key={link.label}
               className="navbar-link-item"
               onClick={() =>
@@ -125,7 +125,7 @@ const Navbar = ({ sections, color }) => {
               }
             >
               {link.label}
-            </a>
+            </Link>
           ) : (
             ''
           ),
@@ -158,5 +158,14 @@ const Navbar = ({ sections, color }) => {
     </div>
   );
 };
+
+const Link = styled.div`
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: ${(props) =>
+      props.secondary ? props.secondary : props.theme.colors.secondary.default};
+  }
+`;
 
 export default Navbar;

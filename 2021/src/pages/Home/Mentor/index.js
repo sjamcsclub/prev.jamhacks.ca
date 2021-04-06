@@ -33,6 +33,7 @@ class Mentor extends Component {
               <a
                 href="https://wvmzd7k3wc0.typeform.com/to/qALh2BUY"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <Button
                   type="primary"
