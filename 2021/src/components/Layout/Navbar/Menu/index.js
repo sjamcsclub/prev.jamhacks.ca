@@ -2,10 +2,12 @@ import React from 'react';
 import { Button } from 'antd';
 import { motion } from 'framer-motion';
 
-import { ReactComponent as Linkedin } from '../../../../assets/icons/social/linkedin.svg';
-import { ReactComponent as Instagram } from '../../../../assets/icons/social/instagram.svg';
-import { ReactComponent as Twitter } from '../../../../assets/icons/social/twitter.svg';
-import { ReactComponent as Facebook } from '../../../../assets/icons/social/facebook.svg';
+import {
+  LinkedinIcon,
+  InstagramIcon,
+  TwitterIcon,
+  FacebookIcon,
+} from '../../../Icons/Socials';
 import Socials from '../../../../data/socials';
 
 //animation variants
@@ -60,7 +62,7 @@ const Menu = ({ sections, open }) => {
             rel="noopener noreferrer"
             className="social-icon linkedin "
           >
-            <Linkedin className="hover-icon"></Linkedin>
+            <LinkedinIcon />
           </a>
           <a
             href={Socials.instagram}
@@ -68,7 +70,7 @@ const Menu = ({ sections, open }) => {
             rel="noopener noreferrer"
             className="social-icon instagram "
           >
-            <Instagram className="hover-icon"></Instagram>
+            <InstagramIcon />
           </a>
           <a
             target="_blank"
@@ -76,7 +78,7 @@ const Menu = ({ sections, open }) => {
             href={Socials.twitter}
             className="social-icon twitter "
           >
-            <Twitter className="hover-icon"></Twitter>
+            <TwitterIcon />
           </a>
           <a
             target="_blank"
@@ -84,7 +86,7 @@ const Menu = ({ sections, open }) => {
             href={Socials.facebook}
             className="social-icon facebook "
           >
-            <Facebook className="hover-icon"></Facebook>
+            <FacebookIcon />
           </a>
         </div>
       </div>

@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
 import { motion } from 'framer-motion';
 
-import { ReactComponent as Linkedin } from '../../../assets/icons/social/linkedin.svg';
-import { ReactComponent as Instagram } from '../../../assets/icons/social/instagram.svg';
-import { ReactComponent as Twitter } from '../../../assets/icons/social/twitter.svg';
-import { ReactComponent as Facebook } from '../../../assets/icons/social/facebook.svg';
+import styled from 'styled-components';
+import {
+  LinkedinIcon,
+  InstagramIcon,
+  TwitterIcon,
+  FacebookIcon,
+} from '../../Icons/Socials';
 import './Navbar.css';
 
 import Menu from './Menu';
@@ -24,7 +27,6 @@ const Navbar = ({ sections, color }) => {
         document
           .getElementsByClassName('navbar-div')[0]
           .classList.add('scrolled-navbar');
-        // for (item in document.getElementsByClassName("navbar-link-item")){
         for (
           var i = 0;
           i < document.getElementsByClassName('navbar-link-item').length;
@@ -111,10 +113,9 @@ const Navbar = ({ sections, color }) => {
       <div className="navbar-links-div">
         {sections.map((link) =>
           link.enabled ? (
-            <div
+            <a
               key={link.label}
               className="navbar-link-item"
-              styled={{ color: color }}
               onClick={() =>
                 window.scrollTo({
                   top: document.getElementById(link.id).offsetTop - 80,
@@ -124,7 +125,7 @@ const Navbar = ({ sections, color }) => {
               }
             >
               {link.label}
-            </div>
+            </a>
           ) : (
             ''
           ),
@@ -132,37 +133,21 @@ const Navbar = ({ sections, color }) => {
       </div>
       <div className="navbar-filler-div"></div>
       <div className="navbar-icons-div">
-        <a
-          href={Socials.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon linkedin navbar-social-icon"
-        >
-          <Linkedin className="hover-icon"></Linkedin>
+        <a href={Socials.linkedin} target="_blank" rel="noopener noreferrer">
+          <LinkedinIcon />
         </a>
         <a
           href="https://www.instagram.com/jamhacks"
           target="_blank"
           rel="noopener noreferrer"
-          className="social-icon instagram navbar-social-icon"
         >
-          <Instagram className="hover-icon"></Instagram>
+          <InstagramIcon />
         </a>
-        <a
-          href={Socials.twitter}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon twitter navbar-social-icon"
-        >
-          <Twitter className="hover-icon"></Twitter>
+        <a href={Socials.twitter} target="_blank" rel="noopener noreferrer">
+          <TwitterIcon />
         </a>
-        <a
-          href={Socials.facebook}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon facebook navbar-social-icon"
-        >
-          <Facebook className="hover-icon"></Facebook>
+        <a href={Socials.facebook} target="_blank" rel="noopener noreferrer">
+          <FacebookIcon />
         </a>
       </div>
       <div className="hamburger" id="hamburger-1" onClick={handleClick}>

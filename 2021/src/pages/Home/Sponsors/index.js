@@ -123,9 +123,9 @@ const Blueberry = styled.a`
 `;
 
 const Strawberry = styled.a`
-  width: 80%;
+  width: 70%;
   ${media('md')`
-    width: 85%;
+    width: 80%;
   `}
   ${media('sm')`
     width: 90%;

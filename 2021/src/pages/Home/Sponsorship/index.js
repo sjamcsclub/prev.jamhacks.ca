@@ -16,8 +16,16 @@ class Sponsor extends Component {
     return (
       <div className="sponsor-div" id="sponsor-section">
         <div className="sponsor-content-div">
-          <div className="sponsor-content-half" data-aos="fade-up">
-            {/*<div className="sponsor-title-div">Sponsor the Next Generation</div>*/}
+          <div
+            className="sponsor-content-half image"
+            style={{ alignItems: 'center' }}
+            data-aos="fade-up"
+          >
+            <div className="sponsor-image-container">
+              <SponsorImage />
+            </div>
+          </div>
+          <div className="sponsor-content-half text" data-aos="fade-up">
             <Header>Sponsor the Next Generation</Header>
             <div className="sponsor-content-text">
               <Text>
@@ -48,15 +56,6 @@ class Sponsor extends Component {
                 Become a Sponsor
               </Button>
             </a>
-          </div>
-          <div
-            className="sponsor-content-half"
-            style={{ alignItems: 'center' }}
-            data-aos="fade-up"
-          >
-            <div className="sponsor-image-container">
-              <SponsorImage />
-            </div>
           </div>
         </div>
       </div>

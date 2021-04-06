@@ -19,7 +19,7 @@ class Mentor extends Component {
       return (
         <div className="mentor-div">
           <div className="sponsor-content-div">
-            <div className="sponsor-content-half" data-aos="fade-up">
+            <div className="sponsor-content-half text" data-aos="fade-up">
               <Header>Mentor Upcoming Talent</Header>
               <Text>
                 Are you in university, or do you have experience in the tech
@@ -46,7 +46,7 @@ class Mentor extends Component {
               </a>
             </div>
             <div
-              className="sponsor-content-half"
+              className="sponsor-content-half image"
               style={{ alignItems: 'center' }}
               data-aos="fade-up"
             >

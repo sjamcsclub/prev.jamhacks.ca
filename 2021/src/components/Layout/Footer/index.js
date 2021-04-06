@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
+import styled from 'styled-components';
 import './Footer.css';
 
-import { Linkedin, Instagram, Twitter, Facebook } from '../../Icons/Socials';
+import {
+  LinkedinIcon,
+  InstagramIcon,
+  TwitterIcon,
+  FacebookIcon,
+} from '../../Icons/Socials';
 import Socials from '../../../data/socials';
 
 class Footer extends Component {
@@ -22,24 +28,24 @@ class Footer extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin color="white"></Linkedin>
+              <LinkedinIcon primary="#ffffff" />
             </a>
             <a
               href={Socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Instagram></Instagram>
+              <InstagramIcon primary="#ffffff" />
             </a>
             <a href={Socials.twitter} target="_blank" rel="noopener noreferrer">
-              <Twitter></Twitter>
+              <TwitterIcon primary="#ffffff" />
             </a>
             <a
               href={Socials.facebook}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Facebook></Facebook>
+              <FacebookIcon primary="#ffffff" />
             </a>
           </div>
         </div>
