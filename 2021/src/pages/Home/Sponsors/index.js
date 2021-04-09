@@ -123,12 +123,12 @@ const Blueberry = styled.a`
 `;
 
 const Strawberry = styled.a`
-  width: 70%;
+  width: 50%;
   ${media('md')`
-    width: 80%;
+    width: 60%;
   `}
   ${media('sm')`
-    width: 90%;
+    width: 70%;
   `}
   img {
     width: 100%;
