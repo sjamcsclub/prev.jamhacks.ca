@@ -21,6 +21,11 @@ import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
 import RStudio from '../assets/sponsorlogos/peach/RStudio.svg';
 import QCSYS from '../assets/sponsorlogos/peach/QCSYS.png';
 
+import Voiceflow from '../assets/sponsorlogos/peach/Voiceflow.png';
+import Magoosh from '../assets/sponsorlogos/peach/Magoosh.png';
+import MapleSoft from '../assets/sponsorlogos/peach/MapleSoft.png';
+import TheCodex from '../assets/sponsorlogos/peach/TheCodex.svg';
+
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 
 const blueberry = [];
@@ -99,6 +104,22 @@ const peach = [
   {
     link: 'https://www.rstudio.com/',
     logo: RStudio,
+  },
+  {
+    link: 'https://www.voiceflow.com/',
+    logo: Voiceflow,
+  },
+  {
+    link: 'https://magoosh.com/',
+    logo: Magoosh,
+  },
+  {
+    link: 'https://www.maplesoft.com/',
+    logo: MapleSoft,
+  },
+  {
+    link: 'https://thecodex.me/',
+    logo: TheCodex,
   },
 ];
 
