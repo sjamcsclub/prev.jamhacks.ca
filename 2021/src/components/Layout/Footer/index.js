@@ -8,6 +8,7 @@ import {
   InstagramIcon,
   TwitterIcon,
   FacebookIcon,
+  MediumIcon,
 } from '../../Icons/Socials';
 import Socials from '../../../data/socials';
 
@@ -46,6 +47,9 @@ class Footer extends Component {
               rel="noopener noreferrer"
             >
               <FacebookIcon primary="#ffffff" />
+            </a>
+            <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
+              <MediumIcon primary="#ffffff" />
             </a>
           </div>
         </div>

@@ -1,4 +1,5 @@
 //import ETH from '../assets/sponsorlogos/blueberry/ETH.png';
+import QuantStamp from '../assets/sponsorlogos/blueberry/QuantStamp.png';
 
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
 import CockroachDB from '../assets/sponsorlogos/strawberry/CockroachDB.svg';
@@ -20,6 +21,8 @@ import Repl from '../assets/sponsorlogos/peach/Replit.svg';
 import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
 import RStudio from '../assets/sponsorlogos/peach/RStudio.svg';
 import QCSYS from '../assets/sponsorlogos/peach/QCSYS.png';
+import EchoAR from '../assets/sponsorlogos/peach/EchoAR.png';
+import VolareLabs from '../assets/sponsorlogos/peach/VolareLabs.png';
 
 import Voiceflow from '../assets/sponsorlogos/peach/Voiceflow.png';
 import Magoosh from '../assets/sponsorlogos/peach/Magoosh.png';
@@ -28,7 +31,16 @@ import TheCodex from '../assets/sponsorlogos/peach/TheCodex.svg';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 
-const blueberry = [];
+const blueberry = [
+  /*{
+    link: 'https://ethereum.foundation/',
+    logo: ETH,
+  }*/
+  /*{
+    link: 'https://quantstamp.com/',
+    logo: QuantStamp,
+  },*/
+];
 
 const strawberry = [
   {
@@ -100,6 +112,14 @@ const peach = [
   {
     link: 'https://uwaterloo.ca/institute-for-quantum-computing/programs/qcsys',
     logo: QCSYS,
+  },
+  {
+    link: 'https://www.echoar.xyz/',
+    logo: EchoAR,
+  },
+  {
+    link: 'https://www.volarelabs.io/',
+    logo: VolareLabs,
   },
   {
     link: 'https://www.rstudio.com/',
