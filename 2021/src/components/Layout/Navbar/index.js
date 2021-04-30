@@ -9,6 +9,7 @@ import {
   TwitterIcon,
   FacebookIcon,
   MediumIcon,
+  YoutubeIcon,
 } from '../../Icons/Socials';
 import './Navbar.css';
 
@@ -152,6 +153,9 @@ const Navbar = ({ sections, color }) => {
         </a>
         <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
           <MediumIcon />
+        </a>
+        <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
+          <YoutubeIcon />
         </a>
       </div>
       <div className="hamburger" id="hamburger-1" onClick={handleClick}>

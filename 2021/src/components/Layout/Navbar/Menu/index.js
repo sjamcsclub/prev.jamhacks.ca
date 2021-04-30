@@ -8,6 +8,8 @@ import {
   InstagramIcon,
   TwitterIcon,
   FacebookIcon,
+  MediumIcon,
+  YoutubeIcon,
 } from '../../../Icons/Socials';
 import Socials from '../../../../data/socials';
 
@@ -88,6 +90,12 @@ const Menu = ({ sections, open }) => {
             className="social-icon facebook "
           >
             <FacebookIcon />
+          </a>
+          <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
+            <MediumIcon />
+          </a>
+          <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
+            <YoutubeIcon />
           </a>
         </div>
       </div>

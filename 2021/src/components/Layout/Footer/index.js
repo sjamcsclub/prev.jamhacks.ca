@@ -9,6 +9,7 @@ import {
   TwitterIcon,
   FacebookIcon,
   MediumIcon,
+  YoutubeIcon,
 } from '../../Icons/Socials';
 import Socials from '../../../data/socials';
 
@@ -50,6 +51,9 @@ class Footer extends Component {
             </a>
             <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
               <MediumIcon primary="#ffffff" />
+            </a>
+            <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
+              <YoutubeIcon primary="#ffffff" />
             </a>
           </div>
         </div>
