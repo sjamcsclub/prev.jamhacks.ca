@@ -47,8 +47,8 @@ class Mentor extends Component {
               </a>
             </div>
             <div
-              className="sponsor-content-half image"
-              style={{ alignItems: 'center' }}
+              className="sponsor-content-half image mentor-image"
+              style={{ alignItems: 'center', marginRight: '0px' }}
               data-aos="fade-up"
             >
               <div className="mentor-section-image-container">

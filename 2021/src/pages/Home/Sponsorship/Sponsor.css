@@ -25,10 +25,12 @@
   flex-direction: column;
   justify-content: center;
   min-width: 380px;
+  margin-bottom: 30px;
 }
 
 .sponsor-content-half.image {
   flex: 1;
+  margin-right: 40px;
 }
 
 .sponsor-content-half.text {
