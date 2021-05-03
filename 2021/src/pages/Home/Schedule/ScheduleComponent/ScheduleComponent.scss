@@ -1,9 +1,8 @@
-$blockTimes: 800, 830, 900, 930, 1000, 1030, 1100, 1130, 1200, 1230, 1300, 1330,
-  1400, 1430, 1500, 1530, 1600, 1630, 1700, 1730, 1800, 1830, 1900, 1930, 2000,
-  2030, 2100, 2130, 2200, 2230, 2300, 2330, 2400, 2430, 100, 130, 200, 230, 300,
-  330, 400, 430, 500, 530, 600, 630, 700, 730;
-
-// , 2300, 2350, 0000
+$blockTimes: SA1100, SA1130, SA1200, SA1230, SA1300, SA1330, SA1400, SA1430,
+  SA1500, SA1530, SA1600, SA1630, SA1700, SA1730, SA1800, SA1830, SA1900, SA1930,
+  SA2000, SA2030, SA2100, SA2130, SA2200, SA2230, SA2300, SA2330, SU2400, SU2430,
+  SU100, SU130, SU200, SU230, SU300, SU330, SU400, SU430, SU500, SU530, SU600,
+  SU630, SU700, SU730;
 
 $blockLengths: 1, 2, 3, 4;
 
@@ -12,56 +11,50 @@ $blockLengths: 1, 2, 3, 4;
   grid-gap: 0.2rem;
 
   grid-template-columns: 5rem repeat(4, 1fr);
-  grid-template-rows: repeat(48, 1fr);
+  grid-template-rows: repeat(42, 1fr);
   grid-template-areas:
-    'time800 stage stage stage stage'
-    'time830 stage stage stage stage'
-    'time900 stage stage stage stage'
-    'time930 stage stage stage stage'
-    'time1000 stage stage stage stage'
-    'time1030 stage stage stage stage'
-    'time1100 stage stage stage stage'
-    'time1130 stage stage stage stage'
-    'time1200 stage stage stage stage'
-    'time1230 stage stage stage stage'
-    'time1300 stage stage stage stage'
-    'time1330 stage stage stage stage'
-    'time1400 stage stage stage stage'
-    'time1430 stage stage stage stage'
-    'time1500 stage stage stage stage'
-    'time1530 stage stage stage stage'
-    'time1600 stage stage stage stage'
-    'time1630 stage stage stage stage'
-    'time1700 stage stage stage stage'
-    'time1730 stage stage stage stage'
-    'time1800 stage stage stage stage'
-    'time1830 stage stage stage stage'
-    'time1900 stage stage stage stage'
-    'time1930 stage stage stage stage'
-    'time2000 stage stage stage stage'
-    'time2030 stage stage stage stage'
-    'time2100 stage stage stage stage'
-    'time2130 stage stage stage stage'
-    'time2200 stage stage stage stage'
-    'time2230 stage stage stage stage'
-    'time2300 stage stage stage stage'
-    'time2330 stage stage stage stage'
-    'time2400 stage stage stage stage'
-    'time2430 stage stage stage stage'
-    'time100 stage stage stage stage'
-    'time130 stage stage stage stage'
-    'time200 stage stage stage stage'
-    'time230 stage stage stage stage'
-    'time300 stage stage stage stage'
-    'time330 stage stage stage stage'
-    'time400 stage stage stage stage'
-    'time430 stage stage stage stage'
-    'time500 stage stage stage stage'
-    'time530 stage stage stage stage'
-    'time600 stage stage stage stage'
-    'time630 stage stage stage stage'
-    'time700 stage stage stage stage'
-    'time730 stage stage stage stage';
+    'timeSA1100 stage stage stage stage'
+    'timeSA1130 stage stage stage stage'
+    'timeSA1200 stage stage stage stage'
+    'timeSA1230 stage stage stage stage'
+    'timeSA1300 stage stage stage stage'
+    'timeSA1330 stage stage stage stage'
+    'timeSA1400 stage stage stage stage'
+    'timeSA1430 stage stage stage stage'
+    'timeSA1500 stage stage stage stage'
+    'timeSA1530 stage stage stage stage'
+    'timeSA1600 stage stage stage stage'
+    'timeSA1630 stage stage stage stage'
+    'timeSA1700 stage stage stage stage'
+    'timeSA1730 stage stage stage stage'
+    'timeSA1800 stage stage stage stage'
+    'timeSA1830 stage stage stage stage'
+    'timeSA1900 stage stage stage stage'
+    'timeSA1930 stage stage stage stage'
+    'timeSA2000 stage stage stage stage'
+    'timeSA2030 stage stage stage stage'
+    'timeSA2100 stage stage stage stage'
+    'timeSA2130 stage stage stage stage'
+    'timeSA2200 stage stage stage stage'
+    'timeSA2230 stage stage stage stage'
+    'timeSA2300 stage stage stage stage'
+    'timeSA2330 stage stage stage stage'
+    'timeSU2400 stage stage stage stage'
+    'timeSU2430 stage stage stage stage'
+    'timeSU100 stage stage stage stage'
+    'timeSU130 stage stage stage stage'
+    'timeSU200 stage stage stage stage'
+    'timeSU230 stage stage stage stage'
+    'timeSU300 stage stage stage stage'
+    'timeSU330 stage stage stage stage'
+    'timeSU400 stage stage stage stage'
+    'timeSU430 stage stage stage stage'
+    'timeSU500 stage stage stage stage'
+    'timeSU530 stage stage stage stage'
+    'timeSU600 stage stage stage stage'
+    'timeSU630 stage stage stage stage'
+    'timeSU700 stage stage stage stage'
+    'timeSU730 stage stage stage stage';
 }
 
 /**
@@ -81,7 +74,7 @@ $blockLengths: 1, 2, 3, 4;
     }
   }
 
-  &[class*='30']:not(.start-1300):not(.start-2300):not(.start-300) {
+  &[class*='30']:not(.start-SA1300):not(.start-SA2300):not(.start-SU300) {
     font-size: 0.8rem;
     color: #ccc;
   }
@@ -154,7 +147,7 @@ $blockLengths: 1, 2, 3, 4;
   .time {
     padding: 0 0.2rem;
     font-size: 0.7rem;
-    &[class*='30']:not(.start-1300) {
+    &[class*='30']:not(.start-SA1300):not(.start-SA2300):not(.start-SU300) {
       font-size: 0.7rem;
       color: #ccc;
     }
