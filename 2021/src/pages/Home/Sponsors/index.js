@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { Collapse } from 'antd';
 import { media } from '../../../utils/media';
 
-import './SponsorDisplay.css';
-
 import Header from '../../../components/Typography/Header';
 import { motion } from 'framer-motion';
 import {
@@ -75,12 +73,7 @@ const SponsorDisplay = ({}) => {
           );
         })}
       </Tier>
-      <Header
-        className="sponsor-display-title-div large-title"
-        data-aos="fade-up"
-      >
-        Partners
-      </Header>
+      <Header data-aos="fade-up">Partners</Header>
       <Tier data-aos="fade-up">
         {partners.map((val) => {
           return (
@@ -114,7 +107,7 @@ const Tier = styled.div`
 `;
 
 const Blueberry = styled.a`
-  width: 100%;
+  width: 70%;
   img {
     width: 100%;
     box-sizing: border-box;

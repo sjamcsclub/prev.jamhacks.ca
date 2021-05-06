@@ -1,5 +1,5 @@
-//import ETH from '../assets/sponsorlogos/blueberry/ETH.png';
-import QuantStamp from '../assets/sponsorlogos/blueberry/QuantStamp.png';
+import ETH from '../assets/sponsorlogos/blueberry/ETH.png';
+import QuantStamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
 
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
 import CockroachDB from '../assets/sponsorlogos/strawberry/CockroachDB.svg';
@@ -32,14 +32,14 @@ import TheCodex from '../assets/sponsorlogos/peach/TheCodex.svg';
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 
 const blueberry = [
-  /*{
+  {
     link: 'https://ethereum.foundation/',
     logo: ETH,
-  }*/
-  /*{
+  },
+  {
     link: 'https://quantstamp.com/',
     logo: QuantStamp,
-  },*/
+  },
 ];
 
 const strawberry = [
