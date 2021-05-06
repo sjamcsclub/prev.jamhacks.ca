@@ -13,8 +13,8 @@ const Blog = () => {
           Interested in learning more about hackathons? Check out our blog posts
           on the{' '}
           <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
-            JAMHacks Medium,
-          </a>{' '}
+            JAMHacks Medium
+          </a>
           , where you'll find articles written by our very own organizers,
           covering topics related to making your hackathon project stand out,
           frontend and backend development, impostor syndrome in the tech
