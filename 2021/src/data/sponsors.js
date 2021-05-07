@@ -1,4 +1,4 @@
-import ETH from '../assets/sponsorlogos/blueberry/ETH.png';
+import ETH from '../assets/sponsorlogos/blueberry/ETH.svg';
 import QuantStamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
 
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
