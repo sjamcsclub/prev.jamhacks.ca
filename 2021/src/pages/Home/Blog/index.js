@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Header, Text } from '../../../components/Typography';
 import Socials from '../../../data/socials';
 import { ReactComponent as BlogImage } from '../../../assets/undraw/Blog.svg';
+import { media } from '../../../utils/media';
 
 const Blog = () => {
   return (
@@ -38,7 +39,9 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  ${media('md')`
+    flex-direction: column-reverse;
+  `}
 `;
 
 const TextContainer = styled.div`
@@ -46,7 +49,6 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 380px;
   margin: 1em 0;
 `;
 
@@ -55,7 +57,6 @@ const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 380px;
   margin: 1em 0;
 `;
 

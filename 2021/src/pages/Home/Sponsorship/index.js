@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { ReactComponent as SponsorImage } from '../../../assets/undraw/Business.svg';
 import Header from '../../../components/Typography/Header';
 import Text from '../../../components/Typography/Text';
+import { media } from '../../../utils/media';
 
 class Sponsor extends Component {
   constructor(props) {
@@ -14,11 +15,6 @@ class Sponsor extends Component {
   render() {
     return (
       <Container id="sponsor-section">
-        <ImageContainer data-aos="fade-up">
-          <SvgContainer>
-            <SponsorImage />
-          </SvgContainer>
-        </ImageContainer>
         <TextContainer>
           <Header>Sponsor the Next Generation</Header>
 
@@ -50,6 +46,11 @@ class Sponsor extends Component {
             </Button>
           </a>
         </TextContainer>
+        <ImageContainer data-aos="fade-up">
+          <SvgContainer>
+            <SponsorImage />
+          </SvgContainer>
+        </ImageContainer>
       </Container>
     );
   }
@@ -62,7 +63,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  ${media('md')`
+    flex-direction: column-reverse;
+  `}
 `;
 
 const TextContainer = styled.div`
@@ -70,7 +74,6 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 380px;
   margin: 1em 0;
 `;
 
@@ -79,7 +82,6 @@ const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 380px;
   margin: 1em 0;
 `;
 

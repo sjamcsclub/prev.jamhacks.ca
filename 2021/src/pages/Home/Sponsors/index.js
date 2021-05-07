@@ -107,7 +107,13 @@ const Tier = styled.div`
 `;
 
 const Blueberry = styled.a`
-  width: 70%;
+  width: 60%;
+  ${media('md')`
+    width: 65%;
+  `}
+  ${media('sm')`
+    width: 75%;
+  `}
   img {
     width: 100%;
     box-sizing: border-box;
