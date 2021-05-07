@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Faq.css';
 import { Collapse } from 'antd';
+import { Header } from '../../../components/Typography';
 
 import { ReactComponent as Arrow } from '../../../assets/icons/RightArrow.svg';
 
@@ -16,9 +17,7 @@ class Faq extends Component {
   render() {
     return (
       <div className="faq-div" id="faq-section">
-        <div className="sponsor-display-title-div" data-aos="fade-up">
-          Frequently Asked Questions
-        </div>
+        <Header>Frequently Asked Questions</Header>
         <div className="faq-content-div" data-aos="fade-up">
           <Collapse
           // expandIcon={({ isActive }) => (
