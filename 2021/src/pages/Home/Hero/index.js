@@ -9,11 +9,12 @@ import { ReactComponent as Logo } from '../../../assets/logo/JamhacksFullV.svg';
 import './Hero.css';
 
 const registerLinks = [
-  'https://wvmzd7k3wc0.typeform.com/to/hTLmCfSw',
-  'https://wvmzd7k3wc0.typeform.com/to/ZomNkpto',
+  /*'https://wvmzd7k3wc0.typeform.com/to/hTLmCfSw',*/
+  /*'https://wvmzd7k3wc0.typeform.com/to/ZomNkpto',*/
   /*'https://uhsftk4mjsw.typeform.com/to/nBOIo2cb',*/
   /*'https://uhsftk4mjsw.typeform.com/to/Ef4CMC4A',*/
   /*'https://uhsftk4mjsw.typeform.com/to/skRsl7ss',*/
+  'https://47m73ezscb9.typeform.com/to/NKRVtHhi',
 ];
 
 const Hero = ({ register }) => {
