@@ -23,6 +23,7 @@ import RStudio from '../assets/sponsorlogos/peach/RStudio.svg';
 import QCSYS from '../assets/sponsorlogos/peach/QCSYS.png';
 import EchoAR from '../assets/sponsorlogos/peach/EchoAR.png';
 import VolareLabs from '../assets/sponsorlogos/peach/VolareLabs.png';
+import Netlify from '../assets/sponsorlogos/peach/Netlify.png';
 
 import Voiceflow from '../assets/sponsorlogos/peach/Voiceflow.png';
 import Magoosh from '../assets/sponsorlogos/peach/Magoosh.png';
@@ -69,6 +70,10 @@ const grape = [
 ];
 
 const peach = [
+  {
+    link: 'https://www.netlify.com/',
+    logo: Netlify,
+  },
   {
     link: 'https://www.framer.com/',
     logo: Framer,
