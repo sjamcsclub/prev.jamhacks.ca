@@ -9,22 +9,32 @@ const ScheduleComponent = () => {
     <div class="scheduleContainer">
       {times.map((val) => {
         return (
-          <div class={`time start-${val.split(':').join('')}`}>
-            {val.replace('SU', '').replace('SA', '')}
+          <div className={`time start-${val.split(':').join('')}`}>
+            {val
+              .replace('SU', '')
+              .replace('SA', '')
+              .replace('11:11', '')
+              .replace('23:23', '')}
           </div>
         );
       })}
 
+      <div className="event start-SA1111 end-SA1111 schedule-component-inner-header">
+        Saturday
+      </div>
+      <div className="event start-SA2323 end-SA2323 schedule-component-inner-header">
+        Sunday
+      </div>
+
       {events.map((val) => {
         return (
           <div
-            class={`event stage-${val.stage} start-${val.start} end-${val.end} length-${val.length}`}
+            className={`event stage-${val.stage} start-${val.start} end-${val.end} length-${val.length}`}
           >
             {val.name} <span>{val.subText}</span>
           </div>
         );
       })}
-
       {/* <div class="event stage-earth start-SA1100 end-SA1100 length-4">
         Speaker Two <span>Earth Stage</span>
       </div>

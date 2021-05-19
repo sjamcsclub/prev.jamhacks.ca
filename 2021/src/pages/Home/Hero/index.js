@@ -56,9 +56,7 @@ const Hero = ({ register }) => {
             to="/"
             onClick={() => {
               window.scrollTo({
-                top:
-                  document.getElementsByClassName('sponsor-div')[0].offsetTop -
-                  80,
+                top: document.getElementById('sponsor-section').offsetTop - 80,
                 left: 0,
                 behavior: 'smooth',
               });

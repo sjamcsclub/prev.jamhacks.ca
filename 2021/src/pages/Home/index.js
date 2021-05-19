@@ -19,7 +19,7 @@ const Home = () => {
       <Hero register={Env.register} />
       <About />
       {Env.schedule && <Schedule />}
-      {Env.register && <Mentor />}
+      {Env.register && <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />}
       <Sponsorship />
       <Sponsors />
       <Faq />

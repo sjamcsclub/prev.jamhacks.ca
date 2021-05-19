@@ -39,6 +39,8 @@
   font-style: normal;
   font-size: 14px;
   line-height: 23px;
+  margin-top: 10px;
+  margin-left: 150px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -47,6 +49,7 @@
   }
   .schedule-component-subtext {
     width: 500px;
+    margin-left: 150px;
   }
 }
 
@@ -56,6 +59,8 @@
     height: 500px;
   }
   .schedule-component-subtext {
-    width: 320px;
+    width: 215px;
+    margin-left: 0px;
+    font-size: 11px;
   }
 }

@@ -1,10 +1,10 @@
-$blockTimes: SA1100, SA1130, SA1200, SA1230, SA1300, SA1330, SA1400, SA1430,
-  SA1500, SA1530, SA1600, SA1630, SA1700, SA1730, SA1800, SA1830, SA1900, SA1930,
-  SA2000, SA2030, SA2100, SA2130, SA2200, SA2230, SA2300, SA2330, SU2400, SU2430,
-  SU100, SU130, SU200, SU230, SU300, SU330, SU400, SU430, SU500, SU530, SU600,
-  SU630, SU700, SU730, SU800, SU830, SU900, SU930, SU1000, SU1030, SU1100,
-  SU1130, SU1200, SU1230, SU1300, SU1330, SU1400, SU1430, SU1500, SU1530, SU1600,
-  SU1630, SU1700, SU1730, SU1800;
+$blockTimes: SA1111, SA1100, SA1130, SA1200, SA1230, SA1300, SA1330, SA1400,
+  SA1430, SA1500, SA1530, SA1600, SA1630, SA1700, SA1730, SA1800, SA1830, SA1900,
+  SA1930, SA2000, SA2030, SA2100, SA2130, SA2200, SA2230, SA2300, SA2330, SA2323,
+  SU2400, SU2430, SU100, SU130, SU200, SU230, SU300, SU330, SU400, SU430, SU500,
+  SU530, SU600, SU630, SU700, SU730, SU800, SU830, SU900, SU930, SU1000, SU1030,
+  SU1100, SU1130, SU1200, SU1230, SU1300, SU1330, SU1400, SU1430, SU1500, SU1530,
+  SU1600, SU1630, SU1700, SU1730, SU1800;
 
 $blockLengths: 1, 2, 3, 4;
 
@@ -13,8 +13,9 @@ $blockLengths: 1, 2, 3, 4;
   grid-gap: 0.2rem;
 
   grid-template-columns: 5rem repeat(4, 1fr);
-  grid-template-rows: repeat(63, 1fr);
+  grid-template-rows: repeat(65, 1fr);
   grid-template-areas:
+    'timeSA1111 stage stage stage stage'
     'timeSA1100 stage stage stage stage'
     'timeSA1130 stage stage stage stage'
     'timeSA1200 stage stage stage stage'
@@ -41,6 +42,7 @@ $blockLengths: 1, 2, 3, 4;
     'timeSA2230 stage stage stage stage'
     'timeSA2300 stage stage stage stage'
     'timeSA2330 stage stage stage stage'
+    'timeSA2323 stage stage stage stage'
     'timeSU2400 stage stage stage stage'
     'timeSU2430 stage stage stage stage'
     'timeSU100 stage stage stage stage'
@@ -87,7 +89,7 @@ $blockLengths: 1, 2, 3, 4;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border-top: thin dotted #ccc;
+  // border-top: thin dotted #ccc;
   height: 100%;
   padding: 0 0.5rem;
 
@@ -149,17 +151,23 @@ $blockLengths: 1, 2, 3, 4;
     background-color: #9ccc65;
   }
   &.stage-venus {
-    background-color: #ff8a65;
+    background-color: #c5fea4;
   }
   &.stage-mars {
-    background-color: #b3e5fc;
+    background-color: #78bdf9;
   }
   &.stage-jupiter {
-    background-color: #81d4fa;
+    background-color: #78e4f9;
   }
   &.stage-saturn {
-    background-color: #26c6da;
+    background-color: #88f9c6;
   }
+}
+
+.schedule-component-inner-header {
+  background: none;
+  font-size: 25px;
+  padding-left: 0px !important;
 }
 
 @media only screen and (max-width: 700px) {
@@ -179,5 +187,8 @@ $blockLengths: 1, 2, 3, 4;
   .scheduleContainer {
     grid-gap: 0.2rem;
     grid-template-columns: 3rem repeat(4, 1fr);
+  }
+  .schedule-component-inner-header {
+    font-size: 15px;
   }
 }

@@ -1,5 +1,6 @@
 const times = [
   // Remember this needs to match with css grid layout
+  'SA11:11',
   'SA11:00',
   'SA11:30',
   'SA12:00',
@@ -26,6 +27,7 @@ const times = [
   'SA22:30',
   'SA23:00',
   'SA23:30',
+  'SA23:23',
   'SU24:00',
   'SU24:30',
   'SU1:00',
@@ -105,7 +107,7 @@ const events = [
   {
     name: 'Product Management',
     subText: 'Andy Tran + Ananya',
-    stage: 'saturn',
+    stage: 'venus',
     start: 'SA1300',
     end: 'SA1330',
     length: 2,
@@ -113,7 +115,7 @@ const events = [
   {
     name: 'Intro to API',
     subText: 'Gabby Chan',
-    stage: 'saturn',
+    stage: 'venus',
     start: 'SA1400',
     end: 'SA1430',
     length: 2,
@@ -137,7 +139,7 @@ const events = [
   {
     name: 'Coding Realistic Physics Simulations',
     subText: 'Jason Schattman',
-    stage: 'saturn',
+    stage: 'venus',
     start: 'SA1600',
     end: 'SA1630',
     length: 4,
@@ -153,7 +155,7 @@ const events = [
   {
     name: 'Ethereum Foundation: Intro to Ethereum',
     subText: 'Austin Griffith',
-    stage: 'saturn',
+    stage: 'venus',
     start: 'SA1700',
     end: 'SA1730',
     length: 2,
@@ -169,7 +171,7 @@ const events = [
   {
     name: 'How to Build a Cloud-Connected AR App',
     subText: 'echoAR',
-    stage: 'saturn',
+    stage: 'venus',
     start: 'SA1900',
     end: 'SA1930',
     length: 2,
@@ -183,7 +185,7 @@ const events = [
     length: 2,
   },
   {
-    name: 'Panel: Careers in Tech - High School and Beyond',
+    name: 'Panel: Pursuing a Career in Tech - What You Need To Know',
     subText: '',
     stage: 'jupiter',
     start: 'SA2000',
