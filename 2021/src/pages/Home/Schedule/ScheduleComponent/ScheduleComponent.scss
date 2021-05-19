@@ -2,7 +2,9 @@ $blockTimes: SA1100, SA1130, SA1200, SA1230, SA1300, SA1330, SA1400, SA1430,
   SA1500, SA1530, SA1600, SA1630, SA1700, SA1730, SA1800, SA1830, SA1900, SA1930,
   SA2000, SA2030, SA2100, SA2130, SA2200, SA2230, SA2300, SA2330, SU2400, SU2430,
   SU100, SU130, SU200, SU230, SU300, SU330, SU400, SU430, SU500, SU530, SU600,
-  SU630, SU700, SU730;
+  SU630, SU700, SU730, SU800, SU830, SU900, SU930, SU1000, SU1030, SU1100,
+  SU1130, SU1200, SU1230, SU1300, SU1330, SU1400, SU1430, SU1500, SU1530, SU1600,
+  SU1630, SU1700, SU1730, SU1800;
 
 $blockLengths: 1, 2, 3, 4;
 
@@ -11,7 +13,7 @@ $blockLengths: 1, 2, 3, 4;
   grid-gap: 0.2rem;
 
   grid-template-columns: 5rem repeat(4, 1fr);
-  grid-template-rows: repeat(42, 1fr);
+  grid-template-rows: repeat(63, 1fr);
   grid-template-areas:
     'timeSA1100 stage stage stage stage'
     'timeSA1130 stage stage stage stage'
@@ -54,7 +56,28 @@ $blockLengths: 1, 2, 3, 4;
     'timeSU600 stage stage stage stage'
     'timeSU630 stage stage stage stage'
     'timeSU700 stage stage stage stage'
-    'timeSU730 stage stage stage stage';
+    'timeSU730 stage stage stage stage'
+    'timeSU800 stage stage stage stage'
+    'timeSU830 stage stage stage stage'
+    'timeSU900 stage stage stage stage'
+    'timeSU930 stage stage stage stage'
+    'timeSU1000 stage stage stage stage'
+    'timeSU1030 stage stage stage stage'
+    'timeSU1100 stage stage stage stage'
+    'timeSU1130 stage stage stage stage'
+    'timeSU1200 stage stage stage stage'
+    'timeSU1230 stage stage stage stage'
+    'timeSU1300 stage stage stage stage'
+    'timeSU1330 stage stage stage stage'
+    'timeSU1400 stage stage stage stage'
+    'timeSU1430 stage stage stage stage'
+    'timeSU1500 stage stage stage stage'
+    'timeSU1530 stage stage stage stage'
+    'timeSU1600 stage stage stage stage'
+    'timeSU1630 stage stage stage stage'
+    'timeSU1700 stage stage stage stage'
+    'timeSU1730 stage stage stage stage'
+    'timeSU1800 stage stage stage stage';
 }
 
 /**
@@ -74,7 +97,7 @@ $blockLengths: 1, 2, 3, 4;
     }
   }
 
-  &[class*='30']:not(.start-SA1300):not(.start-SA2300):not(.start-SU300) {
+  &[class*='30']:not(.start-SA1300):not(.start-SA2300):not(.start-SU300):not(.start-SU1300) {
     font-size: 0.8rem;
     color: #ccc;
   }
@@ -147,7 +170,7 @@ $blockLengths: 1, 2, 3, 4;
   .time {
     padding: 0 0.2rem;
     font-size: 0.7rem;
-    &[class*='30']:not(.start-SA1300):not(.start-SA2300):not(.start-SU300) {
+    &[class*='30']:not(.start-SA1300):not(.start-SA2300):not(.start-SU300):not(.start-SU1300) {
       font-size: 0.7rem;
       color: #ccc;
     }
