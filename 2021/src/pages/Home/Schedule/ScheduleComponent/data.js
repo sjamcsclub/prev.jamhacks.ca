@@ -1,7 +1,6 @@
 const times = [
   // Remember this needs to match with css grid layout
   'SA11:11',
-  'SA11:00',
   'SA11:30',
   'SA12:00',
   'SA12:30',
@@ -76,7 +75,7 @@ const events = [
     name: 'Opening Ceremony',
     subText: '',
     stage: 'mars', // ie colour,
-    start: 'SA1100',
+    start: 'SA1130',
     end: 'SA1130',
     length: 4,
   },
@@ -153,7 +152,7 @@ const events = [
     length: 2,
   },
   {
-    name: 'Ethereum Foundation: Intro to Ethereum',
+    name: 'Build on Ethereum with scaffold-eth',
     subText: 'Austin Griffith',
     stage: 'venus',
     start: 'SA1700',
@@ -177,7 +176,7 @@ const events = [
     length: 2,
   },
   {
-    name: 'Machine Learning',
+    name: 'Quick Draw Emoji with Machine Learning',
     subText: 'Makeschool',
     stage: 'saturn',
     start: 'SA1900',
