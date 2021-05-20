@@ -141,7 +141,15 @@ const events = [
     stage: 'venus',
     start: 'SA1600',
     end: 'SA1630',
-    length: 4,
+    length: 2,
+  },
+  {
+    name: 'Making and Monetizing Side Projects',
+    subText: 'Chris Sev',
+    stage: 'saturn',
+    start: 'SA1600',
+    end: 'SA1630',
+    length: 2,
   },
   {
     name: 'Quantum Science: From Philosophy to Technology',
