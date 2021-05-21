@@ -11,7 +11,8 @@ const Schedule = () => (
       <ScheduleComponent></ScheduleComponent>
     </div>
     <div className="schedule-component-subtext" data-aos="fade-up">
-      *Disclaimer, these events are subject to change
+      *Disclaimer, these events are subject to change. All times are shown in
+      EDT (UTC−04:00)
     </div>
   </div>
 );
