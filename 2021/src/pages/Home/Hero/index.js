@@ -17,6 +17,8 @@ const registerLinks = [
   'https://47m73ezscb9.typeform.com/to/NKRVtHhi',
 ];
 
+const devpostGalleryLink = 'https://jamhacks-v.devpost.com/project-gallery';
+
 const Hero = ({ register }) => {
   return (
     <div className="hero-div">
@@ -28,23 +30,45 @@ const Hero = ({ register }) => {
         <div style={{ margin: '1.5rem 0' }}>
           {register ? (
             <div className="hero-button-div">
-              <a
-                href={
-                  registerLinks[
-                    Math.floor(Math.random() * registerLinks.length)
-                  ]
-                }
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  type="primary"
-                  disabled={register === 'complete'}
-                  style={{ width: '180px', height: '40px', zIndex: '50' }}
+              {register === 'post-event' ? (
+                <a
+                  href="devpostGalleryLink"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {register === 'complete' ? 'Applications Closed' : 'Register'}
-                </Button>
-              </a>
+                  <Button
+                    type="primary"
+                    style={{
+                      width: '180px',
+                      height: '40px',
+                      zIndex: '50',
+                      backgroundColor: '#003e54',
+                    }}
+                  >
+                    View Projects
+                  </Button>
+                </a>
+              ) : (
+                <a
+                  href={
+                    registerLinks[
+                      Math.floor(Math.random() * registerLinks.length)
+                    ]
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    type="primary"
+                    disabled={register === 'complete'}
+                    style={{ width: '180px', height: '40px', zIndex: '50' }}
+                  >
+                    {register === 'complete'
+                      ? 'Applications Closed'
+                      : 'Register'}
+                  </Button>
+                </a>
+              )}
             </div>
           ) : (
             <Newsletter />

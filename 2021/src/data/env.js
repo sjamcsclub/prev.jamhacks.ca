@@ -1,8 +1,8 @@
 //close open finished
 
 const Env = {
-  //false, "open", "complete"
-  register: 'complete',
+  //false, "open", "complete", "post-event"
+  register: 'post-event',
   schedule: 'open',
   mentor: 'finished',
   volunteer: 'finished',
