@@ -32,7 +32,7 @@ const Hero = ({ register }) => {
             <div className="hero-button-div">
               {register === 'post-event' ? (
                 <a
-                  href="devpostGalleryLink"
+                  href={devpostGalleryLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
