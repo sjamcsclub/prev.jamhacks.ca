@@ -25,9 +25,9 @@ const Menu = ({ sections, open }) => {
     >
       <div className="test-navbar">
         <div className="navbar-mobile-links-div">
-          {sections.map((link) =>
+          {sections.map((link, i) =>
             link.enabled ? (
-              <div className="navbar-mobile-link-container">
+              <div key={i} className="navbar-mobile-link-container">
                 <a
                   className="navbar-mobile-link-item"
                   onClick={() =>

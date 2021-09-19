@@ -22,7 +22,7 @@ import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components';
 
 //firebase
-import * as firebase from 'firebase/app';
+import firebase from 'firebase/app';
 import 'firebase/analytics';
 import 'firebase/firestore';
 
@@ -68,9 +68,9 @@ class App extends React.Component {
   componentDidMount() {
     var art = `     
 Designed by: Kevin Gao
-Developed by: Daniel Yu, Kevin Gao
+Developed by: Daniel Yu, Kevin Gao, Andrew Yang
 
-Copyright (c) 2020 JAMHacks.
+Copyright (c) 2021 JAMHacks.
 `;
     console.log(art);
   }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Newsletter from '../../../components/Newsletter';
 import styled from 'styled-components';
 import { media } from '../../../utils/media';
-import { ReactComponent as Logo } from '../../../assets/logo/JamhacksFullV.svg';
+import { ReactComponent as Logo } from '../../../assets/logo/JAMHacks6Adjusted.svg';
 
 import './Hero.css';
 
@@ -23,7 +23,7 @@ const Hero = ({ register }) => {
         <StyledLogo />
         <Subtitle>Learn, Connect, Innovate</Subtitle>
         <LocationText>Virtual Event</LocationText>
-        <DateText>May 22 to 23, 2021</DateText>
+        <DateText>2022 - TDB</DateText>
         <div style={{ margin: '1.5rem 0' }}>
           {register ? (
             <div className="hero-button-div">
