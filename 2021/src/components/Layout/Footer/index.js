@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
-
-import { ReactComponent as Linkedin } from '../../../assets/icons/social/linkedin.svg';
-import { ReactComponent as Instagram } from '../../../assets/icons/social/instagram.svg';
-import { ReactComponent as Twitter } from '../../../assets/icons/social/twitter.svg';
-import { ReactComponent as Facebook } from '../../../assets/icons/social/facebook.svg';
-
+import styled from 'styled-components';
 import './Footer.css';
 
+import {
+  LinkedinIcon,
+  InstagramIcon,
+  TwitterIcon,
+  FacebookIcon,
+  MediumIcon,
+  YoutubeIcon,
+} from '../../Icons/Socials';
 import Socials from '../../../data/socials';
 
 class Footer extends Component {
@@ -26,33 +29,31 @@ class Footer extends Component {
               href={Socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon white linkedin"
             >
-              <Linkedin fill="white"></Linkedin>
+              <LinkedinIcon primary="#ffffff" />
             </a>
             <a
               href={Socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon white instagram"
             >
-              <Instagram></Instagram>
+              <InstagramIcon primary="#ffffff" />
             </a>
-            <a
-              href={Socials.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon white twitter"
-            >
-              <Twitter></Twitter>
+            <a href={Socials.twitter} target="_blank" rel="noopener noreferrer">
+              <TwitterIcon primary="#ffffff" />
             </a>
             <a
               href={Socials.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon white facebook"
             >
-              <Facebook></Facebook>
+              <FacebookIcon primary="#ffffff" />
+            </a>
+            <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
+              <MediumIcon primary="#ffffff" />
+            </a>
+            <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
+              <YoutubeIcon primary="#ffffff" />
             </a>
           </div>
         </div>

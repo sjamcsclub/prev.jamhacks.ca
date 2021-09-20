@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 //router
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 //aos
@@ -9,9 +9,10 @@ import 'aos/dist/aos.css';
 import Navbar from './components/Layout/Navbar';
 import Footer from './components/Layout/Footer';
 //pages
-import Home from './pages/Home';
-import Privacy from './pages/Privacy';
-import NotFound from './pages/NotFound';
+const Home = React.lazy(() => import('./pages/Home'));
+const Privacy = React.lazy(() => import('./pages/Privacy'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
+import Loading from './pages/Loading';
 //data
 import HomeNavData from './data/Navbar/Home.js';
 import PrivacyNavData from './data/Navbar/Privacy.js';
@@ -77,26 +78,28 @@ Copyright (c) 2021 JAMHacks.
 
   render() {
     return (
-      <BrowserRouter>
-        <ThemeProvider theme={Theme}>
-          <Container>
-            <Switch>
-              <Route exact path="/">
-                <Navbar sections={HomeNavData} />
-                <Home />
-                <Footer />
-              </Route>
-              <Route exact path="/privacy-policy">
-                <Navbar sections={PrivacyNavData} />
-                <Privacy />
-                <Footer />
-              </Route>
-              <Route path="/404" component={NotFound} />
-              <Redirect to="/404" />
-            </Switch>
-          </Container>
-        </ThemeProvider>
-      </BrowserRouter>
+      <Suspense fallback={<Loading />}>
+        <BrowserRouter>
+          <ThemeProvider theme={Theme}>
+            <Container>
+              <Switch>
+                <Route exact path="/">
+                  <Navbar sections={HomeNavData} />
+                  <Home />
+                  <Footer />
+                </Route>
+                <Route exact path="/privacy-policy">
+                  <Navbar sections={PrivacyNavData} />
+                  <Privacy />
+                  <Footer />
+                </Route>
+                <Route path="/404" component={NotFound} />
+                <Redirect to="/404" />
+              </Switch>
+            </Container>
+          </ThemeProvider>
+        </BrowserRouter>
+      </Suspense>
     );
   }
 }

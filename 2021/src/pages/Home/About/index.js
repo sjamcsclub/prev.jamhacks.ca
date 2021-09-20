@@ -72,7 +72,7 @@ const About = () => {
                 <div className="about-stat-container">
                   <Spring
                     from={{ prizes: 0 }}
-                    to={{ prizes: isVisible ? 4000 : 0 }}
+                    to={{ prizes: isVisible ? 15000 : 0 }}
                   >
                     {({ prizes }) => (
                       <h2 className="about-stat">{'$' + prizes.toFixed(0)}</h2>
@@ -103,7 +103,11 @@ const About = () => {
           >
             {Photos.map((photo, i) => (
               <div key={i} className="carousel-item-container">
-                <img className="carousel-item" src={photo} />
+                <img
+                  className="carousel-item"
+                  src={photo}
+                  alt="past photo of jamhacks"
+                />
               </div>
             ))}
           </Carousel>

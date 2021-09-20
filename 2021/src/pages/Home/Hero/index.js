@@ -9,12 +9,15 @@ import { ReactComponent as Logo } from '../../../assets/logo/JAMHacks6Adjusted.s
 import './Hero.css';
 
 const registerLinks = [
-  'https://wvmzd7k3wc0.typeform.com/to/hTLmCfSw',
-  'https://wvmzd7k3wc0.typeform.com/to/ZomNkpto',
-  'https://uhsftk4mjsw.typeform.com/to/nBOIo2cb',
-  'https://uhsftk4mjsw.typeform.com/to/Ef4CMC4A',
-  'https://uhsftk4mjsw.typeform.com/to/skRsl7ss',
+  /*'https://wvmzd7k3wc0.typeform.com/to/hTLmCfSw',*/
+  /*'https://wvmzd7k3wc0.typeform.com/to/ZomNkpto',*/
+  /*'https://uhsftk4mjsw.typeform.com/to/nBOIo2cb',*/
+  /*'https://uhsftk4mjsw.typeform.com/to/Ef4CMC4A',*/
+  /*'https://uhsftk4mjsw.typeform.com/to/skRsl7ss',*/
+  'https://47m73ezscb9.typeform.com/to/NKRVtHhi',
 ];
+
+const devpostGalleryLink = 'https://jamhacks-v.devpost.com/project-gallery';
 
 const Hero = ({ register }) => {
   return (
@@ -27,23 +30,45 @@ const Hero = ({ register }) => {
         <div style={{ margin: '1.5rem 0' }}>
           {register ? (
             <div className="hero-button-div">
-              <a
-                href={
-                  registerLinks[
-                    Math.floor(Math.random() * registerLinks.length)
-                  ]
-                }
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  type="primary"
-                  disabled={register === 'complete'}
-                  style={{ width: '180px', height: '40px', zIndex: '50' }}
+              {register === 'post-event' ? (
+                <a
+                  href={devpostGalleryLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {register === 'complete' ? 'Applications Closed' : 'Register'}
-                </Button>
-              </a>
+                  <Button
+                    type="primary"
+                    style={{
+                      width: '180px',
+                      height: '40px',
+                      zIndex: '50',
+                      backgroundColor: '#003e54',
+                    }}
+                  >
+                    View Projects
+                  </Button>
+                </a>
+              ) : (
+                <a
+                  href={
+                    registerLinks[
+                      Math.floor(Math.random() * registerLinks.length)
+                    ]
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    type="primary"
+                    disabled={register === 'complete'}
+                    style={{ width: '180px', height: '40px', zIndex: '50' }}
+                  >
+                    {register === 'complete'
+                      ? 'Applications Closed'
+                      : 'Register'}
+                  </Button>
+                </a>
+              )}
             </div>
           ) : (
             <Newsletter />
@@ -55,9 +80,7 @@ const Hero = ({ register }) => {
             to="/"
             onClick={() => {
               window.scrollTo({
-                top:
-                  document.getElementsByClassName('sponsor-div')[0].offsetTop -
-                  80,
+                top: document.getElementById('sponsor-section').offsetTop - 80,
                 left: 0,
                 behavior: 'smooth',
               });

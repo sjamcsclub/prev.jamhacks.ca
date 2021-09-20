@@ -26,7 +26,10 @@ class Privacy extends Component {
           the Service, You agree to the collection and use of information in
           accordance with this Privacy Policy. This Privacy Policy is maintained
           by the{' '}
-          <a href="https://www.privacypolicies.com/privacy-policy-generator/">
+          <a
+            rel="noopener noreferrer"
+            href="https://www.privacypolicies.com/privacy-policy-generator/"
+          >
             Privacy Policy Generator
           </a>
           .
@@ -174,7 +177,10 @@ class Privacy extends Component {
           remain on your personal computer or mobile device when You go offline,
           while Session Cookies are deleted as soon as You close your web
           browser. Learn more about cookies in the{' '}
-          <a href="https://www.privacypolicies.com/blog/cookies/">
+          <a
+            rel="noopener noreferrer"
+            href="https://www.privacypolicies.com/blog/cookies/"
+          >
             "What Are Cookies"
           </a>{' '}
           article.
@@ -492,7 +498,9 @@ class Privacy extends Component {
         <ul>
           <li>
             By email:{' '}
-            <a href="mailto:contact@jamhacks.ca">contact@jamhacks.ca</a>
+            <a rel="noopener noreferrer" href="mailto:contact@jamhacks.ca">
+              contact@jamhacks.ca
+            </a>
           </li>
         </ul>
       </div>
