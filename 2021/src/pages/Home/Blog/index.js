@@ -20,7 +20,7 @@ const Blog = () => {
           covering topics related to making your hackathon project stand out,
           frontend and backend development, impostor syndrome in the tech
           industry, organizing your own hackathon, coding success stories, and
-          more! We will be posting every week, starting April 26th!
+          more!
         </Text>
       </TextContainer>
       <ImageContainer data-aos="fade-up">

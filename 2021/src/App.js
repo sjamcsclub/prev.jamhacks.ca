@@ -8,10 +8,7 @@ import 'aos/dist/aos.css';
 //components
 import Navbar from './components/Layout/Navbar';
 import Footer from './components/Layout/Footer';
-//pages
-const Home = React.lazy(() => import('./pages/Home'));
-const Privacy = React.lazy(() => import('./pages/Privacy'));
-const NotFound = React.lazy(() => import('./pages/NotFound'));
+
 import Loading from './pages/Loading';
 //data
 import HomeNavData from './data/Navbar/Home.js';
@@ -26,6 +23,11 @@ import { ThemeProvider } from 'styled-components';
 import firebase from 'firebase/app';
 import 'firebase/analytics';
 import 'firebase/firestore';
+
+//pages
+const Home = React.lazy(() => import('./pages/Home'));
+const Privacy = React.lazy(() => import('./pages/Privacy'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 var firebaseConfig = {
   apiKey: 'AIzaSyCDdAEQqSy8Pni1iKOyOB8xUDAR4I0f9Q0',
