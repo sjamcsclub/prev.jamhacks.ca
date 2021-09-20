@@ -10,6 +10,10 @@ const Schedule = () => (
     <div className="schedule-component-container" data-aos="fade-up">
       <ScheduleComponent></ScheduleComponent>
     </div>
+    <div className="schedule-component-subtext" data-aos="fade-up">
+      *Disclaimer, these events are subject to change. All times are shown in
+      EDT (UTC−04:00)
+    </div>
   </div>
 );
 

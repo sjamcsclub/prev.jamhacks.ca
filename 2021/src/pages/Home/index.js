@@ -8,6 +8,7 @@ import Sponsorship from './Sponsorship';
 import Sponsors from './Sponsors';
 import Faq from './Faq';
 import Team from './Team';
+import Blog from './Blog';
 import Contact from './Contact';
 
 import Env from '../../data/env';
@@ -17,12 +18,13 @@ const Home = () => {
     <>
       <Hero register={Env.register} />
       <About />
-      {Env.register && <Mentor />}
       {Env.schedule && <Schedule />}
+      {Env.register && <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />}
       <Sponsorship />
       <Sponsors />
       <Faq />
       <Team />
+      <Blog />
       <Contact />
     </>
   );

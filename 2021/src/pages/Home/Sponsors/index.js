@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { Collapse } from 'antd';
 import { media } from '../../../utils/media';
 
-import './SponsorDisplay.css';
-
 import Header from '../../../components/Typography/Header';
 import { motion } from 'framer-motion';
 import {
@@ -18,11 +16,13 @@ import {
 const SponsorDisplay = ({}) => {
   return (
     <Container>
-      <Header data-aos="fade-up">Sponsors</Header>
+      <Header data-aos="fade-up" style={{ marginTop: 100 }}>
+        Past Sponsors
+      </Header>
       <Tier data-aos="fade-up">
-        {blueberry.map((val) => {
+        {blueberry.map((val, i) => {
           return (
-            <Blueberry href={val.link} target="_blank">
+            <Blueberry key={i} href={val.link} target="_blank">
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 src={val.logo}
@@ -32,9 +32,9 @@ const SponsorDisplay = ({}) => {
         })}
       </Tier>
       <Tier data-aos="fade-up">
-        {strawberry.map((val) => {
+        {strawberry.map((val, i) => {
           return (
-            <Strawberry href={val.link} target="_blank">
+            <Strawberry key={i} href={val.link} target="_blank">
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 src={val.logo}
@@ -44,9 +44,10 @@ const SponsorDisplay = ({}) => {
         })}
       </Tier>
       <Tier data-aos="fade-up">
-        {grape.map((val) => {
+        {grape.map((val, i) => {
           return (
             <Grape
+              key={i}
               href={val.link}
               target="_blank"
               style={{
@@ -64,9 +65,9 @@ const SponsorDisplay = ({}) => {
         })}
       </Tier>
       <Tier data-aos="fade-up">
-        {peach.map((val) => {
+        {peach.map((val, i) => {
           return (
-            <Peach href={val.link} target="_blank">
+            <Peach key={i} href={val.link} target="_blank">
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 src={val.logo}
@@ -75,16 +76,11 @@ const SponsorDisplay = ({}) => {
           );
         })}
       </Tier>
-      <Header
-        className="sponsor-display-title-div large-title"
-        data-aos="fade-up"
-      >
-        Partners
-      </Header>
+      <Header data-aos="fade-up">Partners</Header>
       <Tier data-aos="fade-up">
-        {partners.map((val) => {
+        {partners.map((val, i) => {
           return (
-            <Partner href={val.link} target="_blank">
+            <Partner key={i} href={val.link} target="_blank">
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 src={val.logo}
@@ -114,7 +110,13 @@ const Tier = styled.div`
 `;
 
 const Blueberry = styled.a`
-  width: 100%;
+  width: 60%;
+  ${media('md')`
+    width: 65%;
+  `}
+  ${media('sm')`
+    width: 75%;
+  `}
   img {
     width: 100%;
     box-sizing: border-box;
@@ -123,12 +125,12 @@ const Blueberry = styled.a`
 `;
 
 const Strawberry = styled.a`
-  width: 80%;
+  width: 50%;
   ${media('md')`
-    width: 85%;
+    width: 60%;
   `}
   ${media('sm')`
-    width: 90%;
+    width: 70%;
   `}
   img {
     width: 100%;

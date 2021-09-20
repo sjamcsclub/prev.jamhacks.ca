@@ -1,11 +1,16 @@
 import React from 'react';
 import { Button } from 'antd';
 import { motion } from 'framer-motion';
+import styled from 'styled-components';
 
-import { ReactComponent as Linkedin } from '../../../../assets/icons/social/linkedin.svg';
-import { ReactComponent as Instagram } from '../../../../assets/icons/social/instagram.svg';
-import { ReactComponent as Twitter } from '../../../../assets/icons/social/twitter.svg';
-import { ReactComponent as Facebook } from '../../../../assets/icons/social/facebook.svg';
+import {
+  LinkedinIcon,
+  InstagramIcon,
+  TwitterIcon,
+  FacebookIcon,
+  MediumIcon,
+  YoutubeIcon,
+} from '../../../Icons/Socials';
 import Socials from '../../../../data/socials';
 
 //animation variants
@@ -25,10 +30,10 @@ const Menu = ({ sections, open }) => {
     >
       <div className="test-navbar">
         <div className="navbar-mobile-links-div">
-          {sections.map((link) =>
+          {sections.map((link, i) =>
             link.enabled ? (
-              <div className="navbar-mobile-link-container">
-                <a
+              <div key={i} className="navbar-mobile-link-container">
+                <Link
                   className="navbar-mobile-link-item"
                   onClick={() =>
                     window.scrollTo({
@@ -39,7 +44,7 @@ const Menu = ({ sections, open }) => {
                   }
                 >
                   {link.label}
-                </a>
+                </Link>
               </div>
             ) : (
               ' '
@@ -60,7 +65,7 @@ const Menu = ({ sections, open }) => {
             rel="noopener noreferrer"
             className="social-icon linkedin "
           >
-            <Linkedin className="hover-icon"></Linkedin>
+            <LinkedinIcon />
           </a>
           <a
             href={Socials.instagram}
@@ -68,7 +73,7 @@ const Menu = ({ sections, open }) => {
             rel="noopener noreferrer"
             className="social-icon instagram "
           >
-            <Instagram className="hover-icon"></Instagram>
+            <InstagramIcon />
           </a>
           <a
             target="_blank"
@@ -76,7 +81,7 @@ const Menu = ({ sections, open }) => {
             href={Socials.twitter}
             className="social-icon twitter "
           >
-            <Twitter className="hover-icon"></Twitter>
+            <TwitterIcon />
           </a>
           <a
             target="_blank"
@@ -84,12 +89,27 @@ const Menu = ({ sections, open }) => {
             href={Socials.facebook}
             className="social-icon facebook "
           >
-            <Facebook className="hover-icon"></Facebook>
+            <FacebookIcon />
+          </a>
+          <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
+            <MediumIcon />
+          </a>
+          <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
+            <YoutubeIcon />
           </a>
         </div>
       </div>
     </motion.div>
   );
 };
+
+const Link = styled.div`
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: ${(props) =>
+      props.secondary ? props.secondary : props.theme.colors.secondary.default};
+  }
+`;
 
 export default Menu;

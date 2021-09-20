@@ -5,6 +5,9 @@ import { Spring } from 'react-spring/renderprops';
 import VisibilitySensor from 'react-visibility-sensor';
 import styled from 'styled-components';
 
+import Header from '../../../components/Typography/Header';
+import Text from '../../../components/Typography/Text';
+
 import past1 from '../../../assets/pastphotos/1 1.jpg';
 import past2 from '../../../assets/pastphotos/2 1.jpg';
 import past3 from '../../../assets/pastphotos/3 1.jpg';
@@ -13,9 +16,6 @@ import past5 from '../../../assets/pastphotos/5 1.jpg';
 import past6 from '../../../assets/pastphotos/6 1.jpg';
 
 const Photos = [past1, past2, past3, past4, past5, past6];
-
-import Header from '../../../components/Typography/Header';
-import Text from '../../../components/Typography/Text';
 
 const About = () => {
   const [statsShown, setStatsShown] = useState(false);
@@ -35,10 +35,10 @@ const About = () => {
             style={{ textAlign: 'left', width: '100%' }}
           >
             <Text dark>
-              Waterloo’s largest high school hackathon is back! JAMHacks V will
-              take place from May 22nd to 23rd. This year, we’re bringing
-              together 200+ students from high schools all over North America
-              for a full 24 hours of learning and creating!
+              Waterloo’s largest high school hackathon is back! JAMHacks 6 will
+              take place in 2021, exact TDB. Last year, we’re bringing together
+              200+ students from high schools all over North America for a full
+              24 hours of learning and creating!
             </Text>
             <br></br>
             <Text dark>
@@ -72,7 +72,7 @@ const About = () => {
                 <div className="about-stat-container">
                   <Spring
                     from={{ prizes: 0 }}
-                    to={{ prizes: isVisible ? 4000 : 0 }}
+                    to={{ prizes: isVisible ? 15000 : 0 }}
                   >
                     {({ prizes }) => (
                       <h2 className="about-stat">{'$' + prizes.toFixed(0)}</h2>
@@ -101,9 +101,13 @@ const About = () => {
             effect={'fade'}
             dots={false}
           >
-            {Photos.map((photo) => (
-              <div className="carousel-item-container">
-                <img className="carousel-item" src={photo} />
+            {Photos.map((photo, i) => (
+              <div key={i} className="carousel-item-container">
+                <img
+                  className="carousel-item"
+                  src={photo}
+                  alt="past photo of jamhacks"
+                />
               </div>
             ))}
           </Carousel>

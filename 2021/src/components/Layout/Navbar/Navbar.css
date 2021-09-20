@@ -27,7 +27,7 @@
 }
 
 .navbar-icons-div {
-  /* flex: 1.3; */
+  padding-top: 12px;
   width: 150px;
   min-width: 150px;
   display: flex;
@@ -43,19 +43,14 @@
 }
 
 .navbar-link-item {
+  color: #7b0ff7;
   margin: 0 10px;
-  color: white;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   line-height: 24px;
   transition: 0.15s ease-in all;
-}
-
-.navbar-link-item:hover {
-  cursor: pointer;
-  color: #251d96;
 }
 
 .scrolled-navbar {
@@ -158,19 +153,13 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height, or 171% */
 
-  /* text/headings */
   color: #7b0ff7;
   display: inline;
 }
 
 .navbar-mobile-link-item:hover {
   cursor: pointer;
-}
-
-.navbar-scrolled-link {
-  color: #7b0ff7;
 }
 
 .navbar-social-icon {

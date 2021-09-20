@@ -1,4 +1,5 @@
-//import ETH from '../assets/sponsorlogos/blueberry/ETH.png';
+import ETH from '../assets/sponsorlogos/blueberry/ETH.svg';
+import QuantStamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
 
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
 import CockroachDB from '../assets/sponsorlogos/strawberry/CockroachDB.svg';
@@ -20,10 +21,27 @@ import Repl from '../assets/sponsorlogos/peach/Replit.svg';
 import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
 import RStudio from '../assets/sponsorlogos/peach/RStudio.svg';
 import QCSYS from '../assets/sponsorlogos/peach/QCSYS.png';
+import EchoAR from '../assets/sponsorlogos/peach/EchoAR.png';
+import VolareLabs from '../assets/sponsorlogos/peach/VolareLabs.png';
+import Netlify from '../assets/sponsorlogos/peach/Netlify.png';
+
+import Voiceflow from '../assets/sponsorlogos/peach/Voiceflow.png';
+import Magoosh from '../assets/sponsorlogos/peach/Magoosh.png';
+import MapleSoft from '../assets/sponsorlogos/peach/MapleSoft.png';
+import TheCodex from '../assets/sponsorlogos/peach/TheCodex.svg';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 
-const blueberry = [];
+const blueberry = [
+  {
+    link: 'https://ethereum.foundation/',
+    logo: ETH,
+  },
+  {
+    link: 'https://quantstamp.com/',
+    logo: QuantStamp,
+  },
+];
 
 const strawberry = [
   {
@@ -52,6 +70,10 @@ const grape = [
 ];
 
 const peach = [
+  {
+    link: 'https://www.netlify.com/',
+    logo: Netlify,
+  },
   {
     link: 'https://www.framer.com/',
     logo: Framer,
@@ -97,8 +119,32 @@ const peach = [
     logo: QCSYS,
   },
   {
+    link: 'https://www.echoar.xyz/',
+    logo: EchoAR,
+  },
+  {
+    link: 'https://www.volarelabs.io/',
+    logo: VolareLabs,
+  },
+  {
     link: 'https://www.rstudio.com/',
     logo: RStudio,
+  },
+  {
+    link: 'https://www.voiceflow.com/',
+    logo: Voiceflow,
+  },
+  {
+    link: 'https://magoosh.com/',
+    logo: Magoosh,
+  },
+  {
+    link: 'https://www.maplesoft.com/',
+    logo: MapleSoft,
+  },
+  {
+    link: 'https://thecodex.me/',
+    logo: TheCodex,
   },
 ];
 
