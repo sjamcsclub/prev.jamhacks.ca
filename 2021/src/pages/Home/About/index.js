@@ -36,15 +36,15 @@ const About = () => {
           >
             <Text dark>
               Waterloo’s largest high school hackathon is back! JAMHacks 6 will
-              take place in 2021, exact TDB. Last year, we’re bringing together
-              200+ students from high schools all over North America for a full
-              24 hours of learning and creating!
+              take place in 2022, exact date TDB. Last year, we’re brought
+              together 200+ students from high schools all over North America
+              for a full 24 hours of learning and creating!
             </Text>
             <br></br>
             <Text dark>
-              During this 24 hour long innovation marathon, you’ll be able to
-              work in teams of up to 4 to create an app, game, website, robot,
-              gadget, or whatever your heart desires.
+              During this upcoming 24 hour long innovation marathon, you’ll be
+              able to work in teams of up to 4 to create an app, game, website,
+              robot, gadget, or whatever your heart desires.
             </Text>
           </div>
         </div>
