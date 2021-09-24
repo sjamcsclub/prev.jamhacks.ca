@@ -26,7 +26,7 @@ const Hero = ({ register }) => {
         <StyledLogo />
         <Subtitle>Learn, Connect, Innovate</Subtitle>
         <LocationText>Virtual Event</LocationText>
-        <DateText>2022 - TDB</DateText>
+        <DateText>2022 - TBD</DateText>
         <div style={{ margin: '1.5rem 0' }}>
           {register ? (
             <div className="hero-button-div">
@@ -42,7 +42,7 @@ const Hero = ({ register }) => {
                       width: '180px',
                       height: '40px',
                       zIndex: '50',
-                      backgroundColor: '#003e54',
+                      // backgroundColor: '#003e54',
                     }}
                   >
                     View Projects

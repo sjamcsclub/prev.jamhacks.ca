@@ -36,9 +36,9 @@ const About = () => {
           >
             <Text dark>
               Waterloo’s largest high school hackathon is back! JAMHacks 6 will
-              take place in 2022, exact date TDB. Last year, we’re brought
-              together 200+ students from high schools all over North America
-              for a full 24 hours of learning and creating!
+              take place in 2022, exact date TBD. Last year, we brought together
+              300 students from high schools all over North America for a full
+              24 hours of learning and creating!
             </Text>
             <br></br>
             <Text dark>
