@@ -78,10 +78,10 @@ class Footer extends Component {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://jamhacks.ca/2020/"
+              href="https://jamhacks.ca/2021/"
               className="footer-link"
             >
-              2020 Site
+              2021 Site
             </a>
             <a
               target="_blank"
