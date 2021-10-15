@@ -9,77 +9,85 @@ import Rohan from '../../../assets/headshots/Rohan.png';
 import Kevin from '../../../assets/headshots/Kevin.png';
 import Daniel from '../../../assets/headshots/Daniel.png';
 import Trevor from '../../../assets/headshots/Trevor.png';
-import Aditiya from '../../../assets/headshots/Aditiya.png';
+import Aditiya from '../../../assets/headshots/Aditya.png';
 import Fred from '../../../assets/headshots/Fred.png';
 import Qianxu from '../../../assets/headshots/Qianxu.png';
 import Arnav from '../../../assets/headshots/Arnav.png';
+import Andrew from '../../../assets/headshots/Andrew.png';
+import Calvin from '../../../assets/headshots/Calvin.png';
+import Evan from '../../../assets/headshots/Evan.png';
+import Luke from '../../../assets/headshots/Luke.png';
+import Angelina from '../../../assets/headshots/Angelina.png';
+import Freda from '../../../assets/headshots/Freda.png';
+import Nathan from '../../../assets/headshots/Nathan.png';
+import Sohil from '../../../assets/headshots/Sohil.png';
 
 const MemberData = [
   {
-    name: 'Cristian Bicheru',
-    role: 'Lead Organizer',
-    headshot: Cristian,
-    link: 'https://github.com/cristian-bicheru',
-  },
-  {
-    name: 'Michelle Ma',
-    role: 'Vice Lead',
-    headshot: Michelle,
-    link: 'https://www.linkedin.com/in/michelle-ma-a8b9031a1',
-  },
-  {
-    name: 'Yina Gao',
-    role: 'Vice Lead',
-    headshot: Yina,
-    link: null,
-  },
-  {
-    name: 'Rohan Shetty',
-    role: 'Logistics',
-    headshot: Rohan,
-    link: 'https://rohanshetty.me',
-  },
-  {
-    name: 'Kevin Gao',
-    role: 'Website and Design',
-    headshot: Kevin,
-    link: 'https://kevinboxugao.github.io/',
-  },
-  {
-    name: 'Daniel Yu',
-    role: 'Website',
-    headshot: Daniel,
-    link: 'https://www.linkedin.com/in/danielyu2004/',
-  },
-  {
-    name: 'Trevor Du',
-    role: 'Workshops',
-    headshot: Trevor,
-    link: 'https://github.com/tdude92',
-  },
-  {
     name: 'Aditya Keerthi',
-    role: 'Workshops',
+    role: 'Co-Lead',
     headshot: Aditiya,
     link: 'https://www.linkedin.com/in/aditya-keerthi-b93726197/',
   },
   {
-    name: 'Fred Yang',
-    role: 'Activity Lead',
-    headshot: Fred,
-    link: null,
-  },
-  {
     name: 'Qianxu Guo',
-    role: 'Marketing',
+    role: 'Co-Lead',
     headshot: Qianxu,
     link: 'https://www.linkedin.com/in/qianxu-guo-319808187/',
   },
   {
-    name: 'Arnav Tripathi',
+    name: 'Daniel Yu',
+    role: 'Co-Lead',
+    headshot: Daniel,
+    link: 'https://www.linkedin.com/in/danielyu2004/',
+  },
+  {
+    name: 'Andrew Yang',
+    role: 'Web Developer',
+    headshot: Andrew,
+    link: 'https://www.linkedin.com/in/andytubeee',
+  },
+  {
+    name: 'Calvin Salsali',
+    role: 'Logistics',
+    headshot: Calvin,
+    link: '#',
+  },
+  {
+    name: 'Evan Want',
+    role: 'Logistics',
+    headshot: Evan,
+    link: 'https://www.linkedin.com/in/evanwang04/',
+  },
+  {
+    name: 'Luke Zhang',
+    role: 'Logistics',
+    headshot: Luke,
+    link: 'https://www.linkedin.com/in/luke-zhang-1b8a89198/',
+  },
+  {
+    name: 'Sohil Athare',
+    role: 'Logistics',
+    headshot: Sohil,
+    link: 'https://www.linkedin.com/in/sohil-athare-450a9a1a9/',
+  },
+  {
+    name: 'Angelina Wang',
+    role: 'Marketing',
+    headshot: Angelina,
+    link: '#',
+  },
+  {
+    name: 'Freda Zhao',
+    role: 'Marketing',
+    headshot: Freda,
+    link: 'https://www.linkedin.com/in/freda-zhao-984442210/',
+  },
+  {
+    name: 'Nathan Wong',
     role: 'Finance',
-    headshot: Arnav,
-    link: null,
+    headshot: Nathan,
+    link: 'https://www.linkedin.com/in/nathan-wong-03362696/',
   },
 ];
 
