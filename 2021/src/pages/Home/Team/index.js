@@ -54,7 +54,7 @@ const MemberData = [
     link: '#',
   },
   {
-    name: 'Evan Want',
+    name: 'Evan Wang',
     role: 'Logistics',
     headshot: Evan,
     link: 'https://www.linkedin.com/in/evanwang04/',
