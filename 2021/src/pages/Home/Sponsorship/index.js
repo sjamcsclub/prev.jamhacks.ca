@@ -27,7 +27,7 @@ class Sponsor extends Component {
             <br></br>
             Interested in sponsoring? Check out our{' '}
             <a
-              href="/files/sponsorship1.pdf"
+              href="/files/sponsorship.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
