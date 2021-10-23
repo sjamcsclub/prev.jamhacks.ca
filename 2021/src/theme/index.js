@@ -7,7 +7,8 @@ const Theme = {
     },
     secondary: {
       light: '#77ffb7',
-      default: '#2AFF86',
+      // default: '#2AFF86',
+      default: '#000000',
       dark: '#00ca57',
     },
     background: {
