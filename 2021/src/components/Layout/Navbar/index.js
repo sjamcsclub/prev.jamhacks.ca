@@ -7,12 +7,17 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
+  faFacebookF,
   faInstagram,
   faInstagramSquare,
   faLinkedin,
+  faLinkedinIn,
   faMedium,
+  faMediumM,
   faTwitter,
+  faTwitterSquare,
   faYoutube,
+  faYoutubeSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import './Navbar.css';
 
@@ -139,23 +144,23 @@ const Navbar = ({ sections, color }) => {
       <div className="navbar-filler-div"></div>
       <div className="navbar-icons-div">
         <a href={Socials.linkedin} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
         <a
           href="https://www.instagram.com/jamhacks"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faInstagramSquare} />
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a href={Socials.twitter} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
         <a href={Socials.facebook} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebook} />
+          <FontAwesomeIcon icon={faFacebookF} />
         </a>
         <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faMedium} />
+          <FontAwesomeIcon icon={faMediumM} />
         </a>
         <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faYoutube} />
