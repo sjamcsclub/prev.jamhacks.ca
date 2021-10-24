@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
   faInstagram,
+  faInstagramSquare,
   faLinkedin,
   faMedium,
   faTwitter,
@@ -145,7 +146,7 @@ const Navbar = ({ sections, color }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faInstagramSquare} />
         </a>
         <a href={Socials.twitter} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} />
