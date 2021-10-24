@@ -3,14 +3,16 @@ import { Button } from 'antd';
 import { motion } from 'framer-motion';
 
 import styled from 'styled-components';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  LinkedinIcon,
-  InstagramIcon,
-  TwitterIcon,
-  FacebookIcon,
-  MediumIcon,
-  YoutubeIcon,
-} from '../../Icons/Socials';
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faMedium,
+  faTwitter,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import './Navbar.css';
 
 import Menu from './Menu';
@@ -136,26 +138,26 @@ const Navbar = ({ sections, color }) => {
       <div className="navbar-filler-div"></div>
       <div className="navbar-icons-div">
         <a href={Socials.linkedin} target="_blank" rel="noopener noreferrer">
-          <LinkedinIcon />
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a
           href="https://www.instagram.com/jamhacks"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <InstagramIcon />
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a href={Socials.twitter} target="_blank" rel="noopener noreferrer">
-          <TwitterIcon />
+          <FontAwesomeIcon icon={faTwitter} />
         </a>
         <a href={Socials.facebook} target="_blank" rel="noopener noreferrer">
-          <FacebookIcon />
+          <FontAwesomeIcon icon={faFacebook} />
         </a>
         <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
-          <MediumIcon />
+          <FontAwesomeIcon icon={faMedium} />
         </a>
         <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
-          <YoutubeIcon />
+          <FontAwesomeIcon icon={faYoutube} />
         </a>
       </div>
       <div className="hamburger" id="hamburger-1" onClick={handleClick}>

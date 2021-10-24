@@ -35,6 +35,11 @@
   margin-right: 30px;
 }
 
+.navbar-icons-div a {
+  color: #7b0ff7;
+  font-size: 1.3rem;
+}
+
 .navbar-action-div {
   display: flex;
   justify-content: center;
