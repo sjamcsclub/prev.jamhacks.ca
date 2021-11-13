@@ -13,6 +13,7 @@ import Blog from './Blog';
 import Contact from './Contact';
 
 import Env from '../../data/env';
+import BottomWave from './BottomWave';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Hero register={Env.register} />
       <TopWave />
       <About />
+      <BottomWave />
       {Env.schedule && <Schedule />}
       {Env.register && <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />}
       <Sponsorship />

@@ -21,6 +21,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@n8tb1t/use-scroll-position": "^2.0.3",
     "antd": "^4.4.2",
     "aos": "^2.3.4",
     "craco": "0.0.3",
