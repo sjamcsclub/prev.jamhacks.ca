@@ -46,7 +46,13 @@ const Newsletter = (props) => {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <RoundSearch
         size="large"
         placeholder="Enter your email address to stay connected"
@@ -78,6 +84,7 @@ const RoundSearch = styled(Input.Search)`
   .ant-input,
   .ant-input-group-addon {
     border-radius: 20px;
+    height: 40px;
   }
   max-width: 800px;
   ${media('sm')`
@@ -86,6 +93,10 @@ const RoundSearch = styled(Input.Search)`
     }
     .ant-input-search-button {
       font-size: 0.8rem;
+      height: 35px;
+    }
+    .ant-input,
+    .ant-input-group-addon {
       height: 35px;
     }
   `}

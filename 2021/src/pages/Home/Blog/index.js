@@ -39,6 +39,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   ${media('md')`
     flex-direction: column-reverse;
   `}

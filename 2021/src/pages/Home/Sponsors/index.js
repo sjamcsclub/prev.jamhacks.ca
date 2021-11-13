@@ -99,6 +99,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 10%;
+  z-index: 1;
 `;
 
 const Tier = styled.div`

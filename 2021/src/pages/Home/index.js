@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 
 import Hero from './Hero';
+import TopWave from './TopWave';
 import About from './About';
 import Mentor from './Mentor';
 import Schedule from './Schedule';
@@ -17,6 +18,7 @@ const Home = () => {
   return (
     <>
       <Hero register={Env.register} />
+      <TopWave />
       <About />
       {Env.schedule && <Schedule />}
       {Env.register && <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />}

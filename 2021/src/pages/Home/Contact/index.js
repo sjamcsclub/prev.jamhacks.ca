@@ -24,7 +24,9 @@ class Contact extends Component {
               </a>
             </Text>
             <Header>Subscribe to Newsletter</Header>
-            <Newsletter />
+            <div style={{ width: '80%', maxWidth: '800px' }}>
+              <Newsletter />
+            </div>
           </div>
         </div>
       </div>

@@ -52,7 +52,7 @@
   margin: 0 10px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
   transition: 0.15s ease-in all;
@@ -73,7 +73,6 @@
   width: 30px;
   height: 60px;
   background-image: url('../../../assets/logo/Logo.svg');
-  opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -199,7 +198,7 @@
 
 @media only screen and (max-width: 780px) {
   .navbar-div {
-    height: 70px;
+    height: 80px;
   }
 
   .navbar-links-div {

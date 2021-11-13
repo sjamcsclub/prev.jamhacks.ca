@@ -33,7 +33,7 @@ const Navbar = ({ sections, color }) => {
         window.pageYOffset ||
         (document.documentElement || document.body.parentNode || document.body)
           .scrollTop;
-      if (scrollTop > 10) {
+      if (scrollTop > window.innerHeight - 80) {
         document
           .getElementsByClassName('navbar-div')[0]
           .classList.add('scrolled-navbar');
