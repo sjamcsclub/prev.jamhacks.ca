@@ -1,5 +1,24 @@
 import React, { useEffect, useState } from 'react';
 
+const Wave = ({ height, colour }) => {
+  return (
+    <svg
+      preserveAspectRatio="none"
+      width="100%"
+      height={`${height * 0.75}px`}
+      viewBox="0 0 754 144"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ position: 'absolute', bottom: '-2px' }}
+    >
+      <path
+        d="M0 144V0C123 0 106.5 56.5 192 56.5C273.5 56.5 327.5 0 392 0C456.5 0 503.474 56.5 581.5 56.5C646 56.5 718.833 27.8333 754 0V144H0Z"
+        fill={colour}
+      />
+    </svg>
+  );
+};
+
 const TopWave = () => {
   const [waveHeight, setWaveHeight] = useState(0);
 
@@ -21,20 +40,8 @@ const TopWave = () => {
 
   return (
     <div style={{ width: '100%', zIndex: 2, height: '0px' }}>
-      <svg
-        preserveAspectRatio="none"
-        width="100%"
-        height={`${waveHeight}px`}
-        viewBox="0 0 754 144"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{ position: 'absolute', bottom: '-2px' }}
-      >
-        <path
-          d="M0 144V0C123 0 106.5 56.5 192 56.5C273.5 56.5 327.5 0 392 0C456.5 0 503.474 56.5 581.5 56.5C646 56.5 718.833 27.8333 754 0V144H0Z"
-          fill="#7b0ff7"
-        />
-      </svg>
+      <Wave height={waveHeight} colour={'#b600ff'} />
+      <Wave height={waveHeight * 0.75} colour={'#7b0ff7'} />
     </div>
   );
 };

@@ -68,6 +68,7 @@ const Container = styled.div`
   ${media('md')`
     flex-direction: column-reverse;
   `}
+  padding-top: 400px;
 `;
 
 const TextContainer = styled.div`

@@ -50,7 +50,6 @@ const Newsletter = (props) => {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
       }}
     >
       <RoundSearch
@@ -78,6 +77,7 @@ const SuccessMsg = styled.div`
 const ErrorMsg = styled.div`
   font-size: 1em;
   color: red;
+  text-align: left;
 `;
 
 const RoundSearch = styled(Input.Search)`
@@ -85,6 +85,9 @@ const RoundSearch = styled(Input.Search)`
   .ant-input-group-addon {
     border-radius: 20px;
     height: 40px;
+  }
+  .ant-input-search-button {
+    border-radius: 0px 20px 20px 0px !important;
   }
   max-width: 800px;
   ${media('sm')`
