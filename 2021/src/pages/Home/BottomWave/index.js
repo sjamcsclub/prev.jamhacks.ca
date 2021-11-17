@@ -21,6 +21,9 @@ const Wave = ({ colour, height }) => {
   );
 };
 
+// Lock Animation
+const lock = true;
+
 const BottomWave = () => {
   const [waveHeight, setWaveHeight] = useState(90);
   const [blockHeight, setBlockHeight] = useState(200);
@@ -37,9 +40,16 @@ const BottomWave = () => {
     }
 
     let x = val * Math.PI;
-    if (x > Math.PI) {
-      x = Math.PI;
+    if (lock) {
+      if (x > Math.PI / 2) {
+        x = Math.PI / 2;
+      }
+    } else {
+      if (x > Math.PI) {
+        x = Math.PI;
+      }
     }
+
     let height = Math.sin(x) * 400;
     if (height < 0) {
       height = Math.abs(height);
@@ -52,6 +62,11 @@ const BottomWave = () => {
           150 -
           window.innerHeight)) /
       window.innerHeight;
+    if (lock) {
+      if (x >= Math.PI / 2) {
+        val = 0.5;
+      }
+    }
     setBlockHeight(val * 250);
   }, []);
 

@@ -22,7 +22,7 @@ class Faq extends Component {
           <Collapse>
             {Questions.map((question, index) => (
               <Panel header={question.question} key={index}>
-                <p>{question.answer}</p>
+                <p style={{ marginBottom: '0px' }}>{question.answer}</p>
               </Panel>
             ))}
           </Collapse>
