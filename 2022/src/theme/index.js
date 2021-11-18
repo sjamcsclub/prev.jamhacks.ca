@@ -7,7 +7,7 @@ const Theme = {
     },
     secondary: {
       light: '#77ffb7',
-      default: '#2AFF86',
+      default: '#b600ff',
       // default: '#000000', // TEMP for consistency (black is ugly)
       dark: '#00ca57',
     },
