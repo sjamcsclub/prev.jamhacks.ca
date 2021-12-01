@@ -94,6 +94,7 @@ const SvgContainer = styled.div`
   & svg {
     width: 80%;
     height: 50%;
+    margin-right: 15%;
   }
 `;
 
