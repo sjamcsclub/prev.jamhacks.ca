@@ -62,6 +62,8 @@ const BottomWave = () => {
         width: '100%',
         zIndex: 2,
         height: '0px',
+        position: 'relative',
+        top: '-50px',
       }}
     >
       <div
