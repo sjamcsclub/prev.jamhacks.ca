@@ -65,10 +65,11 @@ const Container = styled.div`
   align-items: center;
   flex-direction: row-reverse;
   z-index: 1;
+  padding-top: 400px;
   ${media('md')`
     flex-direction: column-reverse;
+    padding-top: 350px;
   `}
-  padding-top: 400px;
 `;
 
 const TextContainer = styled.div`

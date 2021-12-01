@@ -40,7 +40,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  /* padding-top: 150px; */
   z-index: 1;
 }
 
@@ -91,6 +91,7 @@
   z-index: 5;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  margin-top: 120px;
 }
 
 .about-content-item {
@@ -147,8 +148,11 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .about-div {
-    padding-top: '80px';
+  /* .about-div {
+    padding-top: 80px;
+  } */
+  .about-content-row-div {
+    margin-top: 60px;
   }
   .about-content-subheading {
     font-size: 1rem;
