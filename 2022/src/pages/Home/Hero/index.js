@@ -100,7 +100,7 @@ const Hero = ({ register }) => {
           </div>
         </div>
       </div>
-      <div style={{ height: '100vh', zIndex: -10 }}></div>
+      <div style={{ height: '100vh', zIndex: 1 }}></div>
     </>
   );
 };

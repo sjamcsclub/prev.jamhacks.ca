@@ -206,7 +206,6 @@
 
 @media only screen and (max-width: 786px) {
   .hero-div {
-    min-height: calc(100vh);
     padding-top: 70px;
   }
   .hero-partners-div {

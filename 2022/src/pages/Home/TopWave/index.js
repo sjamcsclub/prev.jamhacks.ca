@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Wave = ({ height, colour, bottom }) => {
+const Wave = function ({ height, colour, bottom }) {
   return (
     <svg
       preserveAspectRatio="none"
@@ -19,13 +19,13 @@ const Wave = ({ height, colour, bottom }) => {
   );
 };
 
-const TopWave = () => {
+const TopWave = function () {
   const [waveHeight, setWaveHeight] = useState(0);
 
   useEffect(() => {
     window.onscroll = () => {
-      let navbar = 80; // accounting for navbar height
-      let val = window.pageYOffset / (window.innerHeight - navbar);
+      const navbar = 80; // accounting for navbar height
+      const val = window.pageYOffset / (window.innerHeight - navbar);
       let x = val * Math.PI;
       if (x > Math.PI) {
         x = Math.PI;
@@ -40,8 +40,8 @@ const TopWave = () => {
 
   return (
     <div style={{ width: '100%', zIndex: 2, height: '0px' }}>
-      <Wave height={waveHeight} colour={'#b600ff'} bottom={'-1px'} />
-      <Wave height={waveHeight * 0.75} colour={'#7b0ff7'} bottom={'-2px'} />
+      <Wave height={waveHeight} colour="#b600ff" bottom="-1px" />
+      <Wave height={waveHeight * 0.75} colour="#7b0ff7" bottom="-2px" />
     </div>
   );
 };

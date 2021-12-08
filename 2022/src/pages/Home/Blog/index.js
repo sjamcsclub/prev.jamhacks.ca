@@ -66,7 +66,7 @@ const StyledBlogImage = styled.div`
   display: flex;
   & svg {
     width: 80%;
-    height: auto;
+    height: 50%;
   }
 `;
 
