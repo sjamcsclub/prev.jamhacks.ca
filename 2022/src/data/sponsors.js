@@ -4,8 +4,8 @@ import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
 
 import MapleSoft from '../assets/sponsorlogos/peach/MapleSoft.png';
 import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
-import RStudio from '../assets/sponsorlogos/peach/RStudio.svg';
-import Echo3d from '../assets/sponsorlogos/peach/Echo3d.png';
+import RStudio from '../assets/sponsorlogos/peach/RStudio.png';
+import Echo3D from '../assets/sponsorlogos/peach/Echo3D.png';
 import InterviewCake from '../assets/sponsorlogos/peach/InterviewCake.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
@@ -33,7 +33,7 @@ const peach = [
   },
   {
     link: 'https://www.echo3d.co/',
-    logo: Echo3d,
+    logo: Echo3D,
   },
   {
     link: 'https://www.rstudio.com/',

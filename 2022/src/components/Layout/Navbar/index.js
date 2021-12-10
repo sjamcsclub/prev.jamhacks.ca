@@ -128,7 +128,7 @@ const Navbar = ({ sections, color }) => {
               className="navbar-link-item"
               onClick={() =>
                 window.scrollTo({
-                  top: document.getElementById(link.id).offsetTop - 80,
+                  top: document.getElementById(link.id).offsetTop - (80 - 1),
                   left: 0,
                   behavior: 'smooth',
                 })
