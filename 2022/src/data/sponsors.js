@@ -12,7 +12,7 @@ import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 
 const blueberry = [
   {
-    link: 'https://www.hestia.academy/',
+    link: 'https://tmmc.ca/',
     logo: TMMC,
   },
 ];
@@ -44,7 +44,7 @@ const peach = [
     logo: MapleSoft,
   },
   {
-    link: 'https://www.maplesoft.com/',
+    link: 'https://www.interviewcake.com/',
     logo: InterviewCake,
   },
 ];
