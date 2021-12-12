@@ -44,7 +44,7 @@ const TopWave = function () {
     <div
       style={{
         height: '0px',
-        zIndex: 10,
+        zIndex: 1,
         background: '#7b0ff7',
       }}
     >
