@@ -110,6 +110,7 @@ const Container = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
+  background: #7b0ff7;
 `;
 
 export default App;

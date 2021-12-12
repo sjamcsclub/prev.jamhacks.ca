@@ -3,7 +3,7 @@ import TMMC from '../assets/sponsorlogos/blueberry/TMMC.png';
 import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
 
 import MapleSoft from '../assets/sponsorlogos/peach/MapleSoft.png';
-import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
+import Bestbuy from '../assets/sponsorlogos/peach/BestBuy.png';
 import RStudio from '../assets/sponsorlogos/peach/RStudio.png';
 import Echo3D from '../assets/sponsorlogos/peach/Echo3D.png';
 import InterviewCake from '../assets/sponsorlogos/peach/InterviewCake.png';
