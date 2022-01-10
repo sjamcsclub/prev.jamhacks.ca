@@ -17,7 +17,7 @@ const SponsorDisplay = ({}) => {
   return (
     <Container>
       <Header data-aos="fade-up" style={{ marginTop: 100 }}>
-        Past Sponsors
+        Our Sponsors
       </Header>
       <Tier data-aos="fade-up">
         {blueberry.map((val, i) => {

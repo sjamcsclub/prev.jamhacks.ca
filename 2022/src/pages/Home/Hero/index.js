@@ -21,7 +21,7 @@ const devpostGalleryLink = 'https://jamhacks-v.devpost.com/project-gallery';
 
 const Hero = ({ register }) => {
   return (
-    <>
+    <div style={{ height: 'fit-content' }}>
       <div className="hero-div parallax">
         <div className="hero-content-div">
           <StyledLogo />
@@ -101,7 +101,7 @@ const Hero = ({ register }) => {
         </div>
       </div>
       <div style={{ height: '100vh', zIndex: -10 }}></div>
-    </>
+    </div>
   );
 };
 

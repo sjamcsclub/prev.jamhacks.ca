@@ -14,43 +14,45 @@ class Sponsor extends Component {
   }
   render() {
     return (
-      <Container id="sponsor-section">
-        <TextContainer>
-          <Header>Sponsor the Next Generation</Header>
+      <Container>
+        <ContentContainer id="sponsor-section">
+          <TextContainer>
+            <Header>Sponsor the Next Generation</Header>
 
-          <Text>
-            Want to make a lasting impression on our future innovators, coders,
-            and entrepreneurs? Consider sponsoring JAMHacks! By doing so, you
-            can connect with our hackers, gain exposure among those interested
-            in tech, and even seek out potential recruits!
-            <br></br>
-            <br></br>
-            Interested in sponsoring? Check out our{' '}
+            <Text>
+              Want to make a lasting impression on our future innovators,
+              coders, and entrepreneurs? Consider sponsoring JAMHacks! By doing
+              so, you can connect with our hackers, gain exposure among those
+              interested in tech, and even seek out potential recruits!
+              <br></br>
+              <br></br>
+              Interested in sponsoring? Check out our{' '}
+              <a
+                href="/files/sponsorship.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                prospectus
+              </a>{' '}
+              or contact us at{' '}
+              <a href="mailto:sponsor@jamhacks.ca">sponsor@jamhacks.ca</a>
+            </Text>
             <a
-              href="/files/sponsorship.pdf"
+              href="mailto:sponsor@jamhacks.ca"
               target="_blank"
               rel="noopener noreferrer"
             >
-              prospectus
-            </a>{' '}
-            or contact us at{' '}
-            <a href="mailto:sponsor@jamhacks.ca">sponsor@jamhacks.ca</a>
-          </Text>
-          <a
-            href="mailto:sponsor@jamhacks.ca"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button type="primary" style={{ width: '260px', height: '40px' }}>
-              Become a Sponsor
-            </Button>
-          </a>
-        </TextContainer>
-        <ImageContainer data-aos="fade-up">
-          <SvgContainer>
-            <SponsorImage />
-          </SvgContainer>
-        </ImageContainer>
+              <Button type="primary" style={{ width: '260px', height: '40px' }}>
+                Become a Sponsor
+              </Button>
+            </a>
+          </TextContainer>
+          <ImageContainer data-aos="fade-up">
+            <SvgContainer>
+              <SponsorImage />
+            </SvgContainer>
+          </ImageContainer>
+        </ContentContainer>
       </Container>
     );
   }
@@ -60,15 +62,22 @@ const Container = styled.div`
   background: #fbf9ff;
   padding: 0 10%;
   width: 100%;
+  z-index: 1;
+  padding-top: 350px;
+  ${media('md')`
+    padding-top: 350px;
+  `}
+`;
+
+const ContentContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
   z-index: 1;
-  padding-top: 400px;
   ${media('md')`
     flex-direction: column-reverse;
-    padding-top: 350px;
   `}
 `;
 
@@ -78,6 +87,7 @@ const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 1em 0;
+  margin-top: 50px;
 `;
 
 const ImageContainer = styled.div`
@@ -86,6 +96,7 @@ const ImageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 1em 0;
+  margin-top: 50px;
 `;
 
 const SvgContainer = styled.div`

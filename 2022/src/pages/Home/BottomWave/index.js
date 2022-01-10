@@ -40,6 +40,7 @@ const BottomWave = () => {
     }
 
     let x = val * Math.PI;
+    console.log(x);
     if (lock) {
       if (x > Math.PI / 2) {
         x = Math.PI / 2;
@@ -59,15 +60,15 @@ const BottomWave = () => {
     val =
       (Math.abs(currPos.y) -
         (document.getElementById('sponsor-section').offsetTop +
-          150 -
+          0 -
           window.innerHeight)) /
       window.innerHeight;
     if (lock) {
-      if (x >= Math.PI / 2) {
+      if (x >= Math.PI * 0.55) {
         val = 0.5;
       }
     }
-    setBlockHeight(val * 250);
+    setBlockHeight(val * 200);
   }, []);
 
   return (
@@ -78,7 +79,7 @@ const BottomWave = () => {
         zIndex: 2,
         height: '0px',
         position: 'relative',
-        top: '-50px',
+        top: '-5px',
       }}
     >
       <div
