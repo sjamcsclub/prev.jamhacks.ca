@@ -7,6 +7,7 @@ import Bestbuy from '../assets/sponsorlogos/peach/BestBuy.png';
 import RStudio from '../assets/sponsorlogos/peach/RStudio.png';
 import Echo3D from '../assets/sponsorlogos/peach/Echo3D.png';
 import InterviewCake from '../assets/sponsorlogos/peach/InterviewCake.png';
+import Framer from '../assets/sponsorlogos/peach/Framer.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 
@@ -46,6 +47,10 @@ const peach = [
   {
     link: 'https://www.interviewcake.com/',
     logo: InterviewCake,
+  },
+  {
+    link: 'https://www.framer.com/fp/',
+    logo: Framer,
   },
 ];
 
