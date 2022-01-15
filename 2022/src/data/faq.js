@@ -1,4 +1,4 @@
-const Questions = [
+const QuestionsC1 = [
   {
     question: 'What is a hackathon?',
     answer:
@@ -24,6 +24,8 @@ const Questions = [
     answer:
       'Our events are designed to fit everyone’s needs, so there will be everything from programming, to hardware, even to business and marketing. We know how to have fun, too—expect tons of games and contests!',
   },
+];
+const QuestionsC2 = [
   {
     question: 'How big can my team be?',
     answer: 'Teams of up to four are allowed to participate in the event.',
@@ -39,10 +41,15 @@ const Questions = [
       'Your project can be about anything you can dream of—as long as it involves technology in some manner.',
   },
   {
+    question: 'Are there people to help me?',
+    answer:
+      'Yes, we will have professional mentors from universities and industries to guide you through your project',
+  },
+  {
     question: 'Have a question that isn’t listed here?',
     answer:
       'Feel free to email us at hello@jamhacks.ca or send us a direct message on Instagram @jamhacks.',
   },
 ];
 
-export default Questions;
+export { QuestionsC1, QuestionsC2 };
