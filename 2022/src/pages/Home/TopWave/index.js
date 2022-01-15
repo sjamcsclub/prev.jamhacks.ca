@@ -5,7 +5,7 @@ const Wave = function ({ height, colour, bottom }) {
     <svg
       preserveAspectRatio="none"
       width="100%"
-      height={`${height * 0.75}px`}
+      height={`${Math.round(height * 0.75)}px`}
       viewBox="0 0 754 144"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

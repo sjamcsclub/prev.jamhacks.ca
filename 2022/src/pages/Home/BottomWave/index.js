@@ -11,7 +11,7 @@ const Wave = ({ colour, height }) => {
         width: '100%',
         position: 'absolute',
       }}
-      height={`${height * 0.6}px`}
+      height={`${Math.round(height * 0.6)}px`}
     >
       <path
         fill={colour}
@@ -40,7 +40,7 @@ const BottomWave = () => {
     }
 
     let x = val * Math.PI;
-    console.log(x);
+
     if (lock) {
       if (x > Math.PI / 2) {
         x = Math.PI / 2;
@@ -93,7 +93,7 @@ const BottomWave = () => {
       >
         <div
           style={{
-            height: `${blockHeight}px`,
+            height: `${Math.round(blockHeight)}px`,
             width: '100%',
             background: '#7b0ff7',
           }}
