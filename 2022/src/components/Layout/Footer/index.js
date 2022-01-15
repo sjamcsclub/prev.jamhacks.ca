@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
 import styled from 'styled-components';
+import FooterWave from '../../../pages/Home/FooterWave';
 import './Footer.css';
 
 import {
@@ -22,6 +23,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer-div">
+        <FooterWave />
         <div className="footer-content-div">
           <div className="footer-title-content">Follow us on social media</div>
           <div className="footer-icons-div" style={{ marginBottom: '20px' }}>

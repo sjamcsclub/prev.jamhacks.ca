@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: space-around;
   min-height: 270px;
-  margin-left: 30px;
+  margin-left: 140px;
 }
 .footer-bottom-div {
   min-height: 60px;
@@ -22,6 +22,7 @@
   align-items: flex-start;
   width: 100%;
   height: fit-content;
+  padding-left: 100px;
 }
 
 .footer-title-content {

@@ -85,9 +85,12 @@ const RoundSearch = styled(Input.Search)`
   .ant-input-group-addon {
     border-radius: 20px;
     height: 40px;
+    padding-left: 20px;
   }
   .ant-input-search-button {
     border-radius: 0px 20px 20px 0px !important;
+    color: #7b0ef7;
+    background: white;
   }
   max-width: 800px;
   ${media('sm')`
