@@ -8,6 +8,8 @@ const Newsletter = (props) => {
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const location = props.location;
+
   const validateEmail = (email) => {
     if (
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
@@ -45,6 +47,34 @@ const Newsletter = (props) => {
     setLoading(false);
   };
 
+  const RoundSearch = styled(Input.Search)`
+    .ant-input,
+    .ant-input-group-addon {
+      border-radius: 20px;
+      height: 40px;
+      padding-left: 20px;
+    }
+    .ant-input-search-button {
+      border-radius: 0px 20px 20px 0px !important;
+      color: ${location === 'footer' ? '#7b0ef7' : 'white'};
+      background: ${location === 'footer' ? 'white' : '#7b0ef7'};
+    }
+    max-width: 800px;
+    ${media('sm')`
+     .ant-input {
+      font-size: 0.8rem;
+    }
+    .ant-input-search-button {
+      font-size: 0.8rem;
+      height: 35px;
+    }
+    .ant-input,
+    .ant-input-group-addon {
+      height: 35px;
+    }
+  `}
+  `;
+
   return (
     <div
       style={{
@@ -78,34 +108,6 @@ const ErrorMsg = styled.div`
   font-size: 1em;
   color: red;
   text-align: left;
-`;
-
-const RoundSearch = styled(Input.Search)`
-  .ant-input,
-  .ant-input-group-addon {
-    border-radius: 20px;
-    height: 40px;
-    padding-left: 20px;
-  }
-  .ant-input-search-button {
-    border-radius: 0px 20px 20px 0px !important;
-    color: #7b0ef7;
-    background: white;
-  }
-  max-width: 800px;
-  ${media('sm')`
-     .ant-input {
-      font-size: 0.8rem;
-    }
-    .ant-input-search-button {
-      font-size: 0.8rem;
-      height: 35px;
-    }
-    .ant-input,
-    .ant-input-group-addon {
-      height: 35px;
-    }
-  `}
 `;
 
 export default Newsletter;

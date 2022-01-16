@@ -39,16 +39,14 @@ const FooterWave = function () {
           padding: '-2px',
         }}
       >
-        <div
-         className="footer-wave-inner-div"
-        >
+        <div className="footer-wave-inner-div">
           <h1 style={{ color: 'white' }}>Still got a question?</h1>
           <p>
             Feel free to send us an email at{' '}
             <a style={{ color: 'lightgrey' }}>contact@jamhacks.ca</a>{' '}
           </p>
           <h1 style={{ color: 'white' }}>Subscribe to Newsletter</h1>
-          <Newsletter />
+          <Newsletter location="footer" />
         </div>
         <Wave />
       </div>
