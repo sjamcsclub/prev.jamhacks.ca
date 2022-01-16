@@ -43,7 +43,7 @@ const QuestionsC2 = [
   {
     question: 'Are there people to help me?',
     answer:
-      'Yes, we will have professional mentors from universities and industries to guide you through your project',
+      'Yes, we will have professional mentors from universities and industries to guide you through your project.',
   },
   {
     question: 'Have a question that isn’t listed here?',

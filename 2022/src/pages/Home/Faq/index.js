@@ -19,20 +19,24 @@ class Faq extends Component {
       <div className="faq-div" id="faq-section">
         <Header>Frequently Asked Questions</Header>
         <div className="faq-content-div" data-aos="fade-up">
-          <Collapse>
-            {QuestionsC1.map((question, index) => (
-              <Panel header={question.question} key={index}>
-                <p style={{ marginBottom: '0px' }}>{question.answer}</p>
-              </Panel>
-            ))}
-          </Collapse>
-          <Collapse>
-            {QuestionsC2.map((question, index) => (
-              <Panel header={question.question} key={index}>
-                <p style={{ marginBottom: '0px' }}>{question.answer}</p>
-              </Panel>
-            ))}
-          </Collapse>
+          <div className="faq-content-div-col1">
+            <Collapse>
+              {QuestionsC1.map((question, index) => (
+                <Panel header={question.question} key={index}>
+                  <p style={{ marginBottom: '0px' }}>{question.answer}</p>
+                </Panel>
+              ))}
+            </Collapse>
+          </div>
+          <div className="faq-content-div-col1">
+            <Collapse>
+              {QuestionsC2.map((question, index) => (
+                <Panel header={question.question} key={index}>
+                  <p style={{ marginBottom: '0px' }}>{question.answer}</p>
+                </Panel>
+              ))}
+            </Collapse>{' '}
+          </div>
         </div>
       </div>
     );

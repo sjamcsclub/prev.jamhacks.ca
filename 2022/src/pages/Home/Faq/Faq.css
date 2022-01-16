@@ -22,3 +22,7 @@
   /* flex-wrap: wrap; */
   gap: 20px;
 }
+
+.faq-content-div-col1 {
+  max-width: 400px;
+}
