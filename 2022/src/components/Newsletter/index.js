@@ -75,6 +75,17 @@ const Newsletter = (props) => {
   `}
   `;
 
+  const SuccessMsg = styled.div`
+    font-size: 1em;
+    color: ${location === 'footer' ? 'white' : 'green'};
+  `;
+
+  const ErrorMsg = styled.div`
+    font-size: 1em;
+    color: ${location === 'footer' ? 'white' : 'red'};
+    text-align: left;
+  `;
+
   return (
     <div
       style={{
@@ -98,16 +109,5 @@ const Newsletter = (props) => {
     </div>
   );
 };
-
-const SuccessMsg = styled.div`
-  font-size: 1em;
-  color: green;
-`;
-
-const ErrorMsg = styled.div`
-  font-size: 1em;
-  color: red;
-  text-align: left;
-`;
 
 export default Newsletter;

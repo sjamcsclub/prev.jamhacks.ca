@@ -67,6 +67,7 @@ class Footer extends Component {
               width: '100%',
               flexWrap: 'wrap',
               height: 'fit-content',
+              marginBottom: '20px',
             }}
           >
             <a href="/">

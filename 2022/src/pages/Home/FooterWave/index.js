@@ -7,7 +7,7 @@ const Wave = function () {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      height="500"
+      height="450"
       width="100%"
       preserveAspectRatio="none"
       style={{ position: 'absolute', bottom: -10 }}
@@ -37,6 +37,7 @@ const FooterWave = function () {
           position: 'relative',
           height: '0px',
           padding: '-2px',
+          display: 'flex',
         }}
       >
         <div className="footer-wave-inner-div">
