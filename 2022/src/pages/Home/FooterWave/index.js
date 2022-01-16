@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Newsletter from '../../../components/Newsletter';
+import './FooterWave.css';
 
 const Wave = function () {
   return (
@@ -39,15 +40,7 @@ const FooterWave = function () {
         }}
       >
         <div
-          style={{
-            position: 'absolute',
-            bottom: 90,
-            marginLeft: 120,
-            zIndex: 2,
-            padding: '20px',
-            color: 'white',
-            width: '80%',
-          }}
+         className="footer-wave-inner-div"
         >
           <h1 style={{ color: 'white' }}>Still got a question?</h1>
           <p>

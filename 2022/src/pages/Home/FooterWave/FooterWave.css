@@ -1,0 +1,9 @@
+.footer-wave-inner-div {
+  position: absolute;
+  bottom: 90px;
+  margin-left: 8%;
+  z-index: 2;
+  padding: 20px;
+  color: white;
+  width: 80%;
+}
