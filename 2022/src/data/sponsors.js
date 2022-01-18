@@ -1,6 +1,9 @@
 import TMMC from '../assets/sponsorlogos/blueberry/TMMC.png';
+import Quantstamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
 
 import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
+
+import IQC from '../assets/sponsorlogos/grape/IQC.png';
 
 import MapleSoft from '../assets/sponsorlogos/peach/MapleSoft.png';
 import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
@@ -16,6 +19,10 @@ const blueberry = [
     link: 'https://tmmc.ca/',
     logo: TMMC,
   },
+  {
+    link: 'https://quantstamp.com/',
+    logo: Quantstamp,
+  },
 ];
 
 const strawberry = [
@@ -25,7 +32,12 @@ const strawberry = [
   },
 ];
 
-const grape = [];
+const grape = [
+  {
+    link: 'https://uwaterloo.ca/institute-for-quantum-computing/',
+    logo: IQC,
+  },
+];
 
 const peach = [
   {
