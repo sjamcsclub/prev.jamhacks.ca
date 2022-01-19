@@ -7,6 +7,14 @@
   width: 80%;
 }
 
+.footer-wave-link {
+  color: lightgrey;
+}
+
+.footer-wave-link:hover {
+  color: #b600ff;
+}
+
 @media only screen and (max-width: 600px) {
   .footer-wave-inner-div h1 {
     font-size: 5vw;

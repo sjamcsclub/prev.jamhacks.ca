@@ -43,8 +43,8 @@ const FooterWave = function () {
         <div className="footer-wave-inner-div">
           <h1 style={{ color: 'white' }}>Still got a question?</h1>
           <p>
-            Feel free to send us an email at{' '}
-            <a style={{ color: 'lightgrey' }}>contact@jamhacks.ca</a>{' '}
+            Feel free to send us an email at{'  '}
+            <a className="footer-wave-link">contact@jamhacks.ca</a>{' '}
           </p>
           <h1 style={{ color: 'white' }}>Subscribe to Newsletter</h1>
           <Newsletter location="footer" />

@@ -41,9 +41,9 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "DISABLE_ESLINT_PLUGIN=true craco start",
+    "start": "craco start",
     "lint": "prettier --write \"**/*.{js,jsx,json}\"",
-    "build": "DISABLE_ESLINT_PLUGIN=true craco build",
+    "build": "craco build",
     "test": "DISABLE_ESLINT_PLUGIN=true craco test",
     "eject": "react-scripts eject"
   },

@@ -14,8 +14,31 @@ import past3 from '../../../assets/pastphotos/3 1.jpg';
 import past4 from '../../../assets/pastphotos/4 1.jpg';
 import past5 from '../../../assets/pastphotos/5 1.jpg';
 import past6 from '../../../assets/pastphotos/6 1.jpg';
+import past7 from '../../../assets/pastphotos/7.jpg';
+import past8 from '../../../assets/pastphotos/8.jpg';
+import past9 from '../../../assets/pastphotos/9.jpg';
 
-const Photos = [past1, past2, past3, past4, past5, past6];
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+  return array;
+}
+
+const Photos = [past1, past2, past3, past4, past5, past6, past7, past8, past9];
+shuffle(Photos);
+console.log('HI');
 
 const About = () => {
   const [statsShown, setStatsShown] = useState(false);
@@ -36,9 +59,9 @@ const About = () => {
           >
             <Text dark>
               Waterloo’s largest high school hackathon is back! JAMHacks 6 will
-              take place in 2022, exact date TBD. Last year, we brought together
-              300 students from high schools all over North America for a full
-              24 hours of learning and creating!
+              take place virtually again in 2022 May, exact date TBD. Last year,
+              we brought together 300 students from high schools all over North
+              America for a full 24 hours of learning and creating!
             </Text>
             <br></br>
             <Text dark>
