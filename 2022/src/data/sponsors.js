@@ -32,7 +32,7 @@ const strawberry = [
     logo: HestiaAcademy,
   },
   {
-    link: 'https://www.hestia.academy/',
+    link: 'https://uwaterloo.ca/',
     logo: UW,
   },
 ];
