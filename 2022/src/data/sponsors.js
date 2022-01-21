@@ -2,6 +2,7 @@ import TMMC from '../assets/sponsorlogos/blueberry/TMMC.png';
 import Quantstamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
 
 import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
+import UW from '../assets/sponsorlogos/strawberry/UW.png';
 
 import IQC from '../assets/sponsorlogos/grape/IQC.png';
 
@@ -29,6 +30,10 @@ const strawberry = [
   {
     link: 'https://www.hestia.academy/',
     logo: HestiaAcademy,
+  },
+  {
+    link: 'https://www.hestia.academy/',
+    logo: UW,
   },
 ];
 
