@@ -86,12 +86,12 @@ Copyright (c) 2021 JAMHacks.
             <Container>
               <Switch>
                 <Route exact path="/">
-                  <Navbar sections={HomeNavData} />
+                  <Navbar sections={HomeNavData} location="home" />
                   <Home />
                   <Footer />
                 </Route>
                 <Route exact path="/privacy-policy">
-                  <Navbar sections={PrivacyNavData} />
+                  <Navbar sections={PrivacyNavData} location="privacy" />
                   <Privacy />
                   <Footer />
                 </Route>
@@ -110,6 +110,7 @@ const Container = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
+  background: #fbf9ff;
 `;
 
 export default App;

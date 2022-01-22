@@ -5,6 +5,7 @@ import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
 
 import IQC from '../assets/sponsorlogos/grape/IQC.png';
+import Cognitive from '../assets/sponsorlogos/grape/Cognitive.png';
 
 import MapleSoft from '../assets/sponsorlogos/peach/MapleSoft.png';
 import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
@@ -12,6 +13,10 @@ import RStudio from '../assets/sponsorlogos/peach/RStudio.png';
 import Echo3D from '../assets/sponsorlogos/peach/Echo3d.png';
 import InterviewCake from '../assets/sponsorlogos/peach/InterviewCake.png';
 import Framer from '../assets/sponsorlogos/peach/Framer.png';
+import OnePassword from '../assets/sponsorlogos/peach/1Password.png';
+import Bounce from '../assets/sponsorlogos/peach/Bounce.png';
+import Linode from '../assets/sponsorlogos/peach/Linode.png';
+import XYZ from '../assets/sponsorlogos/peach/xyz.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 
@@ -42,6 +47,10 @@ const grape = [
     link: 'https://uwaterloo.ca/institute-for-quantum-computing/',
     logo: IQC,
   },
+  {
+    link: 'https://www.cognitivesystems.com/',
+    logo: Cognitive,
+  },
 ];
 
 const peach = [
@@ -68,6 +77,22 @@ const peach = [
   {
     link: 'https://www.framer.com/fp/',
     logo: Framer,
+  },
+  {
+    link: 'https://1password.com/',
+    logo: OnePassword,
+  },
+  {
+    link: 'https://www.bouncelife.com/',
+    logo: Bounce,
+  },
+  {
+    link: 'https://www.linode.com/',
+    logo: Linode,
+  },
+  {
+    link: 'https://gen.xyz/',
+    logo: XYZ,
   },
 ];
 

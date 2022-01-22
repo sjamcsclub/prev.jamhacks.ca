@@ -4,14 +4,15 @@ import styled from 'styled-components';
 import FooterWave from '../../../pages/Home/FooterWave';
 import './Footer.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  LinkedinIcon,
-  InstagramIcon,
-  TwitterIcon,
-  FacebookIcon,
-  MediumIcon,
-  YoutubeIcon,
-} from '../../Icons/Socials';
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+  faMediumM,
+  faTwitter,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import Socials from '../../../data/socials';
 
 class Footer extends Component {
@@ -31,31 +32,49 @@ class Footer extends Component {
               href={Socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: 'white' }}
             >
-              <LinkedinIcon primary="#ffffff" />
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
             <a
               href={Socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: 'white' }}
             >
-              <InstagramIcon primary="#ffffff" />
-            </a>
-            <a href={Socials.twitter} target="_blank" rel="noopener noreferrer">
-              <TwitterIcon primary="#ffffff" />
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
-              href={Socials.facebook}
               target="_blank"
               rel="noopener noreferrer"
+              href={Socials.twitter}
+              style={{ color: 'white' }}
             >
-              <FacebookIcon primary="#ffffff" />
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
-              <MediumIcon primary="#ffffff" />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={Socials.facebook}
+              style={{ color: 'white' }}
+            >
+              <FontAwesomeIcon icon={faFacebookF} />
             </a>
-            <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
-              <YoutubeIcon primary="#ffffff" />
+            <a
+              href={Socials.medium}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'white' }}
+            >
+              <FontAwesomeIcon icon={faMediumM} />
+            </a>
+            <a
+              href={Socials.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'white' }}
+            >
+              <FontAwesomeIcon icon={faYoutube} />
             </a>
           </div>
         </div>
@@ -74,7 +93,7 @@ class Footer extends Component {
               <div className="footer-logo"></div>
             </a>
             <div className="footer-copyright">
-              Copyright © 2021 JAMHacks.{' '}
+              Copyright © 2022 JAMHacks.{' '}
               <br className="footer-copyright-linebreak"></br> All rights
               reserved.
             </div>

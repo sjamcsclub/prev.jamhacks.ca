@@ -3,14 +3,15 @@ import { Button } from 'antd';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  LinkedinIcon,
-  InstagramIcon,
-  TwitterIcon,
-  FacebookIcon,
-  MediumIcon,
-  YoutubeIcon,
-} from '../../../Icons/Socials';
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+  faMediumM,
+  faTwitter,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import Socials from '../../../../data/socials';
 
 //animation variants
@@ -65,7 +66,7 @@ const Menu = ({ sections, open }) => {
             rel="noopener noreferrer"
             className="social-icon linkedin "
           >
-            <LinkedinIcon />
+            <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
           <a
             href={Socials.instagram}
@@ -73,7 +74,7 @@ const Menu = ({ sections, open }) => {
             rel="noopener noreferrer"
             className="social-icon instagram "
           >
-            <InstagramIcon />
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
             target="_blank"
@@ -81,7 +82,7 @@ const Menu = ({ sections, open }) => {
             href={Socials.twitter}
             className="social-icon twitter "
           >
-            <TwitterIcon />
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a
             target="_blank"
@@ -89,13 +90,23 @@ const Menu = ({ sections, open }) => {
             href={Socials.facebook}
             className="social-icon facebook "
           >
-            <FacebookIcon />
+            <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href={Socials.medium} target="_blank" rel="noopener noreferrer">
-            <MediumIcon />
+          <a
+            href={Socials.medium}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon facebook "
+          >
+            <FontAwesomeIcon icon={faMediumM} />
           </a>
-          <a href={Socials.youtube} target="_blank" rel="noopener noreferrer">
-            <YoutubeIcon />
+          <a
+            href={Socials.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon facebook "
+          >
+            <FontAwesomeIcon icon={faYoutube} />
           </a>
         </div>
       </div>
