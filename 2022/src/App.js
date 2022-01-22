@@ -13,6 +13,7 @@ import Loading from './pages/Loading';
 //data
 import HomeNavData from './data/Navbar/Home.js';
 import PrivacyNavData from './data/Navbar/Privacy.js';
+import CodeConductNavData from './data/Navbar/CodeConduct.js';
 
 import './App.less';
 import Theme from './theme';
@@ -27,6 +28,7 @@ import 'firebase/firestore';
 //pages
 const Home = React.lazy(() => import('./pages/Home'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
+const CodeConduct = React.lazy(() => import('./pages/CodeConduct'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 var firebaseConfig = {
@@ -93,6 +95,11 @@ Copyright (c) 2021 JAMHacks.
                 <Route exact path="/privacy-policy">
                   <Navbar sections={PrivacyNavData} location="privacy" />
                   <Privacy />
+                  <Footer />
+                </Route>
+                <Route exact path="/code-of-conduct">
+                  <Navbar sections={CodeConductNavData} location="privacy" />
+                  <CodeConduct />
                   <Footer />
                 </Route>
                 <Route path="/404" component={NotFound} />
