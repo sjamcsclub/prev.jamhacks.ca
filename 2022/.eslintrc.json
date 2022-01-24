@@ -13,6 +13,6 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "prettier/prettier": ["warning"]
+    "prettier/prettier": 0
   }
 }

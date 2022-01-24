@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MaterialTable from 'material-table';
-import { TablePagination } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
+import { Day1Data } from './data/day1';
+import { Day2Data } from './data/day2';
+import { Day3Data } from './data/day3';
 
 const Schedule = () => {
+  const history = useHistory();
+  const [pageNum, setPageNum] = useState(1);
   return (
     <div style={{ zIndex: 2, height: '100vh' }}>
-      <button onClick={}>Go Back to Main Page</button>
-      <h1 style={{ color: 'white', textAlign: 'center', marginTop: '20px' }}>
+      <button onClick={() => history.push('/')}>Go Back to Main Page</button>
+      <h1 style={{ color: 'purple', textAlign: 'center', marginTop: '20px' }}>
         Schedule Page
       </h1>
       <MaterialTable
@@ -19,17 +24,23 @@ const Schedule = () => {
               color: '#FFF',
             },
             searchable: false,
-            width: '10%',
           },
           { title: 'Event', field: 'title' },
         ]}
-        data={[
-          { title: 'Hacking Starts', time: '6PM' },
-          { title: 'Game', time: '8PM' },
-          { title: 'Introduction to Python', time: '10PM' },
-          { title: 'Introduction to HTML', time: '12PM' },
-        ]}
-        title="JAMHacks 6 Schedule"
+        data={(() => {
+          switch (pageNum) {
+            case 1:
+              return Day1Data;
+            case 2:
+              return Day2Data;
+            case 3:
+              return Day3Data;
+            default:
+              return [];
+          }
+        })()}
+        onChangePage={(page) => setPageNum(page)}
+        title={`JAMHacks 6 - Day ${pageNum}`}
         options={{
           headerStyle: {
             backgroundColor: '#01579b',
@@ -37,9 +48,33 @@ const Schedule = () => {
           },
           exportButton: true,
           sorting: true,
-          tableLayout: 'fixed',
+          paginationType: 'stepped',
+          paging: false,
         }}
       />
+      <div>
+        <button
+          onClick={() => {
+            setPageNum(1);
+          }}
+        >
+          Day 1
+        </button>
+        <button
+          onClick={() => {
+            setPageNum(2);
+          }}
+        >
+          Day 2
+        </button>
+        <button
+          onClick={() => {
+            setPageNum(3);
+          }}
+        >
+          Day 3
+        </button>
+      </div>
     </div>
   );
 };
