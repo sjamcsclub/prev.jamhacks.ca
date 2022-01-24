@@ -12,6 +12,7 @@ import Footer from './components/Layout/Footer';
 import Loading from './pages/Loading';
 //data
 import HomeNavData from './data/Navbar/Home.js';
+import ScheduleNavData from './data/Navbar/Schedule.js';
 import PrivacyNavData from './data/Navbar/Privacy.js';
 
 import './App.less';
@@ -26,6 +27,7 @@ import 'firebase/firestore';
 
 //pages
 const Home = React.lazy(() => import('./pages/Home'));
+const Schedule = React.lazy(() => import('./pages/Schedule'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
@@ -69,11 +71,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    var art = `     
+    var art = `
 Designed by: Kevin Gao
-Developed by: Daniel Yu, Kevin Gao, Andrew Yang
+Developed by: Daniel Yu, Andrew Yang
 
-Copyright (c) 2021 JAMHacks.
+Copyright (c) 2022 JAMHacks.
 `;
     console.log(art);
   }
@@ -94,6 +96,10 @@ Copyright (c) 2021 JAMHacks.
                   <Navbar sections={PrivacyNavData} />
                   <Privacy />
                   <Footer />
+                </Route>
+                <Route exact path="/schedule">
+                  <Schedule />
+                  <Footer disableWave />
                 </Route>
                 <Route path="/404" component={NotFound} />
                 <Redirect to="/404" />

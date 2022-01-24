@@ -23,7 +23,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer-div">
-        <FooterWave />
+        {!this.props.disableWave && <FooterWave />}
         <div className="footer-content-div">
           <div className="footer-title-content">Follow us on social media</div>
           <div className="footer-icons-div" style={{ marginBottom: '20px' }}>
