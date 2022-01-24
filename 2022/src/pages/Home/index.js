@@ -15,7 +15,7 @@ import Contact from './Contact';
 import Env from '../../data/env';
 import BottomWave from './BottomWave';
 
-const Home = () => {
+const Home = function() {
   return (
     <>
       <Hero register={Env.register} />
@@ -32,6 +32,6 @@ const Home = () => {
       <Contact />
     </>
   );
-};
+}
 
 export default Home;
