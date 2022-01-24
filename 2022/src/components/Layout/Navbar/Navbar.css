@@ -162,6 +162,10 @@
   display: inline;
 }
 
+.social-icon {
+  color: #7b0ff7;
+}
+
 .navbar-mobile-link-item:hover {
   cursor: pointer;
 }

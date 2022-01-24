@@ -24,7 +24,7 @@ import './Navbar.css';
 import Menu from './Menu';
 import Socials from '../../../data/socials';
 
-const Navbar = ({ sections, color }) => {
+const Navbar = ({ sections, color, location }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Navbar = ({ sections, color }) => {
         window.pageYOffset ||
         (document.documentElement || document.body.parentNode || document.body)
           .scrollTop;
-      if (scrollTop > window.innerHeight - 80) {
+      if (scrollTop > window.innerHeight - 80 || location != 'home') {
         document
           .getElementsByClassName('navbar-div')[0]
           .classList.add('scrolled-navbar');

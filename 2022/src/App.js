@@ -14,6 +14,7 @@ import Loading from './pages/Loading';
 import HomeNavData from './data/Navbar/Home.js';
 import ScheduleNavData from './data/Navbar/Schedule.js';
 import PrivacyNavData from './data/Navbar/Privacy.js';
+import CodeConductNavData from './data/Navbar/CodeConduct.js';
 
 import './App.less';
 import Theme from './theme';
@@ -29,6 +30,7 @@ import 'firebase/firestore';
 const Home = React.lazy(() => import('./pages/Home'));
 const Schedule = React.lazy(() => import('./pages/Schedule'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
+const CodeConduct = React.lazy(() => import('./pages/CodeConduct'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 var firebaseConfig = {
@@ -88,18 +90,23 @@ Copyright (c) 2022 JAMHacks.
             <Container>
               <Switch>
                 <Route exact path="/">
-                  <Navbar sections={HomeNavData} />
+                  <Navbar sections={HomeNavData} location="home" />
                   <Home />
                   <Footer />
                 </Route>
                 <Route exact path="/privacy-policy">
-                  <Navbar sections={PrivacyNavData} />
+                  <Navbar sections={PrivacyNavData} location="privacy" />
                   <Privacy />
                   <Footer />
                 </Route>
                 <Route exact path="/schedule">
                   <Schedule />
                   <Footer disableWave />
+                </Route>
+                <Route exact path="/code-of-conduct">
+                  <Navbar sections={CodeConductNavData} location="privacy" />
+                  <CodeConduct />
+                  <Footer />
                 </Route>
                 <Route path="/404" component={NotFound} />
                 <Redirect to="/404" />
@@ -116,7 +123,7 @@ const Container = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
-  background: #7b0ff7;
+  background: #fbf9ff;
 `;
 
 export default App;
