@@ -41,7 +41,9 @@ class Faq extends Component {
           <div style={{ marginTop: '20px' }}>
             <span style={{ textAlign: 'center' }}>
               Still got a question? Feel free to send us an email at{' '}
-              <a className="faq-action">contact@jamhacks.ca</a>
+              <a className="faq-action" href="mailto:contact@jamhacks.ca">
+                contact@jamhacks.ca
+              </a>
             </span>
           </div>
         </div>
