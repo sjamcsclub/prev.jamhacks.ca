@@ -24,7 +24,7 @@ const SponsorDisplay = ({}) => {
           return (
             <Blueberry key={i} href={val.link} target="_blank">
               <motion.img
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 src={val.logo}
               ></motion.img>
             </Blueberry>
@@ -36,7 +36,7 @@ const SponsorDisplay = ({}) => {
           return (
             <Strawberry key={i} href={val.link} target="_blank">
               <motion.img
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 src={val.logo}
               ></motion.img>
             </Strawberry>
@@ -57,7 +57,7 @@ const SponsorDisplay = ({}) => {
               }}
             >
               <motion.img
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 src={val.logo}
               ></motion.img>
             </Grape>
@@ -69,7 +69,7 @@ const SponsorDisplay = ({}) => {
           return (
             <Peach key={i} href={val.link} target="_blank">
               <motion.img
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 src={val.logo}
               ></motion.img>
             </Peach>
@@ -82,7 +82,7 @@ const SponsorDisplay = ({}) => {
           return (
             <Partner key={i} href={val.link} target="_blank">
               <motion.img
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 src={val.logo}
               ></motion.img>
             </Partner>

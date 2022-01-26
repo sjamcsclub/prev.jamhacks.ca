@@ -103,7 +103,7 @@ const Team = () => {
           return (
             <div key={member.name} className="team-display-content-item">
               <motion.a
-                whileHover={{ scale: member.link ? 1.1 : 1 }}
+                whileHover={{ scale: member.link ? 1.05 : 1 }}
                 href={member.link}
                 style={{ cursor: member.link ? 'pointer' : 'default' }}
               >

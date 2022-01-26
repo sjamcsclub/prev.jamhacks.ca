@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Faq.css';
 import { Collapse } from 'antd';
 import { Header } from '../../../components/Typography';
+import { Link } from 'react-router-dom';
 
 import { ReactComponent as Arrow } from '../../../assets/icons/RightArrow.svg';
 
@@ -35,7 +36,13 @@ class Faq extends Component {
                   <p style={{ marginBottom: '0px' }}>{question.answer}</p>
                 </Panel>
               ))}
-            </Collapse>{' '}
+            </Collapse>
+          </div>
+          <div style={{ marginTop: '20px' }}>
+            <span style={{ textAlign: 'center' }}>
+              Still got a question? Feel free to send us an email at{' '}
+              <a className="faq-action">contact@jamhacks.ca</a>
+            </span>
           </div>
         </div>
       </div>
