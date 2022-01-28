@@ -105,14 +105,14 @@ class Footer extends Component {
             >
               Code of Conduct
             </a>
-            <a
+            {/* <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://jamhacks.ca/2021/"
               className="footer-link"
             >
               2021 Site
-            </a>
+            </a> */}
             <a
               target="_blank"
               rel="noopener noreferrer"
