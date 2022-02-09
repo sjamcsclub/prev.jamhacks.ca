@@ -100,7 +100,7 @@ class Footer extends Component {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://jamhacks.ca/"
+              href="https://jamhacks.notion.site/jamhacks/Code-of-Conduct-JAMHacks-6-bf2543f05ece4b3e8778a1e6006f3691"
               className="footer-link"
             >
               Code of Conduct

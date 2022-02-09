@@ -2,17 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Team.css';
 
-import Cristian from '../../../assets/headshots/Cristian.png';
-import Michelle from '../../../assets/headshots/Michelle.png';
-import Yina from '../../../assets/headshots/Yina.png';
-import Rohan from '../../../assets/headshots/Rohan.png';
-import Kevin from '../../../assets/headshots/Kevin.png';
 import Daniel from '../../../assets/headshots/Daniel.png';
-import Trevor from '../../../assets/headshots/Trevor.png';
 import Aditiya from '../../../assets/headshots/Aditya.png';
-import Fred from '../../../assets/headshots/Fred.png';
 import Qianxu from '../../../assets/headshots/Qianxu.png';
-import Arnav from '../../../assets/headshots/Arnav.png';
 import Andrew from '../../../assets/headshots/Andrew.png';
 import Calvin from '../../../assets/headshots/Calvin.png';
 import Evan from '../../../assets/headshots/Evan.png';
@@ -21,6 +13,7 @@ import Angelina from '../../../assets/headshots/Angelina.png';
 import Freda from '../../../assets/headshots/Freda.png';
 import Nathan from '../../../assets/headshots/Nathan.png';
 import Sohil from '../../../assets/headshots/Sohil.png';
+import Jon from '../../../assets/headshots/Jon.png';
 
 const MemberData = [
   {
@@ -70,6 +63,12 @@ const MemberData = [
     role: 'Logistics',
     headshot: Sohil,
     link: 'https://www.linkedin.com/in/sohil-athare-450a9a1a9/',
+  },
+  {
+    name: 'Jon Tang',
+    role: 'Logistics',
+    headshot: Jon,
+    link: '#',
   },
   {
     name: 'Angelina Wang',
