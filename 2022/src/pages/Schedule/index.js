@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import { Day1Data } from './data/day1';
 import { Day2Data } from './data/day2';
 import { Day3Data } from './data/day3';
+import './style.css';
 
 const Schedule = () => {
   const history = useHistory();
@@ -52,8 +53,9 @@ const Schedule = () => {
           paging: false,
         }}
       />
-      <div>
+      <div className="schedule_btn_row">
         <button
+          className="schedule_btn"
           onClick={() => {
             setPageNum(1);
           }}
@@ -61,6 +63,7 @@ const Schedule = () => {
           Day 1
         </button>
         <button
+          className="schedule_btn"
           onClick={() => {
             setPageNum(2);
           }}
@@ -68,6 +71,7 @@ const Schedule = () => {
           Day 2
         </button>
         <button
+          className="schedule_btn"
           onClick={() => {
             setPageNum(3);
           }}

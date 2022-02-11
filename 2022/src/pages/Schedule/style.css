@@ -1,0 +1,17 @@
+.schedule_btn_row {
+  display: flex;
+  gap: 40px;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 30px;
+}
+.schedule_btn {
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.schedule_btn:hover {
+  border-bottom: 2px solid purple;
+}
