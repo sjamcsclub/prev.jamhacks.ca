@@ -3,7 +3,7 @@ import Quantstamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
 
 import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
-import OnlyOffice from '../assets/sponsorlogos/strawberry/OnlyOffice.png';
+import OnlyOffice from '../assets/sponsorlogos/strawberry/OnlyOffice.svg';
 
 import IQC from '../assets/sponsorlogos/grape/IQC.png';
 import Cognitive from '../assets/sponsorlogos/grape/Cognitive.png';
