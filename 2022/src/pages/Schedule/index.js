@@ -73,7 +73,7 @@ const Schedule = () => {
             }
           })()}
           onChangePage={(page) => setPageNum(page)}
-          title={`JAMHacks 6 - Day ${pageNum}`}
+          // title={`JAMHacks 6 - Day ${pageNum}`}
           options={{
             showTitle: false,
             headerStyle: {
