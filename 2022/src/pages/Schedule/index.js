@@ -54,8 +54,11 @@ const Schedule = () => {
               cellStyle: {
                 backgroundColor: '#EEDFFF',
                 color: '#7B0EF6',
+                width: '15%',
               },
-              width: '4%',
+              headerStyle: {
+                width: '15%',
+              },
               searchable: false,
             },
             { title: 'Event', field: 'title' },
