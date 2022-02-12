@@ -16,7 +16,7 @@ const Schedule = () => {
         Go Back to Main Page
       </button>
       <h1 style={{ color: '#7B0EF6', textAlign: 'center', marginTop: '20px' }}>
-        Schedule Page
+        Schedule
       </h1>
       <div className="schedule_btn_row">
         <button
