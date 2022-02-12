@@ -8,36 +8,37 @@ import styled from 'styled-components';
 import Header from '../../../components/Typography/Header';
 import Text from '../../../components/Typography/Text';
 
-import past1 from '../../../assets/pastphotos/1 1.jpg';
-import past2 from '../../../assets/pastphotos/2 1.jpg';
-import past3 from '../../../assets/pastphotos/3 1.jpg';
-import past4 from '../../../assets/pastphotos/4 1.jpg';
-import past5 from '../../../assets/pastphotos/5 1.jpg';
-import past6 from '../../../assets/pastphotos/6 1.jpg';
+import { ReactComponent as SponsorImage } from '../../../assets/undraw/Everyone.svg';
+// import past1 from '../../../assets/pastphotos/1 1.jpg';
+// import past2 from '../../../assets/pastphotos/2 1.jpg';
+// import past3 from '../../../assets/pastphotos/3 1.jpg';
+// import past4 from '../../../assets/pastphotos/4 1.jpg';
+// import past5 from '../../../assets/pastphotos/5 1.jpg';
+// import past6 from '../../../assets/pastphotos/6 1.jpg';
 // import past7 from '../../../assets/pastphotos/7.jpg';
-import past8 from '../../../assets/pastphotos/8.jpg';
+// import past8 from '../../../assets/pastphotos/8.jpg';
 // import past9 from '../../../assets/pastphotos/9.jpg';
 
-function shuffle(array) {
-  let currentIndex = array.length,
-    randomIndex;
+// function shuffle(array) {
+//   let currentIndex = array.length,
+//     randomIndex;
 
-  // While there remain elements to shuffle...
-  while (currentIndex != 0) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-  return array;
-}
+//   // While there remain elements to shuffle...
+//   while (currentIndex != 0) {
+//     // Pick a remaining element...
+//     randomIndex = Math.floor(Math.random() * currentIndex);
+//     currentIndex--;
+//     // And swap it with the current element.
+//     [array[currentIndex], array[randomIndex]] = [
+//       array[randomIndex],
+//       array[currentIndex],
+//     ];
+//   }
+//   return array;
+// }
 
-const Photos = [past1, past2, past3, past4, past5, past6, past8];
-shuffle(Photos);
+// const Photos = [past1, past2, past3, past4, past5, past6, past8];
+// shuffle(Photos);
 
 const About = () => {
   const [statsShown, setStatsShown] = useState(false);
@@ -116,7 +117,7 @@ const About = () => {
           data-aos="fade-up"
           onClick={() => carousel.current.next()}
         >
-          <Carousel
+          {/* <Carousel
             autoplaySpeed={2000}
             ref={carousel}
             autoplay
@@ -132,7 +133,10 @@ const About = () => {
                 />
               </div>
             ))}
-          </Carousel>
+          </Carousel> */}
+          <SvgContainer>
+            <SponsorImage />
+          </SvgContainer>
         </div>
         <div className="about-content" data-aos="fade-up">
           <Header dark>All Hackers Welcome</Header>
@@ -154,5 +158,15 @@ const About = () => {
     </div>
   );
 };
+
+const SvgContainer = styled.div`
+  justify-content: center;
+  display: flex;
+  & svg {
+    width: 80%;
+    height: 50%;
+    margin-right: 0%;
+  }
+`;
 
 export default About;

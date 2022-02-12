@@ -121,6 +121,7 @@ Copyright (c) 2022 JAMHacks.
 
 const Container = styled.div`
   height: fit-content;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: #fbf9ff;

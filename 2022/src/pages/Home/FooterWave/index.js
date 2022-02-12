@@ -5,18 +5,37 @@ import './FooterWave.css';
 const Wave = function () {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-      height="450"
+      height="250"
       width="100%"
       preserveAspectRatio="none"
       style={{ position: 'absolute', bottom: -10 }}
+      viewBox="0 0 754 195"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill="#7b0ef7"
-        fill-opacity="1"
-        d="M0,128L60,112C120,96,240,64,360,58.7C480,53,600,75,720,90.7C840,107,960,117,1080,133.3C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-      ></path>
+        d="M754 194.999V29C672 18.5 648.5 47 530 58C448.849 65.533 388 55.4386 345 42C302 28.5614 249.71 15.9141 191.5 5.80188C66 -15.9999 0 36 0 36V194.999H754Z"
+        fill="#7B0FF7"
+      />
+    </svg>
+  );
+};
+
+const Wave2 = function () {
+  return (
+    <svg
+      height="250"
+      width="100%"
+      preserveAspectRatio="none"
+      style={{ position: 'absolute', bottom: -10 }}
+      viewBox="0 0 755 217"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 216.999V56.9999C123 56.9999 73.5 83.4999 150 87.9999C231.359 92.7858 274 70.4386 317 56.9999C360 43.5613 510.5 0.500098 629.5 0.5C756.88 0.499896 754 58 754 58V216.999H0Z"
+        fill="#B600FF"
+      />
     </svg>
   );
 };
@@ -41,14 +60,10 @@ const FooterWave = function () {
         }}
       >
         <div className="footer-wave-inner-div">
-          <h1 style={{ color: 'white' }}>Still got a question?</h1>
-          <p>
-            Feel free to send us an email at{'  '}
-            <a className="footer-wave-link">contact@jamhacks.ca</a>{' '}
-          </p>
-          <h1 style={{ color: 'white' }}>Subscribe to Newsletter</h1>
+          <h1 style={{ color: 'white' }}>Subscribe to our Newsletter</h1>
           <Newsletter location="footer" />
         </div>
+        <Wave2 />
         <Wave />
       </div>
     </div>

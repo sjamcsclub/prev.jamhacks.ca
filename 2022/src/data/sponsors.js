@@ -3,12 +3,15 @@ import Quantstamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
 
 import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
+import OnlyOffice from '../assets/sponsorlogos/strawberry/OnlyOffice.svg';
 
 import IQC from '../assets/sponsorlogos/grape/IQC.png';
 import Cognitive from '../assets/sponsorlogos/grape/Cognitive.png';
 
 import MapleSoft from '../assets/sponsorlogos/peach/MapleSoft.png';
 import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
+import BisectHosting from '../assets/sponsorlogos/peach/BisectHosting.png';
+import CtrlV from '../assets/sponsorlogos/peach/CtrlV.png';
 import RStudio from '../assets/sponsorlogos/peach/RStudio.png';
 import Echo3D from '../assets/sponsorlogos/peach/Echo3d.png';
 import InterviewCake from '../assets/sponsorlogos/peach/InterviewCake.png';
@@ -39,6 +42,10 @@ const strawberry = [
   {
     link: 'https://uwaterloo.ca/',
     logo: UW,
+  },
+  {
+    link: 'https://www.onlyoffice.com/',
+    logo: OnlyOffice,
   },
 ];
 
@@ -93,6 +100,14 @@ const peach = [
   {
     link: 'https://gen.xyz/',
     logo: XYZ,
+  },
+  {
+    link: 'https://www.bisecthosting.com/',
+    logo: BisectHosting,
+  },
+  {
+    link: 'https://www.ctrlv.ca/',
+    logo: CtrlV,
   },
 ];
 

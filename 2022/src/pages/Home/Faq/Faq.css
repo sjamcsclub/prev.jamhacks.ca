@@ -25,3 +25,25 @@
 .faq-content-div-col1 {
   max-width: 400px;
 }
+
+.faq-action {
+  position: relative;
+}
+
+.faq-action:after {
+  background: none repeat scroll 0 0 transparent;
+  content: '';
+  font-size: 0;
+  height: 3px;
+  display: inline-block;
+  background: #b600ff;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+}
+
+.faq-action:hover:after {
+  width: 100%;
+}
