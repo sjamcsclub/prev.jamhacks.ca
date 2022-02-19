@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Newsletter from '../../../components/Newsletter';
 import styled from 'styled-components';
 import { media } from '../../../utils/media';
-import { ReactComponent as Logo } from '../../../assets/logo/JAMHacks6Adjusted2.svg';
+import { ReactComponent as Logo } from '../../../assets/logo/JAMHacks6Adjusted.svg';
 
 import './Hero.css';
 
