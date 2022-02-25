@@ -21,6 +21,7 @@ import Bounce from '../assets/sponsorlogos/peach/Bounce.png';
 import Linode from '../assets/sponsorlogos/peach/Linode.png';
 import XYZ from '../assets/sponsorlogos/peach/xyz.png';
 import InspiritAI from '../assets/sponsorlogos/peach/InspiritAI.png';
+import Balsamiq from '../assets/sponsorlogos/peach/Balsamiq.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 
@@ -113,6 +114,10 @@ const peach = [
   {
     link: 'https://www.inspiritai.com/',
     logo: InspiritAI,
+  },
+  {
+    link: 'https://balsamiq.com/',
+    logo: Balsamiq,
   },
 ];
 
