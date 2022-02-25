@@ -64,7 +64,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
-  padding-top: 300px;
+  // padding-top: 300px;
   ${media('md')`
     flex-direction: column-reverse;
   `}

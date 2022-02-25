@@ -63,10 +63,10 @@ const Container = styled.div`
   padding: 0 10%;
   width: 100%;
   z-index: 1;
-  // padding-top: 350px;
-  // ${media('md')`
-  //   padding-top: 350px;
-  // `}
+  padding-top: 350px;
+  ${media('md')`
+    padding-top: 350px;
+  `}
 `;
 
 const ContentContainer = styled.div`

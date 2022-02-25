@@ -139,8 +139,8 @@
 .hero-button-div {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  /* margin-top: 30px; */
+  justify-content: center;
+  margin-top: 15px;
   z-index: 5;
 }
 
