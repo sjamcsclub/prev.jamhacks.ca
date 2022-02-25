@@ -35,7 +35,7 @@ class Sponsor extends Component {
                 prospectus
               </a>{' '}
               or contact us at{' '}
-              <a href="mailto:sponsor@jamhacks.ca">sponsor@jamhacks.ca</a>
+              <a href="mailto:sponsor@jamhacks.ca">sponsor@jamhacks.ca</a>.
             </Text>
             <a
               href="mailto:sponsor@jamhacks.ca"
@@ -63,10 +63,10 @@ const Container = styled.div`
   padding: 0 10%;
   width: 100%;
   z-index: 1;
-  padding-top: 350px;
-  ${media('md')`
-    padding-top: 350px;
-  `}
+  // padding-top: 350px;
+  // ${media('md')`
+  //   padding-top: 350px;
+  // `}
 `;
 
 const ContentContainer = styled.div`

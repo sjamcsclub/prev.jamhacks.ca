@@ -30,7 +30,7 @@ class Mentor extends Component {
               at JAMHacks today!
             </Text>
             <a
-              href="https://wvmzd7k3wc0.typeform.com/to/qALh2BUY"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSco9I1zhoZzZmaQt6qYYANLEn1AGEP1PBM_X8He9xn5FQaRFw/viewform?usp=sf_link"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,6 +64,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
+  padding-top: 300px;
   ${media('md')`
     flex-direction: column-reverse;
   `}
