@@ -26,20 +26,24 @@ body {
   /* max-width: 700px; */
   width: 80%;
   margin: 0 auto;
+  cursor: default !important;
 }
 
-.go_back_btn {
+.btn_top {
   background: none;
   cursor: pointer;
   outline: none;
   border: 2px solid #7b0ef5;
   border-radius: 5px;
-  margin: 20px 50px;
   color: #7b0ef5;
   transition: all 0.1s ease-in-out;
 }
 
-.go_back_btn:hover {
+.go_back_main {
+  margin: 20px 20px 10px 20px;
+}
+
+.btn_top:hover {
   color: white;
   background: #7b0ef5;
 }

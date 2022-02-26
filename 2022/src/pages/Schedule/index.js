@@ -12,10 +12,13 @@ const Schedule = () => {
   const [pageNum, setPageNum] = useState(1);
   return (
     <div style={{ zIndex: 2, height: '100vh' }}>
-      <button className="go_back_btn" onClick={() => history.push('/')}>
+      <button
+        className="btn_top go_back_main"
+        onClick={() => history.push('/')}
+      >
         Go Back to Main Page
       </button>
-      <button className="go_back_btn">Export Schedule</button>
+      <button className="btn_top">Export Schedule</button>
       <h1 style={{ color: '#7B0EF6', textAlign: 'center', marginTop: '20px' }}>
         Schedule
       </h1>
@@ -97,6 +100,7 @@ const Schedule = () => {
             tableLayout: 'auto',
             search: false,
             toolbar: false,
+            draggable: false,
           }}
         />
       </div>
