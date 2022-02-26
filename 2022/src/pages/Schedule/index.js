@@ -15,6 +15,7 @@ const Schedule = () => {
       <button className="go_back_btn" onClick={() => history.push('/')}>
         Go Back to Main Page
       </button>
+      <button className="go_back_btn">Export Schedule</button>
       <h1 style={{ color: '#7B0EF6', textAlign: 'center', marginTop: '20px' }}>
         Schedule
       </h1>
@@ -55,13 +56,15 @@ const Schedule = () => {
                 backgroundColor: '#EEDFFF',
                 color: '#7B0EF6',
                 width: '15%',
+                cursor: 'default',
               },
               headerStyle: {
                 width: '15%',
+                cursor: 'default',
               },
               searchable: false,
             },
-            { title: 'Event', field: 'title' },
+            { title: 'Event', field: 'title', disableSortBy: false },
           ]}
           data={(() => {
             switch (pageNum) {
@@ -87,8 +90,8 @@ const Schedule = () => {
               overflowWrap: 'break-word',
               fontFamily: 'Poppins',
             },
-            exportButton: false,
-            sorting: true,
+            exportButton: true,
+            sorting: false,
             paginationType: 'stepped',
             paging: false,
             tableLayout: 'auto',

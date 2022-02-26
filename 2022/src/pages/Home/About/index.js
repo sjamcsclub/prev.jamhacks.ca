@@ -65,7 +65,7 @@ const About = () => {
             </Text>
             <br></br>
             <Text dark>
-              During this upcoming 24 hour long innovation marathon, you’ll be
+              During this upcoming 36 hour long innovation marathon, you’ll be
               able to work in teams of up to 4 to create an app, game, website,
               robot, gadget, or whatever your heart desires.
             </Text>
