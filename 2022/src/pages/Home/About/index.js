@@ -59,15 +59,17 @@ const About = () => {
           >
             <Text dark>
               Waterloo’s largest high school hackathon is back! JAMHacks 6 will
-              take place virtually again in 2022 May, exact date TBD. Last year,
-              we brought together 300 students from high schools all over North
-              America for a full 24 hours of learning and creating!
+              take place virtually on May 20th - 22nd, where 300+ high school
+              students all over North America will gather for a weekend of
+              learning and creating.
             </Text>
             <br></br>
             <Text dark>
-              During this upcoming 36 hour long innovation marathon, you’ll be
-              able to work in teams of up to 4 to create an app, game, website,
-              robot, gadget, or whatever your heart desires.
+              During this upcoming 36-hour innovation marathon, you’ll be able
+              to work in teams of up to 4 to create an app, game, website,
+              robot, gadget, or whatever else your heart desires. At the end of
+              the event, you will have the opportunity to pitch your project to
+              a panel of judges and compete for prizes!
             </Text>
           </div>
         </div>
@@ -145,12 +147,19 @@ const About = () => {
             style={{ textAlign: 'left', width: '100%' }}
           >
             <Text dark>
-              Hackers of all skill levels and backgrounds are welcome to
-              participate in JAMHacks! JAMHacks is also a learnathon—there will
-              be workshops and mentors to guide you through making a software or
-              hardware project, even if you’ve never coded before! If you’re an
-              experienced hacker, consider JAMHacks an opportunity to start your
-              next passion project and compete for prizes at the same time!
+              Hackers of all skill levels are welcome to participate in JAMHacks
+              (even if you’ve never coded before)! JAMHacks is also a
+              learnathon—there will be beginner-friendly workshops and mentors
+              to guide you through brainstorming, coding, troubleshooting, and
+              constructing a pitch for your project. We even have a “Best
+              Beginner Hack” prize stream!
+            </Text>
+            <br></br>
+            <Text dark>
+              If you’re an experienced hacker, consider JAMHacks an opportunity
+              to learn about advanced computer science topics and start your
+              next passion project, all the while competing for a chance to win
+              cool prizes!
             </Text>
           </div>
         </div>

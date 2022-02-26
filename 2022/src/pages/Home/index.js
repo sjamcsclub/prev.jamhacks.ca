@@ -15,7 +15,7 @@ import Contact from './Contact';
 import Env from '../../data/env';
 import BottomWave from './BottomWave';
 
-const Home = function() {
+const Home = function () {
   return (
     <>
       <Hero register={Env.register} />
@@ -23,7 +23,7 @@ const Home = function() {
       <About />
       <BottomWave />
       {Env.schedule && <Schedule />}
-      {Env.register && <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />}
+      <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />
       <Sponsorship />
       <Sponsors />
       <Faq />
@@ -32,6 +32,6 @@ const Home = function() {
       <Contact />
     </>
   );
-}
+};
 
 export default Home;

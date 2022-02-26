@@ -28,7 +28,12 @@ const Hero = ({ register }) => {
           <Subtitle>Learn, Connect, Innovate</Subtitle>
           {/* <LocationText>Virtual Event</LocationText>
         <DateText>2022 - TBD</DateText> */}
-          <div style={{ width: '80%', maxWidth: '800px' }}>
+          <div
+            style={{
+              width: '80%',
+              maxWidth: '800px',
+            }}
+          >
             {register ? (
               <div className="hero-button-div">
                 {register === 'post-event' ? (
