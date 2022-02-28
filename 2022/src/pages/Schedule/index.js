@@ -16,9 +16,9 @@ const Schedule = () => {
         className="btn_top go_back_main"
         onClick={() => history.push('/')}
       >
-        Go Back to Main Page
+        &#x2190; Go Back to Main Page
       </button>
-      <button className="btn_top">Export Schedule</button>
+      <button className="btn_top">&#x21e9;&nbsp;Download Schedule</button>
       <h1 style={{ color: '#7B0EF6', textAlign: 'center', marginTop: '20px' }}>
         Schedule
       </h1>
