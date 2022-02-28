@@ -88,6 +88,7 @@ const Schedule = () => {
             headerStyle: {
               backgroundColor: '#7B0EF6',
               color: '#FFF',
+              fontFamily: 'Poppins',
             },
             rowStyle: {
               overflowWrap: 'break-word',
