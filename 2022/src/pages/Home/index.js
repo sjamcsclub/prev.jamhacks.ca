@@ -24,7 +24,7 @@ const Home = function () {
       <BottomWave />
       {Env.schedule && <Schedule />}
       <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />
-      <Sponsorship />
+      <Sponsorship mentor={Env.mentor} />
       <Sponsors />
       <Faq />
       <Team />

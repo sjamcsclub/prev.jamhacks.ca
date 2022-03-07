@@ -6,6 +6,7 @@ import { ReactComponent as VolunteerImage } from '../../../assets/undraw/Volunte
 import Header from '../../../components/Typography/Header';
 import Text from '../../../components/Typography/Text';
 import { media } from '../../../utils/media';
+import Env from '../../../data/env';
 
 class Mentor extends Component {
   constructor(props) {
@@ -30,7 +31,7 @@ class Mentor extends Component {
               at JAMHacks today!
             </Text>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSco9I1zhoZzZmaQt6qYYANLEn1AGEP1PBM_X8He9xn5FQaRFw/viewform?usp=sf_link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSco9I1zhoZzZmaQt6qYYANLEn1AGEP1PBM_X8He9xn5FQaRFw/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -41,7 +42,7 @@ class Mentor extends Component {
               >
                 {this.props.mentor === 'finished'
                   ? 'Applications Closed'
-                  : 'Apply to be a Mentor'}
+                  : 'Apply Now!'}
               </Button>
             </a>
           </TextContainer>
@@ -64,7 +65,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
-  // padding-top: 300px;
+  ${Env.mentor ? 'padding-top: 300px;' : ''}
   ${media('md')`
     flex-direction: column-reverse;
   `}
