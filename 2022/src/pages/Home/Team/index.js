@@ -14,6 +14,7 @@ import Freda from '../../../assets/headshots/Freda.png';
 import Nathan from '../../../assets/headshots/Nathan.png';
 import Sohil from '../../../assets/headshots/Sohil.png';
 import Jon from '../../../assets/headshots/Jon.png';
+import Markos from '../../../assets/headshots/Markos.png';
 
 const MemberData = [
   {
@@ -69,6 +70,12 @@ const MemberData = [
     role: 'Logistics',
     headshot: Jon,
     link: '#',
+  },
+  {
+    name: 'Markos',
+    role: 'Logistics',
+    headshot: Markos,
+    link: 'https://www.linkedin.com/in/markos-the-student/',
   },
   {
     name: 'Angelina Wang',
