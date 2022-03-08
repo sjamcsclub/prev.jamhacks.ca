@@ -64,10 +64,12 @@ const Container = styled.div`
   padding: 0 10%;
   width: 100%;
   z-index: 1;
-  ${!Env.mentor ? 'padding-top: 350px;' : ''}
-  ${media('md')`
-    padding-top: 350px;
-  `}
+  ${!Env.mentor ? 'padding-top: 350px;' : 'padding-top: 10px;'}
+  ${!Env.mentor
+    ? media('md')`
+  padding-top: 350px;
+`
+    : 'padding-top: 10px;'}
 `;
 
 const ContentContainer = styled.div`

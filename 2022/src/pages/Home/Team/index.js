@@ -5,6 +5,7 @@ import './Team.css';
 import Daniel from '../../../assets/headshots/Daniel.png';
 import Aditiya from '../../../assets/headshots/Aditya.png';
 import Qianxu from '../../../assets/headshots/Qianxu.png';
+import Markos from '../../../assets/headshots/Markos.png';
 import Andrew from '../../../assets/headshots/Andrew.png';
 import Calvin from '../../../assets/headshots/Calvin.png';
 import Evan from '../../../assets/headshots/Evan.png';
@@ -14,7 +15,6 @@ import Freda from '../../../assets/headshots/Freda.png';
 import Nathan from '../../../assets/headshots/Nathan.png';
 import Sohil from '../../../assets/headshots/Sohil.png';
 import Jon from '../../../assets/headshots/Jon.png';
-import Markos from '../../../assets/headshots/Markos.png';
 
 const MemberData = [
   {
@@ -34,6 +34,12 @@ const MemberData = [
     role: 'Co-Lead',
     headshot: Daniel,
     link: 'https://www.linkedin.com/in/danielyu2004/',
+  },
+  {
+    name: 'Markos Georghiades',
+    role: 'Co-Lead',
+    headshot: Markos,
+    link: 'https://ca.linkedin.com/in/markos-the-student',
   },
   {
     name: 'Andrew Yang',

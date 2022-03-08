@@ -107,17 +107,24 @@ const Navbar = ({ sections, color, location }) => {
 
   return (
     <div className="navbar-div">
-      <Menu open={menuOpen} sections={sections} />
+      <Menu
+        open={menuOpen}
+        sections={sections}
+        closeMenu={() => {
+          setMenuOpen(false);
+          document.getElementById('hamburger-1').classList.remove('is-active');
+        }}
+      />
       <div className="navbar-logo-div">
         <div
           className="navbar-logo"
-          onClick={() =>
+          onClick={() => {
             window.scrollTo({
               top: 0,
               left: 0,
               behavior: 'smooth',
-            })
-          }
+            });
+          }}
         ></div>
       </div>
       <div className="navbar-links-div">
@@ -126,13 +133,13 @@ const Navbar = ({ sections, color, location }) => {
             <Link
               key={link.label}
               className="navbar-link-item"
-              onClick={() =>
+              onClick={() => {
                 window.scrollTo({
                   top: document.getElementById(link.id).offsetTop - (80 - 1),
                   left: 0,
                   behavior: 'smooth',
-                })
-              }
+                });
+              }}
             >
               {link.label}
             </Link>
