@@ -4,8 +4,8 @@ const Env = {
   //false, "open", "complete", "post-event"
   register: false,
   schedule: false,
-  mentor: 'close',
-  volunteer: 'close',
+  mentor: 'open',
+  volunteer: 'open',
 };
 
 export default Env;

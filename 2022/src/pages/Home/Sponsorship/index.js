@@ -6,6 +6,7 @@ import { ReactComponent as SponsorImage } from '../../../assets/undraw/Business.
 import Header from '../../../components/Typography/Header';
 import Text from '../../../components/Typography/Text';
 import { media } from '../../../utils/media';
+import Env from '../../../data/env';
 
 class Sponsor extends Component {
   constructor(props) {
@@ -63,7 +64,7 @@ const Container = styled.div`
   padding: 0 10%;
   width: 100%;
   z-index: 1;
-  padding-top: 350px;
+  ${!Env.mentor ? 'padding-top: 350px;' : ''}
   ${media('md')`
     padding-top: 350px;
   `}
