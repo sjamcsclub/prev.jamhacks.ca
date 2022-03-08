@@ -78,12 +78,6 @@ const MemberData = [
     link: '#',
   },
   {
-    name: 'Markos',
-    role: 'Logistics',
-    headshot: Markos,
-    link: 'https://www.linkedin.com/in/markos-the-student/',
-  },
-  {
     name: 'Angelina Wang',
     role: 'Marketing',
     headshot: Angelina,
