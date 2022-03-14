@@ -9,6 +9,12 @@
   z-index: 1;
 }
 
+.faq-contact-div {
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 500px) {
   .faq-content-div-col1 {
     width: 200px;
@@ -23,6 +29,9 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+  }
+  .faq-contact-div {
+    width: 340px;
   }
 }
 

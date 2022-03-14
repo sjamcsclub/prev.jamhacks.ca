@@ -20,7 +20,7 @@ const MobileVariants = {
   closed: { height: 0 },
 };
 
-const Menu = ({ sections, open }) => {
+const Menu = ({ sections, open, closeMenu }) => {
   return (
     <motion.div
       className="navbar-mobile-div"
@@ -36,13 +36,14 @@ const Menu = ({ sections, open }) => {
               <div key={i} className="navbar-mobile-link-container">
                 <Link
                   className="navbar-mobile-link-item"
-                  onClick={() =>
+                  onClick={() => {
                     window.scrollTo({
                       top: document.getElementById(link.id).offsetTop - 80,
                       left: 0,
                       behavior: 'smooth',
-                    })
-                  }
+                    });
+                    closeMenu();
+                  }}
                 >
                   {link.label}
                 </Link>

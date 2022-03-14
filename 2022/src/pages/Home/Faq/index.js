@@ -38,7 +38,7 @@ class Faq extends Component {
               ))}
             </Collapse>
           </div>
-          <div style={{ marginTop: '20px' }}>
+          <div className="faq-contact-div">
             <span style={{ textAlign: 'center' }}>
               Still got a question? Feel free to send us an email at{' '}
               <a className="faq-action" href="mailto:contact@jamhacks.ca">
