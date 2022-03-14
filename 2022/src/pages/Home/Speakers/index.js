@@ -11,7 +11,7 @@ const SpeakerDisplay = ({}) => {
   return (
     <Container>
       <Header data-aos="fade-up" style={{ marginTop: 100 }}>
-        Guest Speakers
+        Keynote Speakers
       </Header>
       {speakers.map((val, i) => {
         return (
