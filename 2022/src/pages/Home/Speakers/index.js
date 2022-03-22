@@ -9,13 +9,11 @@ import { speakers } from '../../../data/speakers';
 
 const SpeakerDisplay = ({}) => {
   return (
-    <Container>
-      <Header data-aos="fade-up" style={{ marginTop: 100 }}>
-        Keynote Speakers
-      </Header>
+    <Container id="speaker-section">
+      <Header data-aos="fade-up">Keynote Speaker</Header>
       {speakers.map((val, i) => {
         return (
-          <>
+          <div data-aos="fade-up" key={val.name}>
             <Speaker key={i}>
               <motion.img
                 src={val.headshot}
@@ -28,10 +26,10 @@ const SpeakerDisplay = ({}) => {
                 <i>
                   {val.title} - {val.company}
                 </i>
-                <p>{val.biography}</p>
+                {val.biography}
               </div>
             </Speaker>
-          </>
+          </div>
         );
       })}
     </Container>
@@ -45,6 +43,7 @@ const Container = styled.div`
   align-items: center;
   padding: 0 10%;
   z-index: 1;
+  padding-top: 500px;
 `;
 
 const Speaker = styled.div`
@@ -66,6 +65,9 @@ const Speaker = styled.div`
     width: 70%;
     flex-grow: 1;
   }
+  ${media('md')`
+    gap: 30px;
+  `}
 `;
 
 export default SpeakerDisplay;

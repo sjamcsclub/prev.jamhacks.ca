@@ -65,11 +65,11 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
-  ${Env.mentor ? 'padding-top: 300px;' : ''}
   ${media('md')`
     flex-direction: column-reverse;
   `}
 `;
+//  ${Env.mentor ? 'padding-top: 300px;' : ''}
 
 const TextContainer = styled.div`
   flex: 2;
@@ -92,7 +92,8 @@ const SvgContainer = styled.div`
   display: flex;
   & svg {
     width: 80%;
-    height: auto;
+    height: 50%;
+    margin-right: 15%;
   }
 `;
 

@@ -23,11 +23,11 @@ const Home = function () {
       <TopWave />
       <About />
       <BottomWave />
+      <Speakers />
       {Env.schedule && <Schedule />}
       <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />
       <Sponsorship mentor={Env.mentor} />
       <Sponsors />
-      <Speakers />
       <Faq />
       <Team />
       <Blog />

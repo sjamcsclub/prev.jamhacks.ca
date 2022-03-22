@@ -59,7 +59,7 @@ const BottomWave = () => {
 
     val =
       (Math.abs(currPos.y) -
-        (document.getElementById('sponsor-section').offsetTop +
+        (document.getElementById('speaker-section').offsetTop +
           0 -
           window.innerHeight)) /
       window.innerHeight;

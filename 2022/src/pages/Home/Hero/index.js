@@ -5,6 +5,7 @@ import Newsletter from '../../../components/Newsletter';
 import styled from 'styled-components';
 import { media } from '../../../utils/media';
 import { ReactComponent as Logo } from '../../../assets/logo/JAMHacks6Adjusted.svg';
+import { ReactComponent as Arrow } from '../../../assets/icons/ApplicationArrow.svg';
 
 import './Hero.css';
 
@@ -14,7 +15,7 @@ const registerLinks = [
   /*'https://uhsftk4mjsw.typeform.com/to/nBOIo2cb',*/
   /*'https://uhsftk4mjsw.typeform.com/to/Ef4CMC4A',*/
   /*'https://uhsftk4mjsw.typeform.com/to/skRsl7ss',*/
-  'https://47m73ezscb9.typeform.com/to/NKRVtHhi',
+  'https://www.bouncelife.com/events/622ed14a37aaadee4b92886f',
 ];
 
 const devpostGalleryLink = 'https://jamhacks-v.devpost.com/project-gallery';
@@ -27,7 +28,8 @@ const Hero = ({ register }) => {
           <StyledLogo />
           <Subtitle>Learn, Connect, Innovate</Subtitle>
           {/* <LocationText>Virtual Event</LocationText>
-        <DateText>2022 - TBD</DateText> */}
+           */}
+          <DateText>May 20th - 22nd</DateText>
           <div
             style={{
               width: '80%',
@@ -65,13 +67,25 @@ const Hero = ({ register }) => {
                     rel="noopener noreferrer"
                   >
                     <Button
+                      size="large"
                       type="primary"
                       disabled={register === 'complete'}
-                      style={{ width: '180px', height: '40px', zIndex: '50' }}
+                      style={{ width: '230px', height: '50px', zIndex: '50' }}
                     >
-                      {register === 'complete'
-                        ? 'Applications Closed'
-                        : 'Register'}
+                      {register === 'complete' ? (
+                        'Applications Closed'
+                      ) : (
+                        <span
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                          }}
+                        >
+                          {'Register Now '}
+                          <Arrow style={{ marginLeft: '10px' }}></Arrow>
+                        </span>
+                      )}
                     </Button>
                   </a>
                 )}
@@ -180,8 +194,8 @@ const DateText = styled.h4`
   display: flex;
   justify-content: flex-start;
   z-index: 5;
-  color: white;
-  font-size: 1rem;
+  color: #7b0ff7;
+  font-size: 1.25rem;
   opacity: 90%;
   ${media('md')`
     justify-content: center;
