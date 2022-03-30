@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MaterialTable from 'material-table';
+
 import { useHistory } from 'react-router-dom';
 import { Day1Data } from './data/day1';
 import { Day2Data } from './data/day2';
@@ -11,7 +12,7 @@ const Schedule = () => {
   const history = useHistory();
   const [pageNum, setPageNum] = useState(1);
   return (
-    <div style={{ zIndex: 2, height: '100vh' }}>
+    <div style={{ zIndex: 2, minHeight: '90vh' }}>
       <button
         className="btn_top go_back_main"
         onClick={() => history.push('/')}
@@ -58,11 +59,11 @@ const Schedule = () => {
               cellStyle: {
                 backgroundColor: '#EEDFFF',
                 color: '#7B0EF6',
-                width: '15%',
+                width: '20%',
                 cursor: 'default',
               },
               headerStyle: {
-                width: '15%',
+                width: '20%',
                 cursor: 'default',
               },
               searchable: false,

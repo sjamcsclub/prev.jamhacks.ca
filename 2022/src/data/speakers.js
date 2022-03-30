@@ -1,4 +1,4 @@
-import JohnDoe from '../assets/speakers/ChrisAlbinson.png';
+import ChrisAlbinson from '../assets/speakers/ChrisAlbinson.png';
 
 const speakers = [
   {
@@ -20,7 +20,7 @@ const speakers = [
         CIX - Canadian Innovation Exchange Top 20, and TiEcon 2020.
       </p>
     ),
-    headshot: JohnDoe,
+    headshot: ChrisAlbinson,
   },
 ];
 
