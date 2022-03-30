@@ -24,6 +24,7 @@ import InspiritAI from '../assets/sponsorlogos/peach/InspiritAI.png';
 import Balsamiq from '../assets/sponsorlogos/peach/Balsamiq.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
+import HackClubBank from '../assets/sponsorlogos/partners/HackClub.png';
 
 const blueberry = [
   {
@@ -125,6 +126,10 @@ const partners = [
   {
     link: 'https://hackthenorth.ca/',
     logo: HackTheNorth,
+  },
+  {
+    link: 'https://hackclub.com/bank/',
+    logo: HackClubBank,
   },
 ];
 
