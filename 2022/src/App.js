@@ -101,7 +101,6 @@ Copyright (c) 2022 JAMHacks.
                 </Route>
                 <Route exact path="/schedule">
                   <Schedule />
-                  <Footer disableWave />
                 </Route>
                 <Route exact path="/code-of-conduct">
                   <Navbar sections={CodeConductNavData} location="privacy" />
