@@ -86,7 +86,7 @@ const About = () => {
                 <div className="about-stat-container">
                   <Spring
                     from={{ people: 0 }}
-                    to={{ people: isVisible ? 200 : 0 }}
+                    to={{ people: isVisible ? 300 : 0 }}
                   >
                     {({ people }) => (
                       <h2 className="about-stat">{people.toFixed(0) + '+'}</h2>

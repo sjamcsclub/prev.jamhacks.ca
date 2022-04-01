@@ -15,12 +15,15 @@ const SpeakerDisplay = ({}) => {
         return (
           <div data-aos="fade-up" key={val.name}>
             <Speaker key={i}>
-              <motion.img
-                src={val.headshot}
-                alt={val.name}
-                style={{ width: '20vmax' }}
-                whileHover={{ scale: 0.95 }}
-              ></motion.img>
+              <a href="https://www.linkedin.com/in/albinson" target="_blank">
+                <motion.img
+                  src={val.headshot}
+                  alt={val.name}
+                  style={{ width: '20vmax' }}
+                  whileHover={{ scale: 0.95 }}
+                ></motion.img>
+              </a>
+
               <div>
                 <h2>{val.name}</h2>
                 <i>
