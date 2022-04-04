@@ -15,6 +15,7 @@ import Contact from './Contact';
 import Env from '../../data/env';
 import BottomWave from './BottomWave';
 import Speakers from './Speakers';
+import VenueSection from './Venue';
 
 const Home = function () {
   return (
@@ -28,6 +29,7 @@ const Home = function () {
       <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />
       <Sponsorship mentor={Env.mentor} />
       <Sponsors />
+      <VenueSection />
       <Faq />
       <Team />
       <Blog />

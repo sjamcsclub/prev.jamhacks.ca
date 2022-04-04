@@ -27,8 +27,11 @@ const Hero = ({ register }) => {
         <div className="hero-content-div">
           <StyledLogo />
           <Subtitle>Learn, Connect, Innovate</Subtitle>
-          {/* <LocationText>Virtual Event</LocationText>
-           */}
+          <LocationText>
+            Lazaridis School of Business and Economics, Wilfrid Laurier
+            University
+          </LocationText>
+
           <DateText>May 20th - 22nd</DateText>
           <div
             style={{
@@ -172,7 +175,7 @@ const LocationText = styled.h4`
   z-index: 5;
   color: white;
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.025em;
 
   text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.3);
