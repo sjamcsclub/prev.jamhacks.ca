@@ -111,12 +111,12 @@ const Tier = styled.div`
 `;
 
 const Blueberry = styled.a`
-  width: 60%;
+  width: 40%;
   ${media('md')`
-    width: 65%;
+    width: 35%;
   `}
   ${media('sm')`
-    width: 75%;
+    width: 35%;
   `}
   img {
     width: 100%;
@@ -126,12 +126,12 @@ const Blueberry = styled.a`
 `;
 
 const Strawberry = styled.a`
-  width: 50%;
+  width: 30%;
   ${media('md')`
-    width: 60%;
+    width: 25%;
   `}
   ${media('sm')`
-    width: 70%;
+    width: 25%;
   `}
   img {
     width: 100%;
@@ -141,9 +141,12 @@ const Strawberry = styled.a`
 `;
 
 const Grape = styled.a`
-  width: 32%;
+  width: 25%;
+  ${media('md')`
+    width: 20%;
+  `}
   ${media('sm')`
-    width: 48%;
+    width: 20%;
   `}
   img {
     width: 100%;
@@ -153,16 +156,16 @@ const Grape = styled.a`
 `;
 
 const Peach = styled.a`
+  width: 20%;
   ${media('md')`
-    width: 30%;
+    width: 15%;
   `}
   ${media('sm')`
-    width: 45%;
+    width: 15%;
   `}
   img {
     width: 100%;
   }
-  width: 22%;
   img {
     width: 100%;
     box-sizing: border-box;
