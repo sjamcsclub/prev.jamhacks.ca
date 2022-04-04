@@ -1,5 +1,6 @@
 import TMMC from '../assets/sponsorlogos/blueberry/TMMC.png';
 import Quantstamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
+import Ethereum from '../assets/sponsorlogos/blueberry/Ethereum.png';
 
 import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
@@ -22,6 +23,7 @@ import Linode from '../assets/sponsorlogos/peach/Linode.png';
 import XYZ from '../assets/sponsorlogos/peach/xyz.png';
 import InspiritAI from '../assets/sponsorlogos/peach/InspiritAI.png';
 import Balsamiq from '../assets/sponsorlogos/peach/Balsamiq.png';
+import Magnet from '../assets/sponsorlogos/peach/Magnet.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 import HackClubBank from '../assets/sponsorlogos/partners/HackClub.png';
@@ -35,6 +37,10 @@ const blueberry = [
   {
     link: 'https://quantstamp.com/',
     logo: Quantstamp,
+  },
+  {
+    link: 'https://ethereum.foundation/',
+    logo: Ethereum,
   },
 ];
 
@@ -120,6 +126,10 @@ const peach = [
   {
     link: 'https://balsamiq.com/',
     logo: Balsamiq,
+  },
+  {
+    link: 'https://investors.magnetforensics.com',
+    logo: Magnet,
   },
 ];
 
