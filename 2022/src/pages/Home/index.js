@@ -29,7 +29,7 @@ const Home = function () {
       <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />
       <Sponsorship mentor={Env.mentor} />
       <Sponsors />
-      <VenueSection />
+      {/* <VenueSection /> */}
       <Faq />
       <Team />
       <Blog />

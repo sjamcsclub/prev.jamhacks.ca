@@ -6,6 +6,10 @@ import styled from 'styled-components';
 import { media } from '../../../utils/media';
 import { ReactComponent as Logo } from '../../../assets/logo/JAMHacks6Adjusted.svg';
 import { ReactComponent as Arrow } from '../../../assets/icons/ApplicationArrow.svg';
+import { ReactComponent as TopRight } from '../../../assets/shapes/TopRight.svg';
+import { ReactComponent as TopLeft } from '../../../assets/shapes/TopLeft.svg';
+import { ReactComponent as BottomRight } from '../../../assets/shapes/BottomRight.svg';
+import { ReactComponent as BottomLeft } from '../../../assets/shapes/BottomLeft.svg';
 
 import './Hero.css';
 
@@ -27,10 +31,10 @@ const Hero = ({ register }) => {
         <div className="hero-content-div">
           <StyledLogo />
           <Subtitle>Learn, Connect, Innovate</Subtitle>
-          <LocationText>
+          {/* <LocationText>
             Lazaridis School of Business and Economics, Wilfrid Laurier
             University
-          </LocationText>
+          </LocationText> */}
 
           <DateText>May 20th - 22nd</DateText>
           <div
@@ -120,6 +124,34 @@ const Hero = ({ register }) => {
               </>
             )}
           </div>
+        </div>
+        <div style={{ position: 'absolute', top: '0px', left: '0px' }}>
+          <TopLeft className="hero-background-asset1" />
+        </div>
+        <div
+          style={{
+            position: 'absolute',
+            top: '0px',
+            right: '0px',
+            display: 'flex',
+            justifyContent: 'flex-end',
+          }}
+        >
+          <TopRight className="hero-background-asset2" />
+        </div>
+        <div style={{ position: 'absolute', bottom: '0px', left: '0px' }}>
+          <BottomLeft className="hero-background-asset1" />
+        </div>
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '0px',
+            right: '0px',
+            display: 'flex',
+            justifyContent: 'flex-end',
+          }}
+        >
+          <BottomRight className="hero-background-asset2" />
         </div>
       </div>
       <div style={{ height: '100vh', zIndex: -10 }}></div>
