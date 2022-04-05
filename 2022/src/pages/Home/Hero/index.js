@@ -139,7 +139,15 @@ const Hero = ({ register }) => {
         >
           <TopRight className="hero-background-asset2" />
         </div>
-        <div style={{ position: 'absolute', bottom: '0px', left: '0px' }}>
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '0px',
+            left: '0px',
+            display: 'flex',
+            alignItems: 'flex-end',
+          }}
+        >
           <BottomLeft className="hero-background-asset1" />
         </div>
         <div
