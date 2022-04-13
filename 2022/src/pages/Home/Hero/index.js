@@ -27,10 +27,7 @@ const Hero = ({ register }) => {
         <div className="hero-content-div">
           <StyledLogo />
           <Subtitle>Learn, Connect, Innovate</Subtitle>
-          <LocationText>
-            Lazaridis School of Business and Economics, Wilfrid Laurier
-            University
-          </LocationText>
+          <LocationText></LocationText>
 
           <DateText>May 20th - 22nd</DateText>
           <div

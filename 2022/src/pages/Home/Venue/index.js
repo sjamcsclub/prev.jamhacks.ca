@@ -43,6 +43,7 @@ const VenueSection = ({}) => {
           flexWrap: 'wrap',
           alignContent: 'center',
         }}
+        data-aos="fade-up"
       >
         <MapComponent
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${API_KEY}&v=3.exp&libraries=geometry,drawing,places`}
