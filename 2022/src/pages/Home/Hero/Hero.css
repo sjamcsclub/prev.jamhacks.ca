@@ -56,14 +56,14 @@
 }
 
 .wave {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   width: 200%;
   height: 100%;
   background-image: url('../../../assets/waves.png');
   background-repeat: repeat no-repeat;
   background-position: 0 bottom;
-  transform-origin: center bottom;
+  transform-origin: center bottom; */
 }
 
 .wave-animation .wave-top {
@@ -204,6 +204,17 @@
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .hero-background-asset1 {
+    height: 75%;
+    width: 75%;
+  }
+  .hero-background-asset2 {
+    height: 75%;
+    width: 75%;
+  }
+}
+
 @media only screen and (max-width: 786px) {
   .hero-div {
     padding-top: 70px;
@@ -219,6 +230,14 @@
   .hero-button-div {
     justify-content: center;
   }
+  .hero-background-asset1 {
+    height: 60%;
+    width: 60%;
+  }
+  .hero-background-asset2 {
+    height: 100%;
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -229,5 +248,13 @@
   .hero-partners-div {
     font-size: 20px;
     line-height: 36px;
+  }
+  .hero-background-asset1 {
+    height: 40%;
+    width: 40%;
+  }
+  .hero-background-asset2 {
+    height: 100%;
+    width: 40%;
   }
 }
