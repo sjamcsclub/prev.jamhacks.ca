@@ -1,3 +1,4 @@
+import Communitech from '../assets/sponsorlogos/blueberry/Communitech.png';
 import TMMC from '../assets/sponsorlogos/blueberry/TMMC.png';
 import Quantstamp from '../assets/sponsorlogos/blueberry/Quantstamp.png';
 import Ethereum from '../assets/sponsorlogos/blueberry/Ethereum.png';
@@ -8,6 +9,7 @@ import OnlyOffice from '../assets/sponsorlogos/strawberry/OnlyOffice.svg';
 
 import IQC from '../assets/sponsorlogos/grape/IQC.png';
 import Cognitive from '../assets/sponsorlogos/grape/Cognitive.png';
+import DigitalOcean from '../assets/sponsorlogos/grape/DigitalOcean.png';
 
 import MapleSoft from '../assets/sponsorlogos/peach/MapleSoft.png';
 import Bestbuy from '../assets/sponsorlogos/peach/Bestbuy.png';
@@ -24,12 +26,18 @@ import XYZ from '../assets/sponsorlogos/peach/xyz.png';
 import InspiritAI from '../assets/sponsorlogos/peach/InspiritAI.png';
 import Balsamiq from '../assets/sponsorlogos/peach/Balsamiq.png';
 import Magnet from '../assets/sponsorlogos/peach/Magnet.png';
+import WolframAlpha from '../assets/sponsorlogos/peach/WolframAlpha.png';
+import Desjardins from '../assets/sponsorlogos/peach/Desjardins.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 import HackClubBank from '../assets/sponsorlogos/partners/HackClub.png';
 import MLH from '../assets/sponsorlogos/partners/MLH.png';
 
 const blueberry = [
+  {
+    link: 'https://www.communitech.ca/',
+    logo: Communitech,
+  },
   {
     link: 'https://tmmc.ca/',
     logo: TMMC,
@@ -67,6 +75,10 @@ const grape = [
   {
     link: 'https://www.cognitivesystems.com/',
     logo: Cognitive,
+  },
+  {
+    link: 'https://www.digitalocean.com/',
+    logo: DigitalOcean,
   },
 ];
 
@@ -130,6 +142,14 @@ const peach = [
   {
     link: 'https://investors.magnetforensics.com',
     logo: Magnet,
+  },
+  {
+    link: 'https://www.wolframalpha.com/',
+    logo: WolframAlpha,
+  },
+  {
+    link: 'https://dimakosinsurance.com/',
+    logo: Desjardins,
   },
 ];
 

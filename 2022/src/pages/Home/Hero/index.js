@@ -31,9 +31,8 @@ const Hero = ({ register }) => {
         <div className="hero-content-div">
           <StyledLogo />
           <Subtitle>Learn, Connect, Innovate</Subtitle>
-          <LocationText></LocationText>
-
-          <DateText>May 20th - 22nd</DateText>
+          <LocationText>Hybrid Event</LocationText>
+          <DateText>Wilfrid Laurier University, May 20th - 22nd</DateText>
           <div
             style={{
               width: '80%',
@@ -191,7 +190,7 @@ const Subtitle = styled.h3`
   justify-content: flex-start;
   z-index: 5;
   letter-spacing: 0.04em;
-  margin: 1rem 0rem;
+  margin: 1rem 0rem 0rem 0rem;
   ${media('md')`
     font-size: 1.5rem;
     justify-content: center;
@@ -205,18 +204,15 @@ const LocationText = styled.h4`
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   display: flex;
   justify-content: flex-start;
   z-index: 5;
-  color: white;
+  color: #7b0ff7;
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 0.025em;
-
-  text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.3);
-
   ${media('md')`
     justify-content: center;
   `}

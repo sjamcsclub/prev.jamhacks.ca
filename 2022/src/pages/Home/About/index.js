@@ -59,9 +59,9 @@ const About = () => {
           >
             <Text dark>
               Waterloo’s largest high school hackathon is back! JAMHacks 6 will
-              take place virtually on May 20th - 22nd, where 300+ high school
-              students all over North America will gather for a weekend of
-              learning and creating.
+              take place in a hybrid format on May 20th - 22nd at Wilfrid
+              Laurier University, where 300+ high school students all over North
+              America will gather for a weekend of learning and creating.
             </Text>
             <br></br>
             <Text dark>

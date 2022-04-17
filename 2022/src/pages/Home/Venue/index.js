@@ -20,9 +20,9 @@ const MapComponent = withScriptjs(
     return (
       <GoogleMap
         defaultZoom={15}
-        defaultCenter={{ lat: 43.4756, lng: -80.529678 }}
+        defaultCenter={{ lat: 43.4737, lng: -80.5249 }}
       >
-        <Marker position={{ lat: 43.47496, lng: -80.529678 }} />
+        <Marker position={{ lat: 43.4737, lng: -80.5249 }} />
       </GoogleMap>
     );
   }),
@@ -60,7 +60,7 @@ const VenueSection = ({}) => {
             <div
               style={{
                 height: `100%`,
-                width: isMobile ? '400px' : '500px',
+                width: isMobile ? '350px' : '500px',
                 justifySelf: 'center',
               }}
             />
@@ -74,8 +74,8 @@ const VenueSection = ({}) => {
             width: isMobile ? '70%' : '40%',
           }}
         >
-          <strong>Location</strong>: Lazaridis School of Business and Economics,
-          64 University Ave W, Waterloo, ON N2L 3C7
+          <strong>Location</strong>: Wilfrid Laurier University Science
+          Building, Waterloo, ON N2L 3B4
         </p>
       </div>
     </Container>

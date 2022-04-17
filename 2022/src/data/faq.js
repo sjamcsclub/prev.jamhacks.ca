@@ -12,7 +12,7 @@ const QuestionsC1 = [
   {
     question: 'Will JAMHacks be running in-person or online?',
     answer:
-      'Due to the COVID-19 pandemic, JAMHacks will be running virtually. Everything can be done from the comfort of your own bedroom, and we’ll be using Discord to communicate during the event!',
+      'This year, JAMHacks will be adopting a hybrid event model! We will be running both in-person and online events. In-person events will be held at Wilfrid Laurier University, and online events will be held through our Discord server. We will be posting more information about the details soon!',
   },
   {
     question: 'What if I don’t know how to code?',
