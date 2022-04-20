@@ -154,10 +154,10 @@ const peach = [
 ];
 
 const partners = [
-  {
-    link: 'https://hackthenorth.ca/',
-    logo: HackTheNorth,
-  },
+  // {
+  //   link: 'https://hackthenorth.ca/',
+  //   logo: HackTheNorth,
+  // },
   {
     link: 'https://hackclub.com/bank/',
     logo: HackClubBank,

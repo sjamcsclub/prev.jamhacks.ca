@@ -32,7 +32,8 @@ const Hero = ({ register }) => {
           <StyledLogo />
           <Subtitle>Learn, Connect, Innovate</Subtitle>
           <LocationText>Hybrid Event</LocationText>
-          <DateText>Wilfrid Laurier University, May 20th - 22nd</DateText>
+          {/* <DateText>Wilfrid Laurier University, May 20th - 22nd</DateText> */}
+          <DateText>Waterloo Ontario, May 20th - 22nd</DateText>
           <div
             style={{
               width: '80%',
@@ -235,6 +236,7 @@ const DateText = styled.h4`
   opacity: 90%;
   ${media('md')`
     justify-content: center;
+    font-size: 0.8rem;
   `}
 `;
 //  text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.3);
