@@ -32,6 +32,7 @@ import Desjardins from '../assets/sponsorlogos/peach/Desjardins.png';
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 import HackClubBank from '../assets/sponsorlogos/partners/HackClub.png';
 import MLH from '../assets/sponsorlogos/partners/MLH.png';
+import WaterlooEng from '../assets/sponsorlogos/partners/Waterloo_Engineering_Wordmark.png';
 
 const blueberry = [
   {
@@ -154,10 +155,18 @@ const peach = [
 ];
 
 const partners = [
+<<<<<<< Updated upstream
   // {
   //   link: 'https://hackthenorth.ca/',
   //   logo: HackTheNorth,
   // },
+=======
+  {
+    link: 'https://uwaterloo.ca/engineering/',
+    logo: WaterlooEng,
+    size: 'big',
+  },
+>>>>>>> Stashed changes
   {
     link: 'https://hackclub.com/bank/',
     logo: HackClubBank,

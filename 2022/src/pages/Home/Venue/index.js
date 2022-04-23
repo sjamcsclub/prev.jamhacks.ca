@@ -20,9 +20,9 @@ const MapComponent = withScriptjs(
     return (
       <GoogleMap
         defaultZoom={15}
-        defaultCenter={{ lat: 43.4737, lng: -80.5249 }}
+        defaultCenter={{ lat: 43.470631, lng: -80.541382 }}
       >
-        <Marker position={{ lat: 43.4737, lng: -80.5249 }} />
+        <Marker position={{ lat: 43.470631, lng: -80.541382 }} />
       </GoogleMap>
     );
   }),
@@ -71,11 +71,10 @@ const VenueSection = ({}) => {
           style={{
             fontSize: '1.2rem',
             textAlign: 'center',
-            width: isMobile ? '70%' : '40%',
+            width: isMobile ? '70%' : '30%',
           }}
         >
-          <strong>Location</strong>: Wilfrid Laurier University Science
-          Building, Waterloo, ON N2L 3B4
+          <strong>Location</strong>: Engineering 7 (E7), University of Waterloo
         </p>
       </div>
     </Container>

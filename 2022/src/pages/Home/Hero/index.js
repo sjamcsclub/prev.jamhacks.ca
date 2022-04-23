@@ -31,9 +31,10 @@ const Hero = ({ register }) => {
         <div className="hero-content-div">
           <StyledLogo />
           <Subtitle>Learn, Connect, Innovate</Subtitle>
-          <LocationText>Hybrid Event</LocationText>
-          {/* <DateText>Wilfrid Laurier University, May 20th - 22nd</DateText> */}
-          <DateText>Waterloo Ontario, May 20th - 22nd</DateText>
+          <LocationText></LocationText>
+
+          <DateText>May 20th - 22nd</DateText>
+          <DateText style={{ fontWeight: 'bold' }}>Hybrid Event</DateText>
           <div
             style={{
               width: '80%',

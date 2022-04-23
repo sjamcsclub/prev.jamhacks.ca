@@ -13,6 +13,8 @@ import {
   partners,
 } from '../../../data/sponsors';
 
+const largeLogo = ['https://uwaterloo.ca/engineering/'];
+
 const SponsorDisplay = ({}) => {
   return (
     <Container>
@@ -77,13 +79,32 @@ const SponsorDisplay = ({}) => {
         })}
       </Tier>
       <Header data-aos="fade-up">Partners</Header>
+      {partners.map((val, i) => {
+        if (val.size !== 'big') return null;
+        return (
+          <Partner data-aos="fade-up" key={i} href={val.link} target="_blank">
+            <motion.img
+              whileHover={{ scale: 1.05 }}
+              src={val.logo}
+              style={{
+                width: '30em',
+              }}
+            ></motion.img>
+          </Partner>
+        );
+      })}
       <Tier data-aos="fade-up">
         {partners.map((val, i) => {
+          if (val.size === 'big') return null;
+
           return (
             <Partner key={i} href={val.link} target="_blank">
               <motion.img
                 whileHover={{ scale: 1.05 }}
                 src={val.logo}
+                style={{
+                  width: '18em',
+                }}
               ></motion.img>
             </Partner>
           );
@@ -104,10 +125,11 @@ const Container = styled.div`
 
 const Tier = styled.div`
   display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin-bottom: 1rem;
+  position: relative;
 `;
 
 const Blueberry = styled.a`
@@ -175,16 +197,22 @@ const Peach = styled.a`
 
 const Partner = styled.a`
   ${media('md')`
-    width: 45%;
+    width: 55%;
   `}
-  img {
-    width: 100%;
-  }
   width: 31%;
-  img {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5%;
+  // img {
+  //   width: 20em;
+  //   box-sizing: border-box;
+  //   padding: 5%;
+  //   // border: 2px solid black;
+  //   margin: 0;
+  // }
+  // .big-img {
+  //   width: 35em;
+  //   // position: absolute;
+  //   // top: 0;
+  //   // left: 14em;
+  //   margin: 10em;
   }
 `;
 
