@@ -155,18 +155,11 @@ const peach = [
 ];
 
 const partners = [
-<<<<<<< Updated upstream
-  // {
-  //   link: 'https://hackthenorth.ca/',
-  //   logo: HackTheNorth,
-  // },
-=======
   {
     link: 'https://uwaterloo.ca/engineering/',
     logo: WaterlooEng,
     size: 'big',
   },
->>>>>>> Stashed changes
   {
     link: 'https://hackclub.com/bank/',
     logo: HackClubBank,
