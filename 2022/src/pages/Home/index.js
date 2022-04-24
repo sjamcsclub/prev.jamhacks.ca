@@ -25,7 +25,7 @@ const Home = function () {
       <About />
       <BottomWave />
       <Speakers />
-      {/* <VenueSection /> */}
+      <VenueSection />
       {Env.schedule && <Schedule />}
       <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />
       <Sponsorship mentor={Env.mentor} />
