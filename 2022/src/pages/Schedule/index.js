@@ -11,6 +11,42 @@ import { useEffect } from 'react';
 const Schedule = () => {
   const history = useHistory();
   const [pageNum, setPageNum] = useState(1);
+  const [data, setData] = useState(Day1Data);
+  const [filter, setFilter] = useState('online');
+  useEffect(() => {
+    if (filter === 'online') {
+      switch (pageNum) {
+        case 1:
+          setData(Day1Data);
+          break;
+        case 2:
+          setData(Day2Data);
+          break;
+        case 3:
+          setData(Day3Data);
+          break;
+        default:
+          setData(Day1Data);
+      }
+    } else if (filter === 'in-person') {
+      setData(data.filter((item) => item.type === 'In-person'));
+    }
+  }, [filter]);
+  useEffect(() => {
+    switch (pageNum) {
+      case 1:
+        setData(Day1Data);
+        break;
+      case 2:
+        setData(Day2Data);
+        break;
+      case 3:
+        setData(Day3Data);
+        break;
+      default:
+        setData(Day1Data);
+    }
+  }, [pageNum]);
   return (
     <div style={{ zIndex: 2, minHeight: '90vh' }}>
       <button
@@ -49,6 +85,14 @@ const Schedule = () => {
           Day 3
         </button>
       </div>
+
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '5px' }}>
+        <label htmlFor="typeSelect">Type: </label>
+        <select id="typeSelect" onChange={(e) => setFilter(e.target.value)}>
+          <option value="online">Online</option>
+          <option value="in-person">In-Person</option>
+        </select>
+      </div>
       <div className="schedule-table-container">
         {' '}
         <MaterialTable
@@ -70,18 +114,7 @@ const Schedule = () => {
             },
             { title: 'Event', field: 'title', disableSortBy: false },
           ]}
-          data={(() => {
-            switch (pageNum) {
-              case 1:
-                return Day1Data;
-              case 2:
-                return Day2Data;
-              case 3:
-                return Day3Data;
-              default:
-                return [];
-            }
-          })()}
+          data={data}
           onChangePage={(page) => setPageNum(page)}
           // title={`JAMHacks 6 - Day ${pageNum}`}
           options={{
