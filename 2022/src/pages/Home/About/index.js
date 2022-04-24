@@ -57,9 +57,15 @@ const About = () => {
             className="about-content-subheading"
             style={{ textAlign: 'left', width: '100%' }}
           >
-            <Text dark>
+            {/* <Text dark>
               Waterloo’s largest high school hackathon is back! JAMHacks 6 will
               take place in a hybrid format on May 20th - 22nd, where 300+ high
+              school students all over North America will gather for a weekend
+              of learning and creating.
+            </Text> */}
+            <Text dark>
+              Waterloo’s largest high school hackathon is back! JAMHacks 6 will
+              take place in a virtual format on May 20th - 22nd, where 300+ high
               school students all over North America will gather for a weekend
               of learning and creating.
             </Text>

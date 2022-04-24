@@ -20,9 +20,9 @@ const MapComponent = withScriptjs(
     return (
       <GoogleMap
         defaultZoom={15}
-        defaultCenter={{ lat: 43.470631, lng: -80.541382 }}
+        defaultCenter={{ lat: 43.4728, lng: -80.5397 }}
       >
-        <Marker position={{ lat: 43.470631, lng: -80.541382 }} />
+        <Marker position={{ lat: 43.4728, lng: -80.5397 }} />
       </GoogleMap>
     );
   }),
@@ -74,7 +74,9 @@ const VenueSection = ({}) => {
             width: isMobile ? '70%' : '30%',
           }}
         >
-          <strong>Location</strong>: Engineering 7 (E7), University of Waterloo
+          <strong>Location</strong>: Engineering 7 (E7), University of Waterloo{' '}
+          <br></br>
+          200 University Ave W, Waterloo, ON N2L 3G5
         </p>
       </div>
     </Container>

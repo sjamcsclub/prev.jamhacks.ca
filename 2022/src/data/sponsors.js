@@ -30,6 +30,7 @@ import WolframAlpha from '../assets/sponsorlogos/peach/WolframAlpha.png';
 import Desjardins from '../assets/sponsorlogos/peach/Desjardins.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
+import WaterlooEngineering from '../assets/sponsorlogos/partners/WaterlooEngineering.png';
 import HackClubBank from '../assets/sponsorlogos/partners/HackClub.png';
 import MLH from '../assets/sponsorlogos/partners/MLH.png';
 import WaterlooEng from '../assets/sponsorlogos/partners/Waterloo_Engineering_Wordmark.png';
@@ -156,11 +157,6 @@ const peach = [
 
 const partners = [
   {
-    link: 'https://uwaterloo.ca/engineering/',
-    logo: WaterlooEng,
-    size: 'big',
-  },
-  {
     link: 'https://hackclub.com/bank/',
     logo: HackClubBank,
   },
@@ -170,4 +166,11 @@ const partners = [
   },
 ];
 
-export { blueberry, strawberry, grape, peach, partners };
+const partnersLarge = [
+  {
+    link: 'https://uwaterloo.ca/engineering/',
+    logo: WaterlooEngineering,
+  },
+];
+
+export { blueberry, strawberry, grape, peach, partners, partnersLarge };

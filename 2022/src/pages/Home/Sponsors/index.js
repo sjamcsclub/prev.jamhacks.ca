@@ -11,9 +11,8 @@ import {
   grape,
   peach,
   partners,
+  partnersLarge,
 } from '../../../data/sponsors';
-
-const largeLogo = ['https://uwaterloo.ca/engineering/'];
 
 const SponsorDisplay = ({}) => {
   return (
@@ -79,20 +78,18 @@ const SponsorDisplay = ({}) => {
         })}
       </Tier>
       <Header data-aos="fade-up">Partners</Header>
-      {partners.map((val, i) => {
-        if (val.size !== 'big') return null;
-        return (
-          <Partner data-aos="fade-up" key={i} href={val.link} target="_blank">
-            <motion.img
-              whileHover={{ scale: 1.05 }}
-              src={val.logo}
-              style={{
-                width: '30em',
-              }}
-            ></motion.img>
-          </Partner>
-        );
-      })}
+      <Tier data-aos="fade-up">
+        {partnersLarge.map((val, i) => {
+          return (
+            <PartnerLarge key={i} href={val.link} target="_blank">
+              <motion.img
+                whileHover={{ scale: 1.05 }}
+                src={val.logo}
+              ></motion.img>
+            </PartnerLarge>
+          );
+        })}
+      </Tier>
       <Tier data-aos="fade-up">
         {partners.map((val, i) => {
           if (val.size === 'big') return null;
@@ -102,9 +99,6 @@ const SponsorDisplay = ({}) => {
               <motion.img
                 whileHover={{ scale: 1.05 }}
                 src={val.logo}
-                style={{
-                  width: '18em',
-                }}
               ></motion.img>
             </Partner>
           );
@@ -129,7 +123,6 @@ const Tier = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 1rem;
-  position: relative;
 `;
 
 const Blueberry = styled.a`
@@ -197,22 +190,31 @@ const Peach = styled.a`
 
 const Partner = styled.a`
   ${media('md')`
-    width: 55%;
+    width: 45%;
   `}
+  img {
+    width: 100%;
+  }
   width: 31%;
-  // img {
-  //   width: 20em;
-  //   box-sizing: border-box;
-  //   padding: 5%;
-  //   // border: 2px solid black;
-  //   margin: 0;
-  // }
-  // .big-img {
-  //   width: 35em;
-  //   // position: absolute;
-  //   // top: 0;
-  //   // left: 14em;
-  //   margin: 10em;
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+`;
+
+const PartnerLarge = styled.a`
+  ${media('md')`
+    width: 45%;
+  `}
+  img {
+    width: 100%;
+  }
+  width: 60%;
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
   }
 `;
 
