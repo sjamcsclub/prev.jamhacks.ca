@@ -168,6 +168,10 @@ const partners = [
     link: 'https://mlh.io/',
     logo: MLH,
   },
+  {
+    link: 'https://hackthenorth.com/',
+    logo: HackTheNorth,
+  },
 ];
 
 const partnersLarge = [
