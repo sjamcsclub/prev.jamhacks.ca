@@ -28,12 +28,12 @@ import Balsamiq from '../assets/sponsorlogos/peach/Balsamiq.png';
 import Magnet from '../assets/sponsorlogos/peach/Magnet.png';
 import WolframAlpha from '../assets/sponsorlogos/peach/WolframAlpha.png';
 import Desjardins from '../assets/sponsorlogos/peach/Desjardins.png';
+import StickerMule from '../assets/sponsorlogos/peach/StickerMule.png';
 
 import HackTheNorth from '../assets/sponsorlogos/partners/HackTheNorth.png';
 import WaterlooEngineering from '../assets/sponsorlogos/partners/WaterlooEngineering.png';
 import HackClubBank from '../assets/sponsorlogos/partners/HackClub.png';
 import MLH from '../assets/sponsorlogos/partners/MLH.png';
-import WaterlooEng from '../assets/sponsorlogos/partners/Waterloo_Engineering_Wordmark.png';
 
 const blueberry = [
   {
@@ -153,6 +153,10 @@ const peach = [
     link: 'https://dimakosinsurance.com/',
     logo: Desjardins,
   },
+  {
+    link: 'https://www.stickermule.com/',
+    logo: StickerMule,
+  },
 ];
 
 const partners = [
@@ -163,6 +167,10 @@ const partners = [
   {
     link: 'https://mlh.io/',
     logo: MLH,
+  },
+  {
+    link: 'https://hackthenorth.com/',
+    logo: HackTheNorth,
   },
 ];
 

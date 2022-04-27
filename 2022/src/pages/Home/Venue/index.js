@@ -31,6 +31,7 @@ const MapComponent = withScriptjs(
 const VenueSection = ({}) => {
   const { width, height } = useWindowDimensions();
   const isMobile = width < 768;
+  console.log(API_KEY);
   return (
     <Container id="venue-info-section">
       <Header data-aos="fade-up">Venue</Header>
