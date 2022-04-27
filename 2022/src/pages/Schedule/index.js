@@ -38,7 +38,7 @@ const ScheduleComponent = ({ data }) => {
                 width: '150px',
               }}
             >
-              {i < 12 ? i : i - 12}:00 {i < 12 || i === 24 ? 'AM' : 'PM'}
+              {i <= 12 ? i : i - 12}:00 {i < 12 || i === 24 ? 'AM' : 'PM'}
             </p>
           ))}
         </div>
