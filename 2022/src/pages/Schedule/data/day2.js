@@ -55,6 +55,7 @@ export const Day2Data = [
     title: 'Dinner',
     startTime: 19,
     duration: 2,
+    overlap: true,
     type: 'In-person',
   },
   {
@@ -66,6 +67,7 @@ export const Day2Data = [
   },
   {
     title: 'VALORANT Tournament',
+    overlap: 'true',
     startTime: 22,
     duration: 2,
     type: 'Online',

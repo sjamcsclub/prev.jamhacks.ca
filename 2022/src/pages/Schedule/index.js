@@ -68,7 +68,13 @@ const ScheduleComponent = ({ data }) => {
                   width: '100%',
                 }}
               >
-                {item.title}
+                <div
+                  style={{
+                    marginBottom: item.overlap && '40px',
+                  }}
+                >
+                  {item.title}
+                </div>
               </p>
               {item.concurrent && (
                 <p
