@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MaterialTable from 'material-table';
 
 import { useHistory } from 'react-router-dom';
 import { Day1Data } from './data/day1';
@@ -7,90 +8,6 @@ import { Day2Data } from './data/day2';
 import { Day3Data } from './data/day3';
 import './style.css';
 import { useEffect } from 'react';
-
-const ScheduleComponent = ({ data }) => {
-  const start = data[0].startTime,
-    end = 23;
-  const range = Array.from({ length: end - start + 1 }, (_, i) => start + i);
-  return (
-    <>
-      <div
-        style={{
-          display: 'flex',
-        }}
-      >
-        <div>
-          {range.map((i) => (
-            <p
-              key={i}
-              style={{
-                background: 'purple',
-                color: 'white',
-                margin: 0,
-                height: '80px',
-                border: '1px solid white',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                width: '150px',
-              }}
-            >
-              {i < 12 ? i : i - 12}:00 {i < 12 || i === 24 ? 'AM' : 'PM'}
-            </p>
-          ))}
-        </div>
-        <div style={{ width: '800px', position: 'relative' }}>
-          {data.map((item, i) => (
-            <div
-              style={{
-                display: 'flex',
-                position: 'absolute',
-                top: `${(item.startTime - start) * 80}px`,
-                width: item.behaviour === 'right' ? '790px' : '800px',
-                left: item.behaviour === 'right' ? '450px' : '0',
-              }}
-            >
-              <p
-                key={i}
-                style={{
-                  background: 'gray',
-                  color: 'white',
-                  margin: 0,
-                  height: item.duration * 80,
-                  border: '1px solid white',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: '100%',
-                }}
-              >
-                {item.title}
-              </p>
-              {item.concurrent && (
-                <p
-                  key={i}
-                  style={{
-                    background: 'gray',
-                    color: 'white',
-                    margin: 0,
-                    height: item.concurrent.duration * 80,
-                    border: '1px solid white',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    width: '100%',
-                  }}
-                >
-                  {item.concurrent.title}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
-};
 
 const Schedule = () => {
   const history = useHistory();
@@ -177,16 +94,52 @@ const Schedule = () => {
           <option value="in-person">In-Person</option>
         </select>
       </div>
-      <div
-        style={{
-          border: '1px solid black',
-          margin: '20px',
-          display: 'flex',
-        }}
-      >
-        <div>
-          <ScheduleComponent data={data} />
-        </div>
+      <div className="schedule-table-container">
+        {' '}
+        <MaterialTable
+          columns={[
+            {
+              title: 'Time',
+              field: 'time',
+              cellStyle: {
+                backgroundColor: '#EEDFFF',
+                color: '#7B0EF6',
+                width: '20%',
+                cursor: 'default',
+              },
+              headerStyle: {
+                width: '20%',
+                cursor: 'default',
+              },
+              searchable: false,
+            },
+            { title: 'Event', field: 'title', disableSortBy: false },
+            { title: 'Event', field: 'title_2', disableSortBy: false },
+          ]}
+          data={data}
+          onChangePage={(page) => setPageNum(page)}
+          // title={`JAMHacks 6 - Day ${pageNum}`}
+          options={{
+            showTitle: false,
+            headerStyle: {
+              backgroundColor: '#7B0EF6',
+              color: '#FFF',
+              fontFamily: 'Poppins',
+            },
+            rowStyle: {
+              overflowWrap: 'break-word',
+              fontFamily: 'Poppins',
+            },
+            exportButton: true,
+            sorting: false,
+            paginationType: 'stepped',
+            paging: false,
+            tableLayout: 'auto',
+            search: false,
+            toolbar: false,
+            draggable: false,
+          }}
+        />
       </div>
     </div>
   );

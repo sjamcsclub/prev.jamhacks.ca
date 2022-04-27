@@ -27,6 +27,8 @@ body {
   width: 80%;
   margin: 0 auto;
   cursor: default !important;
+  overflow-y: scroll;
+  max-height: 500px;
 }
 
 .btn_top {
