@@ -11,7 +11,7 @@ import {
   GoogleMap,
   Marker,
 } from 'react-google-maps';
-import useWindowDimensions from '../../../utils/useWindowDimensions';
+import { useWindowDimensions } from '../../../utils/useWindowDimensions';
 
 const API_KEY = process.env.REACT_APP_GMAP_API_KEY;
 

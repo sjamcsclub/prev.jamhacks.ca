@@ -7,8 +7,11 @@ import { Day2Data } from './data/day2';
 import { Day3Data } from './data/day3';
 import './style.css';
 import { useEffect } from 'react';
+import { useWindowDimensions } from '../../utils/useWindowDimensions';
 
 const ScheduleComponent = ({ data }) => {
+  const { width } = useWindowDimensions();
+  const gridWidth = width / 2.5;
   const start = data[0].startTime,
     end = 23;
   const range = Array.from({ length: end - start + 1 }, (_, i) => start + i);
@@ -39,7 +42,7 @@ const ScheduleComponent = ({ data }) => {
             </p>
           ))}
         </div>
-        <div style={{ width: '800px', position: 'relative' }}>
+        <div style={{ width: gridWidth, position: 'relative' }}>
           {data.map((item, i) => (
             <div
               style={{
@@ -48,6 +51,7 @@ const ScheduleComponent = ({ data }) => {
                 top: `${(item.startTime - start) * 80}px`,
                 width: item.behaviour === 'right' ? '100%' : '100%',
                 left: item.behaviour === 'right' ? '50%' : '0',
+                textAlign: 'center',
               }}
             >
               <p
@@ -179,9 +183,9 @@ const Schedule = () => {
       </div>
       <div
         style={{
-          border: '1px solid black',
           margin: '20px',
           display: 'flex',
+          justifyContent: 'center',
         }}
       >
         <div>
