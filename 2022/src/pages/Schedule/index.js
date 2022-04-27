@@ -46,8 +46,8 @@ const ScheduleComponent = ({ data }) => {
                 display: 'flex',
                 position: 'absolute',
                 top: `${(item.startTime - start) * 80}px`,
-                width: item.behaviour === 'right' ? '790px' : '800px',
-                left: item.behaviour === 'right' ? '450px' : '0',
+                width: item.behaviour === 'right' ? '100%' : '100%',
+                left: item.behaviour === 'right' ? '50%' : '0',
               }}
             >
               <p
