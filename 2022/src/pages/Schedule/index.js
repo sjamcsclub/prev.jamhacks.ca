@@ -69,9 +69,12 @@ const ScheduleComponent = ({ data }) => {
                 }}
               >
                 <div
-                  style={{
-                    marginBottom: item.overlap && '40px',
-                  }}
+                  style={
+                    item.overlap && {
+                      position: 'absolute',
+                      left: '15%',
+                    }
+                  }
                 >
                   {item.title}
                 </div>

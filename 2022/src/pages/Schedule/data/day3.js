@@ -25,6 +25,7 @@ export const Day3Data = [
   },
   {
     title: 'Project Judging',
+    overlap: true,
     startTime: 11,
     duration: 6,
     type: 'Online',
