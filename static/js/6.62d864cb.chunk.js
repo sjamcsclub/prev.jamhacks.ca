@@ -1,0 +1,2 @@
+(this["webpackJsonpjamhacks.ca"]=this["webpackJsonpjamhacks.ca"]||[]).push([[6],{479:function(t,c,a){},481:function(t,c,a){"use strict";a.r(c);var e=a(47),n=a(48),s=a(50),r=a(49),u=a(0),i=(a(479),a(2)),o=function(t){Object(s.a)(a,t);var c=Object(r.a)(a);function a(t){var n;return Object(e.a)(this,a),(n=c.call(this,t)).state={},n}return Object(n.a)(a,[{key:"render",value:function(){return Object(i.jsx)("div",{className:"code-conduct-div"})}}]),a}(u.Component);c.default=o}}]);
+//# sourceMappingURL=6.62d864cb.chunk.js.map
