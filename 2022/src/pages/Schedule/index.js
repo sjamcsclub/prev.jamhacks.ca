@@ -49,7 +49,7 @@ const ScheduleComponent = ({ data }) => {
                 display: 'flex',
                 position: 'absolute',
                 top: `${(item.startTime - start) * 80}px`,
-                width: item.behaviour === 'right' ? '100%' : '100%',
+                width: item.hasConcurrent ? '50%' : '100%',
                 left: item.behaviour === 'right' ? '50%' : '0',
                 textAlign: 'center',
               }}
@@ -68,16 +68,7 @@ const ScheduleComponent = ({ data }) => {
                   width: '100%',
                 }}
               >
-                <div
-                  style={
-                    item.overlap && {
-                      position: 'absolute',
-                      left: '15%',
-                    }
-                  }
-                >
-                  {item.title}
-                </div>
+                <div>{item.title}</div>
               </p>
               {item.concurrent && (
                 <p

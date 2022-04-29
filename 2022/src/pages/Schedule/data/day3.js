@@ -29,6 +29,7 @@ export const Day3Data = [
     startTime: 11,
     duration: 6,
     type: 'Online',
+    hasConcurrent: true,
   },
   {
     title: 'Lunch',
@@ -36,6 +37,7 @@ export const Day3Data = [
     duration: 2,
     type: 'In-person',
     behaviour: 'right',
+    hasConcurrent: true,
   },
   {
     title: 'Closing Ceremonies',

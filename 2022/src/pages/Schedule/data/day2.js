@@ -57,12 +57,14 @@ export const Day2Data = [
     duration: 2,
     overlap: true,
     type: 'In-person',
+    hasConcurrent: true,
   },
   {
     title: 'Fireside Chat',
     startTime: 20,
     duration: 2,
     type: 'In-person',
+    hasConcurrent: true,
     behaviour: 'right',
   },
   {
@@ -71,12 +73,14 @@ export const Day2Data = [
     startTime: 22,
     duration: 2,
     type: 'Online',
+    hasConcurrent: true,
   },
   {
     title: 'Minecraft Competition',
     startTime: 23,
     duration: 1,
     type: 'Online',
+    hasConcurrent: true,
     behaviour: 'right',
   },
 ];
