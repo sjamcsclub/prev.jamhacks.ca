@@ -2,7 +2,7 @@
 
 const Env = {
   //false, "open", "complete", "post-event"
-  register: 'open',
+  register: false,
   schedule: false,
   mentor: 'open',
   volunteer: 'open',

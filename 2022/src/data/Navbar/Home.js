@@ -2,14 +2,14 @@ import Env from '../env.js';
 
 const HomeNavData = [
   {
-    label: 'About',
-    id: 'about-section',
-    enabled: true,
-  },
-  {
     label: 'Schedule',
     id: 'schedule-section',
     enabled: Env.schedule,
+  },
+  {
+    label: 'About',
+    id: 'about-section',
+    enabled: true,
   },
   {
     label: 'Sponsors',
