@@ -35,7 +35,7 @@ const ScheduleComponent = ({ data }) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '150px',
+                width: width > 700 ? '150px' : '100px',
               }}
             >
               {i <= 12 ? i : i - 12}:00 {i < 12 || i === 24 ? 'AM' : 'PM'}
@@ -52,6 +52,7 @@ const ScheduleComponent = ({ data }) => {
                 width: item.hasConcurrent ? '50%' : '100%',
                 left: item.behaviour === 'right' ? '50%' : '0',
                 textAlign: 'center',
+                fontSize: width < 800 ? '10px' : '15px',
               }}
             >
               <p
