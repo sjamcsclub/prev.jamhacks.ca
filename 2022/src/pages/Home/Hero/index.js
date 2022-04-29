@@ -24,15 +24,22 @@ const registerLinks = [
 
 const devpostGalleryLink = 'https://jamhacks-v.devpost.com/project-gallery';
 
-const Hero = ({ register }) => {
+const Hero = ({ register, schedule }) => {
   return (
     <div style={{ height: 'fit-content' }}>
       <div className="hero-div parallax">
         <div className="hero-content-div">
           <StyledLogo />
           <Subtitle>Learn, Connect, Innovate</Subtitle>
-          <LocationText>Hybrid Event</LocationText>
+          {schedule ? (
+            <></>
+          ) : (
+            <>
+              <LocationText>Hybrid Event</LocationText>
+            </>
+          )}
           <DateText>University of Waterloo, May 20th - 22nd</DateText>
+
           <div
             style={{
               width: '80%',
@@ -93,6 +100,28 @@ const Hero = ({ register }) => {
                   </a>
                 )}
               </div>
+            ) : schedule ? (
+              <>
+                <div className="hero-button-div">
+                  <a
+                    href={devpostGalleryLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      type="primary"
+                      style={{
+                        width: '180px',
+                        height: '40px',
+                        zIndex: '50',
+                        // backgroundColor: '#003e54',
+                      }}
+                    >
+                      Open Schedule
+                    </Button>
+                  </a>
+                </div>
+              </>
             ) : (
               <>
                 <Newsletter />

@@ -4,7 +4,6 @@ import Hero from './Hero';
 import TopWave from './TopWave';
 import About from './About';
 import Mentor from './Mentor';
-import Schedule from './Schedule';
 import Sponsorship from './Sponsorship';
 import Sponsors from './Sponsors';
 import Faq from './Faq';
@@ -20,13 +19,12 @@ import VenueSection from './Venue';
 const Home = function () {
   return (
     <>
-      <Hero register={Env.register} />
+      <Hero register={Env.register} schedule={Env.schedule} />
       <TopWave />
       <About />
       <BottomWave />
       <Speakers />
       <VenueSection />
-      {Env.schedule && <Schedule />}
       <Mentor mentor={Env.mentor} volunteer={Env.volunteer} />
       <Sponsorship mentor={Env.mentor} />
       <Sponsors />

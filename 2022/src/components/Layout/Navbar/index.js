@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { Button } from 'antd';
 import { motion } from 'framer-motion';
 
@@ -26,9 +27,8 @@ import Socials from '../../../data/socials';
 
 const Navbar = ({ sections, color, location }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   useEffect(() => {
-    window.addEventListener('scroll', function (e) {
+    const scrollFunc = function (e) {
       var scrollTop =
         window.pageYOffset ||
         (document.documentElement || document.body.parentNode || document.body)
@@ -92,7 +92,13 @@ const Navbar = ({ sections, color, location }) => {
           }
         }
       }
-    });
+    };
+
+    window.addEventListener('scroll', scrollFunc);
+
+    return () => {
+      window.removeEventListener('scroll', scrollFunc);
+    };
   });
 
   const handleClick = () => {
@@ -141,19 +147,27 @@ const Navbar = ({ sections, color, location }) => {
       <div className="navbar-links-div">
         {sections.map((link) =>
           link.enabled ? (
-            <Link
-              key={link.label}
-              className="navbar-link-item"
-              onClick={() => {
-                window.scrollTo({
-                  top: document.getElementById(link.id).offsetTop - (80 - 1),
-                  left: 0,
-                  behavior: 'smooth',
-                });
-              }}
-            >
-              {link.label}
-            </Link>
+            link.label == 'Schedule' ? (
+              <RouterLink to="/schedule">
+                <Link key={link.label} className="navbar-link-item">
+                  {link.label}
+                </Link>
+              </RouterLink>
+            ) : (
+              <Link
+                key={link.label}
+                className="navbar-link-item"
+                onClick={() => {
+                  window.scrollTo({
+                    top: document.getElementById(link.id).offsetTop - (80 - 1),
+                    left: 0,
+                    behavior: 'smooth',
+                  });
+                }}
+              >
+                {link.label}
+              </Link>
+            )
           ) : (
             ''
           ),
