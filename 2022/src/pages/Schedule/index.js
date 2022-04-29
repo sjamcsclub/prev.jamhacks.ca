@@ -36,6 +36,7 @@ const ScheduleComponent = ({ data }) => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 width: width > 700 ? '150px' : '100px',
+                borderRadius: '10px 0 0 10px',
               }}
             >
               {i <= 12 ? i : i - 12}:00 {i < 12 || i === 24 ? 'AM' : 'PM'}
@@ -67,6 +68,7 @@ const ScheduleComponent = ({ data }) => {
                   alignItems: 'center',
                   justifyContent: 'center',
                   width: '100%',
+                  borderRadius: '0 10px 10px 0',
                 }}
               >
                 <div>{item.title}</div>
@@ -84,6 +86,7 @@ const ScheduleComponent = ({ data }) => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     width: '100%',
+                    borderRadius: '0 10px 10px 0',
                   }}
                 >
                   {item.concurrent.title}
