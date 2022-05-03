@@ -27,19 +27,27 @@ const ScheduleComponent = ({ data }) => {
             <p
               key={i}
               style={{
-                background: 'purple',
-                color: 'white',
+                color: 'purple',
                 margin: 0,
+                position: 'relative',
                 height: '80px',
-                border: '1px solid white',
+                // borderTop: '3px solid purple',
                 display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                alignItems: 'start',
+                justifyContent: 'end',
+                paddingRight: '5px',
                 width: width > 700 ? '150px' : '100px',
-                borderRadius: '10px 0 0 10px',
+                // borderRadius: '10px 0 0 10px',
               }}
             >
-              {i <= 12 ? i : i - 12}:00 {i < 12 || i === 24 ? 'AM' : 'PM'}
+              <span
+                style={{
+                  position: 'absolute',
+                  top: '-10px',
+                }}
+              >
+                {i <= 12 ? i : i - 12}:00 {i < 12 || i === 24 ? 'AM' : 'PM'}
+              </span>
             </p>
           ))}
         </div>
@@ -181,8 +189,8 @@ const Schedule = () => {
       <div style={{ display: 'flex', justifyContent: 'center', gap: '5px' }}>
         <label htmlFor="typeSelect">Type: </label>
         <select id="typeSelect" onChange={(e) => setFilter(e.target.value)}>
-          <option value="online">Online</option>
-          <option value="in-person">In-Person</option>
+          <option value="online">Everyone</option>
+          <option value="in-person">Just In-Person</option>
         </select>
       </div>
       <div
