@@ -32,6 +32,7 @@ export const Day1Data = [
     concurrent: {
       title: 'Group finding and Brainstorming',
       duration: 1,
+      description: 'Meet people',
     },
   },
   {
@@ -39,18 +40,21 @@ export const Day1Data = [
     startTime: 21,
     duration: 1,
     type: 'In-person',
+    description: 'Learn Python',
   },
   {
     title: 'Hacking Begins!',
     startTime: 22,
     duration: 0.5,
     type: 'Online',
+    description: 'Hacking begins!',
   },
   {
     title: 'Scribbl.io',
     startTime: 23,
     duration: 1 / 3,
     type: 'In-person',
+    description: 'Group game',
     concurrent: {
       title: 'Snack: Cup Ramen',
       duration: 1 / 3,
@@ -62,11 +66,13 @@ export const Day1Data = [
     startTime: 23 + 1 / 3,
     duration: 1 / 3,
     type: 'Online',
+    description: 'Group game',
   },
   {
     title: 'Minecraft',
     startTime: 23 + 2 / 3,
     duration: 1 / 3,
     type: 'Online',
+    description: 'Group game',
   },
 ];
