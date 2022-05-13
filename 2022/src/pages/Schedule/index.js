@@ -60,9 +60,7 @@ const ScheduleComponent = ({ data }) => {
             </p>
           ))}
         </div>
-        <div
-          style={{ width: gridWidth, position: 'relative', cursor: 'pointer' }}
-        >
+        <div style={{ width: gridWidth, position: 'relative' }}>
           {data.map((item, i) => (
             <div
               style={{
@@ -73,9 +71,6 @@ const ScheduleComponent = ({ data }) => {
                 left: item.behaviour === 'right' ? '50%' : '0',
                 textAlign: 'center',
                 fontSize: width < 800 ? '10px' : '15px',
-              }}
-              onClick={() => {
-                displayModal(item.title, item.description || 'No description');
               }}
             >
               <p
@@ -91,6 +86,13 @@ const ScheduleComponent = ({ data }) => {
                   justifyContent: 'center',
                   width: '100%',
                   borderRadius: '0 10px 10px 0',
+                  cursor: 'pointer',
+                }}
+                onClick={() => {
+                  displayModal(
+                    item.title,
+                    item.description || 'No description',
+                  );
                 }}
               >
                 <div>{item.title}</div>
@@ -109,6 +111,13 @@ const ScheduleComponent = ({ data }) => {
                     justifyContent: 'center',
                     width: '100%',
                     borderRadius: '0 10px 10px 0',
+                    cursor: 'pointer',
+                  }}
+                  onClick={() => {
+                    displayModal(
+                      item.concurrent.title,
+                      item.concurrent.description || 'No description',
+                    );
                   }}
                 >
                   {item.concurrent.title}

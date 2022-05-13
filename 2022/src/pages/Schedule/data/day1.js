@@ -28,6 +28,7 @@ export const Day1Data = [
     startTime: 19,
     duration: 2,
     type: 'In-person',
+    description: 'You eat!',
     concurrent: {
       title: 'Group finding and Brainstorming',
       duration: 1,
@@ -53,6 +54,7 @@ export const Day1Data = [
     concurrent: {
       title: 'Snack: Cup Ramen',
       duration: 1 / 3,
+      description: 'Cup Ramen!!!',
     },
   },
   {
