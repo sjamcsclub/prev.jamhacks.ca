@@ -6,6 +6,7 @@ import Ethereum from '../assets/sponsorlogos/blueberry/Ethereum.png';
 import HestiaAcademy from '../assets/sponsorlogos/strawberry/HestiaAcademy.png';
 import UW from '../assets/sponsorlogos/strawberry/UW.png';
 import OnlyOffice from '../assets/sponsorlogos/strawberry/OnlyOffice.svg';
+import UIPath from '../assets/sponsorlogos/strawberry/UIPath.png';
 
 import IQC from '../assets/sponsorlogos/grape/IQC.png';
 import Cognitive from '../assets/sponsorlogos/grape/Cognitive.png';
@@ -56,16 +57,16 @@ const blueberry = [
 
 const strawberry = [
   {
-    link: 'https://www.hestia.academy/',
-    logo: HestiaAcademy,
-  },
-  {
     link: 'https://uwaterloo.ca/',
     logo: UW,
   },
   {
     link: 'https://www.onlyoffice.com/',
     logo: OnlyOffice,
+  },
+  {
+    link: 'https://www.uipath.com/',
+    logo: UIPath,
   },
 ];
 
@@ -142,7 +143,7 @@ const peach = [
     logo: Balsamiq,
   },
   {
-    link: 'https://investors.magnetforensics.com',
+    link: 'https://magnetforensics.com',
     logo: Magnet,
   },
   {
