@@ -205,7 +205,7 @@ const Partner = styled.a`
 
 const PartnerLarge = styled.a`
   ${media('md')`
-    width: 45%;
+    width: 65%;
   `}
   img {
     width: 100%;

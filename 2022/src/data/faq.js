@@ -12,7 +12,7 @@ const QuestionsC1 = [
   {
     question: 'Will JAMHacks be running in-person or online?',
     answer:
-      'This year, JAMHacks will be adopting a hybrid event model! We will be running both in-person and online events. In-person events will be held at Wilfrid Laurier University, and online events will be held through our Discord server. We will be posting more information about the details soon!',
+      'This year, JAMHacks will be adopting a hybrid event model! We will be running both in-person and online events. In-person events will be held at the University of Waterloo, and online events will be held through our Discord server. We will be posting more information about the details soon!',
   },
   {
     question: 'What if I don’t know how to code?',
@@ -29,8 +29,6 @@ const QuestionsC1 = [
     answer:
       'We highly recommend that you submit a project to get a feel for the pitching process—after all, it’s part of the hackathon experience. Our judging criteria places more emphasis on creativity than technical complexity, and even some winning projects in the past have had plenty of bugs and unimplemented features. However, please note that project submission is certainly not mandatory, as we value learning much more than the result.',
   },
-];
-const QuestionsC2 = [
   {
     question: 'How big can my team be?',
     answer: 'Teams of up to four are allowed to participate in the event.',
@@ -39,6 +37,45 @@ const QuestionsC2 = [
     question: 'How will we communicate during the event?',
     answer:
       'We will mainly be using Discord to communicate hackathon-wide announcements and conduct judging, and you are welcome to use the server to connect with mentors and other hackers. YouTube will be used to broadcast our opening and closing ceremonies. Finally, be sure to follow us on social media for updates leading up to and throughout the event!',
+  },
+  {
+    question: 'If I am under 18, can I attend in-person?',
+    answer:
+      'Absolutely! you just need your parent/guardian to sign a waiver for you and attach it to our Hacker Registration Information Form.',
+  },
+  {
+    question:
+      'If I choose to attend in-person, do I need to stay there the entire time, including at night?',
+    answer:
+      'Yes. For liability reasons, in-person hackers must remain on our venue for the entirety of the event. Requests to leave the venue will be dealt with on a case-by-case basis during the event.',
+  },
+];
+const QuestionsC2 = [
+  {
+    question: 'Is food provided for in-person hackers?',
+    answer:
+      'Yes, thanks to our sponsors, we will be providing our in-person participants food throughout the weekend for free!',
+  },
+  {
+    question: 'What do I need to bring with me if I am attending in-person?',
+    answer:
+      'Devices, chargers, and whatever other accessories (e.g. hardware) that you think you should have for your project. Oh, and don’t forget blankets or a sleeping bag if you plan to get some quality sleep!',
+  },
+  {
+    question: 'How do we get to the venue?',
+    answer:
+      'Unfortunately, JAMHacks 6 will not be providing participants travel accommodations/reimbursements this year. Please arrange your own transportation or carpool with other hackers if you live around KW region and plan to attend in-person.',
+  },
+  {
+    question:
+      'Some of my teammates are attending in-person but others are attending virtually, is that fine?',
+    answer:
+      "Yes! There will be Internet access for you to communicate with your team members, so you're welcome to form a mixed team.",
+  },
+  {
+    question: 'How does judging work?',
+    answer:
+      "If you are attending in-person, you will pitch your project in front of a panel of judges; if you're attending virtually, you will still pitch your project live to judges via a Discord call. Regardless of your method of participation, your team is also expected to create a pitch video as part of your Devpost submission.",
   },
   {
     question: 'What can my project be about?',

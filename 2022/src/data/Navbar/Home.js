@@ -2,6 +2,16 @@ import Env from '../env.js';
 
 const HomeNavData = [
   {
+    label: 'About',
+    id: 'about-section',
+    enabled: true,
+  },
+  {
+    label: 'Venue',
+    id: 'venue-info-section',
+    enabled: true,
+  },
+  {
     label: 'Schedule',
     id: 'schedule-section',
     enabled: Env.schedule,
