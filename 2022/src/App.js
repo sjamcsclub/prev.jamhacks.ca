@@ -43,8 +43,11 @@ var firebaseConfig = {
   appId: '1:224359886930:web:793771bdb963fd1831ef8b',
   measurementId: 'G-YBCXKJL5HW',
 };
+
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.app.length === 0
+  ? firebase.initializeApp(firebaseConfig)
+  : firebase.app();
 firebase.analytics();
 
 class App extends React.Component {
