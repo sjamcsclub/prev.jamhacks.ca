@@ -6,7 +6,7 @@ export const Day1Data = [
     startTime: 16,
     duration: 1,
     type: 'Online',
-    description: 'Sign in to the HackerSpace',
+    description: 'Sign in at the front desk and on Discord',
   },
   {
     title: 'Hacker Networking',
@@ -21,6 +21,7 @@ export const Day1Data = [
     startTime: 18.5,
     duration: 0.5,
     type: 'Online',
+    description: 'Chris Albinson, CEO of Communitech',
   },
   {
     title: 'Dinner',

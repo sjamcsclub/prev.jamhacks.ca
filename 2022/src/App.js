@@ -45,9 +45,7 @@ var firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.app.length === 0
-  ? firebase.initializeApp(firebaseConfig)
-  : firebase.app();
+firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 class App extends React.Component {
@@ -77,7 +75,7 @@ class App extends React.Component {
 
   componentDidMount() {
     var art = `
-Designed by: Kevin Gao
+Designed by: Daniel Yu
 Developed by: Daniel Yu, Andrew Yang
 
 Copyright (c) 2022 JAMHacks.
