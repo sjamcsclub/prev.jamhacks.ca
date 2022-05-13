@@ -1,8 +1,20 @@
 // Must be sorted by event start time
 
 export const Day1Data = [
-  { title: 'Hacker Sign In', startTime: 16, duration: 1, type: 'Online' },
-  { title: 'Hacker Networking', startTime: 17, duration: 1, type: 'Online' },
+  {
+    title: 'Hacker Sign In',
+    startTime: 16,
+    duration: 1,
+    type: 'Online',
+    description: 'Sign in to the HackerSpace',
+  },
+  {
+    title: 'Hacker Networking',
+    startTime: 17,
+    duration: 1,
+    type: 'Online',
+    description: 'Meet new people!',
+  },
   { title: 'Opening Ceremonies', startTime: 18, duration: 0.5, type: 'Online' },
   {
     title: 'Keynote Speaker: Chris Albinson, CEO of Communitech',
