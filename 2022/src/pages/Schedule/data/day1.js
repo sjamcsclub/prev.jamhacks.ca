@@ -2,77 +2,148 @@
 
 export const Day1Data = [
   {
-    title: 'Hacker Sign In',
     startTime: 16,
-    duration: 1,
-    type: 'Online',
-    description: 'Sign in at the front desk and on Discord',
+    events: [
+      {
+        title: 'Hacker Check-in Begins!',
+        duration: 15,
+        type: 'In-person',
+        specialStyles: {
+          background: 'purple',
+        },
+      },
+    ],
   },
   {
-    title: 'Hacker Networking',
-    startTime: 17,
-    duration: 1,
-    type: 'Online',
-    description: 'Meet new people!',
+    startTime: 17.5,
+    events: [{ title: 'Opening Ceremonies', duration: 60 }],
   },
-  { title: 'Opening Ceremonies', startTime: 18, duration: 0.5, type: 'Online' },
   {
-    title: 'Keynote Speaker: Chris Albinson, CEO of Communitech',
     startTime: 18.5,
-    duration: 0.5,
-    type: 'Online',
-    description: 'Chris Albinson, CEO of Communitech',
+    events: [
+      {
+        title: 'Keynote Speaker: Chris Albinson, CEO of Communitech',
+        duration: 30,
+      },
+    ],
   },
   {
-    title: 'Dinner',
     startTime: 19,
-    duration: 2,
-    type: 'In-person',
-    description: 'You eat!',
-    concurrent: {
-      title: 'Group finding and Brainstorming',
-      duration: 1,
-      description: 'Meet people',
-    },
+    events: [
+      {
+        title: 'Dinner',
+        duration: 120,
+        type: 'In-person',
+        specialStyles: {
+          background: 'orange',
+        },
+      },
+      {
+        title: 'Group Finding',
+        duration: 60,
+      },
+      {
+        title: 'Hacker Networking',
+        duration: 120,
+      },
+      {
+        title: 'Sponsor Booths',
+        duration: 240,
+        specialStyles: {
+          display: 'block',
+          background: 'blue',
+          paddingTop: '20%',
+        },
+      },
+    ],
   },
   {
-    title: 'Intro to Python',
+    startTime: 20.5,
+    events: [
+      {
+        title: 'Snack: DQ Dilly Bar',
+        duration: 30,
+        specialStyles: {
+          width: '25%',
+          marginLeft: '25%',
+        },
+      },
+    ],
+  },
+  {
     startTime: 21,
-    duration: 1,
-    type: 'In-person',
-    description: 'Learn Python',
+    events: [
+      { title: 'Intro to Python', duration: 60, type: 'In-person' },
+      {
+        title: 'Intro to Web3 and Blockchain-Based Applications',
+        duration: 60,
+        type: 'In-person',
+      },
+    ],
   },
   {
-    title: 'Hacking Begins!',
     startTime: 22,
-    duration: 0.5,
-    type: 'Online',
-    description: 'Hacking begins!',
+    events: [
+      {
+        title: 'Hacking Begins',
+        duration: 15,
+        specialStyles: {
+          background: 'purple',
+        },
+      },
+    ],
   },
   {
-    title: 'Scribbl.io',
-    startTime: 23,
-    duration: 1 / 3,
-    type: 'In-person',
-    description: 'Group game',
-    concurrent: {
-      title: 'Snack: Cup Ramen',
-      duration: 1 / 3,
-      description: 'Cup Ramen!!!',
-    },
+    startTime: 22,
+    events: [
+      {
+        title: 'Intro to Web Development',
+        duration: 120,
+        specialStyles: {
+          marginLeft: '80%',
+          width: '20%',
+        },
+      },
+    ],
   },
   {
-    title: 'Drawbattle.io',
-    startTime: 23 + 1 / 3,
-    duration: 1 / 3,
-    type: 'Online',
-    description: 'Group game',
+    startTime: 22.5,
+    events: [
+      {
+        title: 'Intro to Docker',
+        duration: 75,
+        type: 'In-person',
+        specialStyles: {
+          width: '20%',
+        },
+      },
+      {
+        title: 'Build Web3 dApps Quick and Easy: Intro to Scaffold-ETH',
+        duration: 60,
+        specialStyles: {
+          width: '20%',
+        },
+      },
+      {
+        title: 'Skribbl.io',
+        duration: 60,
+        specialStyles: {
+          width: '20%',
+        },
+      },
+    ],
   },
   {
-    title: 'Minecraft',
-    startTime: 23 + 2 / 3,
-    duration: 1 / 3,
-    type: 'Online',
-    description: 'Group game',
+    startTime: 23.5,
+    events: [
+      {
+        title: 'Minecraft Parkour',
+        duration: 30,
+        specialStyles: {
+          marginLeft: '60%',
+          width: '20%',
+        },
+      },
+    ],
   },
 ];

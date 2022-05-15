@@ -1,99 +1,255 @@
 export const Day2Data = [
   {
-    title: 'Continuation of Activities',
     startTime: 0,
-    duration: 3,
-    type: 'Online',
+    events: [{ title: 'Minecraft Parkour', duration: 30 }],
   },
   {
-    title: 'Midnight Snack: AWAKE	',
     startTime: 3,
-    duration: 0.5,
-    type: 'In-person',
-    description: 'Eat some snacks!',
+    events: [
+      {
+        title: 'Midnight Snack: AWAKE Chocolate',
+        duration: 30,
+        type: 'In-person',
+      },
+    ],
   },
   {
-    title: 'Breakfast',
     startTime: 8,
-    duration: 2,
-    type: 'In-person',
-    description: 'Eat',
+    events: [
+      {
+        title: 'Breakfast',
+        duration: 120,
+        specialStyles: { width: '50%' },
+        type: 'In-person',
+      },
+    ],
   },
   {
-    title: 'Intro to APIs w/ Python',
+    startTime: 8.5,
+    events: [
+      {
+        title: 'Grade 12 Hacker Meetup',
+        duration: 60,
+        type: 'In-person',
+        specialStyles: {
+          marginLeft: '50%',
+        },
+      },
+    ],
+  },
+  {
+    startTime: 9.5,
+    events: [
+      {
+        title: 'Intro to APIs',
+        duration: 75,
+        type: 'In-person',
+        specialStyles: {
+          marginLeft: '50%',
+        },
+      },
+    ],
+  },
+  {
     startTime: 10,
-    duration: 1,
-    type: 'In-person',
-    description: 'Room 1444',
+    events: [
+      {
+        title: 'Intro to Git',
+        duration: 75,
+        specialStyles: {
+          width: '20%',
+        },
+      },
+    ],
   },
   {
-    title: 'Lunch',
+    startTime: 10.4,
+    events: [
+      {
+        title: 'Intro to Machine Learning',
+        type: 'In-person',
+        duration: 75,
+        specialStyles: {
+          marginLeft: '20%',
+          width: '20%',
+        },
+      },
+    ],
+  },
+  {
+    startTime: 11,
+    events: [
+      {
+        title: 'Introducing Your Free Personal Office',
+        type: 'In-person',
+        duration: 75,
+        specialStyles: {
+          marginLeft: '40%',
+          width: '20%',
+        },
+      },
+    ],
+  },
+  {
+    startTime: 11.2,
+    events: [
+      {
+        title: 'Graph Theory and Computer Science',
+        type: 'In-person',
+        duration: 90,
+        specialStyles: {
+          width: '20%',
+        },
+      },
+    ],
+  },
+  {
+    startTime: 12.5,
+    events: [
+      {
+        title: 'Intro to UI/UX Design',
+        type: 'In-person',
+        duration: 90,
+        specialStyles: {
+          width: '20%',
+          marginLeft: '20%',
+        },
+      },
+      {
+        title: 'Intro to Front-end',
+        duration: 90,
+        specialStyles: {
+          width: '20%',
+        },
+      },
+    ],
+  },
+  {
     startTime: 14,
-    duration: 2,
-    type: 'In-person',
-    description: 'Lunch is good',
+    events: [
+      {
+        title: 'Lunch',
+        duration: 120,
+        type: 'In-person',
+      },
+    ],
   },
   {
-    title: 'Kahoot Trivia With Prizes',
     startTime: 16,
-    duration: 1,
-    type: 'In-person',
-    description: 'Kahoot game',
+    events: [
+      {
+        title: 'Intro to Websocket 3.0',
+        duration: 75,
+        type: 'In-person',
+      },
+      {
+        title: 'Jeopardy Trivia Competition',
+        duration: 60,
+        type: 'In-person',
+      },
+    ],
   },
   {
-    title: 'IQC Workshop',
-    startTime: 17,
-    duration: 1,
-    description: 'Learn something new',
-
-    type: 'In-person',
-    concurrent: {
-      title: 'Cup Stacking',
-      duration: 1,
-      description: 'Fun game',
-    },
+    startTime: 17.2,
+    events: [
+      {
+        title: 'Understanding Quantum Computers',
+        duration: 75,
+        type: 'In-person',
+        specialStyles: {
+          width: '20%',
+        },
+      },
+    ],
   },
   {
-    title: 'Scavenger Hunt',
+    startTime: 17.5,
+    events: [
+      {
+        title: 'Werewolf',
+        duration: 75,
+        type: 'In-person',
+        specialStyles: {
+          marginLeft: '20%',
+          width: '40%',
+        },
+      },
+    ],
+  },
+  {
     startTime: 18,
-    duration: 1,
-    type: 'In-person',
-    description: 'Group game',
+    events: [
+      {
+        title: 'A Robot for Everyone',
+        duration: 75,
+        specialStyles: {
+          width: '20%',
+          marginLeft: '60%',
+        },
+      },
+    ],
   },
   {
-    title: 'Dinner',
     startTime: 19,
-    duration: 2,
-    overlap: true,
-    type: 'In-person',
-    hasConcurrent: true,
-    description: 'Eat',
+    events: [
+      {
+        title: 'Dinner',
+        type: 'In-person',
+        duration: 120,
+        specialStyles: {
+          background: 'orange',
+          width: '50%',
+        },
+      },
+    ],
   },
   {
-    title: 'Fireside Chat',
     startTime: 20,
-    duration: 2,
-    type: 'In-person',
-    hasConcurrent: true,
-    behaviour: 'right',
-    description: 'Group game',
+    events: [
+      {
+        title: 'Fireside Chat',
+        duration: 120,
+        type: 'In-person',
+        specialStyles: {
+          marginLeft: '50%',
+        },
+      },
+    ],
   },
   {
-    title: 'VALORANT Tournament',
-    overlap: 'true',
     startTime: 22,
-    duration: 2,
-    type: 'Online',
-    hasConcurrent: true,
-    description: 'Group game',
+    events: [
+      {
+        title: 'Slideshow Karaoke',
+        duration: 60,
+        type: 'In-person',
+      },
+    ],
   },
   {
-    title: 'Minecraft Competition',
     startTime: 23,
-    duration: 1,
-    type: 'Online',
-    hasConcurrent: true,
-    behaviour: 'right',
-    description: 'Group game',
+    events: [
+      {
+        title: 'Cup Stacking',
+        duration: 60,
+        type: 'In-person',
+        specialStyles: {
+          width: '50%',
+        },
+      },
+    ],
+  },
+  {
+    startTime: 23.5,
+    events: [
+      {
+        title: 'Minecraft Speedrunning Competition',
+        duration: 30,
+        specialStyles: {
+          width: '50%',
+          marginLeft: '50%',
+        },
+      },
+    ],
   },
 ];

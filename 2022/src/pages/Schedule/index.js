@@ -12,18 +12,12 @@ import Swal from 'sweetalert2';
 
 const ScheduleComponent = ({ data }) => {
   const { width } = useWindowDimensions();
-  const gridWidth = width / 2.5;
+  const gridWidth = width / 1.3;
+  const defaultHeight = 200;
   const start = data[0].startTime,
     end = 23;
   const range = Array.from({ length: end - start + 1 }, (_, i) => start + i);
-  const displayModal = (title, description) => {
-    Swal.fire({
-      title: title,
-      html: description,
-      showCloseButton: true,
-      icon: 'info',
-    });
-  };
+
   return (
     <>
       <div
@@ -39,14 +33,13 @@ const ScheduleComponent = ({ data }) => {
                 color: 'purple',
                 margin: 0,
                 position: 'relative',
-                height: '80px',
-                // borderTop: '3px solid purple',
+                height: `${defaultHeight}px`,
                 display: 'flex',
                 alignItems: 'start',
                 justifyContent: 'end',
                 paddingRight: '5px',
-                width: width > 700 ? '150px' : '100px',
-                // borderRadius: '10px 0 0 10px',
+                width: '100px',
+                // border: '1px solid #ccc',
               }}
             >
               <span
@@ -64,65 +57,35 @@ const ScheduleComponent = ({ data }) => {
           {data.map((item, i) => (
             <div
               style={{
-                display: 'flex',
                 position: 'absolute',
-                top: `${(item.startTime - start) * 80}px`,
-                width: item.hasConcurrent ? '50%' : '100%',
-                left: item.behaviour === 'right' ? '50%' : '0',
-                textAlign: 'center',
-                fontSize: width < 800 ? '10px' : '15px',
+                top: `${(item.startTime - start) * defaultHeight}px`,
+                width: '100%',
               }}
             >
-              <p
-                key={i}
+              <div
                 style={{
-                  background: 'gray',
-                  color: 'white',
-                  margin: 0,
-                  height: item.duration * 80,
-                  border: '1px solid white',
                   display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: '100%',
-                  borderRadius: '0 10px 10px 0',
-                  cursor: 'pointer',
-                }}
-                onClick={() => {
-                  displayModal(
-                    item.title,
-                    item.description || 'No description',
-                  );
                 }}
               >
-                <div>{item.title}</div>
-              </p>
-              {item.concurrent && (
-                <p
-                  key={i}
-                  style={{
-                    background: 'gray',
-                    color: 'white',
-                    margin: 0,
-                    height: item.concurrent.duration * 80,
-                    border: '1px solid white',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    width: '100%',
-                    borderRadius: '0 10px 10px 0',
-                    cursor: 'pointer',
-                  }}
-                  onClick={() => {
-                    displayModal(
-                      item.concurrent.title,
-                      item.concurrent.description || 'No description',
-                    );
-                  }}
-                >
-                  {item.concurrent.title}
-                </p>
-              )}
+                {item.events.map((event, j) => (
+                  <p
+                    style={{
+                      height: `${(event.duration / 60) * defaultHeight}px`,
+                      background: 'gray',
+                      width: '100%',
+                      color: 'white',
+                      textAlign: 'center',
+                      border: '2px solid #ffff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      ...event?.specialStyles,
+                    }}
+                  >
+                    {event.title}
+                  </p>
+                ))}
+              </div>
             </div>
           ))}
         </div>
@@ -152,7 +115,25 @@ const Schedule = () => {
           setData(Day1Data);
       }
     } else if (filter === 'in-person') {
-      setData(data.filter((item) => item.type === 'In-person'));
+      setData((data) =>
+        data.map((item) => {
+          return {
+            ...item,
+            events: item.events.filter((event) => event.type === 'In-person'),
+          };
+        }),
+      );
+      // console.log(
+      //   data.map((item) => {
+      //     return {
+      //       ...item,
+      //       events: item.events.filter((event) => event.type === 'In-person'),
+      //     };
+      //   }),
+      // );
+      // setData(
+
+      // );
     }
   }, [filter]);
   useEffect(() => {

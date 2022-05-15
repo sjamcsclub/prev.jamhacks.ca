@@ -1,54 +1,109 @@
 export const Day3Data = [
   {
-    title: 'Continuation of Activities',
     startTime: 0,
-    duration: 1,
-    type: 'Online',
+    events: [{ title: 'Minecraft Competition: Speedrunning', duration: 60 }],
   },
   {
-    title: 'Midnight Snack: AWAKE	',
     startTime: 3,
-    duration: 0.5,
-    type: 'In-person',
-    description: 'Eat some snacks!',
+    events: [
+      {
+        title: 'Midnight Snack: AWAKE Chocolate',
+        duration: 30,
+        type: 'In-person',
+      },
+    ],
   },
   {
-    title: 'How to Pitch Your Hackathon Project',
+    startTime: 7,
+    events: [
+      {
+        title: 'Breakfast',
+        duration: 120,
+        specialStyles: { width: '50%' },
+        type: 'In-person',
+      },
+    ],
+  },
+  {
     startTime: 8.5,
-    duration: 1,
-    type: 'In-person',
-    description: 'So you can impress the judges',
+    events: [
+      {
+        title: 'How to Pitch Your Hackathon Project',
+        duration: 75,
+        specialStyles: { marginLeft: '50%' },
+      },
+    ],
   },
   {
-    title: 'Hacking Ends + Submit on Devpost',
     startTime: 10,
-    duration: 1,
-    type: 'Online',
-    description: 'No more coding',
+    events: [
+      {
+        title: 'Hacking Ends!',
+        duration: 15,
+        specialStyles: {
+          background: 'purple',
+        },
+      },
+    ],
   },
   {
-    title: 'Project Judging',
-    overlap: true,
     startTime: 11,
-    duration: 6,
-    type: 'Online',
-    hasConcurrent: true,
-    description: 'Intense',
+    events: [
+      {
+        title: 'Project Judging',
+        duration: 360,
+        specialStyles: {
+          width: '40%',
+        },
+      },
+      {
+        title: 'Sponsor Booths',
+        duration: 360,
+        specialStyles: {
+          width: '30%',
+        },
+      },
+    ],
   },
   {
-    title: 'Lunch',
-    startTime: 13,
-    duration: 2,
-    type: 'In-person',
-    behaviour: 'right',
-    hasConcurrent: true,
-    description: 'You eat',
+    startTime: 12.2,
+    events: [
+      {
+        title: 'Lunch',
+        duration: 105,
+        type: 'In-person',
+        specialStyles: {
+          width: '30%',
+          marginLeft: '70%',
+          background: 'orange',
+        },
+      },
+    ],
   },
   {
-    title: 'Closing Ceremonies',
+    startTime: 15.5,
+    events: [
+      {
+        title: 'Snack: Samosas',
+        duration: 30,
+        type: 'In-person',
+        specialStyles: {
+          width: '30%',
+          marginLeft: '70%',
+        },
+      },
+    ],
+  },
+  {
     startTime: 17,
-    duration: 1,
-    type: 'Online',
-    description: 'Good bye!',
+    events: [
+      {
+        title: 'Closing Ceremonies',
+        duration: 45,
+        specialStyles: {
+          background: 'purple',
+        },
+      },
+    ],
   },
 ];
