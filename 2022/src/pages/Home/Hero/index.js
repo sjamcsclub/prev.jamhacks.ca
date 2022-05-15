@@ -39,7 +39,6 @@ const Hero = ({ register, schedule }) => {
             </>
           )}
           <DateText>University of Waterloo, May 20th - 22nd</DateText>
-
           <div
             style={{
               width: '80%',
@@ -103,11 +102,7 @@ const Hero = ({ register, schedule }) => {
             ) : schedule ? (
               <>
                 <div className="hero-button-div">
-                  <a
-                    href={devpostGalleryLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link to="/schedule">
                     <Button
                       type="primary"
                       style={{
@@ -119,7 +114,7 @@ const Hero = ({ register, schedule }) => {
                     >
                       Open Schedule
                     </Button>
-                  </a>
+                  </Link>
                 </div>
               </>
             ) : (
@@ -149,6 +144,9 @@ const Hero = ({ register, schedule }) => {
               </>
             )}
           </div>
+          <SmallText>
+            Check your inbox for a Discord invite from JAMHacks!
+          </SmallText>
         </div>
         <div style={{ position: 'absolute', top: '0px', left: '0px' }}>
           <TopLeft className="hero-background-asset1" />
@@ -268,5 +266,23 @@ const DateText = styled.h4`
   `}
 `;
 //  text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.3);
+
+const SmallText = styled.h4`
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 5;
+  color: #7b0ff7;
+  font-size: 0.8rem;
+  opacity: 90%;
+  ${media('md')`
+  justify-content: center;
+  font-size: 0.8rem;
+`}
+`;
 
 export default Hero;
