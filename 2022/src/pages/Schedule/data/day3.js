@@ -10,18 +10,21 @@ export const Day3Data = [
     startTime: 3,
     duration: 0.5,
     type: 'In-person',
+    description: 'Eat some snacks!',
   },
   {
     title: 'How to Pitch Your Hackathon Project',
     startTime: 8.5,
     duration: 1,
     type: 'In-person',
+    description: 'So you can impress the judges',
   },
   {
     title: 'Hacking Ends + Submit on Devpost',
     startTime: 10,
     duration: 1,
     type: 'Online',
+    description: 'No more coding',
   },
   {
     title: 'Project Judging',
@@ -30,6 +33,7 @@ export const Day3Data = [
     duration: 6,
     type: 'Online',
     hasConcurrent: true,
+    description: 'Intense',
   },
   {
     title: 'Lunch',
@@ -38,11 +42,13 @@ export const Day3Data = [
     type: 'In-person',
     behaviour: 'right',
     hasConcurrent: true,
+    description: 'You eat',
   },
   {
     title: 'Closing Ceremonies',
     startTime: 17,
     duration: 1,
     type: 'Online',
+    description: 'Good bye!',
   },
 ];

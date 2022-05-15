@@ -8,6 +8,7 @@ import { Day3Data } from './data/day3';
 import './style.css';
 import { useEffect } from 'react';
 import { useWindowDimensions } from '../../utils/useWindowDimensions';
+import Swal from 'sweetalert2';
 
 const ScheduleComponent = ({ data }) => {
   const { width } = useWindowDimensions();
@@ -15,6 +16,14 @@ const ScheduleComponent = ({ data }) => {
   const start = data[0].startTime,
     end = 23;
   const range = Array.from({ length: end - start + 1 }, (_, i) => start + i);
+  const displayModal = (title, description) => {
+    Swal.fire({
+      title: title,
+      html: description,
+      showCloseButton: true,
+      icon: 'info',
+    });
+  };
   return (
     <>
       <div
@@ -77,6 +86,13 @@ const ScheduleComponent = ({ data }) => {
                   justifyContent: 'center',
                   width: '100%',
                   borderRadius: '0 10px 10px 0',
+                  cursor: 'pointer',
+                }}
+                onClick={() => {
+                  displayModal(
+                    item.title,
+                    item.description || 'No description',
+                  );
                 }}
               >
                 <div>{item.title}</div>
@@ -95,6 +111,13 @@ const ScheduleComponent = ({ data }) => {
                     justifyContent: 'center',
                     width: '100%',
                     borderRadius: '0 10px 10px 0',
+                    cursor: 'pointer',
+                  }}
+                  onClick={() => {
+                    displayModal(
+                      item.concurrent.title,
+                      item.concurrent.description || 'No description',
+                    );
                   }}
                 >
                   {item.concurrent.title}

@@ -10,39 +10,47 @@ export const Day2Data = [
     startTime: 3,
     duration: 0.5,
     type: 'In-person',
+    description: 'Eat some snacks!',
   },
   {
     title: 'Breakfast',
     startTime: 8,
     duration: 2,
     type: 'In-person',
+    description: 'Eat',
   },
   {
     title: 'Intro to APIs w/ Python',
     startTime: 10,
     duration: 1,
     type: 'In-person',
+    description: 'Room 1444',
   },
   {
     title: 'Lunch',
     startTime: 14,
     duration: 2,
     type: 'In-person',
+    description: 'Lunch is good',
   },
   {
     title: 'Kahoot Trivia With Prizes',
     startTime: 16,
     duration: 1,
     type: 'In-person',
+    description: 'Kahoot game',
   },
   {
     title: 'IQC Workshop',
     startTime: 17,
     duration: 1,
+    description: 'Learn something new',
+
     type: 'In-person',
     concurrent: {
       title: 'Cup Stacking',
       duration: 1,
+      description: 'Fun game',
     },
   },
   {
@@ -50,6 +58,7 @@ export const Day2Data = [
     startTime: 18,
     duration: 1,
     type: 'In-person',
+    description: 'Group game',
   },
   {
     title: 'Dinner',
@@ -58,6 +67,7 @@ export const Day2Data = [
     overlap: true,
     type: 'In-person',
     hasConcurrent: true,
+    description: 'Eat',
   },
   {
     title: 'Fireside Chat',
@@ -66,6 +76,7 @@ export const Day2Data = [
     type: 'In-person',
     hasConcurrent: true,
     behaviour: 'right',
+    description: 'Group game',
   },
   {
     title: 'VALORANT Tournament',
@@ -74,6 +85,7 @@ export const Day2Data = [
     duration: 2,
     type: 'Online',
     hasConcurrent: true,
+    description: 'Group game',
   },
   {
     title: 'Minecraft Competition',
@@ -82,5 +94,6 @@ export const Day2Data = [
     type: 'Online',
     hasConcurrent: true,
     behaviour: 'right',
+    description: 'Group game',
   },
 ];

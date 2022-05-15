@@ -43,6 +43,7 @@ var firebaseConfig = {
   appId: '1:224359886930:web:793771bdb963fd1831ef8b',
   measurementId: 'G-YBCXKJL5HW',
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
@@ -74,7 +75,7 @@ class App extends React.Component {
 
   componentDidMount() {
     var art = `
-Designed by: Kevin Gao
+Designed by: Daniel Yu
 Developed by: Daniel Yu, Andrew Yang
 
 Copyright (c) 2022 JAMHacks.
