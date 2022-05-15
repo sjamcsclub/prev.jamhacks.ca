@@ -19,7 +19,10 @@ export const Day3Data = [
       {
         title: 'Breakfast',
         duration: 120,
-        specialStyles: { width: '50%' },
+        specialStyles: {
+          width: '50%',
+          background: 'orange',
+        },
         type: 'In-person',
       },
     ],

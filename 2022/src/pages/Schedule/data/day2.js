@@ -19,7 +19,10 @@ export const Day2Data = [
       {
         title: 'Breakfast',
         duration: 120,
-        specialStyles: { width: '50%' },
+        specialStyles: {
+          width: '50%',
+          background: 'orange',
+        },
         type: 'In-person',
       },
     ],
@@ -131,6 +134,9 @@ export const Day2Data = [
         title: 'Lunch',
         duration: 120,
         type: 'In-person',
+        specialStyles: {
+          background: 'orange',
+        },
       },
     ],
   },
