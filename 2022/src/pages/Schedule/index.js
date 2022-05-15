@@ -13,7 +13,7 @@ import Swal from 'sweetalert2';
 const ScheduleComponent = ({ data }) => {
   const { width } = useWindowDimensions();
   const gridWidth = width / 1.3;
-  const defaultHeight = 200;
+  const defaultHeight = 80;
   const start = data[0].startTime,
     end = 23;
   const range = Array.from({ length: end - start + 1 }, (_, i) => start + i);

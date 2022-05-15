@@ -10,6 +10,7 @@ export const Day1Data = [
         type: 'In-person',
         specialStyles: {
           background: 'purple',
+          padding: '10px',
         },
       },
     ],
@@ -52,7 +53,7 @@ export const Day1Data = [
         specialStyles: {
           display: 'block',
           background: 'blue',
-          paddingTop: '20%',
+          paddingTop: '10%',
         },
       },
     ],
@@ -89,6 +90,7 @@ export const Day1Data = [
         duration: 15,
         specialStyles: {
           background: 'purple',
+          padding: '10px',
         },
       },
     ],

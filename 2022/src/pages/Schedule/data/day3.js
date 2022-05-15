@@ -45,6 +45,7 @@ export const Day3Data = [
         duration: 15,
         specialStyles: {
           background: 'purple',
+          padding: '10px',
         },
       },
     ],
