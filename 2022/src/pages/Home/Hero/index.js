@@ -103,11 +103,7 @@ const Hero = ({ register, schedule }) => {
             ) : schedule ? (
               <>
                 <div className="hero-button-div">
-                  <a
-                    href={devpostGalleryLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link to="/schedule">
                     <Button
                       type="primary"
                       style={{
@@ -119,7 +115,7 @@ const Hero = ({ register, schedule }) => {
                     >
                       Open Schedule
                     </Button>
-                  </a>
+                  </Link>
                 </div>
               </>
             ) : (
