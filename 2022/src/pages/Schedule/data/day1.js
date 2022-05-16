@@ -9,7 +9,7 @@ export const Day1Data = [
         duration: 15,
         type: 'In-person',
         specialStyles: {
-          background: 'purple',
+          background: '#9900ff',
           padding: '10px',
         },
       },
@@ -17,7 +17,15 @@ export const Day1Data = [
   },
   {
     startTime: 17.5,
-    events: [{ title: 'Opening Ceremonies', duration: 60 }],
+    events: [
+      {
+        title: 'Opening Ceremonies',
+        duration: 60,
+        specialStyles: {
+          background: '#9900ff',
+        },
+      },
+    ],
   },
   {
     startTime: 18.5,
@@ -25,6 +33,9 @@ export const Day1Data = [
       {
         title: 'Keynote Speaker: Chris Albinson, CEO of Communitech',
         duration: 30,
+        specialStyles: {
+          background: '#9900ff',
+        },
       },
     ],
   },
@@ -36,16 +47,22 @@ export const Day1Data = [
         duration: 120,
         type: 'In-person',
         specialStyles: {
-          background: 'orange',
+          background: '#202124',
         },
       },
       {
         title: 'Group Finding',
         duration: 60,
+        specialStyles: {
+          background: '#ff9900',
+        },
       },
       {
         title: 'Hacker Networking',
         duration: 120,
+        specialStyles: {
+          background: '#ff9900',
+        },
       },
       {
         title: 'Sponsor Booths',
@@ -67,6 +84,7 @@ export const Day1Data = [
         specialStyles: {
           width: '25%',
           marginLeft: '25%',
+          background: '#202124',
         },
       },
     ],
@@ -74,11 +92,17 @@ export const Day1Data = [
   {
     startTime: 21,
     events: [
-      { title: 'Intro to Python', duration: 60, type: 'In-person' },
+      {
+        title: 'Intro to Python',
+        duration: 60,
+        type: 'In-person',
+        specialStyles: { background: '#980000' },
+      },
       {
         title: 'Intro to Web3 and Blockchain-Based Applications',
         duration: 60,
         type: 'In-person',
+        specialStyles: { background: '#980000' },
       },
     ],
   },
@@ -89,7 +113,7 @@ export const Day1Data = [
         title: 'Hacking Begins',
         duration: 15,
         specialStyles: {
-          background: 'purple',
+          background: '#9900ff',
           padding: '10px',
         },
       },
@@ -104,6 +128,7 @@ export const Day1Data = [
         specialStyles: {
           marginLeft: '80%',
           width: '20%',
+          background: '#980000',
         },
       },
     ],
@@ -117,6 +142,7 @@ export const Day1Data = [
         type: 'In-person',
         specialStyles: {
           width: '20%',
+          background: '#980000',
         },
       },
       {
@@ -124,6 +150,7 @@ export const Day1Data = [
         duration: 60,
         specialStyles: {
           width: '20%',
+          background: '#980000',
         },
       },
       {
@@ -131,6 +158,7 @@ export const Day1Data = [
         duration: 60,
         specialStyles: {
           width: '20%',
+          background: '#ff9900',
         },
       },
     ],
@@ -144,6 +172,7 @@ export const Day1Data = [
         specialStyles: {
           marginLeft: '60%',
           width: '20%',
+          background: '#ff9900',
         },
       },
     ],

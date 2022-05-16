@@ -1,7 +1,13 @@
 export const Day2Data = [
   {
     startTime: 0,
-    events: [{ title: 'Minecraft Parkour', duration: 30 }],
+    events: [
+      {
+        title: 'Minecraft Parkour',
+        duration: 30,
+        specialStyles: { background: '#ff9900' },
+      },
+    ],
   },
   {
     startTime: 3,
@@ -10,6 +16,7 @@ export const Day2Data = [
         title: 'Midnight Snack: AWAKE Chocolate',
         duration: 30,
         type: 'In-person',
+        specialStyles: { background: '#202124' },
       },
     ],
   },
@@ -36,6 +43,7 @@ export const Day2Data = [
         type: 'In-person',
         specialStyles: {
           marginLeft: '50%',
+          background: '#0f9d58',
         },
       },
     ],
@@ -49,6 +57,7 @@ export const Day2Data = [
         type: 'In-person',
         specialStyles: {
           marginLeft: '50%',
+          background: '#980000',
         },
       },
     ],
@@ -61,6 +70,7 @@ export const Day2Data = [
         duration: 75,
         specialStyles: {
           width: '20%',
+          background: '#980000',
         },
       },
     ],
@@ -75,6 +85,7 @@ export const Day2Data = [
         specialStyles: {
           marginLeft: '20%',
           width: '20%',
+          background: '#980000',
         },
       },
     ],
@@ -89,6 +100,7 @@ export const Day2Data = [
         specialStyles: {
           marginLeft: '40%',
           width: '20%',
+          background: '#980000',
         },
       },
     ],
@@ -102,6 +114,7 @@ export const Day2Data = [
         duration: 90,
         specialStyles: {
           width: '20%',
+          background: '#980000',
         },
       },
     ],
@@ -116,6 +129,7 @@ export const Day2Data = [
         specialStyles: {
           width: '20%',
           marginLeft: '20%',
+          background: '#980000',
         },
       },
       {
@@ -123,6 +137,7 @@ export const Day2Data = [
         duration: 90,
         specialStyles: {
           width: '20%',
+          background: '#980000',
         },
       },
     ],
@@ -147,11 +162,7 @@ export const Day2Data = [
         title: 'Intro to Websocket 3.0',
         duration: 75,
         type: 'In-person',
-      },
-      {
-        title: 'Jeopardy Trivia Competition',
-        duration: 60,
-        type: 'In-person',
+        specialStyles: { background: '#980000' },
       },
     ],
   },
@@ -164,6 +175,7 @@ export const Day2Data = [
         type: 'In-person',
         specialStyles: {
           width: '20%',
+          background: '#980000',
         },
       },
     ],
@@ -178,6 +190,7 @@ export const Day2Data = [
         specialStyles: {
           marginLeft: '20%',
           width: '40%',
+          background: 'orange',
         },
       },
     ],
@@ -191,6 +204,7 @@ export const Day2Data = [
         specialStyles: {
           width: '20%',
           marginLeft: '60%',
+          background: '#980000',
         },
       },
     ],
@@ -201,7 +215,7 @@ export const Day2Data = [
       {
         title: 'Dinner',
         type: 'In-person',
-        duration: 120,
+        duration: 75,
         specialStyles: {
           background: 'orange',
           width: '50%',
@@ -218,6 +232,21 @@ export const Day2Data = [
         type: 'In-person',
         specialStyles: {
           marginLeft: '50%',
+          background: 'orange',
+        },
+      },
+    ],
+  },
+  {
+    startTime: 20.5,
+    events: [
+      {
+        title: 'Jeopardy Trivia Competition',
+        duration: 60,
+        type: 'In-person',
+        specialStyles: {
+          width: '50%',
+          background: '#980000',
         },
       },
     ],
@@ -229,6 +258,11 @@ export const Day2Data = [
         title: 'Slideshow Karaoke',
         duration: 60,
         type: 'In-person',
+        specialStyles: {
+          background: 'orange',
+          width: '50%',
+          marginLeft: '50%',
+        },
       },
     ],
   },
@@ -241,6 +275,7 @@ export const Day2Data = [
         type: 'In-person',
         specialStyles: {
           width: '50%',
+          background: 'orange',
         },
       },
     ],
@@ -254,6 +289,7 @@ export const Day2Data = [
         specialStyles: {
           width: '50%',
           marginLeft: '50%',
+          background: 'orange',
         },
       },
     ],

@@ -1,7 +1,13 @@
 export const Day3Data = [
   {
     startTime: 0,
-    events: [{ title: 'Minecraft Competition: Speedrunning', duration: 60 }],
+    events: [
+      {
+        title: 'Minecraft Competition: Speedrunning',
+        duration: 60,
+        specialStyles: { background: 'orange' },
+      },
+    ],
   },
   {
     startTime: 3,
@@ -10,6 +16,7 @@ export const Day3Data = [
         title: 'Midnight Snack: AWAKE Chocolate',
         duration: 30,
         type: 'In-person',
+        specialStyles: { background: '#202124' },
       },
     ],
   },
@@ -33,7 +40,7 @@ export const Day3Data = [
       {
         title: 'How to Pitch Your Hackathon Project',
         duration: 75,
-        specialStyles: { marginLeft: '50%' },
+        specialStyles: { marginLeft: '50%', background: '#980000' },
       },
     ],
   },
@@ -44,7 +51,7 @@ export const Day3Data = [
         title: 'Hacking Ends!',
         duration: 15,
         specialStyles: {
-          background: 'purple',
+          background: '#9900ff',
           padding: '10px',
         },
       },
@@ -58,6 +65,7 @@ export const Day3Data = [
         duration: 360,
         specialStyles: {
           width: '40%',
+          background: '#9900ff',
         },
       },
       {
@@ -65,6 +73,7 @@ export const Day3Data = [
         duration: 360,
         specialStyles: {
           width: '30%',
+          background: 'blue',
         },
       },
     ],
@@ -94,6 +103,7 @@ export const Day3Data = [
         specialStyles: {
           width: '30%',
           marginLeft: '70%',
+          background: '#202124',
         },
       },
     ],
