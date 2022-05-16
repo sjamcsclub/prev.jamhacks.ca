@@ -159,7 +159,7 @@ const Schedule = () => {
       >
         &#x2190; Go Back to Main Page
       </button>
-      <button className="btn_top">&#x21e9;&nbsp;Download Schedule</button>
+      {/* <button className="btn_top">&#x21e9;&nbsp;Download Schedule</button> */}
       <h1 style={{ color: '#7B0EF6', textAlign: 'center', marginTop: '20px' }}>
         Schedule
       </h1>
@@ -193,7 +193,7 @@ const Schedule = () => {
       <div style={{ display: 'flex', justifyContent: 'center', gap: '5px' }}>
         <label htmlFor="typeSelect">Type: </label>
         <select id="typeSelect" onChange={(e) => setFilter(e.target.value)}>
-          <option value="online">Everyone</option>
+          <option value="online">All</option>
           <option value="in-person">Just In-Person</option>
         </select>
       </div>

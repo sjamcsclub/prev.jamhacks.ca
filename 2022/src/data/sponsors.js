@@ -107,7 +107,7 @@ const peach = [
     logo: InterviewCake,
   },
   {
-    link: 'https://www.framer.com/fp/',
+    link: 'https://www.framer.com/',
     logo: Framer,
   },
   {

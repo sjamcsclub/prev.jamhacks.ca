@@ -1,3 +1,11 @@
+const colour = {
+  event: '#9900FF',
+  food: '#13E341',
+  workshop: '#13C6FF',
+  activity: '#161DBC',
+  sponsor: '#E1921B',
+};
+
 export const Day3Data = [
   {
     startTime: 0,
@@ -5,7 +13,7 @@ export const Day3Data = [
       {
         title: 'Minecraft Competition: Speedrunning',
         duration: 60,
-        specialStyles: { background: 'orange' },
+        specialStyles: { background: colour.activity },
       },
     ],
   },
@@ -16,7 +24,7 @@ export const Day3Data = [
         title: 'Midnight Snack: AWAKE Chocolate',
         duration: 30,
         type: 'In-person',
-        specialStyles: { background: '#202124' },
+        specialStyles: { background: colour.food },
       },
     ],
   },
@@ -28,7 +36,7 @@ export const Day3Data = [
         duration: 120,
         specialStyles: {
           width: '50%',
-          background: 'orange',
+          background: colour.food,
         },
         type: 'In-person',
       },
@@ -40,7 +48,7 @@ export const Day3Data = [
       {
         title: 'How to Pitch Your Hackathon Project',
         duration: 75,
-        specialStyles: { marginLeft: '50%', background: '#980000' },
+        specialStyles: { marginLeft: '50%', background: colour.workshop },
       },
     ],
   },
@@ -51,7 +59,7 @@ export const Day3Data = [
         title: 'Hacking Ends!',
         duration: 15,
         specialStyles: {
-          background: '#9900ff',
+          background: colour.event,
           padding: '10px',
         },
       },
@@ -65,7 +73,7 @@ export const Day3Data = [
         duration: 360,
         specialStyles: {
           width: '40%',
-          background: '#9900ff',
+          background: colour.event,
         },
       },
       {
@@ -73,7 +81,7 @@ export const Day3Data = [
         duration: 360,
         specialStyles: {
           width: '30%',
-          background: 'blue',
+          background: colour.sponsor,
         },
       },
     ],
@@ -88,7 +96,7 @@ export const Day3Data = [
         specialStyles: {
           width: '30%',
           marginLeft: '70%',
-          background: 'orange',
+          background: colour.food,
         },
       },
     ],
@@ -103,7 +111,7 @@ export const Day3Data = [
         specialStyles: {
           width: '30%',
           marginLeft: '70%',
-          background: '#202124',
+          background: colour.food,
         },
       },
     ],
@@ -115,7 +123,7 @@ export const Day3Data = [
         title: 'Closing Ceremonies',
         duration: 45,
         specialStyles: {
-          background: 'purple',
+          background: colour.event,
         },
       },
     ],

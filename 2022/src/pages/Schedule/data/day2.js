@@ -1,3 +1,11 @@
+const colour = {
+  event: '#9900FF',
+  food: '#13E341',
+  workshop: '#13C6FF',
+  activity: '#161DBC',
+  sponsor: '#E1921B',
+};
+
 export const Day2Data = [
   {
     startTime: 0,
@@ -5,7 +13,7 @@ export const Day2Data = [
       {
         title: 'Minecraft Parkour',
         duration: 30,
-        specialStyles: { background: '#ff9900' },
+        specialStyles: { background: colour.activity },
       },
     ],
   },
@@ -16,7 +24,7 @@ export const Day2Data = [
         title: 'Midnight Snack: AWAKE Chocolate',
         duration: 30,
         type: 'In-person',
-        specialStyles: { background: '#202124' },
+        specialStyles: { background: colour.food },
       },
     ],
   },
@@ -28,7 +36,7 @@ export const Day2Data = [
         duration: 120,
         specialStyles: {
           width: '50%',
-          background: 'orange',
+          background: colour.food,
         },
         type: 'In-person',
       },
@@ -43,7 +51,7 @@ export const Day2Data = [
         type: 'In-person',
         specialStyles: {
           marginLeft: '50%',
-          background: '#0f9d58',
+          background: colour.activity,
         },
       },
     ],
@@ -54,10 +62,9 @@ export const Day2Data = [
       {
         title: 'Intro to APIs',
         duration: 75,
-        type: 'In-person',
         specialStyles: {
           marginLeft: '50%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
     ],
@@ -70,7 +77,7 @@ export const Day2Data = [
         duration: 75,
         specialStyles: {
           width: '20%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
     ],
@@ -80,12 +87,11 @@ export const Day2Data = [
     events: [
       {
         title: 'Intro to Machine Learning',
-        type: 'In-person',
         duration: 75,
         specialStyles: {
           marginLeft: '20%',
           width: '20%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
     ],
@@ -95,12 +101,11 @@ export const Day2Data = [
     events: [
       {
         title: 'Introducing Your Free Personal Office',
-        type: 'In-person',
         duration: 75,
         specialStyles: {
           marginLeft: '40%',
           width: '20%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
     ],
@@ -110,11 +115,24 @@ export const Day2Data = [
     events: [
       {
         title: 'Graph Theory and Computer Science',
-        type: 'In-person',
         duration: 90,
         specialStyles: {
           width: '20%',
-          background: '#980000',
+          background: colour.workshop,
+        },
+      },
+    ],
+  },
+  {
+    startTime: 12,
+    events: [
+      {
+        title: 'Sponsor Booths',
+        duration: 360,
+        specialStyles: {
+          background: colour.sponsor,
+          width: '25%',
+          marginLeft: '75%',
         },
       },
     ],
@@ -124,12 +142,11 @@ export const Day2Data = [
     events: [
       {
         title: 'Intro to UI/UX Design',
-        type: 'In-person',
         duration: 90,
         specialStyles: {
           width: '20%',
           marginLeft: '20%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
       {
@@ -137,7 +154,7 @@ export const Day2Data = [
         duration: 90,
         specialStyles: {
           width: '20%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
     ],
@@ -150,7 +167,21 @@ export const Day2Data = [
         duration: 120,
         type: 'In-person',
         specialStyles: {
-          background: 'orange',
+          width: '75%',
+          background: colour.food,
+        },
+      },
+    ],
+  },
+  {
+    startTime: 15.75,
+    events: [
+      {
+        title: 'Intro to Docker',
+        duration: 75,
+        specialStyles: {
+          width: '37.5%',
+          background: colour.workshop,
         },
       },
     ],
@@ -161,8 +192,11 @@ export const Day2Data = [
       {
         title: 'Intro to Websocket 3.0',
         duration: 75,
-        type: 'In-person',
-        specialStyles: { background: '#980000' },
+        specialStyles: {
+          background: colour.workshop,
+          width: '37.5%',
+          marginLeft: '37.5%',
+        },
       },
     ],
   },
@@ -172,10 +206,9 @@ export const Day2Data = [
       {
         title: 'Understanding Quantum Computers',
         duration: 75,
-        type: 'In-person',
         specialStyles: {
           width: '20%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
     ],
@@ -190,7 +223,7 @@ export const Day2Data = [
         specialStyles: {
           marginLeft: '20%',
           width: '40%',
-          background: 'orange',
+          background: colour.activity,
         },
       },
     ],
@@ -204,7 +237,7 @@ export const Day2Data = [
         specialStyles: {
           width: '20%',
           marginLeft: '60%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
     ],
@@ -217,7 +250,7 @@ export const Day2Data = [
         type: 'In-person',
         duration: 75,
         specialStyles: {
-          background: 'orange',
+          background: colour.food,
           width: '50%',
         },
       },
@@ -229,10 +262,9 @@ export const Day2Data = [
       {
         title: 'Fireside Chat',
         duration: 120,
-        type: 'In-person',
         specialStyles: {
           marginLeft: '50%',
-          background: 'orange',
+          background: colour.activity,
         },
       },
     ],
@@ -246,7 +278,7 @@ export const Day2Data = [
         type: 'In-person',
         specialStyles: {
           width: '50%',
-          background: '#980000',
+          background: colour.activity,
         },
       },
     ],
@@ -259,7 +291,7 @@ export const Day2Data = [
         duration: 60,
         type: 'In-person',
         specialStyles: {
-          background: 'orange',
+          background: colour.activity,
           width: '50%',
           marginLeft: '50%',
         },
@@ -275,7 +307,7 @@ export const Day2Data = [
         type: 'In-person',
         specialStyles: {
           width: '50%',
-          background: 'orange',
+          background: colour.activity,
         },
       },
     ],
@@ -289,7 +321,7 @@ export const Day2Data = [
         specialStyles: {
           width: '50%',
           marginLeft: '50%',
-          background: 'orange',
+          background: colour.activity,
         },
       },
     ],

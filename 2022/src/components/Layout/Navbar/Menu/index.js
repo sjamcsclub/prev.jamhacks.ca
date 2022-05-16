@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-
+import { Link as RouterLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
@@ -33,21 +33,31 @@ const Menu = ({ sections, open, closeMenu }) => {
         <div className="navbar-mobile-links-div">
           {sections.map((link, i) =>
             link.enabled ? (
-              <div key={i} className="navbar-mobile-link-container">
-                <Link
-                  className="navbar-mobile-link-item"
-                  onClick={() => {
-                    window.scrollTo({
-                      top: document.getElementById(link.id).offsetTop - 80,
-                      left: 0,
-                      behavior: 'smooth',
-                    });
-                    closeMenu();
-                  }}
-                >
-                  {link.label}
-                </Link>
-              </div>
+              link.label == 'Schedule' ? (
+                <RouterLink to="/schedule">
+                  <div key={i} className="navbar-mobile-link-container">
+                    <Link className="navbar-mobile-link-item">
+                      {link.label}
+                    </Link>
+                  </div>
+                </RouterLink>
+              ) : (
+                <div key={i} className="navbar-mobile-link-container">
+                  <Link
+                    className="navbar-mobile-link-item"
+                    onClick={() => {
+                      window.scrollTo({
+                        top: document.getElementById(link.id).offsetTop - 80,
+                        left: 0,
+                        behavior: 'smooth',
+                      });
+                      closeMenu();
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                </div>
+              )
             ) : (
               ' '
             ),

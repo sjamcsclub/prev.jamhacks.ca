@@ -1,5 +1,13 @@
 // Must be sorted by event start time
 
+const colour = {
+  event: '#9900FF',
+  food: '#13E341',
+  workshop: '#13C6FF',
+  activity: '#161DBC',
+  sponsor: '#E1921B',
+};
+
 export const Day1Data = [
   {
     startTime: 16,
@@ -9,7 +17,7 @@ export const Day1Data = [
         duration: 15,
         type: 'In-person',
         specialStyles: {
-          background: '#9900ff',
+          background: colour.event,
           padding: '10px',
         },
       },
@@ -22,7 +30,7 @@ export const Day1Data = [
         title: 'Opening Ceremonies',
         duration: 60,
         specialStyles: {
-          background: '#9900ff',
+          background: colour.event,
         },
       },
     ],
@@ -34,7 +42,7 @@ export const Day1Data = [
         title: 'Keynote Speaker: Chris Albinson, CEO of Communitech',
         duration: 30,
         specialStyles: {
-          background: '#9900ff',
+          background: colour.event,
         },
       },
     ],
@@ -47,30 +55,28 @@ export const Day1Data = [
         duration: 120,
         type: 'In-person',
         specialStyles: {
-          background: '#202124',
+          background: colour.food,
         },
       },
       {
         title: 'Group Finding',
         duration: 60,
         specialStyles: {
-          background: '#ff9900',
+          background: colour.activity,
         },
       },
       {
         title: 'Hacker Networking',
         duration: 120,
         specialStyles: {
-          background: '#ff9900',
+          background: colour.activity,
         },
       },
       {
         title: 'Sponsor Booths',
         duration: 240,
         specialStyles: {
-          display: 'block',
-          background: 'blue',
-          paddingTop: '10%',
+          background: colour.sponsor,
         },
       },
     ],
@@ -84,7 +90,7 @@ export const Day1Data = [
         specialStyles: {
           width: '25%',
           marginLeft: '25%',
-          background: '#202124',
+          background: colour.food,
         },
       },
     ],
@@ -95,14 +101,12 @@ export const Day1Data = [
       {
         title: 'Intro to Python',
         duration: 60,
-        type: 'In-person',
-        specialStyles: { background: '#980000' },
+        specialStyles: { background: colour.workshop, width: '37.5%' },
       },
       {
         title: 'Intro to Web3 and Blockchain-Based Applications',
         duration: 60,
-        type: 'In-person',
-        specialStyles: { background: '#980000' },
+        specialStyles: { background: colour.workshop, width: '37.5%' },
       },
     ],
   },
@@ -113,8 +117,9 @@ export const Day1Data = [
         title: 'Hacking Begins',
         duration: 15,
         specialStyles: {
-          background: '#9900ff',
+          background: colour.event,
           padding: '10px',
+          width: '75%',
         },
       },
     ],
@@ -126,9 +131,9 @@ export const Day1Data = [
         title: 'Intro to Web Development',
         duration: 120,
         specialStyles: {
-          marginLeft: '80%',
+          marginLeft: '60%',
           width: '20%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
     ],
@@ -137,20 +142,11 @@ export const Day1Data = [
     startTime: 22.5,
     events: [
       {
-        title: 'Intro to Docker',
-        duration: 75,
-        type: 'In-person',
-        specialStyles: {
-          width: '20%',
-          background: '#980000',
-        },
-      },
-      {
         title: 'Build Web3 dApps Quick and Easy: Intro to Scaffold-ETH',
         duration: 60,
         specialStyles: {
           width: '20%',
-          background: '#980000',
+          background: colour.workshop,
         },
       },
       {
@@ -158,7 +154,7 @@ export const Day1Data = [
         duration: 60,
         specialStyles: {
           width: '20%',
-          background: '#ff9900',
+          background: colour.activity,
         },
       },
     ],
@@ -170,9 +166,9 @@ export const Day1Data = [
         title: 'Minecraft Parkour',
         duration: 30,
         specialStyles: {
-          marginLeft: '60%',
+          marginLeft: '20%',
           width: '20%',
-          background: '#ff9900',
+          background: colour.activity,
         },
       },
     ],
