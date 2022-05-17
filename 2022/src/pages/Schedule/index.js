@@ -79,6 +79,7 @@ const ScheduleComponent = ({ data }) => {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
+                      fontSize: width > 600 ? '15px' : '10px',
                       ...event?.specialStyles,
                     }}
                   >
