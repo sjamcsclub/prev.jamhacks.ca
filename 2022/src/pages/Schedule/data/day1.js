@@ -88,6 +88,7 @@ export const Day1Data = [
       {
         title: 'Snack: DQ Dilly Bar',
         duration: 30,
+        type: 'In-person',
         specialStyles: {
           width: '25%',
           marginLeft: '25%',

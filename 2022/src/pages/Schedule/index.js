@@ -199,7 +199,7 @@ const Schedule = () => {
           justifyContent: 'center',
         }}
       >
-        <div>
+        <div style={{ marginBottom: '100px' }}>
           <ScheduleComponent data={data} />
         </div>
       </div>

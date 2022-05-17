@@ -87,7 +87,7 @@ export const Day2Data = [
     ],
   },
   {
-    startTime: 10.4,
+    startTime: 10.75,
     events: [
       {
         title: 'Intro to Machine Learning',
@@ -117,7 +117,7 @@ export const Day2Data = [
     ],
   },
   {
-    startTime: 11.2,
+    startTime: 11.25,
     events: [
       {
         title: 'Graph Theory and Computer Science',
@@ -185,7 +185,7 @@ export const Day2Data = [
     ],
   },
   {
-    startTime: 15.75,
+    startTime: 15.5,
     events: [
       {
         title: 'Intro to Docker',
@@ -203,7 +203,7 @@ export const Day2Data = [
     startTime: 16,
     events: [
       {
-        title: 'Working With WebSocket',
+        title: 'Working With WebSockets',
         duration: 75,
         description:
           'Host: Wilson Wang <br><br> This workshop will teach the fundamentals of Websockets and communication over the internet. Throughout the workshop, you will learn about protocols like HTTP, TCP/UDP, and of course WebSockets. There will be lots of interactive demonstrations that will make the workshop far more enjoyable. By the end of the workshop, you should be able to make a simple chat application and/or game, and understand how to expand it for other uses.',
@@ -216,7 +216,7 @@ export const Day2Data = [
     ],
   },
   {
-    startTime: 17.2,
+    startTime: 17.25,
     events: [
       {
         title: 'Understanding Quantum Computers',
