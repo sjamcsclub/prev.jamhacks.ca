@@ -39,7 +39,7 @@ const HomeNavData = [
   {
     label: 'Blog',
     id: 'blog-section',
-    enabled: true,
+    enabled: false,
   },
   {
     label: 'Contact',

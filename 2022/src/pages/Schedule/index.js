@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import { useHistory } from 'react-router-dom';
 import { Day1Data } from './data/day1';
-import { Day1Data_2 } from './data/day1_2';
 import { Day2Data } from './data/day2';
 import { Day3Data } from './data/day3';
 import './style.css';
