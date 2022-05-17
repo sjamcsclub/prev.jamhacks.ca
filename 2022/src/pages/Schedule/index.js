@@ -83,6 +83,7 @@ const ScheduleComponent = ({ data }) => {
                         event?.specialStyles?.background === '#13C6FF'
                           ? 'help'
                           : 'default',
+                      zIndex: '2',
                       ...event?.specialStyles,
                     }}
                     onClick={() => {
@@ -187,7 +188,7 @@ const Schedule = () => {
       <div style={{ display: 'flex', justifyContent: 'center', gap: '5px' }}>
         <label htmlFor="typeSelect">Type: </label>
         <select id="typeSelect" onChange={(e) => setFilter(e.target.value)}>
-          <option value="online">All</option>
+          <option value="online">All Events</option>
           <option value="in-person">Just In-Person</option>
         </select>
       </div>

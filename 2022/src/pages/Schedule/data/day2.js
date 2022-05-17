@@ -203,7 +203,7 @@ export const Day2Data = [
     startTime: 16,
     events: [
       {
-        title: 'Intro to Websocket 3.0',
+        title: 'Working With WebSocket',
         duration: 75,
         description:
           'Host: Wilson Wang <br><br> This workshop will teach the fundamentals of Websockets and communication over the internet. Throughout the workshop, you will learn about protocols like HTTP, TCP/UDP, and of course WebSockets. There will be lots of interactive demonstrations that will make the workshop far more enjoyable. By the end of the workshop, you should be able to make a simple chat application and/or game, and understand how to expand it for other uses.',
