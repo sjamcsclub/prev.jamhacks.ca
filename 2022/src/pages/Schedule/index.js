@@ -80,7 +80,22 @@ const ScheduleComponent = ({ data }) => {
                       alignItems: 'center',
                       justifyContent: 'center',
                       fontSize: width > 600 ? '15px' : '10px',
+                      cursor:
+                        event?.specialStyles?.background === '#13C6FF'
+                          ? 'help'
+                          : 'default',
                       ...event?.specialStyles,
+                    }}
+                    onClick={() => {
+                      if (event?.specialStyles?.background === '#13C6FF') {
+                        Swal.fire({
+                          title: event.title,
+                          html:
+                            event?.description ||
+                            'Workshop description coming soon!',
+                          showCloseButton: true,
+                        });
+                      }
                     }}
                   >
                     {event.title}

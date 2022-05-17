@@ -48,6 +48,8 @@ export const Day3Data = [
       {
         title: 'How to Pitch Your Hackathon Project',
         duration: 75,
+        description:
+          "Host: Advait Maybhate <br><br> What's the difference between a good and a great pitch? What components should you have in your hackathon demo? How can you blow the judges away (perhaps literally)? Come out to this workshop led by Advait Maybhate, a voracious hackathoner, to find the answer to these questions and many more!",
         specialStyles: { marginLeft: '50%', background: colour.workshop },
       },
     ],
