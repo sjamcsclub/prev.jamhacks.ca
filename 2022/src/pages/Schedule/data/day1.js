@@ -2,10 +2,10 @@
 
 const colour = {
   event: '#9900FF',
-  food: '#13E341',
-  workshop: '#13C6FF',
-  activity: '#161DBC',
-  sponsor: '#E1921B',
+  food: '#4AA006',
+  workshop: '#34CEFF',
+  activity: '#2E36F5',
+  sponsor: '#FFB23F',
 };
 
 export const Day1Data = [
@@ -105,6 +105,8 @@ export const Day1Data = [
         duration: 60,
         description:
           'Host: Misha Melynk <br><br> This introductory Python workshop will show you the basics of the Python programming language.<br>It will present to you the tools that Python provides that are crucial in many applications.The workshop will cover:<br> - Arithmetic in Python<br>- Data types like ints, floats and strings<br>- Control flow with if statements and loops<br>- Lists<br>- Functions <br>- Importing modules <br><br>The workshop will work through an example of incrementally creating a program to calculate a list of prime numbers.',
+        begin: '9:00 PM',
+        end: '10:00 PM',
         specialStyles: { background: colour.workshop, width: '37.5%' },
       },
       {
@@ -112,6 +114,8 @@ export const Day1Data = [
         duration: 60,
         description:
           'Host: Kevin Jones (Developer Advocate for Scaffold-ETH) Web3, Solidity, Blockchain, Ethereum, EVM, Crypto… <br><br>Have you ever heard these terms being thrown around without knowing what they really mean? In this talk, Kevin will give a brief overview of what Web3 is, how the concepts are supported by blockchain technology and what it looks like to build web applications on these new types of networks and protocols.',
+        begin: '9:00 PM',
+        end: '10:00 PM',
         specialStyles: { background: colour.workshop, width: '37.5%' },
       },
     ],
@@ -137,6 +141,8 @@ export const Day1Data = [
         title: 'Intro to Web Development',
         duration: 120,
         description: 'Hosts: Leo Tian, Lucy Mo',
+        begin: '10:15 PM',
+        end: '12:15 PM',
         specialStyles: {
           marginLeft: '60%',
           width: '20%',
@@ -153,6 +159,8 @@ export const Day1Data = [
         description:
           'Host: Kevin Jones (Developer Advocate for Scaffold-ETH) <br><br> Join Kevin Jones for a workshop on Scaffold-ETH, an off-the-shelf stack for rapid prototyping on Ethereum, giving developers access to state-of-the-art tools to quickly learn and ship an Ethereum-based dApp. Scaffold-ETH is everything you need to get started building decentralized applications powered by smart contracts. Learn more <a href="https://github.com/scaffold-eth/scaffold-eth" target="_blank">here</a>!',
         duration: 60,
+        begin: '10:30 PM',
+        end: '11:45 PM',
         specialStyles: {
           width: '20%',
           background: colour.workshop,

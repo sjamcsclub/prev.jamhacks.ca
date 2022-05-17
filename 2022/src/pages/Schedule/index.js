@@ -89,7 +89,12 @@ const ScheduleComponent = ({ data }) => {
                     onClick={() => {
                       if (event?.specialStyles?.background === '#13C6FF') {
                         Swal.fire({
-                          title: event.title,
+                          title:
+                            event.title +
+                            '<br>' +
+                            event.begin +
+                            ' : ' +
+                            event.end,
                           html:
                             event?.description ||
                             'Workshop description coming soon!',

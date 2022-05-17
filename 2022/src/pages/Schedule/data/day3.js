@@ -1,9 +1,9 @@
 const colour = {
   event: '#9900FF',
-  food: '#13E341',
-  workshop: '#13C6FF',
-  activity: '#161DBC',
-  sponsor: '#E1921B',
+  food: '#4AA006',
+  workshop: '#34CEFF',
+  activity: '#2E36F5',
+  sponsor: '#FFB23F',
 };
 
 export const Day3Data = [
@@ -48,6 +48,8 @@ export const Day3Data = [
       {
         title: 'How to Pitch Your Hackathon Project',
         duration: 75,
+        begin: '8:30 AM',
+        end: '9:45 PM',
         description:
           "Host: Advait Maybhate <br><br> What's the difference between a good and a great pitch? What components should you have in your hackathon demo? How can you blow the judges away (perhaps literally)? Come out to this workshop led by Advait Maybhate, a voracious hackathoner, to find the answer to these questions and many more!",
         specialStyles: { marginLeft: '50%', background: colour.workshop },

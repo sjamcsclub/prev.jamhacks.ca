@@ -1,9 +1,9 @@
 const colour = {
   event: '#9900FF',
-  food: '#13E341',
-  workshop: '#13C6FF',
-  activity: '#161DBC',
-  sponsor: '#E1921B',
+  food: '#4AA006',
+  workshop: '#34CEFF',
+  activity: '#2E36F5',
+  sponsor: '#FFB23F',
 };
 
 export const Day2Data = [
@@ -64,6 +64,8 @@ export const Day2Data = [
         duration: 75,
         description:
           'Host: Matthews Ma & Samer <br><br>A practical introduction to API principles and how to use and create them in your own projects.',
+        begin: '9:30 AM',
+        end: '10:45 AM',
         specialStyles: {
           marginLeft: '50%',
           background: colour.workshop,
@@ -79,6 +81,8 @@ export const Day2Data = [
         duration: 75,
         description:
           'Host: Leon Fattakhov <br><br>Learn how to use Git, one of the most popular version control systems, to enable collaboration between team members! This workshop will cover how to get started with Git and how to use it with GitHub!',
+        begin: '10:00 AM',
+        end: '11:15 AM',
         specialStyles: {
           width: '20%',
           background: colour.workshop,
@@ -94,6 +98,8 @@ export const Day2Data = [
         duration: 75,
         description:
           'Host: Trevor Du <br><br> An overview of the concepts and applications of machine learning at a high school level. Come join us to learn what sort of problems AI can solve and how it can be done with machine learning. Using PyTorch, we will be training a neural network to recognize handwritten digits, so make sure to bring a laptop!',
+        begin: '10:45 AM',
+        end: '12:00 PM',
         specialStyles: {
           marginLeft: '20%',
           width: '20%',
@@ -107,6 +113,8 @@ export const Day2Data = [
     events: [
       {
         title: 'Introducing Your Free Personal Office',
+        begin: '11:00 AM',
+        end: '12:15 PM',
         duration: 75,
         specialStyles: {
           marginLeft: '40%',
@@ -122,6 +130,8 @@ export const Day2Data = [
       {
         title: 'Graph Theory and Computer Science',
         duration: 90,
+        begin: '11:15 AM',
+        end: '1:00 PM',
         description:
           "Host: Jason Schattman <br><br> What's the cheapest way for a K-pop band to visit 20 cities while on tour? What are the odds that Black Panther will still be alive after 12 missions? How does Google Maps get you directions so fast? Why does tomato soup remind me of rubber ducks? The answer to all of these questions lies in graph theory, the science of networks. In this FRED talk (Free Range Educators), Dr. Jason Schattman will show how to use Python to model problems in graph theory. Along the way, you'll learn about Markov chains, Djikstra's algorithm, linear algebra, and the world famous TSP (traveling salesman problem).",
         specialStyles: {
@@ -146,11 +156,13 @@ export const Day2Data = [
     ],
   },
   {
-    startTime: 12.5,
+    startTime: 12.75,
     events: [
       {
         title: 'Intro to UI/UX Design',
         duration: 90,
+        begin: '12:45 PM',
+        end: '2:00 PM',
         description: 'Host: LJA Bolongaita',
         specialStyles: {
           width: '20%',
@@ -161,6 +173,8 @@ export const Day2Data = [
       {
         title: 'Intro to Front-end',
         duration: 90,
+        begin: '12:45 PM',
+        end: '2:15 PM',
         description:
           'Host: Juberiya Ayaz <br><br> In this workshop, we will provide you with a structured introduction that will teach you all you need to know to become a front-end web developer. Front-end web development, also known as client-side development, is the practice of producing HTML, CSS, and JavaScript for a website or Web Application so that a user can see and interact with them directly. <br><br> Topics covered:<br> How to get started HTML, the language that gives web content structure and meaning. CSS, the language used to style web pages. JavaScript, the scripting language used to create dynamic functionality.',
         specialStyles: {
@@ -192,6 +206,8 @@ export const Day2Data = [
         duration: 75,
         description:
           "Host: Misha Melynk <br><br> This introductory Docker workshop will give you an overview of some of the features that Docker provides. It will start by showing you how to run containers from Docker images. After, it will also get you started with building your own images with Dockerfiles. The goal will be to launch a container from an image you've built yourself.",
+        begin: '3:45 PM',
+        end: '4:45 PM',
         specialStyles: {
           width: '37.5%',
           background: colour.workshop,
@@ -207,6 +223,8 @@ export const Day2Data = [
         duration: 75,
         description:
           'Host: Wilson Wang <br><br> This workshop will teach the fundamentals of Websockets and communication over the internet. Throughout the workshop, you will learn about protocols like HTTP, TCP/UDP, and of course WebSockets. There will be lots of interactive demonstrations that will make the workshop far more enjoyable. By the end of the workshop, you should be able to make a simple chat application and/or game, and understand how to expand it for other uses.',
+        begin: '4:00 PM',
+        end: '5:15 PM',
         specialStyles: {
           background: colour.workshop,
           width: '37.5%',
@@ -222,6 +240,8 @@ export const Day2Data = [
         title: 'Understanding Quantum Computers',
         description:
           'Host: Jack DeGooyer <br><br> Quantum computing is set to shape the future fundamentally. We will explore quantum physics, computer science, and their intersection, quantum information processing in this workshop. Topics such as superpositions, wave-particle duality, and quantum machine learning will be introduced to give attendees a framework to understand quantum information. With this foundation, Python packages such as PennyLane and Qiskit and simple simulators such as Quirk will be discussed.<br><br>Prerequisites: There are no prerequisites.<br>Learning outcome: At the end, attendees will be able to understand key terms used in quantum computation and how they are leveraged for information processing. Moreover, attendees will be given resources to further their understanding of information processing.',
+        begin: '5:15 PM',
+        end: '6:30 PM',
         duration: 75,
         specialStyles: {
           width: '20%',
@@ -253,6 +273,8 @@ export const Day2Data = [
         duration: 75,
         description:
           'Hosts: Priya Darshini, Rahul Goyal <br><br>We are surrounded by automations everywhere, be it personal or work life. Join us for an interactive session to learn and understand how to kick start your journey towards RPA (Robotic Process Automation) and empower everyone with a digital assistant to work faster, smarter, and more efficiently.',
+        begin: '6:00 PM',
+        end: '7:15 PM',
         specialStyles: {
           width: '20%',
           marginLeft: '60%',
