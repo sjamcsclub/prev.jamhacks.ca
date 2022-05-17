@@ -115,44 +115,9 @@ const Schedule = () => {
   const [pageNum, setPageNum] = useState(1);
   const [data, setData] = useState(Day1Data);
   const [filter, setFilter] = useState('online');
-  useEffect(() => {
-    if (filter === 'online') {
-      switch (pageNum) {
-        case 1:
-          setData(Day1Data);
-          break;
-        case 2:
-          setData(Day2Data);
-          break;
-        case 3:
-          setData(Day3Data);
-          break;
-        default:
-          setData(Day1Data);
-      }
-    } else if (filter === 'in-person') {
-      setData((data) =>
-        data.map((item) => {
-          return {
-            ...item,
-            events: item.events.filter((event) => event.type === 'In-person'),
-          };
-        }),
-      );
-      // console.log(
-      //   data.map((item) => {
-      //     return {
-      //       ...item,
-      //       events: item.events.filter((event) => event.type === 'In-person'),
-      //     };
-      //   }),
-      // );
-      // setData(
+  useEffect(() => updateData(), [filter]);
 
-      // );
-    }
-  }, [filter]);
-  useEffect(() => {
+  const updateData = () => {
     switch (pageNum) {
       case 1:
         setData(Day1Data);
@@ -166,6 +131,20 @@ const Schedule = () => {
       default:
         setData(Day1Data);
     }
+    if (filter === 'in-person') {
+      setData((data) =>
+        data.map((item) => {
+          return {
+            ...item,
+            events: item.events.filter((event) => event.type === 'In-person'),
+          };
+        }),
+      );
+    }
+  };
+
+  useEffect(() => {
+    updateData();
   }, [pageNum]);
   return (
     <div style={{ zIndex: 2, minHeight: '90vh' }}>
