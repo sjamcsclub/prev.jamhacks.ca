@@ -29,6 +29,7 @@ import 'firebase/firestore';
 //pages
 const Home = React.lazy(() => import('./pages/Home'));
 const Schedule = React.lazy(() => import('./pages/Schedule'));
+const Map = React.lazy(() => import('./pages/Map'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
 const CodeConduct = React.lazy(() => import('./pages/CodeConduct'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
@@ -102,6 +103,9 @@ Copyright (c) 2022 JAMHacks.
                 </Route>
                 <Route exact path="/schedule">
                   <Schedule />
+                </Route>
+                <Route exact path="/map">
+                  <Map />
                 </Route>
                 <Route exact path="/code-of-conduct">
                   <Navbar sections={CodeConductNavData} location="privacy" />

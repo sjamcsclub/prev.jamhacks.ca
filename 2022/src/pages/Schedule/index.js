@@ -80,14 +80,14 @@ const ScheduleComponent = ({ data }) => {
                       justifyContent: 'center',
                       fontSize: width > 600 ? '15px' : '10px',
                       cursor:
-                        event?.specialStyles?.background === '#13C6FF'
+                        event?.specialStyles?.background === '#34CEFF'
                           ? 'help'
                           : 'default',
                       zIndex: '2',
                       ...event?.specialStyles,
                     }}
                     onClick={() => {
-                      if (event?.specialStyles?.background === '#13C6FF') {
+                      if (event?.specialStyles?.background === '#34CEFF') {
                         Swal.fire({
                           title:
                             event.title +
