@@ -1,2 +1,0 @@
-(this["webpackJsonpjamhacks.ca"]=this["webpackJsonpjamhacks.ca"]||[]).push([[7],{261:function(n,c){},489:function(n,c){},490:function(n,c){},491:function(n,c){},492:function(n,c){},493:function(n,c){},500:function(n,c,t){"use strict";t.r(c);t(0);var a=t(498),i=t(2);c.default=function(){return Object(i.jsx)(a.a,{file:"./JAMHacksMap.pdf",children:Object(i.jsx)(a.b,{pageNumber:1})})}}}]);
-//# sourceMappingURL=7.0182fc63.chunk.js.map
