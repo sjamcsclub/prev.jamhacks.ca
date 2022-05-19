@@ -115,6 +115,19 @@ const Hero = ({ register, schedule }) => {
                       Open Schedule
                     </Button>
                   </Link>
+                  <Link to="/map" style={{ marginLeft: '20px' }}>
+                    <Button
+                      type="primary"
+                      style={{
+                        width: '180px',
+                        height: '40px',
+                        zIndex: '50',
+                        // backgroundColor: '#003e54',
+                      }}
+                    >
+                      Open Map
+                    </Button>
+                  </Link>
                 </div>
               </>
             ) : (
@@ -144,9 +157,9 @@ const Hero = ({ register, schedule }) => {
               </>
             )}
           </div>
-          <SmallText>
+          {/* <SmallText>
             Check your inbox for a Discord invite from JAMHacks!
-          </SmallText>
+          </SmallText> */}
         </div>
         <div style={{ position: 'absolute', top: '0px', left: '0px' }}>
           <TopLeft className="hero-background-asset1" />

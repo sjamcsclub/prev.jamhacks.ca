@@ -33,6 +33,7 @@ export const Day1Data = [
         specialStyles: {
           background: colour.event,
         },
+        location: 'E7 (1427)',
       },
     ],
   },
@@ -45,6 +46,7 @@ export const Day1Data = [
         specialStyles: {
           background: colour.event,
         },
+        location: 'E7 (1427)',
       },
     ],
   },
@@ -58,6 +60,7 @@ export const Day1Data = [
         specialStyles: {
           background: colour.food,
         },
+        location: 'E7 (2472)',
       },
       {
         title: 'Group Finding',
@@ -65,6 +68,7 @@ export const Day1Data = [
         specialStyles: {
           background: colour.activity,
         },
+        location: 'E7 (2472)',
       },
       {
         title: 'Hacker Networking',
@@ -72,6 +76,7 @@ export const Day1Data = [
         specialStyles: {
           background: colour.activity,
         },
+        location: 'E7 (2472)',
       },
       {
         title: 'Sponsor Booths',
@@ -79,6 +84,7 @@ export const Day1Data = [
         specialStyles: {
           background: colour.sponsor,
         },
+        location: 'E7 (2472)',
       },
     ],
   },
@@ -94,6 +100,7 @@ export const Day1Data = [
           marginLeft: '25%',
           background: colour.food,
         },
+        location: 'E7 (2472)',
       },
     ],
   },
@@ -108,6 +115,7 @@ export const Day1Data = [
         begin: '9:00 PM',
         end: '10:00 PM',
         specialStyles: { background: colour.workshop, width: '37.5%' },
+        location: 'E5 (3102)',
       },
       {
         title: 'Intro to Web3 and Blockchain-Based Applications',
@@ -117,6 +125,7 @@ export const Day1Data = [
         begin: '9:00 PM',
         end: '10:00 PM',
         specialStyles: { background: colour.workshop, width: '37.5%' },
+        location: 'Virtual',
       },
     ],
   },
@@ -148,6 +157,7 @@ export const Day1Data = [
           width: '20%',
           background: colour.workshop,
         },
+        location: 'Virtual',
       },
     ],
   },
@@ -165,6 +175,7 @@ export const Day1Data = [
           width: '20%',
           background: colour.workshop,
         },
+        location: 'Virtual',
       },
       {
         title: 'Skribbl.io',
@@ -173,6 +184,7 @@ export const Day1Data = [
           width: '20%',
           background: colour.activity,
         },
+        location: 'Virtual',
       },
     ],
   },
@@ -187,6 +199,7 @@ export const Day1Data = [
           width: '20%',
           background: colour.activity,
         },
+        location: 'Virtual',
       },
     ],
   },

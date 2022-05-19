@@ -80,24 +80,31 @@ const ScheduleComponent = ({ data }) => {
                       justifyContent: 'center',
                       fontSize: width > 600 ? '15px' : '10px',
                       cursor:
-                        event?.specialStyles?.background === '#34CEFF'
-                          ? 'help'
-                          : 'default',
+                        // event?.specialStyles?.background === '#34CEFF' ||
+                        // event?.specialStyles?.background === '#2E36F5'
+                        true ? 'help' : 'default',
                       zIndex: '2',
                       ...event?.specialStyles,
                     }}
                     onClick={() => {
-                      if (event?.specialStyles?.background === '#34CEFF') {
+                      if (
+                        // event?.specialStyles?.background === '#34CEFF' ||
+                        // event?.specialStyles?.background === '#2E36F5'
+                        true
+                      ) {
                         Swal.fire({
                           title:
                             event.title +
                             '<br>' +
-                            event.begin +
-                            ' : ' +
-                            event.end,
+                            (event.begin
+                              ? event.begin + ' : ' + event.end
+                              : ''),
                           html:
-                            event?.description ||
-                            'Workshop description coming soon!',
+                            (event?.description || '') +
+                            '<br><br>' +
+                            (event.location
+                              ? 'Location: ' + event.location
+                              : ''),
                           showCloseButton: true,
                         });
                       }
