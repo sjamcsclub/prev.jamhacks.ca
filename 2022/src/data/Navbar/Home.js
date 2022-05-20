@@ -19,7 +19,7 @@ const HomeNavData = [
   {
     label: 'About',
     id: 'about-section',
-    enabled: true,
+    enabled: false,
   },
   {
     label: 'Sponsors',
