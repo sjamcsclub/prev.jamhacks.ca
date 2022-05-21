@@ -66,7 +66,7 @@ export const Day2Data = [
         title: 'Intro to APIs',
         duration: 75,
         description:
-          'Host: Matthews Ma & Samer <br><br>A practical introduction to API principles and how to use and create them in your own projects.',
+          'Host: Matthews Ma & Samer Rustum <br><br>APIs, or “Application Programming Interfaces”, form the backbone of countless digital services. From delivering crucial data between platforms to connecting the frontend and backends of applications, APIs are a must know topic. Learn how to use APIs and create your own in this practical workshop for beginners. Come with a laptop and a node.js environment (we recommend repl.it).',
         begin: '9:30 AM',
         end: '10:45 AM',
         specialStyles: {
