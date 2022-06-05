@@ -22,7 +22,8 @@ const registerLinks = [
   'https://www.bouncelife.com/events/622ed14a37aaadee4b92886f',
 ];
 
-const devpostGalleryLink = 'https://jamhacks-v.devpost.com/project-gallery';
+const devpostGalleryLink = 'https://jamhacks6.devpost.com/project-gallery';
+const applicationForm = 'https://forms.gle/5b3RKu8AoUDXBsxG7';
 
 const Hero = ({ register, schedule }) => {
   return (
@@ -48,23 +49,67 @@ const Hero = ({ register, schedule }) => {
             {register ? (
               <div className="hero-button-div">
                 {register === 'post-event' ? (
-                  <a
-                    href={devpostGalleryLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <div
+                    style={{
+                      display: 'flex',
+                      maxWidth: '380px',
+                      flexWrap: 'wrap',
+                      justifyContent: 'center',
+                    }}
                   >
-                    <Button
-                      type="primary"
-                      style={{
-                        width: '180px',
-                        height: '40px',
-                        zIndex: '50',
-                        // backgroundColor: '#003e54',
-                      }}
+                    <a
+                      href={devpostGalleryLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      View Projects
-                    </Button>
-                  </a>
+                      <Button
+                        type="primary"
+                        style={{
+                          width: '180px',
+                          height: '40px',
+                          zIndex: '50',
+                          margin: '5px',
+                          // backgroundColor: '#003e54',
+                        }}
+                      >
+                        View Projects
+                      </Button>
+                    </a>
+                    <Link to="/schedule">
+                      <Button
+                        type="primary"
+                        style={{
+                          width: '180px',
+                          height: '40px',
+                          zIndex: '50',
+                          // backgroundColor: '#003e54',
+                          margin: '5px',
+                        }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open Schedule
+                      </Button>
+                    </Link>
+                    <a
+                      href={applicationForm}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ margin: '5px' }}
+                    >
+                      <Button
+                        type="primary"
+                        style={{
+                          width: '280px',
+                          height: '40px',
+                          zIndex: '50',
+                          // backgroundColor: '#003e54',
+                        }}
+                      >
+                        Apply to Become an Organizer!
+                      </Button>
+                    </a>
+                  </div>
                 ) : (
                   <a
                     href={
@@ -111,6 +156,8 @@ const Hero = ({ register, schedule }) => {
                         zIndex: '50',
                         // backgroundColor: '#003e54',
                       }}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Open Schedule
                     </Button>
@@ -124,6 +171,8 @@ const Hero = ({ register, schedule }) => {
                         zIndex: '50',
                         // backgroundColor: '#003e54',
                       }}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Open Map
                     </Button>

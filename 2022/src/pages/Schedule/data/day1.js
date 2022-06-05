@@ -68,7 +68,7 @@ export const Day1Data = [
         specialStyles: {
           background: colour.activity,
         },
-        location: 'E7 (2472)',
+        location: 'E7 (2334)',
       },
       {
         title: 'Hacker Networking',
@@ -76,7 +76,7 @@ export const Day1Data = [
         specialStyles: {
           background: colour.activity,
         },
-        location: 'E7 (2472)',
+        location: 'E7 (2334)',
       },
       {
         title: 'Sponsor Booths',
