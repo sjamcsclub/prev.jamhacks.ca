@@ -40,8 +40,10 @@ const Hero = ({ register, schedule }) => {
               <LocationText>Hybrid Event</LocationText>
             </>
           )}
-          <CrossedText>University of Waterloo, May 20th - 22nd</CrossedText>
-          <DateText>Jamhacks 7 Coming Soon!</DateText>
+          <CrossedText>
+            University of Waterloo, May 20th - 22nd, 2022
+          </CrossedText>
+          {/* <DateText>Jamhacks 7 Coming Soon!</DateText> */}
           <div
             style={{
               width: '80%',
