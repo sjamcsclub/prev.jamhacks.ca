@@ -1,0 +1,3 @@
+TXT google-site-verification=m-8W9ec0uMf-ZsGwkBZn3p-qnHdv8K9LSCwRnPnEomE
+TXT v=spf1 include:mailgun.org ~all
+MX mxb.mailgun.org

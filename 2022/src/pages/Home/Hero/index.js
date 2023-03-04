@@ -12,6 +12,7 @@ import { ReactComponent as BottomRight } from '../../../assets/shapes/BottomRigh
 import { ReactComponent as BottomLeft } from '../../../assets/shapes/BottomLeft.svg';
 
 import './Hero.css';
+import { triggerFocus } from 'antd/lib/input/Input';
 
 const registerLinks = [
   /*'https://wvmzd7k3wc0.typeform.com/to/hTLmCfSw',*/
@@ -39,7 +40,8 @@ const Hero = ({ register, schedule }) => {
               <LocationText>Hybrid Event</LocationText>
             </>
           )}
-          <DateText>University of Waterloo, May 20th - 22nd</DateText>
+          <CrossedText>University of Waterloo, May 20th - 22nd</CrossedText>
+          <DateText>Jamhacks 7 Coming Soon!</DateText>
           <div
             style={{
               width: '80%',
@@ -327,6 +329,26 @@ const DateText = styled.h4`
     font-size: 0.8rem;
   `}
 `;
+
+const CrossedText = styled.h4`
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: line-through;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 5;
+  color: #7b0ff7;
+  font-size: 1.25rem;
+  opacity: 90%;
+  ${media('md')`
+    justify-content: center;
+    font-size: 0.8rem;
+  `}
+`;
+
 //  text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.3);
 
 const SmallText = styled.h4`

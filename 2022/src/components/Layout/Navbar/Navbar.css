@@ -2,11 +2,32 @@
   width: 100%;
   height: 80px;
   display: flex;
+  /* align-items: center;
+  justify-content: space-between; */
+  position: fixed;
+  transition: 0.3s ease-in;
+  z-index: 10;
+}
+
+.navbar-banner {
+  background: white;
+  color: #7b0ff7;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  height: 33.33%;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   transition: 0.3s ease-in;
   z-index: 10;
+  top: 20px;
 }
 
 .navbar-logo-div {
